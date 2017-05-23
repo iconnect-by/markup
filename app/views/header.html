@@ -1,0 +1,36 @@
+<div class="container-fluid navbar-content padding-left-20 padding-right-20">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="#">CONNECT</a>
+  </div>
+
+  <div  class="collapse navbar-collapse">
+   <div ng-if="true">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a ui-sref="app">TOP ARTISTS</a></li>
+      <li><a ui-sref="app.events">EVENTS</a></li>
+      <li><a ui-sref="app.organization">ORGANIZATION</a></li>
+      <li><button ui-sref="app.login" class="btn btn-login">LOGIN</button></li>
+      <li><a class="search"><img src="images/Search.png"></a></li>
+    </ul>
+  </div>
+   <div ng-if="!true">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a ng-click="">TOP ARTISTS</a></li>
+      <li><a (ng-click="">EVENTS</a></li>
+      <li><a ng-click="">ORGANIZATION</a></li>
+      <li><a><i class="fa fa-envelope"></i></a></li>          
+      <li><button><i class="fa fa-bell"></i></button></li>
+      <li class="dropdown open">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">
+                        <span><img src= "http://placehold.it/25x25" alt="" class="img-circle img-responsive"></span> user name <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Edit</a></li>
+						<li class="divider"></li>
+						<li><a ng-click="logout()">Log Out</a></li>
+					</ul>
+	    </li>                
+      <li><a><i class="fa fa-search"></i></a></li>             
+    </ul>
+  </div>
+  </div>
+</div>
