@@ -9,7 +9,7 @@ angular.module('iConnectApp')
   };
 
   $scope.register = function() {
-   $scope.message = "Welcome " + $scope.user.firstname + " " + $scope.user.lastname;
+   $scope.message = "Welcome " + $scope.user.email;
   };
 
 }]);

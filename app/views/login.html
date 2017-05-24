@@ -2,75 +2,54 @@
     <div class="login-well col-sm-6 col-sm-offset-3">
         <h1>Welcome to iConnect</h1>
         <ul class="nav nav-tabs" role="tablist">
-            <li><a href="#signup" aria-controls="signup" role="tab"  data-toggle="tab" activ>Sign Up</a></li>
-            <li><a href="#signin" aria-controls="signin" role="tab"  data-toggle="tab">Sign In</a></li>
+            <li class="active"><a data-target='#signup' aria-controls="signup" role="tab"  data-toggle="tab" activ>Sign Up</a></li>
+            <li><a data-target='#signin' aria-controls="signin" role="tab"  data-toggle="tab">Sign In</a></li>
         </ul>
-        <div id="myTabContent" class="tab-content">
+        <div id="myTabContent" class="tab-content margin-top-10">
             <div role="tabpanel" class="tab-pane active in" id="signup">
                 <div class="margin-bottom-30">
                 <form name="myform" ng-submit="login()" novalidate>
                     <fieldset>
-                        <label></label>
-                        <input class="col-sm-12 margin-bottom-05" type="email" name="email" placeholder="Email" ng-model="user.email" ng-required="true">
+                        <label>Email Adress</label><br/>
+                        <input class="col-sm-12 margin-bottom-05" autocomplete="off" type="email" name="email" placeholder="Email" ng-model="user.email" ng-required="true"><br/>
                         <p class="error validationerror" ng-show="myform.email.$invalid && myform.email.$touched">Must be a valid email</p>
 
-                        <input class="col-sm-12 margin-bottom-05" type="password" name="password" placeholder="Password" ng-model="user.password" ng-required="true">
+                        <label>Password</label><br/>
+                        <input class="col-sm-12 margin-bottom-05" autocomplete="off" type="password" name="password" placeholder="Password" ng-model="user.password" ng-required="true"><br/>
                         <p class="error validationerror" ng-show="myform.password.$invalid && myform.email.$touched">Password is required</p>
                     </fieldset>
 
                     <button type="submit" class="btn-sign-up pull-right margin-bottom-05" ng-disabled="myform.$invalid">sign up</button>
                 </form>
                 </div>
-                <div class="social-content margin-bottom-05 padding-top-05">
-                    <div class="pull-left">Or sign in through social networks</div>
-                    <div class="pull-right">
-                        <ul class="social-icons">
-                    <li class="social-icons__item"><a href=""><img src="images/YouTube_icon@2x.png" alt="youtube" title="youtube"></a></li>
-                    <li class="social-icons__item"><a href="" id="share-twitter-btn" ><img src="images/Twitter_icon@2x.png" alt="twitter"></a></li>
-                    <li class="social-icons__item"><a href="" id="share-fb-btn"><img src="images/Facebook_icon@2x.png" alt="facebook"></a></li>
-                    </ul>
-                    </div>
-                </div>
             </div>
             <div role="tabpanel" class="tab-pane fade" id="signin">
-                <form name="myform" ng-submit="register()" novalidate>
+                <div class="margin-bottom-30">
+                    <form name="myform" ng-submit="register()" novalidate>
+                        <fieldset>
+                            <label>Email Adress</label><br/>
+                            <input class="col-sm-12 margin-bottom-05" autocomplete="off" type="email" name="email" placeholder="Email" ng-model="user.email" ng-required="true"><br/>
+                            <p class="error validationerror" ng-show="myform.email.$invalid && myform.email.$touched">Must be a valid email</p>
 
-                    <div class="textintro">
-                        <h1>Register</h1>
-                        <p>To access site features</p>
-                        <p class="message" ng-show="message">{{ message }}</p>
-                    </div>
+                            <label>Password</label><br/>
+                            <input class="col-sm-12 margin-bottom-05" autocomplete="off" type="password" name="password" placeholder="Password" ng-model="user.password" ng-required="true"><br/>
+                            <p class="error validationerror" ng-show="myform.password.$invalid && myform.email.$touched">Password is required</p>
+                        </fieldset>
 
-                    <fieldset>
-                        <input type="text" name="firstname" placeholder="First Name"
-                               ng-model="user.firstname" ng-required="true">
-                        <p class="error validationerror"
-                           ng-show="myform.firstname.$invalid && myform.firstname.$touched">
-                            First name required</p>
+                        <button type="submit" class="btn-sign-up pull-right margin-bottom-05" ng-disabled="myform.$invalid">sign in</button>
+                    </form>
+                </div>
+            </div>
 
-                        <input type="text" name="lastname" placeholder="Last Name"
-                               ng-model="user.lastname" ng-required="true">
-                        <p class="error validationerror"
-                           ng-show="myform.lastname.$invalid && myform.lastname.$touched">
-                            Last name required</p>
-
-                        <input type="email" name="email" placeholder="Email"
-                               ng-model="user.email" ng-required="true">
-                        <p class="error validationerror"
-                           ng-show="myform.email.$invalid && myform.email.$touched">
-                            Must be a valid email</p>
-
-                        <input type="password" name="password" placeholder="Password"
-                               ng-model="user.password" ng-required="true">
-                        <p class="error validationerror"
-                           ng-show="myform.password.$invalid && myform.email.$touched">
-                            Password is required</p>
-
-                    </fieldset>
-
-                    <button type="submit" class="btn" ng-disabled="myform.$invalid">Register</button>
-                    <p>or <a ng-href="#/login">login</a></p>
-                </form>
+            <div class="social-content margin-bottom-05 padding-top-05">
+                <div class="pull-left">Or sign in through social networks</div>
+                <div class="pull-right">
+                    <ul class="social-icons">
+                        <li class="social-icons__item"><a href=""><img src="images/YouTube_icon@2x.png" alt="youtube" title="youtube"></a></li>
+                        <li class="social-icons__item"><a href="" id="share-twitter-btn" ><img src="images/Twitter_icon@2x.png" alt="twitter"></a></li>
+                        <li class="social-icons__item"><a href="" id="share-fb-btn"><img src="images/Facebook_icon@2x.png" alt="facebook"></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
