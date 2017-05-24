@@ -349,25 +349,66 @@ body {
             Tops Artist Page
 ----------------------------------------------------------*/
 .card-photo {
-  width: 40px;
+  width: 50px;
   border: 0.2em solid transparent;
 }
 
-.thumbnail {
+.first-signer {
   background-color: white;
-  height: 22rem;
-}
+  height: 16rem;
+  vertical-align: top;
+  padding-top: 1em;
 
-.discribe {
-  height: 5em;
-  overflow: hidden;
-  text-overflow: ellipsis
+  .signer-describe {
+    height: 5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    font-weight: normal;
+    width: 100%;
+  }
+
+  .divider {
+    height: 7em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-right: 0;
+  }
+
+  span{
+    vertical-align: top;
+    font-weight: bold;
+    width: 60%;
+  }
+
+  img{
+    display: -webkit-inline-box;
+    width: 75px;
+  }
 }
 
 .artist-new {
   background-color: white;
 }
 
-.divider {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+.display-span{
+  display: inline-grid;
+}
+
+.artist-all{
+  .container-fluid{
+    background-color: white;
+    border-top: 1px solid #f2f2f2;
+  }
+
+  .btn-search,
+  .btn-search:hover {
+    font-size: 13px;
+    padding: 5px 40px !important;
+    margin-top: 10px;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #4a90e2;
+  }
 }

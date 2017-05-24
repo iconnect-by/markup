@@ -31,6 +31,17 @@ angular.module('iConnectApp', ['ui.router', 'ngResource'])
                 }
             })
 
+        // route for the events page
+            .state('app.allArtits', {
+                url: 'allArtits',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/artits-all.html',
+                        controller: 'ArtistTopsController'
+                    }
+                }
+            })
+
         // route for the organization page
             .state('app.organization', {
                 url: 'organization',

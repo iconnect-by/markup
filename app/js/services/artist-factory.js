@@ -367,5 +367,306 @@ angular.module('iConnectApp')
         this.getNewArtist = function (index) {
             return newArtist[index];
         };
+
+        var allArtists = {
+            "Signer": {
+                artistList: [
+                    {
+                        id: 0,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    },
+                    {
+                        id: 1,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    },
+                    {
+                        id: 2,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    },
+                    {
+                        id: 3,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    },
+                    {
+                        id: 4,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    }
+                ]
+            },
+            "Dj's": {
+                artistList: [
+                    {
+                        id: 0,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    },
+                    {
+                        id: 1,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    },
+                    {
+                        id: 2,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    },
+                    {
+                        id: 3,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    },
+                    {
+                        id: 4,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    }
+                ]
+            },
+            "Music Band": {
+                artistList: [
+                    {
+                        id: 0,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    },
+                    {
+                        id: 1,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    },
+                    {
+                        id: 2,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    },
+                    {
+                        id: 3,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    },
+                    {
+                        id: 4,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    }
+                ]
+            },
+            "MC": {
+                artistList: [
+                    {
+                        id: 0,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    },
+                    {
+                        id: 1,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    },
+                    {
+                        id: 2,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    },
+                    {
+                        id: 3,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    },
+                    {
+                        id: 4,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    },
+                ]
+            },
+            "Dancer": {
+                artistList: [
+                    {
+                        id: 0,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    },
+                    {
+                        id: 1,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    },
+                    {
+                        id: 2,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    },
+                    {
+                        id: 3,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    },
+                    {
+                        id: 4,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    },
+                ]
+            },
+            "Painter": {
+                artistList: [
+                    {
+                        id: 0,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    },
+                    {
+                        id: 1,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    },
+                    {
+                        id: 2,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    },
+                    {
+                        id: 3,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    },
+                    {
+                        id: 4,
+                        firstName: "Nicole",
+                        lastName: "Pearson",
+                        country: "Belarus",
+                        style: "Signer",
+                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "http://placehold.it/100x100"
+                    }
+                ]
+            }
+        };
+
+        this.getArtistByType = function(type){
+            return allArtists[type];
+        }
     })
 ;
