@@ -1,6 +1,6 @@
-<div class="container" ng-controller="ArtistTopsController">
+<div class="container-fluid padding-left-20 padding-right-20" ng-controller="ArtistTopsController">
     <div class="row row-content">
-        <div class="col-sm-9 margin-top-10">
+        <div class="col-sm-9 margin-top-20">
             <div class="col-sm-4" ng-repeat="artist in artists">
                 <label class="small-default-text">TOP 5 {{artist.type}}</label>
                 <div class="first-signer">
@@ -28,7 +28,7 @@
                 <a class="pull-right small-blue-text" ng-click="add(artist.type)" >View All</a>
             </div>
         </div>
-        <div class="col-sm-3 margin-top-10">
+        <div class="col-sm-3 margin-top-20">
             <label class="small-default-text">New Artist</label>
             <div class="artist-new">
                 <div class="pading-bottom-10" ng-repeat="art in newArtists">
