@@ -7,9 +7,6 @@ angular.module('iConnectApp')
   	$scope.Person = {};
     $scope.Person = loginFactory.getPerson($scope.user.email);
 
-      console.log("cont");
-      console.log(this.Person);
-
       if($scope.Person.type === 'artist'){
           $state.go('app.personal-artist');
       } else if($scope.Person.type === 'organization') {
