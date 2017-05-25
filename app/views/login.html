@@ -8,7 +8,7 @@
         <div id="myTabContent" class="tab-content margin-top-10">
             <div role="tabpanel" class="tab-pane active in" id="signup">
                 <div class="margin-bottom-30">
-                <form name="myform" ng-submit="login()" novalidate>
+                <form name="myform" ng-submit="register()" novalidate>
                     <fieldset>
                         <label>Email Adress</label><br/>
                         <input class="col-sm-12 margin-bottom-05" autocomplete="off" type="email" name="email" placeholder="Email" ng-model="user.email" ng-required="true"><br/>
@@ -25,7 +25,7 @@
             </div>
             <div role="tabpanel" class="tab-pane fade" id="signin">
                 <div class="margin-bottom-30">
-                    <form name="myform" ng-submit="register()" novalidate>
+                    <form name="myform" ng-submit="login()" novalidate>
                         <fieldset>
                             <label>Email Adress</label><br/>
                             <input class="col-sm-12 margin-bottom-05" autocomplete="off" type="email" name="email" placeholder="Email" ng-model="user.email" ng-required="true"><br/>

@@ -11,7 +11,7 @@ angular.module('iConnectApp')
         $scope.add = function (type) {
             $scope.type = type;
             $scope.artistList.push( artistFactory.getArtistByType(type));
-            $state.go('app.allArtits');
+            $state.go('app.artist-open');
         };
 
     }]);

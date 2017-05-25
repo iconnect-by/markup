@@ -11,7 +11,7 @@ angular.module('iConnectApp', ['ui.router', 'ngResource'])
                         templateUrl: 'views/header.html',
                     },
                     'content': {
-                        templateUrl: 'views/artist-tops.html',
+                        templateUrl: 'views/artist/artist-tops.html',
                         controller: 'ArtistTopsController'
                     }
                     // 'footer': {
@@ -31,12 +31,12 @@ angular.module('iConnectApp', ['ui.router', 'ngResource'])
                 }
             })
 
-        // route for the events page
-            .state('app.allArtits', {
-                url: 'allArtits',
+        // route for the artist-open page
+            .state('app.artist-open', {
+                url: 'artist-open',
                 views: {
                     'content@': {
-                        templateUrl: 'views/artits-all.html',
+                        templateUrl: 'views/artist/artist-open.html',
                         controller: 'ArtistTopsController'
                     }
                 }
@@ -47,7 +47,7 @@ angular.module('iConnectApp', ['ui.router', 'ngResource'])
                 url: 'organization',
                 views: {
                     'content@': {
-                        templateUrl: 'views/organization.html',
+                        templateUrl: 'views/organizations.html',
                         controller: 'OrganizationController'
                     }
                 }
@@ -60,6 +60,27 @@ angular.module('iConnectApp', ['ui.router', 'ngResource'])
                     'content@': {
                         templateUrl: 'views/login.html',
                         controller: 'RegistrationController'
+                    }
+                }
+            })
+
+        // route for the personal artist page
+            .state('app.personal-artist', {
+                url: 'personal-artist',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/personal/artist.html',
+                        controller: 'PersonalController'
+                    }
+                }
+            })
+        // route for the personal organization page
+            .state('app.personal-organization', {
+                url: 'personal-organization',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/personal/organization.html',
+                        controller: 'PersonalController'
                     }
                 }
             });
