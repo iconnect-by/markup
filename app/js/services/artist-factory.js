@@ -668,5 +668,9 @@ angular.module('iConnectApp')
         this.getArtistByType = function(type){
             return allArtists[type];
         }
+
+        this.getAllArtist = function(){
+            return allArtists;
+        }
     })
 ;

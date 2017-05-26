@@ -5,13 +5,13 @@ angular.module('iConnectApp')
         $scope.artists = artistFactory.getArtists();
         $scope.newArtists = artistFactory.getNewArtists();
         $scope.type ="";
-        $scope.allArtist = [];
+        $scope.allArtist = artistFactory.getAllArtist();
+        $scope.artistList = [];
 
         $scope.add = function (type) {
             $scope.type = type;
-            $scope.allArtist.push( artistFactory.getArtistByType(type));
-            $state.go('app.allArtits');
-
+            $scope.artistList.push( artistFactory.getArtistByType(type));
+            $state.go('app.artist-open');
         };
 
     }]);
