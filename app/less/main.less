@@ -44,7 +44,7 @@ body {
 .margin-left-minus {  margin-left: -5%;  }
 .margin-left-auto {  margin-left: auto;  }
 .margin-right-auto {  margin-right: auto;  }
-.pading-00 {  padding: 0;  }
+.padding-00 {  padding: 0;  }
 
 .padding-top-05 {  padding-top: 0.5em;  }
 .padding-top-10 {  padding-top: 1.0em;  }
@@ -77,6 +77,13 @@ body {
 .small-default-text {
   color: black;
   font-size: 10px;
+  font-family: "Open Sans";
+}
+.default-text {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
   font-family: "Open Sans";
 }
 
@@ -293,4 +300,48 @@ body {
     border-radius: 4px;
     background-color: @iConnect-blue;
   }
+}
+/*----------------------------------------------------------
+                   Personal Artist Page
+----------------------------------------------------------*/
+.personal-artist{
+  .photo-content,
+  .video-content,
+  .music-content,
+  .booking-content,
+  .artist-info,
+  .download{
+    background-color: white;
+  }
+
+  .photo-content,
+  .video-content,
+  .music-content{
+    height: 7em;
+  }
+  .booking-content{
+    .form-group{
+      label{
+        vertical-align: top;
+      }
+    }
+
+    .btn{
+      color: white;
+      background-color: @iConnect-blue;
+    }
+  }
+  .download{
+    .btn{
+      color: white;
+      background-color: @iConnect-orange;
+    }
+  }
+
+  .artist-content{
+    img{
+      display: -webkit-inline-box;
+    }
+  }
+
 }

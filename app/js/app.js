@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('iConnectApp', ['ui.router', 'ngResource'])
+angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar'])
     .config(function ($stateProvider, $urlRouterProvider) {
         $stateProvider
         // route for the home page
