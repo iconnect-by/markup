@@ -38,23 +38,32 @@
         </div>
 
         <div class="col-sm-6">
-            <div class="row-content">
+            <div class="row-content" ng-show="divShow == 'allMedia'">
                 <div class="col-sm-6">
-                    <div class="photo-content">
+                    <div class="photo-content padding-left-10 padding-right-10">
                         <label class="default-text">Photo</label>
+                        <div>
+                            Insert image here
+                        </div>
+                        <a class="pull-right small-blue-text" ng-click="showMedia('photo')" >View All</a>
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="video-content">
+                    <div class="video-content padding-left-10 padding-right-10">
                         <label class="default-text">Video</label>
+                        <div>
+                            Insert video here
+                        </div>
+                        <a class="pull-right small-blue-text" ng-click="showMedia('video')" >View All</a>
                     </div>
                 </div>
-
-
                 <div class="col-sm-12 margin-top-20">
-                    <div class="music-content ">
+                    <div class="music-content  padding-left-10 padding-right-10">
                         <label class="default-text">Music</label>
-
+                        <div>
+                            Insert music here
+                        </div>
+                        <a class="pull-right small-blue-text" ng-click="showMedia('music')" >View All</a>
                     </div>
                 </div>
 
@@ -62,8 +71,10 @@
                     <label class="default-text">Other Activities of the organizer</label>
                 </div>
             </div>
+            <div class="row-content" ng-show="divShow == 'photo'" ng-include="'views/personal/photo-all.html'"></div>
+            <div class="row-content" ng-show="divShow == 'video'" ng-include="'views/personal/video-all.html'"></div>
+            <div class="row-content" ng-show="divShow == 'music'" ng-include="'views/personal/music-all.html'"></div>
         </div>
-
         <div class="col-sm-3 padding-00">
             <div class="col-sm-12 booking-content">
                 <label class="default-text">Booking Artist's</label>
@@ -97,6 +108,5 @@
                 </div>
             </div>
         </div>
-
     </div>
 </div>

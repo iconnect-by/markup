@@ -2,6 +2,11 @@
 
 angular.module('iConnectApp')
     .controller('PersonalController', ['$scope', function($scope) {
+        $scope.divShow = "allMedia";
+        $scope.showMedia = function(arg) {
+            $scope.divShow = arg;
+        };
+
         $scope.itunesSelect = {
             "Itunes Festival":[1,2,3],
             "Itunes Show":[1,2,3]
