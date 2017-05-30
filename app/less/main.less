@@ -13,7 +13,11 @@ body {
   background-color: @iConnect-lightGrey;
   color: black;
 }
-
+.margin-left-minus {  margin-left: -5%;  }
+.margin-left-auto {  margin-left: auto;  }
+.margin-right-auto {  margin-right: auto;  }
+.padding-00 {  padding: 0;  }
+.margin-00 { margin: 0; }
 .margin-top-05 {  margin-top: 0.5em;  }
 .margin-top-10 {  margin-top: 1.0em;  }
 .margin-top-15 {  margin-top: 1.5em;  }
@@ -42,11 +46,6 @@ body {
 .margin-right-25 {  margin-right: 2.5em;  }
 .margin-right-30 {  margin-right: 3.0em;  }
 
-.margin-left-minus {  margin-left: -5%;  }
-.margin-left-auto {  margin-left: auto;  }
-.margin-right-auto {  margin-right: auto;  }
-.pading-00 {  padding: 0;  }
-
 .padding-top-05 {  padding-top: 0.5em;  }
 .padding-top-10 {  padding-top: 1.0em;  }
 .padding-top-15 {  padding-top: 1.5em;  }
@@ -74,6 +73,20 @@ body {
 .padding-right-20 {  padding-right: 2.0em;  }
 .padding-right-25 {  padding-right: 2.5em;  }
 .padding-right-30 {  padding-right: 3.0em;  }
+
+.grey-text {
+  color: @iConnect-grey;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans SemiBold";
+}
+.default-text {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Open Sans";
+}
 
 .small-default-text {
   color: black;
@@ -162,6 +175,8 @@ body {
     text-transform: uppercase;
   }
   ul {
+     list-style: none;
+
     li > a:focus,
     li > a:hover,
     li > a:active,
@@ -293,5 +308,66 @@ body {
     border: 1px solid transparent;
     border-radius: 4px;
     background-color: @iConnect-blue;
+  }
+}
+/*----------------------------------------------------------
+                   Personal Artist Page
+----------------------------------------------------------*/
+.personal-artist{
+  .photo-content,
+  .video-content,
+  .music-content,
+  .booking-content,
+  .artist-info,
+  .download{
+    background-color: white;
+  }
+
+  .photo-content,
+  .video-content,
+  .music-content{
+    height: 7em;
+  }
+  .booking-content{
+    .form-group{
+      label{
+        vertical-align: top;
+      }
+    }
+
+    .btn{
+      color: white;
+      background-color: @iConnect-blue;
+    }
+  }
+  .download{
+    .btn{
+      color: white;
+      background-color: @iConnect-orange;
+    }
+  }
+
+  .artist-content {
+    img {
+      display: -webkit-inline-box;
+    }
+
+    .artist-info {
+      .label-default{
+        color: black;
+        background-color: white;
+        border: 1px solid @iConnect-lightGrey;
+
+      }
+      ul {
+        list-style: none;
+      }
+
+      .genres,
+      .social-icons {
+        display: flex;
+        padding: 0;
+      }
+    }
   }
 }
