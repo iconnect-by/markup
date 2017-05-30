@@ -1,22 +1,29 @@
 <div class="personal-artist container-fluid padding-left-20 padding-right-20" ng-controller="PersonalController">
     <div class="row row-content margin-top-20">
         <div class="col-sm-3">
-            <div class="artist-content text-center">
-                <div class="artist-img">
-                    <img src="http://placehold.it/200x200" alt="artist-img" class="img-circle img-responsive">
+            <div class="artist-content">
+                <div class="artist-img  text-center">
+                    <img src="http://placehold.it/300x300" alt="artist-img" class="img-circle img-responsive">
                 </div>
-                <div class="artist-info">
-                    <h3>Sarah Dawson</h3>
-                    <span>Signer</span>
+                <div class="artist-info margin-top-10 padding-bottom-10 padding-top-10 padding-right-10 padding-left-10">
+                    <h3 class="padding-00 margin-00">Sarah Dawson</h3>
+                    <small class="small-grey-text">Signer</small>
                     <div class="artist-rating">
                     </div>
-                    <p class="artist-description"></p>
-                    <div class="artist-main-info">
-                        <h4>Location</h4><span>Belarus</span>
-                        <h4>iTunes Link</h4><span>SarahDawson</span>
-                        <h4>Sound cloud</h4><span>SarahDawson</span>
+                    <p class="artist-description">Read, out with friends, listen to music, draw and learn new
+                        things.</p>
+                    <div class="genres margin-bottom-05" >
+                        <span class="label label-default margin-left-05 margin-right-05" ng-repeat="gen in ['Hip-hop', 'R&B', 'Dancer']">{{gen}}</span>
+
                     </div>
-                    <div class="artist-social">
+                    <div class="artist-main-info">
+                        <ul class="list-group">
+                            <li class="list-group-item grey-text">Location<span class="pull-right default-text">Belarus</span></li>
+                            <li class="list-group-item grey-text">iTunes Link<span class="pull-right default-text">SarahDawson</span></li>
+                            <li class="list-group-item grey-text">Sound cloud<span class="pull-right default-text">SarahDawson</span></li>
+                        </ul>
+                    </div>
+                    <div class="social-content text-center">
                         <ul class="social-icons">
                             <li class="social-icons__item"><a href="" id="share-fb-btn"><img
                                     src="images/Facebook_icon.png" alt="facebook"></a></li>
