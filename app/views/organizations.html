@@ -1,5 +1,32 @@
-<div class="container-fluid padding-left-20 padding-right-20" ng-controller="OrganizationController">
-    <div class="row row-content">
-        <h1>Not yet implemented Organizations page</h1>
+<section class="organizations-section" ng-controller="OrganizationController">
+    <div class="container-fluid padding-left-20 padding-right-20 filter-section padding-bottom-10 padding-top-10">
+        <div class="pull-right">
+            <label>Location</label><input type="text"/>
+            <label>Genres</label><select ng-model="selectedallArtist" ng-options="x for (x, y) in {Festival :[], Show:[]}"></select>
+            <button class="btn btn-search">Search</button>
+        </div>
     </div>
-</div>
+    <div class="container-fluid padding-left-20 padding-right-20">
+        <div class="row row-content">
+            <div class="col-sm-9 margin-top-05">
+                <div class="col-sm-4 margin-top-10" ng-repeat="org in organizationList">
+                    <div class="first-signer">
+                        <div class="col-sm-12 divider">
+                            <img ng-src="{{ org.photo }}" alt="" class="img-responsive">
+                            <span class="display-span">{{ org.title}}
+                                <span class="signer-describe">{{ org.discrabe}}</span>
+                            </span>
+                        </div>
+                        <div class="text-center col-sm-12">
+                            <div class="pull-left">
+                                <h5>{{ org.location}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 margin-top-05">
+            </div>
+        </div>
+    </div>
+</section>

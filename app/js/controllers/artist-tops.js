@@ -4,13 +4,13 @@ angular.module('iConnectApp')
     .controller('ArtistTopsController', ['$scope', '$state', 'artistFactory', function($scope, $state, artistFactory) {
         $scope.artists = artistFactory.getArtists();
         $scope.newArtists = artistFactory.getNewArtists();
-        $scope.type ="";
+        $scope.genres = "Dj's";
         $scope.allArtist = artistFactory.getAllArtist();
         $scope.artistList = [];
 
-        $scope.add = function (type) {
-            $scope.type = type;
-            $scope.artistList.push( artistFactory.getArtistByType(type));
+        $scope.openArtist = function (genres) {
+            $scope.artisGenres = genres;
+            $scope.artistList.push( artistFactory.getArtistByType(genres));
             $state.go('app.artist-open');
         };
 

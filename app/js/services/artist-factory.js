@@ -425,7 +425,7 @@ angular.module('iConnectApp')
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
+                        style: "Dj's",
                         discrabe: "Read, out with friends, listen to music, draw and learn new things.",
                         photo: "http://placehold.it/100x100"
                     },
@@ -434,7 +434,7 @@ angular.module('iConnectApp')
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
+                        style: "Dj's",
                         discrabe: "Read, out with friends, listen to music, draw and learn new things.",
                         photo: "http://placehold.it/100x100"
                     },
@@ -443,7 +443,7 @@ angular.module('iConnectApp')
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
+                        style: "Dj's",
                         discrabe: "Read, out with friends, listen to music, draw and learn new things.",
                         photo: "http://placehold.it/100x100"
                     },
@@ -452,7 +452,7 @@ angular.module('iConnectApp')
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
+                        style: "Dj's",
                         discrabe: "Read, out with friends, listen to music, draw and learn new things.",
                         photo: "http://placehold.it/100x100"
                     },
@@ -461,7 +461,7 @@ angular.module('iConnectApp')
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
+                        style: "Dj's",
                         discrabe: "Read, out with friends, listen to music, draw and learn new things.",
                         photo: "http://placehold.it/100x100"
                     }
@@ -474,7 +474,7 @@ angular.module('iConnectApp')
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
+                        style: "Music Band",
                         discrabe: "Read, out with friends, listen to music, draw and learn new things.",
                         photo: "http://placehold.it/100x100"
                     },
@@ -523,7 +523,7 @@ angular.module('iConnectApp')
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
+                        style: "MC",
                         discrabe: "Read, out with friends, listen to music, draw and learn new things.",
                         photo: "http://placehold.it/100x100"
                     },
@@ -572,7 +572,7 @@ angular.module('iConnectApp')
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
+                        style: "Dancer",
                         discrabe: "Read, out with friends, listen to music, draw and learn new things.",
                         photo: "http://placehold.it/100x100"
                     },
@@ -621,7 +621,7 @@ angular.module('iConnectApp')
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
+                        style: "Painter",
                         discrabe: "Read, out with friends, listen to music, draw and learn new things.",
                         photo: "http://placehold.it/100x100"
                     },
@@ -665,9 +665,9 @@ angular.module('iConnectApp')
             }
         };
 
-        this.getArtistByType = function(type){
-            return allArtists[type];
-        }
+        this.getArtistByType = function(genres){
+            return allArtists[genres];
+        };
 
         this.getAllArtist = function(){
             return allArtists;

@@ -5,12 +5,12 @@
             <label>To</label><input type="date"/>
             <label>Location</label><input type="text"/>
             <label>Genres</label><select ng-model="selectedallArtist" ng-options="x for (x, y) in allArtist"></select>
+            <button class="btn btn-search">Search</button>
         </div>
     </div>
     <div class="container-fluid padding-left-20 padding-right-20 margin-top-10">
-        <a ui-sref="app" class="text-left margin-top-20">Back to the general list</a> / Find
+        <a ui-sref="app" class="text-left margin-top-20">Back to the general list</a> / Find {{allArtist['Signer'].artistList.length}} {{type}}
         <div class="row row-content">
-            {{allArtist['Signer'].artistList.length}} {{type}}
             <div class="col-sm-3 margin-top-10" ng-repeat="art in allArtist['Signer'].artistList">
                 <div class="first-signer">
                     <div class="col-sm-12 divider">
