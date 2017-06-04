@@ -1,43 +1,46 @@
-<div class="container-fluid padding-left-20 padding-right-20" ng-controller="ArtistTopsController">
-    <div class="row row-content">
-        <div class="col-sm-9 margin-top-20">
-            <div class="col-sm-4" ng-repeat="artist in artists">
-                <label class="small-default-text">TOP 5 {{artist.type}}</label>
-                <div class="first-signer">
-                    <div class="col-sm-12 divider">
-                        <img ng-src="{{ artist.artistTops[0].photo }}" alt="" class="img-circle img-responsive">
-                        <span class="display-span">{{ artist.artistTops[0].firstName}} {{ artist.artistTops[0].lastName}}
+<section class="artists" ng-controller="ArtistTopsController">
+    <div class="container-fluid padding-left-20 padding-right-20">
+        <div class="row row-content">
+            <div class="col-sm-9 margin-top-20">
+                <div class="col-sm-4 " ng-repeat="artist in artists">
+                    <label class="small-default-text">TOP 5 {{artist.type}}</label>
+                    <div class="first-signer">
+                        <div class="col-sm-12 divider">
+                            <img ng-src="{{ artist.artistTops[0].photo }}" alt="" class="img-circle img-responsive">
+                            <span class="display-span">{{ artist.artistTops[0].firstName}} {{ artist.artistTops[0].lastName}}
                           <span class="signer-describe">{{ artist.artistTops[0].discrabe}}</span>
                         </span>
-                    </div>
-                    <div class="text-center col-sm-12">
-                        <div class="pull-left">
-                            <h5>{{ artist.artistTops[0].country}}</h5>
                         </div>
-                        <div class="pull-right">
-                            <h5><strong>{{ artist.artistTops[0].style}}</strong></h5>
+                        <div class="text-center col-sm-12">
+                            <div class="pull-left">
+                                <h5>{{ artist.artistTops[0].country}}</h5>
+                            </div>
+                            <div class="pull-right">
+                                <h5><strong>{{ artist.artistTops[0].style}}</strong></h5>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="text" ng-repeat="art in artist.artistTops.slice(1, artist.artistTops.length)">
-                    <span>{{art.id+1}}</span> <img alt="user image" src="{{art.photo}}" class="img-circle card-photo">
-                    <span class="display-span">{{art.firstName}} {{art.lastName}}
+                    <div class="text" ng-repeat="art in artist.artistTops.slice(1, artist.artistTops.length)">
+                        <span>{{art.id+1}}</span> <img alt="user image" src="{{art.photo}}"
+                                                       class="img-circle card-photo">
+                        <span class="display-span">{{art.firstName}} {{art.lastName}}
                             <span class="small-grey-text">{{art.country}} | {{art.style}}</span>
                         </span>
+                    </div>
+                    <a class="pull-right small-blue-text" ng-click="openArtist(artist.type)">View All</a>
                 </div>
-                <a class="pull-right small-blue-text" ng-click="openArtist(artist.type)" >View All</a>
             </div>
-        </div>
-        <div class="col-sm-3 margin-top-20">
-            <label class="small-default-text">New Artist</label>
-            <div class="artist-new">
-                <div class="pading-bottom-10" ng-repeat="art in newArtists">
-                    <img alt="user image" src="{{art.photo}}" class="img-circle card-photo">
-                    <span class="padding-right-10   ">{{art.firstName}} {{art.lastName}}
+            <div class="col-sm-3 margin-top-20">
+                <label class="small-default-text">New Artist</label>
+                <div class="artist-new">
+                    <div class="pading-bottom-10" ng-repeat="art in newArtists">
+                        <img alt="user image" src="{{art.photo}}" class="img-circle card-photo">
+                        <span class="padding-right-10   ">{{art.firstName}} {{art.lastName}}
                 <span class="padding-right-20 small-grey-text">{{art.country}} | {{art.style}}</span></span>
 
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>

@@ -58,7 +58,18 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar'])
                 url: 'login',
                 views: {
                     'content@': {
-                        templateUrl: 'views/login.html',
+                        templateUrl: 'views/login/login.html',
+                        controller: 'RegistrationController'
+                    }
+                }
+            })
+
+        // route for the verification page
+            .state('app.verification', {
+                url: 'verification',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/login/verification.html',
                         controller: 'RegistrationController'
                     }
                 }

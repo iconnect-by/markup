@@ -1,0 +1,79 @@
+<section class="login-section">
+    <div class="container" ng-controller="RegistrationController">
+        <div class="login-well col-sm-6 col-sm-offset-3">
+            <h1>Welcome to iConnect</h1>
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="active"><a data-target='#signup' aria-controls="signup" role="tab" data-toggle="tab" activ>Sign
+                    Up</a></li>
+                <li><a data-target='#signin' aria-controls="signin" role="tab" data-toggle="tab">Sign In</a></li>
+            </ul>
+            <div id="myTabContent" class="tab-content margin-top-10">
+                <div role="tabpanel" class="tab-pane active in" id="signup">
+                    <div class="margin-bottom-30">
+                        <form name="regform" ng-submit="register()" novalidate>
+                            <fieldset>
+                                <label>Email Adress</label><br/>
+                                <input class="col-sm-12 margin-bottom-20" autocomplete="off" type="email" name="email"
+                                       placeholder="Email" ng-model="userReg.email" ng-required="true"><br/>
+                                <p class="error validationerror"
+                                   ng-show="regform.email.$invalid && regform.email.$touched">Must be a valid email</p>
+
+                                <label>Password</label><br/>
+                                <input class="col-sm-12 margin-bottom-20" autocomplete="off" type="password"
+                                       ng-attr-type="{{ showPassword ? 'text' : 'password' }}" name="password"
+                                       placeholder="Password" ng-model="userReg.password" ng-required="true"><br/>
+                                <p class="error validationerror"
+                                   ng-show="regform.password.$invalid && regform.email.$touched">Password is
+                                    required</p>
+                            </fieldset>
+
+                            <button type="submit" class="btn-sign-up pull-right margin-bottom-05"
+                                    ng-disabled="regform.$invalid">sign up
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="signin">
+                    <div class="margin-bottom-30">
+                        <form name="loginform" ng-submit="login()" novalidate>
+                            <fieldset>
+                                <label>Email Adress</label><br/>
+                                <input class="col-sm-12 margin-bottom-20" autocomplete="off" type="email" name="email"
+                                       placeholder="Email" ng-model="user.email" ng-required="true"><br/>
+                                <p class="error validationerror"
+                                   ng-show="loginform.email.$invalid && loginform.email.$touched">Must be a valid
+                                    email</p>
+
+                                <label>Password</label><br/>
+                                <input class="col-sm-12 margin-bottom-20" autocomplete="off" type="password"
+                                       name="password" placeholder="Password" ng-model="user.password"
+                                       ng-required="true"><br/>
+                                <p class="error validationerror"
+                                   ng-show="loginform.password.$invalid && loginform.email.$touched">Password is
+                                    required</p>
+                            </fieldset>
+
+                            <button type="submit" class="btn-sign-up pull-right margin-bottom-05"
+                                    ng-disabled="loginform.$invalid">sign in
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="social-content margin-bottom-05 padding-top-05">
+                    <div class="pull-left">Or sign in through social networks</div>
+                    <div class="pull-right">
+                        <ul class="social-icons">
+                            <li class="social-icons__item"><a href=""><img src="images/YouTube_icon@2x.png"
+                                                                           alt="youtube" title="youtube"></a></li>
+                            <li class="social-icons__item"><a href="" id="share-twitter-btn"><img
+                                    src="images/Twitter_icon@2x.png" alt="twitter"></a></li>
+                            <li class="social-icons__item"><a href="" id="share-fb-btn"><img
+                                    src="images/Facebook_icon@2x.png" alt="facebook"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

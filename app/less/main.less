@@ -116,12 +116,37 @@ body {
   border-radius: 4px;
   background-color: @iConnect-blue;
 }
+
+.btn-send,
+.btn-send:hover {
+  width: 15em;
+  font-size: 13px;
+  padding: 5px 10px !important;
+  color: white;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: @iConnect-blue;
+}
+
+.btn-request,
+.btn-request:hover {
+  width: 15em;
+  font-size: 13px;
+  padding: 5px 10px !important;
+  color: black;
+  text-transform: uppercase;
+  border: 1px solid @iConnect-lightGrey;
+  border-radius: 4px;
+  background-color: white;
+}
 /*----------------------------------------------------------
                    Navbar
 ----------------------------------------------------------*/
 .navbar-content {
   background-color: white;
-
+  border: 0 solid @iConnect-lightGrey;
+  border-bottom-width: 1px;
   .navbar-brand {
     font-style: italic;
     font-weight: bold;
@@ -165,16 +190,12 @@ body {
 /*----------------------------------------------------------
             Login Page
 ----------------------------------------------------------*/
-.login-container {
+.login-section {
   background-image: url('@{iConnect-imagePath}/background.jpg');
   line-height: 1;
   position: absolute;
   height: 100%;
   width: 100%;
-
-  h1{
-    font-weight: bold;
-  }
 
   .login-well {
     background-color: transparent;
@@ -205,31 +226,6 @@ body {
 
   }
 
-  label{
-    font-weight: 400;
-  }
-
-  input,
-  input [type=email],
-  input [type=password]{
-    height: 2em;
-    border: 0 groove white;
-    border-bottom-width: 1px;
-    background-color: transparent!important;
-    color: white;
-  }
-
-  input:focus,
-  input [type=email]:focus,
-  input [type=password]:focus{
-    height: 2em;
-    border: 0 solid @iConnect-orange;
-    border-bottom-width: 1px;
-    background-color: transparent!important;
-    outline: none;
-    color: white;
-  }
-
   .social-icons {
     display: flex;
     padding: 0;
@@ -257,123 +253,209 @@ body {
   .social-content {
     border-top: 1px dashed @iConnect-lightGrey;
   }
+
+  input,
+  input [type=tel],
+  input [type=email],
+  input [type=number],
+  input [type=password]{
+    color: white;
+  }
+
+  input:focus,
+  input [type=tel]:focus,
+  input [type=email]:focus,
+  input [type=number]:focus,
+  input [type=password]:focus{
+    color: white;
+  }
 }
 
+.verification-section {
+  background-color: white;
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  height: 91vh;
+
+  h1 {
+    span {
+      color: @iConnect-blue;
+    }
+  }
+
+  label{
+    color: @iConnect-grey;
+  }
+
+  input,
+  input [type=tel],
+  input [type=email],
+  input [type=number],
+  input [type=password]{
+    color: black;
+  }
+
+  input:focus,
+  input [type=tel]:focus,
+  input [type=email]:focus,
+  input [type=number]:focus,
+  input [type=password]:focus{
+    color: black;
+  }
+}
+
+.verification-section,
+.login-section {
+  h1{
+    font-weight: bold;
+  }
+
+  label{
+    font-size: 12px;
+    font-family: "Open Sans Regular";
+    font-weight: 400;
+  }
+
+  input,
+  input [type=tel],
+  input [type=email],
+  input [type=number],
+  input [type=password]{
+    height: 2em;
+    border: 0 groove white;
+    border-bottom-width: 1px;
+    background-color: transparent!important;
+  }
+
+  input:focus,
+  input [type=tel]:focus,
+  input [type=email]:focus,
+  input [type=number]:focus,
+  input [type=password]:focus{
+    height: 2em;
+    border: 0 solid @iConnect-orange;
+    border-bottom-width: 1px;
+    background-color: transparent!important;
+    outline: none;
+  }
+}
 /*----------------------------------------------------------
             Tops Artist Page
 ----------------------------------------------------------*/
-.card-photo {
-  width: 50px;
-  border: 0.2em solid transparent;
-}
+.artists,
+.organizations-section {
+  background-color: @iConnect-lightGrey;
 
-.first-signer {
-  background-color: white;
-  height: 17rem;
-  vertical-align: top;
-  padding-top: 1em;
-
-  .signer-describe {
-    height: 5em;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 13px;
-    font-weight: normal;
-    width: 100%;
+  .card-photo {
+    width: 50px;
+    border: 0.2em solid transparent;
   }
 
-  .divider {
-    height: 7em;
-    border-bottom: 1px solid @iConnect-lightGrey;
-    padding-right: 0;
-  }
-
-  span{
-    vertical-align: top;
-    font-weight: bold;
-    width: 50%;
-  }
-
-  img{
-    display: -webkit-inline-box;
-  }
-}
-
-.artist-new {
-  background-color: white;
-}
-
-.display-span{
-  display: inline-grid;
-}
-
-.artist-all{
-  .filter-section{
-  background-color: white;
-  }
-  .container-fluid{
-    border-top: 1px solid @iConnect-lightGrey;
-  }
-
-}
-/*----------------------------------------------------------
-                   Personal Artist Page
-----------------------------------------------------------*/
-.personal-artist{
-  .photo-content,
-  .video-content,
-  .music-content,
-  .booking-content,
-  .artist-info,
-  .download{
+  .first-signer {
     background-color: white;
-  }
+    height: 17rem;
+    vertical-align: top;
+    padding-top: 1em;
 
-  .photo-content,
-  .video-content,
-  .music-content{
-    height: 15em;
-  }
-  .booking-content{
-    .form-group{
-      label{
-        vertical-align: top;
-      }
+    .signer-describe {
+      height: 5em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 13px;
+      font-weight: normal;
+      width: 100%;
     }
 
-    .btn{
-      color: white;
-      background-color: @iConnect-blue;
+    .divider {
+      height: 7em;
+      border-bottom: 1px solid @iConnect-lightGrey;
+      padding-right: 0;
     }
-  }
-  .download{
-    .btn{
-      color: white;
-      background-color: @iConnect-orange;
-    }
-  }
 
-  .artist-content {
+    span {
+      vertical-align: top;
+      font-weight: bold;
+      width: 50%;
+    }
+
     img {
       display: -webkit-inline-box;
     }
+  }
 
-    .artist-info {
-      .label-default{
-        color: black;
-        background-color: white;
-        border: 1px solid @iConnect-lightGrey;
+  .artist-new,
+  .filter-section{
+    background-color: white;
+  }
 
+  .display-span {
+    display: inline-grid;
+  }
+
+}
+  /*----------------------------------------------------------
+                     Personal Artist Page
+  ----------------------------------------------------------*/
+  .personal-artist {
+    background-color: @iConnect-lightGrey;
+
+    .photo-content,
+    .video-content,
+    .music-content,
+    .booking-content,
+    .artist-info,
+    .download {
+      background-color: white;
+    }
+
+    .photo-content,
+    .video-content,
+    .music-content {
+      height: 15em;
+    }
+    .booking-content {
+      .form-group {
+        label {
+          vertical-align: top;
+        }
       }
-      ul {
-        list-style: none;
+
+      .btn {
+        color: white;
+        background-color: @iConnect-blue;
+      }
+    }
+    .download {
+      .btn {
+        color: white;
+        background-color: @iConnect-orange;
+      }
+    }
+
+    .artist-content {
+      img {
+        display: -webkit-inline-box;
       }
 
-      .genres,
-      .social-icons {
-        display: flex;
-        padding: 0;
+      .artist-info {
+        .label-default {
+          color: black;
+          background-color: white;
+          border: 1px solid @iConnect-lightGrey;
+
+        }
+        ul {
+          list-style: none;
+        }
+
+        .genres,
+        .social-icons {
+          display: flex;
+          padding: 0;
+        }
       }
     }
   }
-}
