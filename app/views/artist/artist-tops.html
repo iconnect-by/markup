@@ -31,15 +31,7 @@
                 </div>
             </div>
             <div class="col-sm-3 margin-top-20">
-                <label class="small-default-text">New Artist</label>
-                <div class="artist-new">
-                    <div class="pading-bottom-10" ng-repeat="art in newArtists">
-                        <img alt="user image" src="{{art.photo}}" class="img-circle card-photo">
-                        <span class="padding-right-10   ">{{art.firstName}} {{art.lastName}}
-                <span class="padding-right-20 small-grey-text">{{art.country}} | {{art.style}}</span></span>
-
-                    </div>
-                </div>
+                <ng-include src="'views/artist/new-artist.html'"/>
             </div>
         </div>
     </div>
