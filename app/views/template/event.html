@@ -1,0 +1,19 @@
+<div class="event">
+    <img class="event-img-top" src="{{event.imgUrl}}">
+    <div class="event-block">
+        <h4 class="event-title">{{event.title}}</h4>
+        <span class="small-grey-text">{{event.eventDate}}</span>
+        <div class="event-text">{{event.eventText}}</div>
+        <div class="event-artist">
+            <p>
+                <a  ng-repeat="artist in event.eventArtist" ng-click="gotoArtist(artist.id)">
+                    <img src="{{artist.artistImg}}" alt="" class="img-circle img-responsive margin-top-10 margin-right-05">
+                </a>
+            </p>
+        </div>
+    </div>
+    <div class="event-footer">
+        <span></i>{{event.eventLocation}}</span>
+        <span class="pull-right">{{event.eventType}}</span>
+    </div>
+</div>
