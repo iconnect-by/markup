@@ -231,6 +231,9 @@ h4 {
   background-color: white;
   border: 0 solid @iConnect-lightGrey;
   border-bottom-width: 1px;
+  min-height: 50px;
+  max-height: 50px;
+
   .navbar-brand {
     font-style: italic;
     font-weight: bold;
@@ -269,9 +272,16 @@ h4 {
     border: 0 solid @iConnect-orange;
     border-bottom-width: 2px;
     background-color: white;
+    padding-bottom: 13px;
   }
   .nav > li > a > span > img {
     display: -webkit-inline-box;
+  }
+  .dropdown > a,
+  .dropdown > a:hover,
+  .dropdown > a:active,
+  .dropdown > a:focus {
+    padding-bottom: 3px!important;
   }
 }
 
