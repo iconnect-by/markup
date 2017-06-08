@@ -11,21 +11,17 @@
     <div class="container-fluid padding-left-20 padding-right-20 margin-top-10">
         <a ui-sref="app" class="text-left margin-top-20">Back to the general list</a> / Find {{allArtist['Signer'].artistList.length}} {{type}}
         <div class="row row-content">
-            <div class="col-sm-3 margin-top-10" ng-repeat="art in allArtist['Signer'].artistList">
+            <div class="col-sm-3 margin-top-10 padding-left-05 padding-right-05" ng-repeat="art in allArtist['Signer'].artistList">
                 <div class="first-signer">
-                    <div class="col-sm-12 divider">
+                    <div class="divider padding-left-05 padding-right-05">
                         <img ng-src="{{ art.photo }}" alt="" class="img-circle img-responsive">
                         <span class="display-span">{{ art.firstName}} {{ art.lastName}}
                           <span class="signer-describe">{{ art.discrabe}}</span>
                     </span>
                     </div>
-                    <div class="text-center col-sm-12">
-                        <div class="pull-left">
-                            <h5>{{ art.country}}</h5>
-                        </div>
-                        <div class="pull-right">
-                            <h5><strong>{{ art.style}}</strong></h5>
-                        </div>
+                    <div class="artist-footer">
+                        <span class="small-grey-text">{{ art.country}}</span>
+                        <span class="pull-right small-default-text"><strong>{{ art.style}}</strong></span>
                     </div>
                 </div>
             </div>

@@ -1,23 +1,19 @@
 <section class="artists" ng-controller="ArtistTopsController">
     <div class="container-fluid padding-left-20 padding-right-20">
         <div class="row row-content">
-            <div class="col-sm-9 margin-top-20">
-                <div class="col-sm-4 " ng-repeat="artist in artists">
+            <div class="col-sm-9 margin-top-20 padding-right-05">
+                <div class="col-sm-4 padding-left-05 padding-right-05" ng-repeat="artist in artists">
                     <label class="section-title-black">TOP 5 {{artist.type}}</label>
                     <div class="first-signer">
-                        <div class="col-sm-12 divider">
+                        <div class="padding-left-05 padding-right-05 divider">
                             <img ng-src="{{ artist.artistTops[0].photo }}" alt="" class="img-circle img-responsive">
                             <span class="display-span">{{ artist.artistTops[0].firstName}} {{ artist.artistTops[0].lastName}}
                           <span class="signer-describe">{{ artist.artistTops[0].discrabe}}</span>
                         </span>
                         </div>
-                        <div class="text-center col-sm-12">
-                            <div class="pull-left">
-                                <h5>{{ artist.artistTops[0].country}}</h5>
-                            </div>
-                            <div class="pull-right">
-                                <h5><strong>{{ artist.artistTops[0].style}}</strong></h5>
-                            </div>
+                        <div class="artist-footer">
+                            <span class="small-grey-text">{{ artist.artistTops[0].country}}</span>
+                            <span class="pull-right small-default-text"><strong>{{ artist.artistTops[0].style}}</strong></span>
                         </div>
                     </div>
                     <div class="text margin-top-05 margin-bottom-05" ng-repeat="art in artist.artistTops.slice(1, artist.artistTops.length)">
@@ -29,7 +25,7 @@
                     <a class="pull-right small-blue-text" ng-click="openArtist(artist.type)">View All</a>
                 </div>
             </div>
-            <div class="col-sm-3 margin-top-20">
+            <div class="col-sm-3 margin-top-20 padding-left-05">
                 <ng-include src="'views/template/new-artist.html'"/>
             </div>
         </div>
