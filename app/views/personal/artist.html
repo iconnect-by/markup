@@ -8,9 +8,20 @@
                     </div>
                     <div class="artist-info margin-top-10">
                         <div class="artist-main-info padding-bottom-05 padding-top-05 padding-right-10 padding-left-10">
-                            <h3 class="padding-00 margin-00">Sarah Dawson</h3>
+                            <h1 class="padding-00 margin-00">Sarah Dawson</h1>
                             <small class="small-grey-text">Signer</small>
-                            <div class="artist-rating"></div>
+                            <div class="artist-rating">
+                                <ul class="artist-rating">
+                                    <li class="artist-rating__item"><img src="images/Star_small_Full.png"></li>
+                                    <li class="artist-rating__item"><img src="images/Star_small_Full.png"></li>
+                                    <li class="artist-rating__item"><img src="images/Star_small_Full.png"></li>
+                                    <li class="artist-rating__item"><img src="images/Star_small_Full.png"></li>
+                                    <li class="artist-rating__item"><img src="images/Star_small_Full.png"></li>
+                                    <li class="artist-rating__item"><img src="images/Star_small.png"></li>
+                                    <li class="artist-rating__item"><img src="images/Star_small.png"></li>
+                                </ul>
+                                <small class="small-grey-text">Rating 5.35</small>
+                            </div>
                             <p class="artist-description">Read, out with friends, listen to music, draw and learn new
                                 things.</p>
                             <div class="genres margin-bottom-05">
@@ -19,16 +30,16 @@
                         </div>
                         <div class="artist-footer">
                             <div class="artist-contact padding-bottom-05 padding-top-05 padding-right-10 padding-left-10">
-                                <span>Location</span>
-                                <span class="pull-right  default-text">Belarus</span>
+                                <span class="small-grey-text">Location</span>
+                                <span class="pull-right">Belarus<i class="margin-left-05 fa fa-2x fa-flag"></i></span>
                             </div>
                             <div class="artist-contact padding-bottom-05 padding-top-05 padding-right-10 padding-left-10">
-                                <span>iTunes Link</span>
-                                <span class="pull-right default-text">SarahDawson</span>
+                                <span class="small-grey-text">iTunes Link</span>
+                                <span class="pull-right text-blue">SarahDawson</span>
                             </div>
                             <div class="artist-contact padding-bottom-05 padding-top-05 padding-right-10 padding-left-10">
-                                <span>Sound cloud</span>
-                                <span class="pull-right default-text">SarahDawson</span>
+                                <span class="small-grey-text">Sound cloud</span>
+                                <span class="pull-right text-orange">SarahDawson</span>
                             </div>
                         </div>
                         <div class="social-content text-center artist-contact padding-bottom-05 padding-top-05">
@@ -49,7 +60,7 @@
                 <div class="row-content" ng-show="divShow == 'allMedia'">
                     <div class="col-sm-6">
                         <div class="photo-content padding-left-10 padding-right-10">
-                            <label class="default-text">Photo</label>
+                            <label class="section-title-black">Photo</label>
                             <div>
                                 Insert image here
                             </div>
@@ -58,7 +69,7 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="video-content padding-left-10 padding-right-10">
-                            <label class="default-text">Video</label>
+                            <label class="section-title-black">Video</label>
                             <div>
                                 Insert video here
                             </div>
@@ -67,7 +78,7 @@
                     </div>
                     <div class="col-sm-12 margin-top-20">
                         <div class="music-content  padding-left-10 padding-right-10">
-                            <label class="default-text">Music</label>
+                            <label class="section-title-black">Music</label>
                             <div>
                                 Insert music here
                             </div>
@@ -76,7 +87,7 @@
                     </div>
 
                     <div class="col-sm-12 other-content margin-top-20">
-                        <label class="default-text">Other Activities of the organizer</label>
+                        <label class="section-title-black">Other Activities of the organizer</label>
                     </div>
                 </div>
                 <div class="row-content" ng-show="divShow == 'photo'"
@@ -88,21 +99,21 @@
             </div>
             <div class="col-sm-3 padding-00">
                 <div class="col-sm-12 booking-content">
-                    <label class="default-text">Booking Artist's</label>
+                    <label class="section-title-black">Booking Artist's</label>
                     <div ui-calendar="uiConfig.calendar" ng-model="eventSources"></div>
-                    <form class="form-horizontal padding-bottom-10" role="form">
+                    <form class="form-horizontal padding-bottom-10 margin-top-10" role="form">
                         <fieldset>
                             <div class="form-group">
-                                <label class="default-text col-sm-3 control-label" for="itunesSelect">Event</label>
+                                <label class="section-title-black col-sm-3 control-label" for="itunesSelect">Event</label>
                                 <div class="col-sm-9">
                                     <select id="itunesSelect" ng-model="selecteditunesSelect"
                                             ng-options="x for (x, y) in itunesSelect"></select>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label class="default-text col-sm-3 control-label" for="bookCommit">Text</label>
+                            <div class="form-group ">
+                                <label class="section-title-black col-sm-3 control-label" for="bookCommit">Text</label>
                                 <div class="col-sm-9">
-                                    <textarea id="bookCommit" rows="4" cols="28" maxlength="140"></textarea>
+                                    <textarea id="bookCommit" rows="4" cols="25" maxlength="140"></textarea>
                                 </div>
                             </div>
                             <div class="text-center">
@@ -112,7 +123,7 @@
                     </form>
                 </div>
                 <div class="col-sm-12 margin-top-10 download">
-                    <label class="default-text">Rider Download</label><br/>
+                    <label class="section-title-black">Rider Download</label><br/>
                     <div class="btn-group text-center">
                         <button class="btn margin-right-10">Home Rider</button>
                         <button class="btn margin-left-10">Technical Rider</button>

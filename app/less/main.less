@@ -18,6 +18,7 @@ body {
 .margin-right-auto {  margin-right: auto;  }
 .padding-00 {  padding: 0;  }
 .margin-00 { margin: 0; }
+
 .margin-top-05 {  margin-top: 0.5em;  }
 .margin-top-10 {  margin-top: 1.0em;  }
 .margin-top-15 {  margin-top: 1.5em;  }
@@ -74,6 +75,29 @@ body {
 .padding-right-25 {  padding-right: 2.5em;  }
 .padding-right-30 {  padding-right: 3.0em;  }
 
+h1 {
+  font-size: 32px;
+  font-family: "Open Sans Bold";
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+h2
+h3
+h4 {
+  font-family: "Open Sans SemiBold";
+}
+
 .grey-text {
   color: @iConnect-grey;
   font-size: 16px;
@@ -94,21 +118,41 @@ body {
   font-family: "Open Sans";
 }
 
-.small-grey-text {
-  color: @iConnect-grey;
+.small-blue-text,
+.small-grey-text,
+.section-title-blue,
+.section-title-black {
   font-size: 10px;
   font-family: "Open Sans SemiBold";
 }
 
+.small-grey-text {
+  color: @iConnect-grey;
+}
+
 .small-blue-text {
   color: @iConnect-blue;
+}
+
+.section-title-blue {
+  color: @iConnect-blue;
+  text-transform: uppercase;
+}
+
+.section-title-black {
+  color:black;
+  text-transform: uppercase;
+}
+.btn {
+  text-transform: uppercase;
   font-size: 10px;
   font-family: "Open Sans SemiBold";
 }
 
 .btn-search,
 .btn-search:hover {
-  font-size: 13px;
+  font-size: 10px;
+  font-family: "Open Sans SemiBold";
   padding: 5px 40px !important;
   color: white;
   text-transform: uppercase;
@@ -120,7 +164,8 @@ body {
 .btn-send,
 .btn-send:hover {
   width: 15em;
-  font-size: 13px;
+  font-size: 10px;
+  font-family: "Open Sans SemiBold";
   padding: 5px 10px !important;
   color: white;
   text-transform: uppercase;
@@ -132,7 +177,8 @@ body {
 .btn-request,
 .btn-request:hover {
   width: 15em;
-  font-size: 13px;
+  font-size: 10px;
+  font-family: "Open Sans SemiBold";
   padding: 5px 10px !important;
   color: black;
   text-transform: uppercase;
@@ -140,6 +186,44 @@ body {
   border-radius: 4px;
   background-color: white;
 }
+
+.search-content{
+  label{
+    font-size: 10px;
+    font-family: "Open Sans Regular";
+    font-weight: 400;
+    color: @iConnect-grey;
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+
+  select{
+    margin-right: 3em;
+  }
+
+  input,
+  select,
+  input [type=text],
+  input [type=date] {
+    font-size: 10px;
+    height: 2em;
+    border: 0 groove @iConnect-grey;
+    border-bottom-width: 1px;
+    background-color: transparent!important;
+  }
+
+  input:focus,
+  select:focus,
+  input [type=text]:focus,
+  input [type=date]:focus {
+    font-size: 10px;
+    height: 2em;
+    border: 0 groove @iConnect-grey;
+    border-bottom-width: 1px;
+    background-color: transparent!important;
+  }
+}
+
 /*----------------------------------------------------------
                    Navbar
 ----------------------------------------------------------*/
@@ -155,7 +239,8 @@ body {
 
   .btn-login,
   .btn-login:hover {
-    font-size: 13px;
+    font-size: 10px;
+    font-family: "Open Sans SemiBold";
     padding: 5px 40px !important;
     margin-top: 10px;
     color: white;
@@ -174,6 +259,7 @@ body {
   }
 
   .nav > li > a {
+    font-size: 10px;
     color: black;
     text-transform: uppercase;
   }
@@ -244,7 +330,8 @@ body {
 
   .btn-sign-up,
   .btn-sign-up:hover {
-    font-size: 13px;
+    font-size: 10px;
+    font-family: "Open Sans SemiBold";
     padding: 10px 70px !important;
     color: white;
     text-transform: uppercase;
@@ -316,7 +403,7 @@ body {
   }
 
   label{
-    font-size: 12px;
+    font-size: 10px;
     font-family: "Open Sans Regular";
     font-weight: 400;
   }
@@ -423,6 +510,7 @@ body {
         position: absolute;
         right: 3em;
         bottom: 1em;
+        text-transform: uppercase;
       }
     }
 
@@ -458,9 +546,10 @@ body {
       .artist-info {
         .label-default {
           color: black;
+          font-size: 12px;
           background-color: white;
           border: 1px solid @iConnect-lightGrey;
-
+          text-transform: uppercase;
         }
         ul {
           list-style: none;
@@ -472,11 +561,53 @@ body {
           padding: 0;
         }
       }
-    }
+      .artist-rating {
+        margin-bottom: 1em;
+        ul {
+          padding: 0;
+          margin: 0;
+          display: inline-flex;
+        }
+        .artist-rating__item {
+          margin-right: 0.5em;
 
+          img {
+            width: 1.9rem;
+          }
+        }
+      }
+      .small-grey-text{
+        right: 0;
+      }
+    }
     .artist-contact{
       border-top: 1px solid @iConnect-lightGrey !important;
+      span{
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+      .text-orange{
+       color: @iConnect-orange;
+      }
+      .text-blue {
+       color: @iConnect-blue;
+      }
     }
+
+  .social-icons{
+    display: inline-flex!important;
+    margin-right: auto;
+    margin-left: auto;
+
+    .social-icons__item{
+      margin-right: 0.5em;
+      margin-left: 0.5em;
+
+      img{
+        width: 1.9rem;
+      }
+    }
+  }
 
   }
 

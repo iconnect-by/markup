@@ -1,10 +1,10 @@
 <section class="section-events" ng-controller="EventsController">
     <div class="container-fluid padding-left-20 padding-right-20 filter-section padding-bottom-10 padding-top-10">
-        <div class="pull-right">
-            <label>From</label><input type="date"/>
-            <label>To</label><input type="date"/>
-            <label>Location</label><input type="text"/>
-                <label>Type</label><select ng-model="selectedType" ng-options="x for x in ['Niight Club', 'Bar', 'Hall', 'Concert']"></select>
+        <div class="pull-right search-content">
+            <label class="section-title-black">From</label><input type="date"/>
+            <label class="section-title-black">To</label><input type="date"/>
+            <label class="section-title-black">Location</label><input type="text"/>
+            <label class="section-title-black">Type</label><select ng-model="selectedType" ng-options="x for x in ['Niight Club', 'Bar', 'Hall', 'Concert']"></select>
             <button class="btn btn-search">Search</button>
         </div>
     </div>
