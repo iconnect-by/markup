@@ -35,7 +35,7 @@ gulp.task('scripts', function () {
 
 
 gulp.task('lessStyles', function () {
-    return gulp.src(['app/less/**/*.less'])
+    return gulp.src('app/less/main.less')
         .pipe(less())
         .pipe(cssmin())
         .pipe(rename({ suffix: '.min' }))

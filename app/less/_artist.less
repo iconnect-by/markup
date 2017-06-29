@@ -1,0 +1,136 @@
+/*----------------------------------------------------------
+                   Personal Artist Page
+----------------------------------------------------------*/
+.section-personal-organization,
+.personal-artist-section {
+  background-color: @iConnect-lightGrey;
+
+  .photo-content,
+  .video-content,
+  .music-content,
+  .booking-content,
+  .artist-info,
+  .download {
+    background-color: white;
+  }
+
+  .photo-content,
+  .video-content,
+  .music-content {
+    .view-all {
+      position: absolute;
+      right: 3em;
+      bottom: 1em;
+      text-transform: uppercase;
+    }
+  }
+
+  .h-photo-content__image {
+    img {
+      max-width: 100%;
+      overflow: hidden;
+      margin: 5px 0;
+    }
+  }
+
+
+  .photo-content,
+  .video-content,
+  .music-content {
+    min-height: 15em;
+    padding-bottom: 2em;
+  }
+  .booking-content {
+    .form-group {
+      label {
+        vertical-align: top;
+      }
+    }
+
+    .btn {
+      color: white;
+      background-color: @iConnect-blue;
+    }
+  }
+  .download {
+    .btn {
+      color: white;
+      background-color: @iConnect-orange;
+    }
+  }
+
+  .artist-content {
+    img {
+      display: -webkit-inline-box;
+    }
+
+    .artist-info {
+      .label-default {
+        color: black;
+        font-size: 12px;
+        background-color: white;
+        border: 1px solid @iConnect-lightGrey;
+        text-transform: uppercase;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      .genres,
+      .social-icons {
+        display: flex;
+        padding: 0;
+      }
+    }
+    .artist-rating {
+      margin-bottom: 1em;
+
+      ul {
+        padding: 0;
+        margin: 0;
+        display: inline-flex;
+      }
+
+      .artist-rating__item {
+        margin-right: 0.5em;
+
+        img {
+          width: 1.9rem;
+        }
+      }
+    }
+    .small-grey-text {
+      right: 0;
+    }
+  }
+  .artist-contact {
+    border-top: 1px solid @iConnect-lightGrey !important;
+
+    span {
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    .text-orange {
+      color: @iConnect-orange;
+    }
+    .text-blue {
+      color: @iConnect-blue;
+    }
+  }
+
+  .social-icons {
+    display: inline-flex !important;
+    margin-right: auto;
+    margin-left: auto;
+
+    .social-icons__item {
+      margin-right: 0.5em;
+      margin-left: 0.5em;
+
+      img {
+        width: 1.9rem;
+      }
+    }
+  }
+}

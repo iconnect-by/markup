@@ -1,0 +1,156 @@
+/*----------------------------------------------------------
+            Login Page
+----------------------------------------------------------*/
+.login-section {
+  background-image: url('@{iConnect-imagePath}/background.jpg');
+  line-height: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  .login-well {
+    background-color: transparent;
+    color: white;
+    min-height: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .login-well > .nav > li > a {
+    color: @iConnect-orange;
+    text-transform: uppercase;
+  }
+  ul {
+    list-style: none;
+
+    li > a:focus,
+    li > a:hover,
+    li > a:active,
+    li.active > a,
+    li.active > a:hover,
+    li.active > a:focus,
+    li.active > a:active {
+      border: 0 solid @iConnect-orange;
+      border-bottom-width: 2px;
+      background-color: transparent;
+    }
+
+  }
+
+  .social-icons {
+    display: flex;
+    padding: 0;
+  }
+
+  .social-icons__item {
+    margin: 0 0.8rem 0 0;
+  }
+
+  .social-icons__item img {
+    height: 3.0rem;
+    width: 3.0rem;
+  }
+
+  .btn-sign-up,
+  .btn-sign-up:hover {
+    font-size: 10px;
+    font-family: @iConnect-font-semiBold;
+    padding: 10px 70px !important;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: @iConnect-blue;
+  }
+  .social-content {
+    border-top: 1px dashed @iConnect-lightGrey;
+  }
+
+  input,
+  input [type=tel],
+  input [type=email],
+  input [type=number],
+  input [type=password] {
+    color: white;
+  }
+
+  input:focus,
+  input [type=tel]:focus,
+  input [type=email]:focus,
+  input [type=number]:focus,
+  input [type=password]:focus {
+    color: white;
+  }
+}
+
+.verification-section {
+  background-color: white;
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  height: 91vh;
+
+  h1 {
+    span {
+      color: @iConnect-blue;
+    }
+  }
+
+  label {
+    color: @iConnect-grey;
+  }
+
+  input,
+  input [type=tel],
+  input [type=email],
+  input [type=number],
+  input [type=password] {
+    color: black;
+  }
+
+  input:focus,
+  input [type=tel]:focus,
+  input [type=email]:focus,
+  input [type=number]:focus,
+  input [type=password]:focus {
+    color: black;
+  }
+}
+
+.verification-section,
+.login-section {
+  h1 {
+    font-weight: bold;
+  }
+
+  label {
+    font-size: 10px;
+    font-family: @iConnect-font-regular;
+    font-weight: 400;
+  }
+
+  input,
+  input [type=tel],
+  input [type=email],
+  input [type=number],
+  input [type=password] {
+    height: 2em;
+    border: 0 groove white;
+    border-bottom-width: 1px;
+    background-color: transparent !important;
+  }
+
+  input:focus,
+  input [type=tel]:focus,
+  input [type=email]:focus,
+  input [type=number]:focus,
+  input [type=password]:focus {
+    height: 2em;
+    border: 0 solid @iConnect-orange;
+    border-bottom-width: 1px;
+    background-color: transparent !important;
+    outline: none;
+  }
+}

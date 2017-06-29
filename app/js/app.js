@@ -8,7 +8,7 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar'])
                 url: '/',
                 views: {
                     'header': {
-                        templateUrl: 'views/header.html',
+                        templateUrl: 'views/header.html'
                     },
                     'content': {
                         templateUrl: 'views/artist/artist-tops.html',
