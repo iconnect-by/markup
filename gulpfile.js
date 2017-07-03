@@ -4,7 +4,6 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     del = require('del'),
     bower = require('gulp-bower'),
-    less = require('gulp-less'),
     cssmin = require('gulp-cssmin'),
     rename = require('gulp-rename'),
     browserSync = require('browser-sync'),
@@ -65,7 +64,7 @@ gulp.task('files', function () {
 gulp.task('watch', function() {
   gulp.watch('app/js/**/*', ['scripts']);
   gulp.watch('app/less/*.less', ['lessStyles']);
-  gulp.watch(['app/*.html', 'app/views/*.html'], ['html']);
+  gulp.watch(['app/*.html', 'app/**/*.html'], ['html']);
 });
 
 gulp.task("build", ["bower", "lessStyles", "scripts", "fonts", "images", "html", "files"]);
@@ -86,6 +85,7 @@ gulp.task('browser-sync', ['build'], function () {
          index: "index.html"
       }
    });
-        // Watch any files in dist/, reload on change
-  gulp.watch(['app/**']).on('change', browserSync.reload);
-    });
+
+    // Watch any files in dist/, reload on change
+    gulp.watch(['app/**']).on('change', browserSync.reload);
+});
