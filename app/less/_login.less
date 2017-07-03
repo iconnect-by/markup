@@ -157,14 +157,14 @@
     list-style: none;
   }
 
-  .btn-sign-up,
-  .btn-sign-up:hover {
+  .btn-sign-up {
     color: #fff;
     font-size: 11px;
     font-family: @iConnect-font-semiBold;
+    letter-spacing: .7px;
     text-transform: uppercase;
 
-    border: 1px solid transparent;
+    border: 0 none;
     border-radius: 4px;
     background-color: @iConnect-blue;
 
@@ -172,9 +172,23 @@
 
     padding: 10px 140px!important;
 
+    &:hover, :active {
+      background-color: darken(@iConnect-blue, 10%);
+    }
+
+    &:active {
+      background-color: darken(@iConnect-blue, 20%);
+      outline: none;
+    }
+
     &:disabled {
       cursor: default;
       background-color: lighten(@iConnect-blue, 10%);
+
+      &:hover, :active {
+        background-color: lighten(@iConnect-blue, 10%);
+        outline: none;
+      }
     }
   }
 

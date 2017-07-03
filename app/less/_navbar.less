@@ -9,6 +9,28 @@
   position: relative;
   z-index: 1;
 
+  * {
+    text-shadow: none!important;
+  }
+
+  &.transparent {
+    background: transparent;
+    border-color: transparent;
+    color: #fff;
+
+    .navbar-brand {
+      color: inherit;
+    }
+
+    .nav > li > a {
+      color: #fff;
+
+      &:hover, &:active, &:focus {
+        background: transparent!important;
+      }
+    }
+  }
+
   .navbar-brand {
     font-style: italic;
     font-weight: bold;
@@ -22,7 +44,7 @@
     font-size: 10px;
     font-family: @iConnect-font-regular;
     padding: 5px 40px !important;
-    margin-top: 10px;
+    margin-top: 17px;
     color: white;
     text-transform: uppercase;
     border: 1px solid transparent;
