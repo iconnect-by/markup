@@ -1,0 +1,229 @@
+/*----------------------------------------------------------
+                   Personal Artist Page
+----------------------------------------------------------*/
+.profile-section {
+  background-color: @iConnect-lightGrey;
+
+  .box-content {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 17px 20px;
+
+    .box-content__title {
+      color: lighten(@iConnect-slate-gray, 20%);
+      font: 700 11px @iConnect-font-semiBold;
+      margin: 0 0 10px;
+      text-transform: uppercase;
+    }
+  }
+
+  .media-content {
+    position: relative;
+
+    .box-content__title {
+      .link {
+        color: @iConnect-blue;
+        float: right;
+      }
+    }
+
+    .empty {
+      background: rgba(0, 0, 0, .05);
+      border-radius: 7px;
+      border: 2px dashed rgba(0, 0, 0, .15);
+
+      margin-bottom: 15px;
+
+      .text {
+        color: lighten(@iConnect-slate-gray, 30%);
+        font-size: 12px;
+        text-align: center;
+
+        margin: 70px 0;
+      }
+    }
+
+    .view-all {
+      line-height: 1em;
+      text-align: right;
+
+      border-top: 1px solid rgba(0, 0, 0, .1);
+      display: block;
+      padding: 12px 0 0;
+
+      a {
+        font-size: 11px;
+        line-height: 1em;
+        text-transform: uppercase;
+      }
+    }
+
+    .h-photo-preview {
+      img {
+        max-width: 100%;
+        overflow: hidden;
+        margin: 5px 0;
+      }
+    }
+  }
+
+  .sidebar {
+    color: @iConnect-slate-gray;
+
+    .avatar {
+      margin-bottom: 20px;
+
+      img {
+        display: -webkit-inline-box;
+      }
+    }
+
+    .hero-actions {
+      margin-bottom: 20px;
+    }
+
+    .hero-desc__name {
+      font-size: 30px;
+      line-height: 1.1em;
+      margin: 0 0 2px;
+    }
+
+    .hero-desc__caption {
+      color: lighten(@iConnect-slate-gray, 50%);
+      font-size: 12px;
+      line-height: 1.1em;
+      display: block;
+      margin: 0 0 10px;
+    }
+
+    .hero-desc__about {
+      color: lighten(@iConnect-slate-gray, 15%);
+      font-size: 14px;
+      line-height: 1.5em;
+      margin-bottom: 20px;
+    }
+
+    .hero-desc__list {
+      .item {
+        margin: 0 -20px;
+        padding: 15px 20px;
+        border-top: 1px solid @iConnect-lightGrey !important;
+
+        &:last-child {
+          border-bottom: 1px solid @iConnect-lightGrey !important;
+        }
+
+        .title {
+          color: lighten(@iConnect-slate-gray, 50%);
+          font-size: 12px;
+        }
+
+        .value {
+          float: right;
+        }
+
+        .text-orange {
+          color: @iConnect-orange;
+        }
+
+        .text-blue {
+          color: @iConnect-blue;
+        }
+      }
+    }
+
+    .artist-genres {
+      margin: 0 0 20px;
+      padding: 0;
+      list-style: none;
+
+      .item {
+        display: inline-block;
+        margin-bottom: 3px;
+
+        .label-default {
+          background-color: white;
+          border: 1px solid @iConnect-lightGrey;
+
+          color: inherit;
+          font-size: 11px;
+          text-transform: uppercase;
+        }
+
+        + .item {
+          margin-left: 3px;
+        }
+      }
+    }
+
+    .artist-rating {
+      margin-bottom: 1em;
+      position: relative;
+
+      .value {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        color: lighten(@iConnect-slate-gray, 50%);
+        font-size: 12px;
+      }
+
+      .list {
+        display: inline-flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        .item {
+          margin-right: 0.5em;
+
+          img {
+            width: 1.9rem;
+          }
+        }
+      }
+    }
+
+    .hero-desc__social {
+      margin-top: 20px;
+      text-align: center;
+
+      .social-icons {
+        display: inline-flex !important;
+        list-style: none;
+        margin: 0 auto;
+        padding: 0;
+
+        .social-icons__item {
+          margin-right: 0.5em;
+          margin-left: 0.5em;
+
+          img {
+            width: 1.9rem;
+          }
+        }
+      }
+    }
+  }
+
+  .booking-content {
+    .form-group {
+      label {
+        vertical-align: top;
+      }
+    }
+
+    .btn {
+      color: white;
+      background-color: @iConnect-blue;
+    }
+  }
+
+  .download {
+    .btn {
+      color: white;
+      background-color: @iConnect-orange;
+    }
+  }
+}

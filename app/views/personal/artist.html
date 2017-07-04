@@ -1,57 +1,71 @@
-<section class="personal-artist-section" ng-controller="PersonalController">
+<section class="profile-section" ng-controller="PersonalController">
     <div class="container-fluid padding-left-20 padding-right-20">
         <div class="row row-content margin-top-20">
-            <div class="col-sm-3">
-                <div class="artist-content">
-                    <div class="artist-img  text-center">
-                        <img src="http://placehold.it/300x300" alt="artist-img" class="img-circle img-responsive">
+            <div class="col-sm-3 sidebar">
+                <div class="avatar text-center">
+                    <img src="http://placehold.it/300x300" alt="artist-img" class="img-circle img-responsive">
+                </div>
+
+                <div class="hero-actions">
+                    <button class="btn btn-block">Change profile information</button>
+                </div>
+
+                <div class="hero-desc box-content">
+                    <h1 class="hero-desc__name">Sarah Dawson</h1>
+                    <small class="hero-desc__caption">Signer</small>
+                    <div class="artist-rating">
+                        <ul class="list">
+                            <li class="item"><img src="images/Star_small_Full.png"></li>
+                            <li class="item"><img src="images/Star_small_Full.png"></li>
+                            <li class="item"><img src="images/Star_small_Full.png"></li>
+                            <li class="item"><img src="images/Star_small_Full.png"></li>
+                            <li class="item"><img src="images/Star_small_Full.png"></li>
+                            <li class="item"><img src="images/Star_small.png"></li>
+                            <li class="item"><img src="images/Star_small.png"></li>
+                        </ul>
+                        <small class="value">Rating 5.35</small>
                     </div>
-                    <div class="artist-info margin-top-10">
-                        <div class="artist-main-info padding-bottom-05 padding-top-05 padding-right-10 padding-left-10">
-                            <h1 class="padding-00 margin-00">Sarah Dawson</h1>
-                            <small class="small-grey-text">Signer</small>
-                            <div class="artist-rating">
-                                <ul class="artist-rating">
-                                    <li class="artist-rating__item"><img src="images/Star_small_Full.png"></li>
-                                    <li class="artist-rating__item"><img src="images/Star_small_Full.png"></li>
-                                    <li class="artist-rating__item"><img src="images/Star_small_Full.png"></li>
-                                    <li class="artist-rating__item"><img src="images/Star_small_Full.png"></li>
-                                    <li class="artist-rating__item"><img src="images/Star_small_Full.png"></li>
-                                    <li class="artist-rating__item"><img src="images/Star_small.png"></li>
-                                    <li class="artist-rating__item"><img src="images/Star_small.png"></li>
-                                </ul>
-                                <small class="small-grey-text">Rating 5.35</small>
-                            </div>
-                            <p class="artist-description">Read, out with friends, listen to music, draw and learn new
-                                things.</p>
-                            <div class="genres margin-bottom-05">
-                                <span class="label label-default margin-left-05 margin-right-05" ng-repeat="gen in ['Hip-hop', 'R&B', 'Dancer']">{{gen}}</span>
-                            </div>
+                    <p class="hero-desc__about">Read, out with friends, listen to music, draw and learn new things.</p>
+
+                    <ul class="artist-genres">
+                        <li class="item" ng-repeat="gen in ['Hip-hop', 'R&B', 'Dancer']">
+                            <a class="label label-default" >{{ gen }}</a>
+                        </li>
+                    </ul>
+
+                    <div class="hero-desc__list">
+                        <div class="item">
+                            <span class="title">Location</span>
+                            <span class="value">Belarus&nbsp;<i class="fa fa-flag"></i></span>
                         </div>
-                        <div class="artist-footer">
-                            <div class="artist-contact padding-bottom-05 padding-top-05 padding-right-10 padding-left-10">
-                                <span class="small-grey-text">Location</span>
-                                <span class="pull-right">Belarus<i class="margin-left-05 fa fa-2x fa-flag"></i></span>
-                            </div>
-                            <div class="artist-contact padding-bottom-05 padding-top-05 padding-right-10 padding-left-10">
-                                <span class="small-grey-text">iTunes Link</span>
-                                <span class="pull-right text-blue">SarahDawson</span>
-                            </div>
-                            <div class="artist-contact padding-bottom-05 padding-top-05 padding-right-10 padding-left-10">
-                                <span class="small-grey-text">Sound cloud</span>
-                                <span class="pull-right text-orange">SarahDawson</span>
-                            </div>
+                        <div class="item">
+                            <span class="title">iTunes link</span>
+                            <span class="value text-blue">SarahDawson</span>
                         </div>
-                        <div class="social-content text-center artist-contact padding-bottom-05 padding-top-05">
-                            <ul class="social-icons">
-                                <li class="social-icons__item"><a href="" id="share-fb-btn"><img
-                                        src="images/Facebook_icon.png" alt="facebook"></a></li>
-                                <li class="social-icons__item"><a href="" id="share-twitter-btn"><img
-                                        src="images/Twitter_icon.png" alt="twitter"></a></li>
-                                <li class="social-icons__item"><a href=""><img src="images/YouTube_icon.png"
-                                                                               alt="youtube" title="youtube"></a></li>
-                            </ul>
+                        <div class="item">
+                            <span class="title">Soundcloud</span>
+                            <span class="value text-orange">SarahDawson</span>
                         </div>
+                    </div>
+
+                    <div class="hero-desc__social">
+                        <ul class="social-icons">
+                            <li class="social-icons__item">
+                                <a href="" id="share-fb-btn">
+                                    <img src="images/Facebook_icon.png" alt="facebook">
+                                </a>
+                            </li>
+                            <li class="social-icons__item">
+                                <a href="" id="share-twitter-btn">
+                                    <img src="images/Twitter_icon.png" alt="twitter">
+                                </a>
+                            </li>
+                            <li class="social-icons__item">
+                                <a href="">
+                                    <img src="images/YouTube_icon.png" alt="youtube" title="youtube">
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -59,49 +73,70 @@
             <div class="col-sm-6">
                 <div class="row-content" ng-show="divShow == 'allMedia'">
                     <div class="col-sm-6">
-                        <div class="photo-content padding-left-10 padding-right-10">
-                            <label class="section-title-black">Photo</label>
+                        <div class="media-content box-content">
+                            <h3 class="box-content__title">
+                                <a class="link">Add photo</a>
+                                Photo (12)
+                            </h3>
 
-                            <div class="row">
-                                <div class="col-sm-4 h-photo-content__image">
-                                    <img src="http://placehold.it/75x75" alt="placeholder" width="75" height="75">
-                                </div>
-                                <div class="col-sm-4 h-photo-content__image">
-                                    <img src="http://placehold.it/75x75" alt="placeholder" width="75" height="75">
-                                </div>
-                                <div class="col-sm-4 h-photo-content__image">
-                                    <img src="http://placehold.it/75x75" alt="placeholder" width="75" height="75">
-                                </div>
-                                <div class="col-sm-4 h-photo-content__image">
-                                    <img src="http://placehold.it/75x75" alt="placeholder" width="75" height="75">
-                                </div>
-                                <div class="col-sm-4 h-photo-content__image">
-                                    <img src="http://placehold.it/75x75" alt="placeholder" width="75" height="75">
-                                </div>
-                                <div class="col-sm-4 h-photo-content__image">
-                                    <img src="http://placehold.it/75x75" alt="placeholder" width="75" height="75">
-                                </div>
+                            <div class="empty">
+                                <div class="text">Upload a Photo</div>
                             </div>
 
-                            <a class="view-all small-blue-text" ng-click="showMedia('photo')">View All</a>
+                            <!-- <div class="row">
+                                <div class="col-sm-4 h-photo-preview">
+                                    <img src="http://placehold.it/75x75" alt="placeholder" width="75" height="75">
+                                </div>
+                                <div class="col-sm-4 h-photo-preview">
+                                    <img src="http://placehold.it/75x75" alt="placeholder" width="75" height="75">
+                                </div>
+                                <div class="col-sm-4 h-photo-preview">
+                                    <img src="http://placehold.it/75x75" alt="placeholder" width="75" height="75">
+                                </div>
+                                <div class="col-sm-4 h-photo-preview">
+                                    <img src="http://placehold.it/75x75" alt="placeholder" width="75" height="75">
+                                </div>
+                                <div class="col-sm-4 h-photo-preview">
+                                    <img src="http://placehold.it/75x75" alt="placeholder" width="75" height="75">
+                                </div>
+                                <div class="col-sm-4 h-photo-preview">
+                                    <img src="http://placehold.it/75x75" alt="placeholder" width="75" height="75">
+                                </div>
+                            </div> -->
+
+                            <div class="view-all">
+                                <a ng-click="showMedia('photo')">View All</a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <div class="video-content padding-left-10 padding-right-10">
-                            <label class="section-title-black">Video</label>
+                        <div class="media-content box-content">
+                            <h3 class="box-content__title">
+                                <a class="link">Add embed video</a>
+                                Video (3)
+                            </h3>
 
-                            <iframe width="100%" src="https://www.youtube.com/embed/CrwLEKMj0G8" frameborder="0" allowfullscreen></iframe>
+                            <div class="empty">
+                                <div class="text">Upload a Video</div>
+                            </div>
 
-                            <a class="view-all small-blue-text" ng-click="showMedia('video')">View All</a>
+                            <div class="view-all">
+                                <a ng-click="showMedia('video')">View All</a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-12 margin-top-20">
-                        <div class="music-content  padding-left-10 padding-right-10">
-                            <label class="section-title-black">Music</label>
-                            <div>
-                                Insert music here
+                        <div class="media-content box-content">
+                            <h3 class="box-content__title">
+                                <a class="link">Add embed audio</a>
+                                Music (17)
+                            </h3>
+                            <div class="empty">
+                                <div class="text">Upload a Audio</div>
                             </div>
-                            <a class="view-all small-blue-text" ng-click="showMedia('music')">View All</a>
+                            <div class="view-all">
+                                <a ng-click="showMedia('music')">View All</a>
+                            </div>
                         </div>
                     </div>
 
@@ -116,9 +151,10 @@
                 <div class="row-content" ng-show="divShow == 'music'"
                      ng-include="'views/template/music-all.html'"></div>
             </div>
+
             <div class="col-sm-3 padding-00">
-                <div class="col-sm-12 booking-content">
-                    <label class="section-title-black">Booking Artist's</label>
+                <div class="col-sm-12 box-content">
+                    <h3 class="box-content__title">Booking Artist's</h3>
                     <div ui-calendar="uiConfig.calendar" ng-model="eventSources"></div>
                     <form class="form-horizontal padding-bottom-10 margin-top-10" role="form">
                         <fieldset>
@@ -141,8 +177,8 @@
                         </fieldset>
                     </form>
                 </div>
-                <div class="col-sm-12 margin-top-10 download">
-                    <label class="section-title-black">Rider Download</label><br/>
+                <div class="col-sm-12 margin-top-10 box-content download">
+                    <h3 class="box-content__title">Rider Download</h3>
                     <div class="btn-group text-center">
                         <button class="btn margin-right-10">Home Rider</button>
                         <button class="btn margin-left-10">Technical Rider</button>
