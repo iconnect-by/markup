@@ -226,4 +226,27 @@
       background-color: @iConnect-orange;
     }
   }
+
+  .photo-gallery {
+    line-height: 0;
+
+    -webkit-column-count: 2;
+    -webkit-column-gap:   3px;
+    -moz-column-count:    2;
+    -moz-column-gap:      3px;
+    column-count:         2;
+    column-gap:           3px;
+
+    .photo-gallery__item {
+      width: 100%;
+      height: auto;
+
+      margin-bottom: 3px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
 }
