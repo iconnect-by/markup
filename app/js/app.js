@@ -74,6 +74,16 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar'])
                     }
                 }
             })
+        // route for the cabinet page
+            .state('app.cabinet', {
+                url: 'cabinet',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/login/cabinet.html',
+                        controller: 'RegistrationController'
+                    }
+                }
+            })
 
         // route for the personal artist page
             .state('app.personal-artist', {

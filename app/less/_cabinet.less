@@ -1,0 +1,30 @@
+.cabinet-section{
+
+  .nav-tabs {
+    border-color: @iConnect-lightGrey;
+    border-width: 2px;
+    margin-bottom: 2rem;
+
+    li {
+      a {
+        background: transparent;
+        border: 0 solid transparent;
+        border-bottom-width: 2px;
+
+        color: inherit;
+        font-size: 11px;
+        text-transform: uppercase;
+
+        padding: 20px 35px 18px;
+      }
+
+      &.active, &.hover {
+        a {
+          color: @iConnect-orange;
+          border: 0 solid @iConnect-orange;
+          border-bottom-width: 2px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+<section class="cabinet-section" ng-controller="RegistrationController">
+    <!-- card -->
+    <div class="container-fluid">
+        <div class="row row-content margin-top-15 padding-left-20 padding-right-20">
+            <div class="col-sm-4">
+                <img alt="user image" src="http://placehold.it/60x60" class="img-circle img-responsive card-photo">
+                <span class="display-span padding-right-10">Johnny van Djick
+                <span class="padding-right-20 small-grey-text">Standart Account / Balance $ 1 345.45</span></span>
+            </div>
+            <div class="col-sm-8">
+                <div class="btn-group pull-right">
+                    <button class="btn btn-def margin-right-10">GET A PRO ACCOUNT</button>
+                    <button class="btn btn-aster"><i class="fa fa-asterisk" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content margin-top-15">
+            <ul class="nav nav-tabs padding-left-20 padding-right-20" role="tablist">
+                <li class="active">
+                    <a data-target='#dashboard' aria-controls="dashboard" role="tab" data-toggle="tab">Dashboard</a>
+                </li>
+                <li>
+                    <a data-target='#your-artist' aria-controls="your-artist" role="tab" data-toggle="tab">Your
+                        Artist</a>
+                </li>
+                <li>
+                    <a data-target='#your-organization' aria-controls="your-organization" role="tab" data-toggle="tab">Your
+                        Organization</a>
+                </li>
+                <li>
+                    <a data-target='#your-events' aria-controls="your-events" role="tab" data-toggle="tab">Your
+                        Events</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active in" id="dashboard">
+                    <div class="container-fluid">
+                        <div class="row row-content padding-left-20 padding-right-20">
+                            <label class="section-title-black">New Artist</label>
+                        </div>
+                        <div class="row row-content padding-left-20 padding-right-20">
+                            <label class="section-title-black">New Organization</label>
+                        </div>
+                        <div class="row row-content padding-left-20 padding-right-20">
+                            <label class="section-title-black">New Event</label>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="your-artist">
+                    <div class="container-fluid">
+                        <div class="row row-content padding-left-20 padding-right-20">
+                            <label class="section-title-black">Your Artist</label>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="your-organization">
+                    <div class="container-fluid">
+                        <div class="row row-content padding-left-20 padding-right-20">
+                            <label class="section-title-black">Your Organization</label>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="your-events">
+                    <div class="container-fluid">
+                        <div class="row row-content padding-left-20 padding-right-20">
+                            <label class="section-title-black">Your Events</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
