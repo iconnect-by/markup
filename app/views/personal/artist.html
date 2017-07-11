@@ -142,6 +142,11 @@
 
                     <div class="col-sm-12 other-content margin-top-20">
                         <label class="section-title-black">Other Activities of the organizer</label>
+                        <div class="row row-content">
+                        <div class="col-sm-6 margin-top-10" ng-repeat="event in eventsArt">
+                            <ng-include src="'views/template/event.html'"/>
+                        </div>
+                            </div>
                     </div>
                 </div>
                 <div class="row-content" ng-show="divShow == 'photo'"

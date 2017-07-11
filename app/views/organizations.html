@@ -11,16 +11,14 @@
             <div class="col-sm-9 margin-top-05">
                 <div class="col-sm-4 margin-top-10" ng-repeat="org in organizationList">
                     <div class="first-signer">
-                        <div class="col-sm-12 divider">
+                        <div class="divider">
                             <img ng-src="{{ org.photo }}" alt="" class="img-responsive">
                             <span class="display-span">{{ org.title}}
-                                <span class="signer-describe">{{ org.discrabe}}</span>
-                            </span>
+                                        <span class="signer-describe">{{ org.discrabe}}</span>
+                                    </span>
                         </div>
-                        <div class="text-center col-sm-12">
-                            <div class="pull-left">
-                                <h5>{{ org.location}}</h5>
-                            </div>
+                        <div class="artist-footer">
+                            <span class="small-grey-text">{{ org.location}}</span>
                         </div>
                     </div>
                 </div>
