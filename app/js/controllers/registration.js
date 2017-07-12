@@ -38,38 +38,39 @@ angular.module('iConnectApp')
                 photo: "http://placehold.it/100x100"
             }
         ];
-        $scope.eventsArt = [{
-            id: 0,
-            title: 'Romantic Ballads',
-            imgUrl: 'http://placehold.it/150x200',
-            eventText: 'Read, out with friends, listen to music, draw and learn new things.',
-            eventType: 'Concert',
-            eventLocation: 'UK, London',
-            eventDate: '12 nov 2016, 22:00 - 5:00',
-            eventArtist: [
-                {
-                    id: 1,
-                    artistImg: 'http://placehold.it/60x60'
-                },
-                {
-                    id: 1,
-                    artistImg: 'http://placehold.it/60x60'
-                },
-                {
-                    id: 0,
-                    artistImg: 'images/Add_small@2x.png'
-                },
-                {
-                    id: 0,
-                    artistImg: 'images/Add_small@2x.png'
-                },
-                {
-                    id: 0,
-                    artistImg: 'images/Add_small@2x.png'
-                }
-            ]
+        $scope.eventsArt = [
+            {
+                id: 0,
+                title: 'Romantic Ballads',
+                imgUrl: 'http://placehold.it/150x200',
+                eventText: 'Read, out with friends, listen to music, draw and learn new things.',
+                eventType: 'Concert',
+                eventLocation: 'UK, London',
+                eventDate: '12 nov 2016, 22:00 - 5:00',
+                eventArtist: [
+                    {
+                        id: 1,
+                        artistImg: 'http://placehold.it/60x60'
+                    },
+                    {
+                        id: 1,
+                        artistImg: 'http://placehold.it/60x60'
+                    },
+                    {
+                        id: 0,
+                        artistImg: 'images/Add_small@2x.png'
+                    },
+                    {
+                        id: 0,
+                        artistImg: 'images/Add_small@2x.png'
+                    },
+                    {
+                        id: 0,
+                        artistImg: 'images/Add_small@2x.png'
+                    }
+                ]
 
-        },
+            },
             {
                 id: 0,
                 title: 'Romantic Ballads',
@@ -113,7 +114,148 @@ angular.module('iConnectApp')
                     }
                 ]
 
-            }];
+            }
+        ];
+
+        $scope.changeInformPerson = [
+            {
+                id: 0,
+                name: 'Dj',
+                icon: {
+                    on: 'images/Add_full@2x.png',
+                    off: 'images/Add_small@2x.png'
+                }
+            },
+            {
+                id: 1,
+                name: 'Musician',
+                icon: {
+                    on: 'images/Add_full@2x.png',
+                    off: 'images/Add_small@2x.png'
+                }
+            },
+            {
+                id: 2,
+                name: 'Vocalist',
+                icon: {
+                    on: 'images/Add_full@2x.png',
+                    off: 'images/Add_small@2x.png'
+                }
+            },
+            {
+                id: 3,
+                name: 'MC',
+                icon: {
+                    on: 'images/Add_full@2x.png',
+                    off: 'images/Add_small@2x.png'
+                }
+            },
+            {
+                id: 4,
+                name: 'Promoter',
+                icon: {
+                    on: 'images/Add_full@2x.png',
+                    off: 'images/Add_small@2x.png'
+                }
+            },
+            {
+                id: 5,
+                name: 'Event Leader',
+                icon: {
+                    on: 'images/Add_full@2x.png',
+                    off: 'images/Add_small@2x.png'
+                }
+            },
+            {
+                id: 6,
+                name: 'Musical group',
+                icon: {
+                    on: 'images/Add_full@2x.png',
+                    off: 'images/Add_small@2x.png'
+                }
+            },
+            {
+                id: 7,
+                name: 'Dancer',
+                icon: {
+                    on: 'images/Add_full@2x.png',
+                    off: 'images/Add_small@2x.png'
+                }
+            }
+        ];
+        $scope.changeInformOrganization = [
+            {
+                id: 0,
+                name: 'NightClub',
+                icon: {
+                    on: 'images/Add_full@2x.png',
+                    off: 'images/Add_small@2x.png'
+                }
+            },
+            {
+                id: 1,
+                name: 'Wedding',
+                icon: {
+                    on: 'images/Add_full@2x.png',
+                    off: 'images/Add_small@2x.png'
+                }
+            },
+            {
+                id: 2,
+                name: 'Birthday',
+                icon: {
+                    on: 'images/Add_full@2x.png',
+                    off: 'images/Add_small@2x.png'
+                }
+            },
+            {
+                id: 3,
+                name: 'Festival',
+                icon: {
+                    on: 'images/Add_full@2x.png',
+                    off: 'images/Add_small@2x.png'
+                }
+            },
+            {
+                id: 4,
+                name: 'Daytime Party',
+                icon: {
+                    on: 'images/Add_full@2x.png',
+                    off: 'images/Add_small@2x.png'
+                }
+            },
+            {
+                id: 5,
+                name: 'Private Party',
+                icon: {
+                    on: 'images/Add_full@2x.png',
+                    off: 'images/Add_small@2x.png'
+                }
+            },
+            {
+                id: 6,
+                name: 'Underground Party',
+                icon: {
+                    on: 'images/Add_full@2x.png',
+                    off: 'images/Add_small@2x.png'
+                }
+            },
+            {
+                id: 7,
+                name: 'Corporate Event',
+                icon: {
+                    on: 'images/Add_full@2x.png',
+                    off: 'images/Add_small@2x.png'
+                }
+            }
+        ];
+
+        $scope.getIcon = function (data) {
+            if (data.icon) {
+                if (data.isChecked) return data.icon.on;
+                else return data.icon.off;
+            }
+        };
 
         function gotoPersonalPage() {
             if ($scope.Person.type === 'artist') {

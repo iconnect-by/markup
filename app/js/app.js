@@ -84,6 +84,26 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar'])
                     }
                 }
             })
+        // route for the create-artist page
+            .state('app.create-artist', {
+                url: 'create-artist',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/login/create-artist.html',
+                        controller: 'RegistrationController'
+                    }
+                }
+            })
+            // route for the create-organization page
+            .state('app.create-organization', {
+                url: 'create-organization',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/login/create-organization.html',
+                        controller: 'RegistrationController'
+                    }
+                }
+            })
 
         // route for the personal artist page
             .state('app.personal-artist', {
@@ -91,6 +111,16 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar'])
                 views: {
                     'content@': {
                         templateUrl: 'views/personal/artist.html',
+                        controller: 'PersonalController'
+                    }
+                }
+            })
+        // route for the personal artist config page
+            .state('app.personal-artist.config', {
+                url: 'personal-artist/config',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/personal/artist-config.html',
                         controller: 'PersonalController'
                     }
                 }

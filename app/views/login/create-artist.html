@@ -1,0 +1,22 @@
+<section class="create-section" ng-controller="RegistrationController">
+    <div class="container-fluid">
+        <div class="row row-content create-well  margin-top-15 padding-left-20 padding-right-20">
+            <label for="artist-name">Set artist name here</label>
+            <input id="artist-name"
+                   class="form-control"
+                   autocomplete="off"
+                   type="text"
+                   name="artist-name"
+                   placeholder="Add a artist name">
+            <div class="row">
+                <div class="col-sm-3" ng-repeat="info in changeInformPerson">
+                    <input type="checkbox" ng-attr-id="{{'info' + info.id}}" ng-model="info.isChecked"/>
+                    <label ng-attr-for="{{'info' +info.id}}">{{info.name}}<img ng-src="{{getIcon(info)}}"><br/>
+                        {{info.name}}
+                    </label>
+                </div>
+            </div>
+            <button class="btn">Create Account</button>
+        </div>
+    </div>
+</section>

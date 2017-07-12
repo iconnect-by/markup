@@ -1,0 +1,186 @@
+<section class="profile-section" ng-controller="PersonalController">
+    <div class="container-fluid padding-left-20 padding-right-20">
+        <div class="row row-content margin-top-20">
+            <div class="col-sm-3 sidebar">
+                <div class="avatar text-center">
+                    <img src="http://placehold.it/300x300" alt="artist-img" class="img-circle img-responsive">
+                </div>
+
+                <div class="hero-actions">
+                    <button class="btn btn-block">Change profile information</button>
+                </div>
+
+                <div class="hero-desc box-content">
+                    <h1 class="hero-desc__name">Sarah Dawson</h1>
+                    <small class="hero-desc__caption">Signer</small>
+                    <div class="artist-rating">
+                        <ul class="list">
+                            <li class="item"><img src="images/Star_small_Full.png"></li>
+                            <li class="item"><img src="images/Star_small_Full.png"></li>
+                            <li class="item"><img src="images/Star_small_Full.png"></li>
+                            <li class="item"><img src="images/Star_small_Full.png"></li>
+                            <li class="item"><img src="images/Star_small_Full.png"></li>
+                            <li class="item"><img src="images/Star_small.png"></li>
+                            <li class="item"><img src="images/Star_small.png"></li>
+                        </ul>
+                        <small class="value">Rating 5.35</small>
+                    </div>
+                    <p class="hero-desc__about">Read, out with friends, listen to music, draw and learn new things.</p>
+
+                    <ul class="artist-genres">
+                        <li class="item" ng-repeat="gen in ['Hip-hop', 'R&B', 'Dancer']">
+                            <a class="label label-default">{{ gen }}</a>
+                        </li>
+                    </ul>
+
+                    <div class="hero-desc__list">
+                        <div class="item">
+                            <span class="title">Location</span>
+                            <span class="value">Belarus&nbsp;<i class="fa fa-flag"></i></span>
+                        </div>
+                        <div class="item">
+                            <span class="title">iTunes link</span>
+                            <span class="value text-blue">SarahDawson</span>
+                        </div>
+                        <div class="item">
+                            <span class="title">Soundcloud</span>
+                            <span class="value text-orange">SarahDawson</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-desc__social">
+                        <ul class="social-icons">
+                            <li class="social-icons__item">
+                                <a href="" id="share-fb-btn">
+                                    <img src="images/Facebook_icon.png" alt="facebook">
+                                </a>
+                            </li>
+                            <li class="social-icons__item">
+                                <a href="" id="share-twitter-btn">
+                                    <img src="images/Twitter_icon.png" alt="twitter">
+                                </a>
+                            </li>
+                            <li class="social-icons__item">
+                                <a href="">
+                                    <img src="images/YouTube_icon.png" alt="youtube" title="youtube">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <form name="setting" ng-submit="save_setting()" class="panel-profile clearfix" novalidate>
+                    <fieldset>
+                        <legend class="padding-left-10 padding-top-10">Profile Information Setting</legend>
+                        <div class="form-group col-sm-12">
+                            <label for="aliase-email" class="col-sm-2">Aliase</label>
+                            <div class="col-sm-10">
+                                <input id="aliase-email"
+                                       class="form-control"
+                                       autocomplete="off"
+                                       type="email"
+                                       name="email"
+                                       ng-model="user.email"
+                                       ng-required="true">
+                                <p class="error"
+                                   ng-show="setting.email.$invalid && signin.email.$touched">Must be a valid
+                                    email</p>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="your-role" class="col-sm-2">Your Role</label>
+                            <div class="col-sm-10">
+                                <input id="your-role"
+                                       class="form-control"
+                                       autocomplete="off"
+                                       type="text"
+                                       name="your-role"
+                                       ng-model="user.role"
+                                       ng-required="true">
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="about" class="col-sm-2">About your</label>
+                            <div class="col-sm-10">
+                                <textarea id="about"
+                                          class="form-control"
+                                          autocomplete="off"
+                                          type="text"
+                                          name="about"
+                                          ng-model="user.about"
+                                          ng-required="true"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="genres" class="col-sm-2">Music Genres</label>
+                            <div class="col-sm-10">
+                                <input id="genres"
+                                       class="form-control"
+                                       autocomplete="off"
+                                       type="text"
+                                       name="genres"
+                                       ng-model="user.genres"
+                                       ng-required="true">
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="location" class="col-sm-2">Your Location</label>
+                            <div class="col-sm-10">
+                                <input id="location"
+                                       class="form-control"
+                                       autocomplete="off"
+                                       type="text"
+                                       name="location"
+                                       ng-model="user.location"
+                                       ng-required="true">
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="iTunes" class="col-sm-2">iTunes</label>
+                            <div class="col-sm-10">
+                                <input id="iTunes"
+                                       class="form-control"
+                                       autocomplete="off"
+                                       type="text"
+                                       name="iTunes"
+                                       ng-model="user.iTunes"
+                                       ng-required="true">
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="SoundCloud" class="col-sm-2">SoundCloud</label>
+                            <div class="col-sm-10">
+                                <input id="SoundCloud"
+                                       class="form-control"
+                                       autocomplete="off"
+                                       type="text"
+                                       name="SoundCloud"
+                                       ng-model="user.SoundCloud"
+                                       ng-required="true">
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="social" class="col-sm-2">Social Networks</label>
+                            <div class="col-sm-10">
+                                <input id="social"
+                                       class="form-control"
+                                       autocomplete="off"
+                                       type="text"
+                                       name="social"
+                                       ng-model="user.social"
+                                       ng-required="true">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="form-group col-sm-12">
+                        <button class="btn pull-left">Delete</button>
+                        <button class="btn pull-right">Cancel</button>
+                        <button type="submit" class="btn pull-right margin-right-20" ng-disabled="setting.$invalid">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
