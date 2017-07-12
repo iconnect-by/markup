@@ -117,7 +117,7 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar'])
             })
         // route for the personal artist config page
             .state('app.personal-artist.config', {
-                url: 'personal-artist/config',
+                url: '/config',
                 views: {
                     'content@': {
                         templateUrl: 'views/personal/artist-config.html',
@@ -131,6 +131,16 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar'])
                 views: {
                     'content@': {
                         templateUrl: 'views/personal/organization.html',
+                        controller: 'PersonalController'
+                    }
+                }
+            })
+        // route for the personal organization page
+            .state('app.personal-organization.config', {
+                url: '/config',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/personal/organization-config.html',
                         controller: 'PersonalController'
                     }
                 }
