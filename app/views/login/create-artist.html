@@ -9,14 +9,16 @@
                    name="artist-name"
                    placeholder="Add a artist name">
             <div class="row">
-                <div class="col-sm-3" ng-repeat="info in changeInformPerson">
+                <div class="col-sm-3 margin-top-30" ng-repeat="info in changeInformPerson">
                     <input type="checkbox" ng-attr-id="{{'info' + info.id}}" ng-model="info.isChecked"/>
-                    <label ng-attr-for="{{'info' +info.id}}">{{info.name}}<img ng-src="{{getIcon(info)}}"><br/>
+                    <label ng-attr-for="{{'info' +info.id}}"><img ng-src="{{getIcon(info)}}">
+                        <br/>
+                        <br/>
                         {{info.name}}
                     </label>
                 </div>
             </div>
-            <button class="btn">Create Account</button>
+            <button class="btn btn-send margin-top-30">Create Account</button>
         </div>
     </div>
 </section>
