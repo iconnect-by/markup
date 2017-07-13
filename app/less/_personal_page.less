@@ -279,6 +279,7 @@
     }
 
     input,
+    input [type=search],
     textarea {
       background-color: transparent !important;
       height: auto;
@@ -355,6 +356,44 @@
         img{
           width: 1.5em;
         }
+      }
+    }
+
+    .multi {
+      div{
+        border: 0;
+      }
+      .btn,
+      .btn-default,
+      .btn-xs {
+        color: white;
+        padding: 4px 15px!important;
+        background-color: @iConnect-blue;
+        border-radius: 20px;
+        background-image: none;
+      }
+      ::-webkit-input-placeholder {
+        text-align: end;
+        font-size: 10px;
+        color: @iConnect-blue;
+      }
+
+      :-moz-placeholder { /* Firefox 18- */
+        text-align: end;
+        font-size: 10px;
+        color: @iConnect-blue;
+      }
+
+      ::-moz-placeholder {  /* Firefox 19+ */
+        text-align: end;
+        font-size: 10px;
+        color: @iConnect-blue;
+      }
+
+      :-ms-input-placeholder {
+        text-align: end;
+        font-size: 10px;
+        color: @iConnect-blue;
       }
     }
   }

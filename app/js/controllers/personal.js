@@ -151,4 +151,6 @@ angular.module('iConnectApp')
             }
             ]
 
+        $scope.artistRole = ['Singer', 'Dj' , 'Dancer', 'Vocalist', 'Musician', 'MC', 'Promoter', 'Event Leader', 'Musical group'];
+        $scope.organizationRole = ['POP', 'jAZZ', 'Blues', 'Comedy', 'Country', 'Folk', 'Hip Hop', 'Rock', 'Electronic', 'R&B and Soul' ];
     }]);

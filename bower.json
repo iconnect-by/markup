@@ -12,6 +12,7 @@
     "angular-sanitize": "^1.4.0",
     "angular-touch": "^1.4.0",
     "font-awesome": "^4.7.0",
-    "angular-ui-calendar": "latest"
+    "angular-ui-calendar": "latest",
+    "angular-ui-select": "latest"
   }
 }
