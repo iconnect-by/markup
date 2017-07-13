@@ -274,15 +274,36 @@
     border: 1px solid @iConnect-lightGrey;
     border-radius: 4px;
 
-    legend {
-      font: 700 13px @iConnect-font-regular;
+    input {
+      padding: 5px 0;
+    }
+
+    input,
+    textarea {
+      background-color: transparent !important;
+      height: auto;
+
+      border: 0 solid rgba(255, 255, 255, .3);
+      border-radius: 0;
+
+      &:focus {
+        background-color: transparent !important;
+        box-shadow: none;
+        outline: none;
+
+        border: 0 solid @iConnect-orange;
+      }
+    }
+
+  legend {
+      font: 700 12px @iConnect-font-regular;
       text-transform: uppercase;
       margin-bottom: 0;
       padding: 1em;
       border: 0;
     }
     label {
-      font: bold 13px @iConnect-font-regular;
+      font: bold 12px @iConnect-font-regular;
       margin-bottom: 0;
       padding-right: 0;
       padding-left: 0;

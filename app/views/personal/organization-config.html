@@ -59,7 +59,7 @@
                         <legend class="padding-left-10 padding-top-10">Profile Information Setting</legend>
                         <div class="form-group col-sm-12">
                             <label for="aliase-email" class="col-sm-2">Email</label>
-                            <div class="col-sm-10">
+                            <div class="col-sm-8">
                                 <input id="aliase-email"
                                        class="form-control"
                                        autocomplete="off"
@@ -68,9 +68,10 @@
                                        ng-model="user.email"
                                        ng-required="true">
                                 <p class="error"
-                                   ng-show="setting.email.$invalid && signin.email.$touched">Must be a valid
+                                ng-show="setting.email.$invalid && signin.email.$touched">Must be a valid
                                     email</p>
                             </div>
+                            <label class="small-grey-text pull-right">Not verified</label>
                         </div>
                         <div class="form-group col-sm-12">
                             <label for="activity" class="col-sm-2">Field of activity</label>
@@ -135,7 +136,7 @@
                     </fieldset>
                     <div class="form-group col-sm-12">
                         <button class="btn delete pull-left">Delete</button>
-                        <button class="btn pull-right">Cancel</button>
+                        <button class="btn pull-right" ui-sref="app.personal-organization">Cancel</button>
                         <button type="submit" class="btn btn-save pull-right margin-right-20" ng-disabled="setting.$invalid">Save</button>
                     </div>
                 </form>
