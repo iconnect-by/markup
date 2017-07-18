@@ -7,11 +7,12 @@ var gulp = require('gulp'),
     cssmin = require('gulp-cssmin'),
     rename = require('gulp-rename'),
     browserSync = require('browser-sync'),
-    webserver = require('gulp-webserver');
+    webserver = require('gulp-webserver'),
+    autoprefixer = require('gulp-autoprefixer');
 
 var paths = {
     webroot: "app/",
-    lib:  "lib/", 	
+    lib:  "lib/",
     dist: "dist/"
 };
 
@@ -35,6 +36,9 @@ gulp.task('scripts', function () {
 
 gulp.task('lessStyles', function () {
     return gulp.src('app/less/main.less')
+        .pipe(autoprefixer("last 2 version", "> 1%", "Explorer >= 8", {
+            cascade: true
+        }))
         .pipe(less())
         .pipe(cssmin())
         .pipe(rename({ suffix: '.min' }))

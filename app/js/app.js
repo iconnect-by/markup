@@ -20,7 +20,7 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.sel
                 }
             })
 
-        // route for the events page
+            // route for the events page
             .state('app.events', {
                 url: 'events',
                 views: {
@@ -31,7 +31,7 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.sel
                 }
             })
 
-        // route for the artist-open page
+            // route for the artist-open page
             .state('app.artist-open', {
                 url: 'artist-open',
                 views: {
@@ -42,7 +42,7 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.sel
                 }
             })
 
-        // route for the organization page
+            // route for the organization page
             .state('app.organization', {
                 url: 'organization',
                 views: {
@@ -53,7 +53,7 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.sel
                 }
             })
 
-        // route for the login page
+            // route for the login page
             .state('app.login', {
                 url: 'login',
                 views: {
@@ -64,7 +64,7 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.sel
                 }
             })
 
-        // route for the verification page
+            // route for the verification page
             .state('app.verification', {
                 url: 'verification',
                 views: {
@@ -74,7 +74,7 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.sel
                     }
                 }
             })
-        // route for the cabinet page
+            // route for the cabinet page
             .state('app.cabinet', {
                 url: 'cabinet',
                 views: {
@@ -84,7 +84,7 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.sel
                     }
                 }
             })
-        // route for the create-artist page
+            // route for the create-artist page
             .state('app.create-artist', {
                 url: 'create-artist',
                 views: {
@@ -105,7 +105,7 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.sel
                 }
             })
 
-        // route for the personal artist page
+            // route for the personal artist page
             .state('app.personal-artist', {
                 url: 'personal-artist',
                 views: {
@@ -115,7 +115,7 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.sel
                     }
                 }
             })
-        // route for the personal artist config page
+            // route for the personal artist config page
             .state('app.personal-artist.config', {
                 url: '/config',
                 views: {
@@ -125,7 +125,7 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.sel
                     }
                 }
             })
-        // route for the personal organization page
+            // route for the personal organization page
             .state('app.personal-organization', {
                 url: 'personal-organization',
                 views: {
@@ -135,13 +135,22 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.sel
                     }
                 }
             })
-        // route for the personal organization page
+            // route for the personal organization page
             .state('app.personal-organization.config', {
                 url: '/config',
                 views: {
                     'content@': {
                         templateUrl: 'views/personal/organization-config.html',
                         controller: 'PersonalController'
+                    }
+                }
+            })
+            // Commmon elements
+            .state('app.common', {
+                url: 'common',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/common.html'
                     }
                 }
             });
