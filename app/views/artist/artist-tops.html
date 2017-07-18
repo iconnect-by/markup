@@ -1,11 +1,11 @@
 <section class="artists" ng-controller="ArtistTopsController">
-    <div class="container-fluid padding-left-20 padding-right-20">
+    <div class="container-fluid">
         <div class="row row-content">
-            <div class="col-sm-9 margin-top-20 padding-right-05">
-                <div class="col-sm-4 padding-left-05 padding-right-05" ng-repeat="artist in artists">
+            <div class="col-md-9 co-sm-12 col-xs-12 margin-top-20">
+                <div class="col-md-4 col-sm-6 col-xs-12" ng-repeat="artist in artists">
                     <label class="section-title-black">TOP 5 {{artist.type}}</label>
                     <div class="first-signer">
-                        <div class="padding-left-05 padding-right-05 divider">
+                        <div class="divider">
                             <img ng-src="{{ artist.artistTops[0].photo }}" alt="" class="img-circle img-responsive">
                             <span class="display-span">{{ artist.artistTops[0].firstName}} {{ artist.artistTops[0].lastName}}
                           <span class="signer-describe">{{ artist.artistTops[0].discrabe}}</span>
@@ -25,7 +25,7 @@
                     <a class="pull-right small-blue-text" ng-click="openArtist(artist.type)">View All</a>
                 </div>
             </div>
-            <div class="col-sm-3 margin-top-20 padding-left-05">
+            <div class="col-md-3 col-sm-6 col-xs-6 margin-top-20 padding-left-05">
                 <ng-include src="'views/template/new-artist.html'"/>
             </div>
         </div>

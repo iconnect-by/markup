@@ -1,7 +1,7 @@
 <section class="profile-section" ng-controller="PersonalController">
-    <div class="container-fluid padding-left-20 padding-right-20">
+    <div class="container-fluid">
         <div class="row row-content margin-top-20">
-            <div class="col-sm-3 sidebar">
+            <div class="col-md-3 col-sm-4 col-xs-12 sidebar">
                 <div class="avatar text-center">
                     <img src="http://placehold.it/400x400" alt="artist-img" class="img-circle img-responsive">
                 </div>
@@ -70,9 +70,9 @@
                 </div>
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-md-6 col-sm-4 col-xs-12">
                 <div class="row-content" ng-show="divShow == 'allMedia'">
-                    <div class="col-sm-6">
+                    <div class="col-md-6 col-sm-6">
                         <div class="media-content box-content">
                             <h3 class="box-content__title">
                                 <a class="link">Add photo</a>
@@ -80,7 +80,11 @@
                             </h3>
 
                             <div class="empty">
-                                <div class="text">Upload a Photo</div>
+                                <div class="text">
+                                    <i class="fa fa-camera fa-2x" aria-hidden="true"></i>
+                                    <br/>
+                                    Upload a Photo
+                                </div>
                             </div>
 
                             <!-- <div class="row">
@@ -109,7 +113,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-md-6 col-sm-6">
                         <div class="media-content box-content">
                             <h3 class="box-content__title">
                                 <a class="link">Add embed video</a>
@@ -117,7 +121,10 @@
                             </h3>
 
                             <div class="empty">
-                                <div class="text">Upload a Video</div>
+                                <div class="text">
+                                    <i class="fa fa-film fa-2x" aria-hidden="true"></i>
+                                    <br/>
+                                    Upload a Video</div>
                             </div>
 
                             <div class="view-all">
@@ -132,7 +139,10 @@
                                 Music (17)
                             </h3>
                             <div class="empty">
-                                <div class="text">Upload a Audio</div>
+                                <div class="text">
+                                    <i class="fa fa-microphone fa-2x" aria-hidden="true"></i>
+                                    <br/>
+                                    Upload a Audio</div>
                             </div>
                             <div class="view-all">
                                 <a ng-click="showMedia('music')">View All</a>
@@ -143,7 +153,7 @@
                     <div class="col-sm-12 other-content margin-top-20">
                         <label class="section-title-black">Other Activities of the organizer</label>
                         <div class="row row-content">
-                        <div class="col-sm-6 margin-top-10" ng-repeat="event in eventsArt">
+                        <div class="col-md-6 margin-top-10" ng-repeat="event in eventsArt">
                             <ng-include src="'views/template/event.html'"/>
                         </div>
                             </div>
@@ -157,7 +167,7 @@
                      ng-include="'views/template/music-all.html'"></div>
             </div>
 
-            <div class="col-sm-3 padding-00">
+            <div class="col-md-3 col-sm-4 col-xs-12 padding-00">
                 <div class="col-sm-12 box-content">
                     <h3 class="box-content__title">Booking Artist's</h3>
                     <div ui-calendar="uiConfig.calendar" ng-model="eventSources"></div>
@@ -185,8 +195,8 @@
                 <div class="col-sm-12 margin-top-10 box-content download">
                     <h3 class="box-content__title">Rider Download</h3>
                     <div class="btn-group text-center">
-                        <button class="btn margin-right-10">Home Rider</button>
-                        <button class="btn margin-left-10">Technical Rider</button>
+                        <button class="btn">Home Rider</button>
+                        <button class="btn">Technical Rider</button>
                     </div>
                 </div>
             </div>

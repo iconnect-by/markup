@@ -1,13 +1,14 @@
 <section class="cabinet-section" ng-controller="RegistrationController">
     <!-- card -->
     <div class="container-fluid">
-        <div class="row row-content margin-top-15 padding-left-20 padding-right-20">
-            <div class="col-sm-4">
-                <img alt="user image" src="http://placehold.it/60x60" class="img-circle img-responsive card-photo pull-left margin-right-10">
+        <div class="row row-content margin-top-15">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <img alt="user image" src="http://placehold.it/60x60"
+                     class="img-circle img-responsive card-photo pull-left margin-right-10">
                 <h2>Johnny van Djick</h2>
-                <h6><span>Standart Account</span> / <span>Balance $ 1 345.45 </span> </h6>
+                <h6><span>Standart Account</span> / <span>Balance $ 1 345.45 </span></h6>
             </div>
-            <div class="col-sm-8">
+            <div class="col-md-8 col-sm-8 col-xs-12">
                 <div class="btn-group pull-right">
                     <button class="btn btn-def margin-right-20">GET A PRO ACCOUNT</button>
                     <button class="btn btn-aster"><i class="fa fa-cog fa-2x" aria-hidden="true"></i></button>
@@ -16,7 +17,7 @@
         </div>
 
         <div class="row row-content margin-top-15">
-            <ul class="nav nav-tabs padding-left-20 padding-right-20" role="tablist">
+            <ul class="nav nav-tabs" role="tablist">
                 <li class="active">
                     <a data-target='#dashboard' aria-controls="dashboard" role="tab" data-toggle="tab">Dashboard</a>
                 </li>
@@ -35,28 +36,26 @@
             </ul>
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane active in" id="dashboard">
-                    <div class="container-fluid padding-left-20 padding-right-20">
-                        <label class="section-title-black">New Artist</label>
-                        <div class="row row-content">
-                            <div class="col-sm-3 margin-top-10 padding-left-05 padding-right-05"
-                                 ng-repeat="art in artistList">
-                                <div class="first-signer">
-                                    <div class="divider">
-                                        <img ng-src="{{ art.photo }}" alt="" class="img-circle img-responsive">
-                                        <span class="display-span">{{ art.firstName}} {{ art.lastName}}
+                    <label class="section-title-black">New Artist</label>
+                    <div class="row row-content">
+                        <div class="col-md-3 col-sm-4 col-xs-12 margin-top-10 padding-left-05 padding-right-05"
+                             ng-repeat="art in artistList">
+                            <div class="first-signer">
+                                <div class="divider">
+                                    <img ng-src="{{ art.photo }}" alt="" class="img-circle img-responsive">
+                                    <span class="display-span">{{ art.firstName}} {{ art.lastName}}
                                       <span class="signer-describe">{{ art.discrabe}}</span></span>
-                                    </div>
-                                    <div class="artist-footer">
-                                        <span class="small-grey-text">{{ art.country}}</span>
-                                        <span class="pull-right small-default-text"><strong>{{ art.style}}</strong></span>
-                                    </div>
+                                </div>
+                                <div class="artist-footer">
+                                    <span class="small-grey-text">{{ art.country}}</span>
+                                    <span class="pull-right small-default-text"><strong>{{ art.style}}</strong></span>
                                 </div>
                             </div>
                         </div>
-                        <label class="margin-top-30 section-title-black">New Organization</label>
-                        <div class="row row-content">
-                            <div class="col-sm-3 margin-top-10" ng-repeat="org in organizationList">
-
+                    </div>
+                    <label class="margin-top-30 section-title-black">New Organization</label>
+                    <div class="row row-content">
+                        <div class="col-md-3 col-sm-4 col-xs-12 margin-top-10" ng-repeat="org in organizationList">
                             <div class="first-signer">
                                 <div class="divider">
                                     <img ng-src="{{ org.photo }}" alt="" class="img-responsive">
@@ -68,90 +67,80 @@
                                     <span class="small-grey-text">{{ org.location}}</span>
                                 </div>
                             </div>
-                                </div>
                         </div>
-                        <label class="margin-top-30 section-title-black">New Event</label>
-                        <div class="row row-content">
-                            <div class="col-sm-3 margin-top-10" ng-repeat="event in eventsArt">
-                                <ng-include src="'views/template/event.html'"/>
-                            </div>
+                    </div>
+                    <label class="margin-top-30 section-title-black">New Event</label>
+                    <div class="row row-content">
+                        <div class="col-md-3 col-sm-4 col-xs-12 margin-top-10" ng-repeat="event in eventsArt">
+                            <ng-include src="'views/template/event.html'"/>
                         </div>
                     </div>
                 </div>
                 <div role="tabpanel" class="tab-pane fade" id="your-artist">
-                    <div class="container-fluid">
-                        <div class="row row-content padding-left-20 padding-right-20">
-                            <div class="col-sm-3 margin-top-10 padding-left-05 padding-right-05"
-                                 ng-repeat="art in artistList">
-                                <div class=" first-signer">
-                                    <div class="divider">
-                                        <img ng-src="{{ art.photo }}" alt="" class="img-circle img-responsive">
-                                        <span class="display-span">{{ art.firstName}} {{ art.lastName}}
+                    <div class="col-md-3 col-sm-4 col-xs-12 margin-top-10 padding-left-05 padding-right-05" ng-repeat="art in artistList">
+                        <div class=" first-signer">
+                            <div class="divider">
+                                <img ng-src="{{ art.photo }}" alt="" class="img-circle img-responsive">
+                                <span class="display-span">{{ art.firstName}} {{ art.lastName}}
                                       <span class="signer-describe">{{ art.discrabe}}</span></span>
-                                    </div>
-                                    <div class="artist-footer">
-                                        <span class="small-grey-text">{{ art.country}}</span>
-                                        <span class="pull-right small-default-text"><strong>{{ art.style}}</strong></span>
-                                    </div>
-                                </div>
                             </div>
-                            <div class="col-sm-3 margin-top-10 padding-left-05 padding-right-05">
-                                <div class="first-signer">
-                                    <div class="text-center padding-left-05 padding-right-05">
-                                        <span>Create a new Artist</span><br/>
-                                        <span class="signer-describe">This page presents you as an artist of the
+                            <div class="artist-footer">
+                                <span class="small-grey-text">{{ art.country}}</span>
+                                <span class="pull-right small-default-text"><strong>{{ art.style}}</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12 margin-top-10 padding-left-05 padding-right-05">
+                        <div class="first-signer">
+                            <div class="text-center padding-left-05 padding-right-05">
+                                <span>Create a new Artist</span><br/>
+                                <span class="signer-describe">This page presents you as an artist of the
                                             chosen genre and allows you to work with the organization</span><br/>
-                                        <button class="btn btn-create-page margin-top-10" ui-sref="app.create-artist">Create Page</button>
-                                    </div>
-                                </div>
+                                <button class="btn btn-create-page margin-top-10" ui-sref="app.create-artist">
+                                    Create Page
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div role="tabpanel" class="tab-pane fade" id="your-organization">
-                    <div class="container-fluid">
-                        <div class="row row-content padding-left-20 padding-right-20">
-                            <div class="col-sm-3 margin-top-10" ng-repeat="org in organizationList">
-                                <div class="first-signer">
-                                    <div class="divider">
-                                        <img ng-src="{{ org.photo }}" alt="" class="img-responsive">
-                                        <span class="display-span">{{ org.title}}
+                    <div class="col-md-3 col-sm-4 col-xs-12 margin-top-10" ng-repeat="org in organizationList">
+                        <div class="first-signer">
+                            <div class="divider">
+                                <img ng-src="{{ org.photo }}" alt="" class="img-responsive">
+                                <span class="display-span">{{ org.title}}
                                         <span class="signer-describe">{{ org.discrabe}}</span>
                                     </span>
-                                    </div>
-                                    <div class="artist-footer">
-                                        <span class="small-grey-text">{{ org.location}}</span>
-                                    </div>
-                                </div>
                             </div>
-                            <div class="col-sm-3 margin-top-10 padding-left-05 padding-right-05">
-                                <div class="first-signer">
-                                    <div class="text-center padding-left-05 padding-right-05">
-                                        <span>Create a new organization page</span><br/><br/>
-                                        <span class="signer-describe">This page presents you as an artist of the
+                            <div class="artist-footer">
+                                <span class="small-grey-text">{{ org.location}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12 margin-top-10 padding-left-05 padding-right-05">
+                        <div class="first-signer">
+                            <div class="text-center padding-left-05 padding-right-05">
+                                <span>Create a new organization page</span><br/><br/>
+                                <span class="signer-describe">This page presents you as an artist of the
                                             chosen genre and allows you to work with the organization</span><br/>
-                                        <button class="btn btn-create-page margin-top-10" ui-sref="app.create-organization">Create Page</button>
-                                    </div>
-                                </div>
+                                <button class="btn btn-create-page margin-top-10" ui-sref="app.create-organization">
+                                    Create Page
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div role="tabpanel" class="tab-pane fade" id="your-events">
-                    <div class="container-fluid">
-                        <div class="row row-content padding-left-20 padding-right-20">
-                            <div class="col-sm-3 margin-top-10" ng-repeat="event in eventsArt">
-                                <ng-include src="'views/template/event.html'"/>
-                            </div>
-                            <div class="col-sm-3 margin-top-10 padding-left-05 padding-right-05">
-                                <div class="first-signer">
-                                    <div class="text-center padding-left-05 padding-right-05">
-                                        <span>Create a new event</span><br/><br/>
-                                        <span class="signer-describe">This page presents you as an artist of the
+                    <div class="col-md-3 col-sm-4 col-xs-12 margin-top-10" ng-repeat="event in eventsArt">
+                        <ng-include src="'views/template/event.html'"/>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12 margin-top-10 padding-left-05 padding-right-05">
+                        <div class="first-signer">
+                            <div class="text-center padding-left-05 padding-right-05">
+                                <span>Create a new event</span><br/><br/>
+                                <span class="signer-describe">This page presents you as an artist of the
                                             chosen genre and allows you to work with the organization</span><br/>
-                                        <button class="btn btn-create-page margin-top-10">Create Page</button>
-                                    </div>
-                                </div>
+                                <button class="btn btn-create-page margin-top-10">Create Page</button>
                             </div>
                         </div>
                     </div>

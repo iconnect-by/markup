@@ -1,15 +1,15 @@
 <section class="organizations-section" ng-controller="OrganizationController">
-    <div class="container-fluid padding-left-20 padding-right-20 filter-section padding-bottom-10 padding-top-10">
+    <div class="container-fluid filter-section padding-bottom-10 padding-top-10">
         <div class="pull-right search-content">
             <label>Location</label><input type="text"/>
             <label>Genres</label><select ng-model="selectedallArtist" ng-options="x for (x, y) in {Festival :[], Show:[]}"></select>
             <button class="btn btn-search">Search</button>
         </div>
     </div>
-    <div class="container-fluid padding-left-20 padding-right-20">
+    <div class="container-fluid">
         <div class="row row-content">
-            <div class="col-sm-9 margin-top-05">
-                <div class="col-sm-4 margin-top-10" ng-repeat="org in organizationList">
+            <div class="col-md-9 co-sm-9 col-xs-12 margin-top-05">
+                <div class="col-md-4 col-sm-6 col-xs-12 margin-top-10" ng-repeat="org in organizationList">
                     <div class="first-signer">
                         <div class="divider">
                             <img ng-src="{{ org.photo }}" alt="" class="img-responsive">
@@ -23,7 +23,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3 margin-top-05">
+            <div class="col-md-3 col-sm-3 col-xs-6 margin-top-05">
                 <ng-include src="'/views/template/new-artist.html'"/>
             </div>
         </div>
