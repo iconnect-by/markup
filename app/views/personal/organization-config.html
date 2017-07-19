@@ -1,9 +1,12 @@
 <section class="profile-section" ng-controller="PersonalController">
     <div class="container-fluid">
         <div class="row row-content margin-top-20">
-            <div class="col-sm-3 sidebar">
+            <div class="col-sm-3 sidebar config">
                 <div class="avatar text-center">
                     <img src="http://placehold.it/400x400" alt="artist-img" class="img-responsive">
+                </div>
+                <div class="hero-actions">
+                    <button class="btn btn-block">Change profile information</button>
                 </div>
                 <div class="hero-desc box-content">
                     <h1 class="hero-desc__name">The Needle Groove</h1>
@@ -33,17 +36,17 @@
                         <ul class="social-icons">
                             <li class="social-icons__item">
                                 <a href="" id="share-fb-btn">
-                                    <img src="images/Facebook_icon.png" alt="facebook">
+                                    <img src="images/Facebook_icon@3x.png" class="img-circle" alt="facebook">
                                 </a>
                             </li>
                             <li class="social-icons__item">
                                 <a href="" id="share-twitter-btn">
-                                    <img src="images/Twitter_icon.png" alt="twitter">
+                                    <img src="images/Twitter_icon@3x.png" class="img-circle" alt="twitter">
                                 </a>
                             </li>
                             <li class="social-icons__item">
                                 <a href="">
-                                    <img src="images/YouTube_icon.png" alt="youtube" title="youtube">
+                                    <img src="images/YouTube_icon@3x.png" class="img-circle" alt="youtube" title="youtube">
                                 </a>
                             </li>
                         </ul>
@@ -70,7 +73,7 @@
                                    ng-show="setting.email.$invalid && signin.email.$touched">Must be a valid
                                     email</p>
                             </div>
-                            <label class="small-grey-text pull-right">Not verified</label>
+                            <label class="verifi-label pull-right">Non verified</label>
                         </div>
                         <div class="form-group col-sm-12">
                             <label class="col-sm-2">Field of activity</label>

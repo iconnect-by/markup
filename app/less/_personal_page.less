@@ -156,10 +156,12 @@
         .label-default {
           background-color: white;
           border: 1px solid @iConnect-lightGrey;
-
+          font-family: @iConnect-font-bold;
+          padding: .3em .6em;
           color: inherit;
-          font-size: 11px;
+          font-size: 12px;
           text-transform: uppercase;
+          margin-right: .5em;
         }
 
         + .item {
@@ -212,7 +214,8 @@
           margin-left: 0.5em;
 
           img {
-            width: 1.9rem;
+            width: 3rem;
+            height: 3rem;
           }
         }
       }
@@ -277,13 +280,22 @@
       margin-top: -2.5em;
     }
   }
-
+  .config {
+    .label-default {
+      border: dashed @iConnect-lightGrey!important;
+      font-weight: 400;
+    }
+  }
   .panel-profile {
     border: 1px solid @iConnect-lightGrey;
     border-radius: 4px;
 
     input {
       padding: 5px 0;
+    }
+    .form-control{
+      -webkit-box-shadow: none!important;
+      box-shadow:none!important;
     }
 
     input,
@@ -294,99 +306,118 @@
 
       border: 0 solid rgba(255, 255, 255, .3);
       border-radius: 0;
+      -webkit-box-shadow: none!important;
+      box-shadow:none!important;
 
-      &:focus {
-        background-color: transparent !important;
-        box-shadow: none;
-        outline: none;
+        &:focus {
+          background-color: transparent !important;
+          box-shadow: none;
+          outline: none;
 
-        border: 0 solid @iConnect-orange;
-      }
-    }
-
-  legend {
-      font: 700 12px @iConnect-font-regular;
-      text-transform: uppercase;
-      margin-bottom: 0;
-      padding: 1em;
-      border: 0;
-    }
-    label {
-      font: bold 12px @iConnect-font-regular;
-      margin-bottom: 0;
-      padding-right: 0;
-      padding-left: 0;
-    }
-
-    .form-group {
-      border: 0 solid @iConnect-lightGrey;
-      border-top-width: 1px;
-      margin-bottom: 0;
-      padding: 1em;
-    }
-
-    .delete {
-      color: red;
-    }
-
-    .btn {
-      font-size: 12px;
-      background-color: white;
-      border: 1px solid @iConnect-lightGrey;
-      padding: 5px 40px !important;
-    }
-    .btn-save,
-    .btn-save:hover {
-      font-size: 12px;
-      font-family: @iConnect-font-regular;
-      padding: 5px 40px !important;
-      color: white;
-      border: 1px solid transparent;
-      border-radius: 4px;
-      background-color: @iConnect-orange;
-    }
-    a {
-        color: @iConnect-grey;
-        font-size: 12px;
-    }
-    .social-network {
-      display: -webkit-box;
-      h5 {
-        margin-left: 2em;
-        margin-right: 5em;
-      }
-      img{
-        width: 2em;
-        display: -webkit-inline-box;
-      }
-
-      a {
-        img{
-          width: 1.5em;
+          border: 0 solid @iConnect-orange;
         }
       }
-    }
 
-    .multi {
-      div{
+
+      legend {
+        font: 700 12px @iConnect-font-regular;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        padding: 1em;
         border: 0;
       }
-      .btn,
-      .btn-default,
-      .btn-xs {
-        color: white;
-        padding: 4px 15px!important;
-        background-color: @iConnect-blue;
-        border-radius: 20px;
-        background-image: none;
-      }
-      ::-webkit-input-placeholder {
-        text-align: end;
-        font-size: 10px;
-        color: @iConnect-blue;
+
+      label {
+        font: 700 12px @iConnect-font-bold;
+        margin-bottom: 0;
+        padding-right: 0;
+        padding-left: 0;
       }
 
-      :-moz-placeholder { /* Firefox 18- */
+      .form-group {
+        border: 0 solid @iConnect-lightGrey;
+        border-top-width: 1px;
+        margin-bottom: 0;
+        padding: 1em;
+      }
+
+      .delete {
+        color: red;
+      }
+
+      .connected-label {
+        color: @iConnect-green;
+        font-family: @iConnect-font-regular;
+        font-weight: 400;
+      }
+
+      .verifi-label{
+        color: @iConnect-grey;
+        font-family: @iConnect-font-regular;
+        font-weight: 400;
+      }
+
+      .btn {
+        font-weight: 700;
+        font-size: 12px;
+        background-color: white;
+        border: 1px solid @iConnect-lightGrey;
+        padding: 5px 40px !important;
+      }
+      .btn-save,
+      .btn-save:hover {
+        font-size: 12px;
+        font-family: @iConnect-font-regular;
+        padding: 5px 40px !important;
+        color: white;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        background-color: @iConnect-orange;
+      }
+      a {
+          color: @iConnect-grey;
+          font-size: 12px;
+      }
+      .social-network {
+        display: -webkit-box;
+        h5 {
+          margin-left: 1em;
+          margin-right: 5em;
+          font-weight: 400;
+          font-family: @iConnect-font-bold;
+        }
+        img{
+          width: 2em;
+          display: -webkit-inline-box;
+        }
+
+        a {
+          img{
+            width: 1.5em;
+          }
+        }
+      }
+
+      .multi {
+        div{
+          border: 0;
+        }
+        .btn,
+        .btn-default,
+        .btn-xs {
+          color: white;
+          padding: 4px 15px!important;
+          background-color: @iConnect-blue;
+          border-radius: 20px;
+          background-image: none;
+        }
+        ::-webkit-input-placeholder {
+          text-align: end;
+          font-size: 10px;
+          color: @iConnect-blue;
+        }
+
+        :-moz-placeholder { /* Firefox 18- */
         text-align: end;
         font-size: 10px;
         color: @iConnect-blue;
