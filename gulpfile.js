@@ -8,7 +8,8 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     browserSync = require('browser-sync'),
     webserver = require('gulp-webserver'),
-    autoprefixer = require('gulp-autoprefixer');
+    autoprefixer = require('gulp-autoprefixer'),
+    cleanDest = require('gulp-clean-dest');
 
 var paths = {
     webroot: "app/",
@@ -41,6 +42,7 @@ gulp.task('lessStyles', function () {
         }))
         .pipe(less())
         .pipe(cssmin())
+        .pipe(cleanDest('out'))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest(paths.dist + "styles/"));
 });
