@@ -1,0 +1,186 @@
+html, body {
+  font-family: @iConnect-font-regular;
+  font-size: @context-pt;
+  min-height: 100%;
+  height: 100%;
+}
+
+.ic-title {
+  display: inline-block;
+  line-height: 1.5;
+
+  &.title-1 {
+    padding: 0 19px;
+    font-size: 32 * @rem;
+    color: @iConnect-white;
+    background-color: @iConnect-black;
+    border-radius: 6px;
+    font-weight: @fw-bold;
+  }
+
+  &.title-2 {
+    font-size: 26 * @rem;
+    font-weight: @fw-semibold;
+  }
+
+  &.title-3 {
+    font-size: 16 * @rem;
+    font-weight: @fw-semibold;
+  }
+
+  &.title-4 {
+    font-size: 14 * @rem;
+    font-weight: @fw-semibold;
+  }
+}
+
+.ic-text {
+  line-height: 1.5;
+  &.text-default {
+    font-weight: @fw-regular;
+    color: @iConnect-black;
+  }
+  &.text-grey {
+    font-weight: @fw-semibold;
+    color: @iConnect-grey;
+  }
+
+  &.big {
+    font-size: 16 * @rem;
+  }
+  &.medium {
+    font-size: 12 * @rem;
+  }
+  &.small {
+    font-size: 10 * @rem;
+  }
+}
+
+.ic-section {
+  &.section-title {
+    font-size: 10 * @rem;
+    text-transform: uppercase;
+    font-weight: @fw-semibold;
+    line-height: 1.5;
+  }
+  &.black {
+    color: @iConnect-black;
+  }
+  &.blue {
+    color: @iConnect-blue;
+  }
+}
+
+.ic-btn-label {
+  font-size: 10 * @rem;
+  text-transform: uppercase;
+  font-weight: @fw-semibold;
+  color: @iConnect-black;
+  line-height: 2;
+  display: inline-block;
+
+  &.reverse {
+    color: @iConnect-white;
+    background-color: @iConnect-black;
+    border-radius: 6px;
+    padding: 0 20px;
+  }
+}
+
+.ic-btn {
+  display: inline-block;
+  margin: 0 auto 10px;
+  border: 0;
+  background-color: transparent;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12 * @rem;
+  line-height: 2.5;
+  color: @iConnect-white;
+  border-radius: 7px;
+  padding: 0 16px;
+  font-weight: @fw-regular;
+
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: opacity .2s;
+  outline: none;
+
+  &.ic-btn-blue {
+    background-color: @iConnect-blue;
+    padding: 0 65px;
+
+    &:visited {
+      background-color: @iConnect-blue;
+    }
+    &:hover, &:active, &:focus {
+      color: @iConnect-white;
+      background-color: lighten(@iConnect-blue, @lighten-percentage);
+    }
+  }
+
+  &.ic-btn-white {
+    border: 2px solid @iConnect-lightGrey;
+    color: @iConnect-black;
+    padding: 0 45px;
+
+    &:visited {
+      color: @iConnect-black;
+    }
+    &:hover, &:active, &:focus {
+      color: lighten(@iConnect-black, @lighten-percentage);
+    }
+  }
+
+  &.ic-btn-orange {
+    background-color: @iConnect-orange;
+    padding: 0 50px;
+
+    &:visited {
+      background-color: @iConnect-orange;
+    }
+    &:hover, &:active, &:focus {
+      color: @iConnect-white;
+      background-color: lighten(@iConnect-orange, @lighten-percentage);
+    }
+
+  }
+
+  &.ic-btn-red {
+    background-color: @iConnect-red;
+    padding: 0 50px;
+
+    &:visited {
+      background-color: @iConnect-red;
+    }
+    &:hover, &:active, &:focus {
+      color: @iConnect-white;
+      background-color: lighten(@iConnect-red, @lighten-percentage);
+    }
+  }
+
+  &.ic-btn-green {
+    background-color: @iConnect-green;
+
+    &:visited {
+      color: @iConnect-white;
+      background-color: @iConnect-green;
+    }
+    &:hover, &:active, &:focus {
+      color: @iConnect-white;
+      background-color: lighten(@iConnect-green, @lighten-percentage);
+    }
+  }
+}
+
+.ic-color {
+  height: 40px;
+  width: 40px;
+  display: block;
+  border-radius: 50%;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+}
