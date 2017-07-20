@@ -15,10 +15,63 @@
       margin: 0 0 10px;
       text-transform: uppercase;
     }
+
     .btn {
-      border-radius: 4px!important;
+      border-radius: 4px !important;
       margin: 1em;
     }
+
+    .btn-block {
+      color: white;
+      background-color: @iConnect-blue;
+    }
+
+    .btn-group {
+      display: flex;
+    }
+
+    .fc-toolbar {
+      background-color: @iConnect-lightGrey !important;
+
+      h2 {
+        font: 700 12px @iConnect-font-semiBold, sans-serif;
+        text-transform: uppercase !important;
+      }
+
+      button,
+      button:hover,
+      button:active {
+        background-color: transparent !important;
+        color: @iConnect-grey !important;
+        font: 700 12px @iConnect-font-semiBold, sans-serif;
+        border: none !important;
+      }
+
+      .fc-state-default {
+        background-color: @iConnect-lightGrey !important;
+        background-image: none !important;
+        border-color: none !important;
+        color: @iConnect-grey !important;
+        text-shadow: none !important;
+        box-shadow: none !important;
+        border: none !important;
+      }
+    }
+    .fc-day-header {
+      text-align: right;
+      text-transform: uppercase !important;
+      color: @iConnect-grey !important;
+      font: 400 12px @iConnect-font-regular, sans-serif;
+    }
+    .fc-scroller{
+      margin-top: 1em;
+    }
+
+    .fc th, .fc td {
+      border: none !important;
+      border-style: none!important;
+    }
+
   }
 
   .media-content {
@@ -28,7 +81,7 @@
       .link {
         color: @iConnect-blue;
         float: right;
-        font-family: "Open Sans",sans-serif
+        font-family: "Open Sans", sans-serif
       }
     }
 
@@ -89,7 +142,7 @@
     .hero-actions {
       margin-bottom: 20px;
       .btn {
-       background-color: @iConnect-blue;
+        background-color: @iConnect-blue;
         color: white;
       }
     }
@@ -282,7 +335,7 @@
   }
   .config {
     .label-default {
-      border: dashed @iConnect-lightGrey!important;
+      border: dashed @iConnect-lightGrey !important;
       font-weight: 400;
     }
   }
@@ -293,9 +346,9 @@
     input {
       padding: 5px 0;
     }
-    .form-control{
-      -webkit-box-shadow: none!important;
-      box-shadow:none!important;
+    .form-control {
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
     }
 
     input,
@@ -306,124 +359,123 @@
 
       border: 0 solid rgba(255, 255, 255, .3);
       border-radius: 0;
-      -webkit-box-shadow: none!important;
-      box-shadow:none!important;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
 
-        &:focus {
-          background-color: transparent !important;
-          box-shadow: none;
-          outline: none;
+      &:focus {
+        background-color: transparent !important;
+        box-shadow: none;
+        outline: none;
 
-          border: 0 solid @iConnect-orange;
-        }
+        border: 0 solid @iConnect-orange;
+      }
+    }
+
+    legend {
+      font: 700 12px @iConnect-font-regular;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      padding: 1em;
+      border: 0;
+    }
+
+    label {
+      font: 700 12px @iConnect-font-bold;
+      margin-bottom: 0;
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .form-group {
+      border: 0 solid @iConnect-lightGrey;
+      border-top-width: 1px;
+      margin-bottom: 0;
+      padding: 1em;
+    }
+
+    .delete {
+      color: red;
+    }
+
+    .connected-label {
+      color: @iConnect-green;
+      font-family: @iConnect-font-regular;
+      font-weight: 400;
+    }
+
+    .verifi-label {
+      color: @iConnect-grey;
+      font-family: @iConnect-font-regular;
+      font-weight: 400;
+    }
+
+    .btn {
+      font-weight: 700;
+      font-size: 12px;
+      background-color: white;
+      border: 1px solid @iConnect-lightGrey;
+      padding: 5px 40px !important;
+    }
+    .btn-save,
+    .btn-save:hover {
+      font-size: 12px;
+      font-family: @iConnect-font-regular;
+      padding: 5px 40px !important;
+      color: white;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      background-color: @iConnect-orange;
+    }
+    a {
+      color: @iConnect-grey;
+      font-size: 12px;
+    }
+    .social-network {
+      display: -webkit-box;
+      h5 {
+        margin-left: 1em;
+        margin-right: 5em;
+        font-weight: 400;
+        font-family: @iConnect-font-bold;
+      }
+      img {
+        width: 2em;
+        display: -webkit-inline-box;
       }
 
+      a {
+        img {
+          width: 1.3em;
+        }
+      }
+    }
 
-      legend {
-        font: 700 12px @iConnect-font-regular;
-        text-transform: uppercase;
-        margin-bottom: 0;
-        padding: 1em;
+    .multi {
+      div {
         border: 0;
       }
-
-      label {
-        font: 700 12px @iConnect-font-bold;
-        margin-bottom: 0;
-        padding-right: 0;
-        padding-left: 0;
-      }
-
-      .form-group {
-        border: 0 solid @iConnect-lightGrey;
-        border-top-width: 1px;
-        margin-bottom: 0;
-        padding: 1em;
-      }
-
-      .delete {
-        color: red;
-      }
-
-      .connected-label {
-        color: @iConnect-green;
-        font-family: @iConnect-font-regular;
-        font-weight: 400;
-      }
-
-      .verifi-label{
-        color: @iConnect-grey;
-        font-family: @iConnect-font-regular;
-        font-weight: 400;
-      }
-
-      .btn {
-        font-weight: 700;
-        font-size: 12px;
-        background-color: white;
-        border: 1px solid @iConnect-lightGrey;
-        padding: 5px 40px !important;
-      }
-      .btn-save,
-      .btn-save:hover {
-        font-size: 12px;
-        font-family: @iConnect-font-regular;
-        padding: 5px 40px !important;
+      .btn,
+      .btn-default,
+      .btn-xs {
         color: white;
-        border: 1px solid transparent;
-        border-radius: 4px;
-        background-color: @iConnect-orange;
+        padding: 4px 15px !important;
+        background-color: @iConnect-blue;
+        border-radius: 20px;
+        background-image: none;
       }
-      a {
-          color: @iConnect-grey;
-          font-size: 12px;
-      }
-      .social-network {
-        display: -webkit-box;
-        h5 {
-          margin-left: 1em;
-          margin-right: 5em;
-          font-weight: 400;
-          font-family: @iConnect-font-bold;
-        }
-        img{
-          width: 2em;
-          display: -webkit-inline-box;
-        }
-
-        a {
-          img{
-            width: 1.3em;
-          }
-        }
-      }
-
-      .multi {
-        div{
-          border: 0;
-        }
-        .btn,
-        .btn-default,
-        .btn-xs {
-          color: white;
-          padding: 4px 15px!important;
-          background-color: @iConnect-blue;
-          border-radius: 20px;
-          background-image: none;
-        }
-        ::-webkit-input-placeholder {
-          text-align: end;
-          font-size: 10px;
-          color: @iConnect-blue;
-        }
-
-        :-moz-placeholder { /* Firefox 18- */
+      ::-webkit-input-placeholder {
         text-align: end;
         font-size: 10px;
         color: @iConnect-blue;
       }
 
-      ::-moz-placeholder {  /* Firefox 19+ */
+      :-moz-placeholder { /* Firefox 18- */
+        text-align: end;
+        font-size: 10px;
+        color: @iConnect-blue;
+      }
+
+      ::-moz-placeholder { /* Firefox 19+ */
         text-align: end;
         font-size: 10px;
         color: @iConnect-blue;
