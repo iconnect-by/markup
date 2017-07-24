@@ -103,7 +103,7 @@ html, body {
   font-weight: @fw-semibold;
 
   max-height: @max-button-height;
-  max-width: 300px;
+  max-width: 370px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -113,6 +113,12 @@ html, body {
   &.ic-btn-blue {
     background-color: @iConnect-blue;
     padding: 0 65px;
+
+    &.big {
+      line-height: 3.5;
+      padding: 0 110px;
+      max-height: 42px;
+    }
 
     &:visited {
       background-color: @iConnect-blue;

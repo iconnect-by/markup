@@ -12,10 +12,10 @@
                 <div class="col-md-offset-3 col-md-6">
                     <ul class="nav nav-tabs list-unstyled" role="tablist">
                         <li class="active">
-                            <a data-target='#signup' aria-controls="signup" role="tab" data-toggle="tab">Sign Up</a>
+                            <a data-target='#signup' aria-controls="signup" role="tab" data-toggle="tab">Registration</a>
                         </li>
                         <li>
-                            <a data-target='#signin' aria-controls="signin" role="tab" data-toggle="tab">Sign In</a>
+                            <a data-target='#signin' aria-controls="signin" role="tab" data-toggle="tab">Login</a>
                         </li>
                     </ul>
 
@@ -35,7 +35,7 @@
                                         <p class="error" ng-show="signup.password.$invalid && signup.email.$touched">Password is required</p>
                                     </div>
                                 </fieldset>
-                                <button type="submit" class="ic-btn ic-btn-blue pull-right" ng-disabled="signup.$invalid">sign up</button>
+                                <button type="submit" class="ic-btn ic-btn-blue big pull-right" ng-disabled="signup.$invalid">Registration</button>
                             </form>
                         </div>
 
@@ -54,47 +54,49 @@
                                         <p class="error" ng-show="signin.password.$invalid && signin.email.$touched">Password is required</p>
                                     </div>
                                 </fieldset>
-                                <button type="submit" class="ic-btn ic-btn-blue pull-right" ng-disabled="signin.$invalid">sign in</button>
+                                <button type="submit" class="ic-btn ic-btn-blue big pull-right" ng-disabled="signin.$invalid">Login</button>
                             </form>
+
+                            <div class="social-content">
+                                <p>Or sign in through social networks</p>
+
+                                <ul class="social-icons list-unstyled">
+                                    <li class="social-icons__item">
+                                        <a href="#">
+                                            <img class="img-circle img-responsive" src="images/soundcloud@2x.png" alt="soundCloud">
+                                        </a>
+                                    </li>
+                                    <li class="social-icons__item">
+                                        <a href="">
+                                            <img class="img-circle img-responsive" src="images/insta@2x.png" alt="instagram">
+                                        </a>
+                                    </li>
+                                    <li class="social-icons__item">
+                                        <a href="#">
+                                            <img class="img-circle img-responsive" src="images/vimeo@2x.png" alt="vimeo">
+                                        </a>
+                                    </li>
+                                    <li class="social-icons__item">
+                                        <a href="#">
+                                            <img class="img-circle img-responsive" src="images/youtube@2x.png" alt="youtube">
+                                        </a>
+                                    </li>
+                                    <li class="social-icons__item">
+                                        <a href="#">
+                                            <img class="img-circle img-responsive" src="images/twitter@2x.png" alt="twitter">
+                                        </a>
+                                    </li>
+                                    <li class="social-icons__item">
+                                        <a href="#">
+                                            <img class="img-circle img-responsive" src="images/facebook@2x.png" alt="facebook">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="social-content">
-                        <p>Or sign in through social networks</p>
 
-                        <ul class="social-icons list-unstyled">
-                            <li class="social-icons__item">
-                                <a href="#">
-                                    <img class="img-circle img-responsive" src="images/sound-cloud.png" alt="soundCloud">
-                                </a>
-                            </li>
-                            <li class="social-icons__item">
-                                <a href="">
-                                    <img class="img-circle img-responsive" src="images/instagram.png" alt="instagram">
-                                </a>
-                            </li>
-                            <li class="social-icons__item">
-                                <a href="#">
-                                    <img class="img-circle img-responsive" src="images/vimeo.png" alt="vimeo">
-                                </a>
-                            </li>
-                            <li class="social-icons__item">
-                                <a href="#">
-                                    <img class="img-circle img-responsive" src="images/youtube.png" alt="youtube">
-                                </a>
-                            </li>
-                            <li class="social-icons__item">
-                                <a href="#">
-                                    <img class="img-circle img-responsive" src="images/twitter.png" alt="twitter">
-                                </a>
-                            </li>
-                            <li class="social-icons__item">
-                                <a href="#">
-                                    <img class="img-circle img-responsive" src="images/facebook.png" alt="facebook">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
