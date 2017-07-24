@@ -2,21 +2,12 @@
     <div class="login-container" ng-controller="RegistrationController">
 
 
-        <video id="background-video" class="video" muted loop>
-            <source src="video/video_background.mp4" type="video/mp4">
+        <video id="background-video" class="video" autoplay muted poster="images/background2.png">
+            <source src="video/video_background1.mp4" type="video/mp4">
             <!--<source src="video/demo.ogv" type="video/ogg">-->
             <!--<source src="video/demo.webm" type="video/webm">-->
+            Your browser does not support the video tag.
         </video><!-- /video -->
-
-        <script>
-            (function() {
-                var video = document.getElementById('background-video');
-                video.addEventListener('canplay', function() {
-                    video.play();
-                });
-            })();
-        </script>
-
 
         <div class="container login-well">
             <div class="row">
