@@ -70,19 +70,28 @@ gulp.task('fonts', function(){
         .pipe(gulp.dest('dist/fonts'));
 });
 
+gulp.task('video', function(){
+    return gulp
+        .src([
+            'app/video/**/*.*'
+        ])
+        .pipe(gulp.dest('dist/video'));
+});
+
 gulp.task('watch', function() {
   gulp.watch('app/js/**/*', ['scripts']);
   gulp.watch('app/less/*.less', ['lessStyles']);
   gulp.watch(['app/*.html', 'app/**/*.html'], ['html']);
 });
 
-gulp.task("build", ["bower", "lessStyles", "scripts", "fonts", "images", "html", "files"]);
+gulp.task("build", ["bower", "lessStyles", "scripts", "fonts", "images", "html", "files", "video"]);
 
 gulp.task('browser-sync', ['build'], function () {
     var files = [
       'app/**/*.html',
       'app/less/**/*.css',
       'app/images/**/*.png',
+      'app/video/**/*',
       'app/js/**/*.js',
       'dist/**/*'
    ];
