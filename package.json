@@ -6,6 +6,9 @@
     "type": "git",
     "url": ""
   },
+  "scripts": {
+    "gulp": "gulp"
+  },
   "author": "",
   "devDependencies": {
     "browser-sync": "^2.11.1",
