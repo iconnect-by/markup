@@ -1,9 +1,8 @@
-/*----------------------------------------------------------
-            Login Page
-----------------------------------------------------------*/
 .security-form {
   label {
-    font: 400 13px @iConnect-font-regular;
+    font-family: @iConnect-font-regular;
+    font-size: 12 * @rem;
+    font-weight: 400;
     margin-bottom: 0;
   }
 
@@ -22,97 +21,65 @@
   input [type=email],
   input [type=number],
   input [type=password] {
-    background-color: transparent !important;
+    background-color: transparent;
     height: auto;
     padding: 15px 0;
-
-    border: 0 solid rgba(255, 255, 255, .3);
+    border: 0;
+    border-bottom: 1px solid fade(#fff, 30%);
     border-radius: 0;
-    border-bottom-width: 1px;
 
     &:focus {
-      background-color: transparent !important;
+      background-color: transparent;
       box-shadow: none;
       outline: none;
-
-      border: 0 solid @iConnect-orange;
-      border-bottom-width: 1px;
+      border-bottom: 1px solid @iConnect-orange;
     }
   }
+  .pwd-group {
+    position: relative;
+
+    .see-pwd {
+      position: absolute;
+      padding: 19px 10px;
+      pointer-events: none;
+      right: 0;
+      bottom: 0;
+      top: auto;
+      
+      img {
+        display: inline-block;
+        width: 14px;
+        height: 10px;
+      }
+    }
+  }
+
 }
 
 .login-section {
-  height: 100%;
-
-  margin-top: -@iConnect-header-height;
-  padding-top: @iConnect-header-height;
-
-  .login-container {
-    height: 800px;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-
-  .login-bg {
-    margin-top: -@iConnect-header-height;
-
-    position: fixed;
-    width: 200%;
-    height: 200%;
-    left: -50%;
-
-    z-index: 0;
-
-    .login-bg-overlay {
-      display: block;
-      background-color: rgba(0, 0, 0, .75);
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
-
-    img {
-      display: block;
-      margin: auto;
-      min-width: 50%;
-      min-height: 50%;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
-  }
+  height: 100vh;
+  background-image: url('../images/background2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  min-height: 750px;
 
   .login-well {
     background-color: transparent;
     color: #fff;
-    height: 400px;
-    width: 700px;
-    margin: -235px 0 0 -350px;
+    padding-top: 155px;
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    .welcome-text {
-      margin-bottom: 35px;
-
-      h1 {
-        font-size: 30px;
-        font-weight: 600;
-        line-height: 1.2em;
-        margin: 0;
-      }
+    h1 {
+      font-size: 30 * @rem;
+      font-weight: 700;
+      line-height: 1.125;
+      margin: 0 0 35px 0;
+      letter-spacing: 1.6px;
     }
 
     .nav-tabs {
-      border-color: rgba(255, 255, 255, 0.3);
+      border-color: fade(#fff, 30%);
       margin-bottom: 40px;
 
       li {
@@ -139,7 +106,7 @@
 
     .security-form {
       label {
-        color: rgba(255, 255, 255, .5);
+        color: fade(#fff, 50%);
       }
 
       input,
@@ -156,49 +123,14 @@
     }
   }
 
-  ul {
-    list-style: none;
-  }
-
-  .btn-sign-up {
-    color: #fff;
-    font-size: 11px;
-    font-family: @iConnect-font-semiBold;
-    letter-spacing: .7px;
-    text-transform: uppercase;
-
-    border: 0 none;
-    border-radius: 4px;
-    background-color: @iConnect-blue;
-
-    cursor: pointer;
-
-    padding: 10px 140px!important;
-
-    &:hover, :active {
-      background-color: darken(@iConnect-blue, 10%);
-    }
-
-    &:active {
-      background-color: darken(@iConnect-blue, 20%);
-      outline: none;
-    }
-
-    &:disabled {
-      cursor: default;
-      background-color: lighten(@iConnect-blue, 10%);
-
-      &:hover, :active {
-        background-color: lighten(@iConnect-blue, 10%);
-        outline: none;
-      }
-    }
-  }
-
   .social-content {
-    border-top: 1px dashed rgba(255, 255, 255, .3);
-    margin-top: 50px;
-    padding-top: 30px;
+    border-top: 1px dashed fade(#fff, 30%);
+    margin-top: 64px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
 
     p {
       font-size: 15px;
@@ -207,20 +139,22 @@
 
     .social-icons {
       display: flex;
-      float: right;
-      padding: 0;
+      flex-direction: row;
+      align-items: center;
+      align-content: space-around;
+      margin-left: auto;
 
       .social-icons__item {
-        margin: 0 0.8rem 0 0;
-
-        img {
-          height: 3.0rem;
-          width: 3.0rem;
-        }
+        height: 30px;
+        width: 30px;
+        margin: 0 5px;
       }
     }
   }
 }
+
+
+
 
 .verification-section {
   background-color: white;

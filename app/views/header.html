@@ -1,33 +1,42 @@
-<div class="container-fluid navbar-content padding-left-20 padding-right-20">
-    <div class="navbar-header">
-        <a class="navbar-brand" href="#">CONNECT</a>
-    </div>
+<!--.transparent1 - change it to .transparent, it makes menu transparent, for white menu bgc - remove it-->
+<nav class="navbar navbar-default navbar-fixed-top transparent1">
+    <div class="container navbar-content">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">CONNECT</a>
+        </div>
 
-    <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-            <li><a ui-sref="app">TOP ARTISTS</a></li>
-            <li><a ui-sref="app.events">EVENTS</a></li>
-            <li><a ui-sref="app.organization">ORGANIZATION</a></li>
-            <li ng-if="!true"><a><i class="fa fa-envelope"></i></a></li>
-            <li ng-if="!true"><a><i class="fa fa-bell"></i></a></li>
-            <li ng-if="!true" class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">
-                    <span>
-                        <img src="http://placehold.it/30x30" alt="" class="img-circle img-responsive">
-                    </span> user name <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Edit</a></li>
-                    <li class="divider"></li>
-                    <li><a ng-click="logout()">Log Out</a></li>
-                </ul>
-            </li>
-            <li ng-if="true">
-                <button ui-sref="app.login" class="btn btn-login">LOGIN</button>
-            </li>
-            <li>
-                <a class="search"><i class="fa fa-search"></i></a>
-            </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a ui-sref="app">TOP ARTISTS</a></li>
+                <li><a ui-sref="app.events">EVENTS</a></li>
+                <li><a ui-sref="app.organization">ORGANIZATION</a></li>
+                <li ng-if="!true"><a><i class="fa fa-envelope"></i></a></li>
+                <li ng-if="!true"><a><i class="fa fa-bell"></i></a></li>
+                <li ng-if="!true" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">
+                        <span>
+                            <img src="http://placehold.it/30x30" alt="" class="img-circle img-responsive">
+                        </span> user name <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Edit</a></li>
+                        <li class="divider"></li>
+                        <li><a ng-click="logout()">Log Out</a></li>
+                    </ul>
+                </li>
+                <li ng-if="true">
+                    <button ui-sref="app.login" class="ic-btn ic-btn-orange">LOGIN</button>
+                </li>
+                <li>
+                    <a class="search"><i class="fa fa-search"></i></a>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
+</nav>

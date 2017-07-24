@@ -1,118 +1,104 @@
 <section class="login-section">
     <div class="login-container" ng-controller="RegistrationController">
 
-        <!-- bg -->
-        <div class="login-bg">
-            <img src="images/background.jpg">
-            <div class="login-bg-overlay"></div>
-        </div>
 
-        <!-- card -->
-        <div class="login-well">
-            <div class="welcome-text">
-                <h1>Welcome to iConnect</h1>
-            </div>
-
-            <ul class="nav nav-tabs" role="tablist">
-                <li class="active">
-                    <a data-target='#signup' aria-controls="signup" role="tab" data-toggle="tab">Sign Up</a>
-                </li>
-                <li>
-                    <a data-target='#signin' aria-controls="signin" role="tab" data-toggle="tab">Sign In</a>
-                </li>
-            </ul>
-
-            <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active in" id="signup">
-                    <form name="signup" ng-submit="register()" class="security-form clearfix" novalidate>
-                        <fieldset>
-                            <div class="form-group">
-                                <label for="signup-email">Email</label>
-                                <input id="signup-email"
-                                       class="form-control"
-                                       autocomplete="off"
-                                       type="email"
-                                       name="email"
-                                       ng-model="userReg.email"
-                                       ng-required="true">
-                                <p class="error"
-                                   ng-show="signup.email.$invalid && signup.email.$touched">Must be a valid email</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="signup-pass">Password</label>
-                                <input id="signup-pass"
-                                       class="form-control"
-                                       autocomplete="off"
-                                       type="password"
-                                       name="password"
-                                       ng-attr-type="{{ showPassword ? 'text' : 'password' }}"
-                                       ng-model="userReg.password"
-                                       ng-required="true">
-                                <p class="error"
-                                   ng-show="signup.password.$invalid && signup.email.$touched">Password is required</p>
-                            </div>
-                        </fieldset>
-                        <button type="submit"
-                                class="btn-sign-up pull-right"
-                                ng-disabled="signup.$invalid">sign up</button>
-                    </form>
-                </div>
-
-                <div role="tabpanel" class="tab-pane fade" id="signin">
-                    <form name="signin" ng-submit="login()" class="security-form clearfix" novalidate>
-                        <fieldset>
-                            <div class="form-group">
-                                <label for="signin-email">Email</label>
-                                <input id="signin-email"
-                                       class="form-control"
-                                       autocomplete="off"
-                                       type="email"
-                                       name="email"
-                                       ng-model="user.email"
-                                       ng-required="true">
-                                <p class="error"
-                                   ng-show="signin.email.$invalid && signin.email.$touched">Must be a valid email</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="signin-pass">Password</label>
-                                <input id="signin-pass"
-                                       class="form-control"
-                                       autocomplete="off"
-                                       type="password"
-                                       name="password"
-                                       ng-model="user.password"
-                                       ng-required="true">
-                                <p class="error"
-                                   ng-show="signin.password.$invalid && signin.email.$touched">Password is required</p>
-                            </div>
-                        </fieldset>
-                        <button type="submit"
-                                class="btn-sign-up pull-right"
-                                ng-disabled="signin.$invalid">sign in</button>
-                    </form>
+        <div class="container login-well">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6">
+                    <h1>Welcome to iConnect</h1>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6">
+                    <ul class="nav nav-tabs list-unstyled" role="tablist">
+                        <li class="active">
+                            <a data-target='#signup' aria-controls="signup" role="tab" data-toggle="tab">Sign Up</a>
+                        </li>
+                        <li>
+                            <a data-target='#signin' aria-controls="signin" role="tab" data-toggle="tab">Sign In</a>
+                        </li>
+                    </ul>
 
-            <div class="social-content">
-                <ul class="social-icons">
-                    <li class="social-icons__item">
-                        <a href="">
-                            <img src="images/YouTube_icon@2x.png" alt="youtube" title="youtube">
-                        </a>
-                    </li>
-                    <li class="social-icons__item">
-                        <a href="" id="share-twitter-btn">
-                            <img src="images/Twitter_icon@2x.png" alt="twitter">
-                        </a>
-                    </li>
-                    <li class="social-icons__item">
-                        <a href="" id="share-fb-btn">
-                            <img src="images/Facebook_icon@2x.png" alt="facebook"></a>
-                    </li>
-                </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active in" id="signup">
+                            <form name="signup" ng-submit="register()" class="security-form clearfix" novalidate>
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label for="signup-email">Email Address</label>
+                                        <input id="signup-email" class="form-control" autocomplete="off" type="email" name="email" ng-model="userReg.email" ng-required="true">
+                                        <p class="error" ng-show="signup.email.$invalid && signup.email.$touched">Must be a valid email</p>
+                                    </div>
+                                    <div class="form-group pwd-group">
+                                        <label for="signup-pass">Password</label>
+                                        <a href="#" class="see-pwd"><img src="images/eye.png" alt="eye"></a>
+                                        <input id="signup-pass" class="form-control" autocomplete="off" type="password" name="password" ng-attr-type="{{ showPassword ? 'text' : 'password' }}" ng-model="userReg.password" ng-required="true">
+                                        <p class="error" ng-show="signup.password.$invalid && signup.email.$touched">Password is required</p>
+                                    </div>
+                                </fieldset>
+                                <button type="submit" class="ic-btn ic-btn-blue pull-right" ng-disabled="signup.$invalid">sign up</button>
+                            </form>
+                        </div>
 
-                <p>Or sign in through social networks</p>
+                        <div role="tabpanel" class="tab-pane fade" id="signin">
+                            <form name="signin" ng-submit="login()" class="security-form clearfix" novalidate>
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label for="signin-email">Email Address</label>
+                                        <input id="signin-email" class="form-control" autocomplete="off" type="email" name="email" ng-model="user.email" ng-required="true">
+                                        <p class="error" ng-show="signin.email.$invalid && signin.email.$touched">Must be a valid email</p>
+                                    </div>
+                                    <div class="form-group pwd-group">
+                                        <label for="signin-pass">Password</label>
+                                        <a href="#" class="see-pwd"><img src="images/eye.png" alt="eye"></a>
+                                        <input id="signin-pass" class="form-control" autocomplete="off" type="password" name="password" ng-model="user.password" ng-required="true">
+                                        <p class="error" ng-show="signin.password.$invalid && signin.email.$touched">Password is required</p>
+                                    </div>
+                                </fieldset>
+                                <button type="submit" class="ic-btn ic-btn-blue pull-right" ng-disabled="signin.$invalid">sign in</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="social-content">
+                        <p>Or sign in through social networks</p>
+
+                        <ul class="social-icons list-unstyled">
+                            <li class="social-icons__item">
+                                <a href="#">
+                                    <img class="img-circle img-responsive" src="images/sound-cloud.png" alt="soundCloud">
+                                </a>
+                            </li>
+                            <li class="social-icons__item">
+                                <a href="">
+                                    <img class="img-circle img-responsive" src="images/instagram.png" alt="instagram">
+                                </a>
+                            </li>
+                            <li class="social-icons__item">
+                                <a href="#">
+                                    <img class="img-circle img-responsive" src="images/vimeo.png" alt="vimeo">
+                                </a>
+                            </li>
+                            <li class="social-icons__item">
+                                <a href="#">
+                                    <img class="img-circle img-responsive" src="images/youtube.png" alt="youtube">
+                                </a>
+                            </li>
+                            <li class="social-icons__item">
+                                <a href="#">
+                                    <img class="img-circle img-responsive" src="images/twitter.png" alt="twitter">
+                                </a>
+                            </li>
+                            <li class="social-icons__item">
+                                <a href="#">
+                                    <img class="img-circle img-responsive" src="images/facebook.png" alt="facebook">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
+
+
     </div>
 </section>
