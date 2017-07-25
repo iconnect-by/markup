@@ -6,19 +6,19 @@ angular.module('iConnectApp')
             {
                 id: 0,
                 title: 'Romantic Ballads',
-                imgUrl: 'http://placehold.it/150x200',
-                eventText: 'Read, out with friends, listen to music, draw and learn new things.',
+                imgUrl: 'images/placeholder.svg',
+                eventText: '<p>A purpose is the eternal condition for success.Every former smoker can tell you just how hard it is to stop smoking cigarettes. </p> <p>A purpose is the eternal condition for success.Every former smoker can tell you just how hard it is to stop smoking cigarettes. </p> <p>A purpose is the eternal condition for success.Every former smoker can tell you just how hard it is to stop smoking cigarettes. </p>',
                 eventType: 'Concert',
                 eventLocation: 'UK, London',
                 eventDate: '12 nov 2016, 22:00 - 5:00',
                 eventArtist: [
                     {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
                         id: 0,
@@ -36,9 +36,9 @@ angular.module('iConnectApp')
 
             },
             {
-                id: 0,
+                id: 1,
                 title: 'Romantic Ballads',
-                imgUrl: 'http://placehold.it/150x200',
+                imgUrl: 'images/placeholder.svg',
                 eventText: 'Read, out with friends, listen to music, draw and learn new things.',
                 eventType: 'Concert',
                 eventLocation: 'UK, London',
@@ -46,95 +46,19 @@ angular.module('iConnectApp')
                 eventArtist: [
                     {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
-                    },
-                    {
-                        id: 0,
-                        artistImg: 'images/Add_small@2x.png'
-                    },
-                    {
-                        id: 0,
-                        artistImg: 'images/Add_small@2x.png'
-                    },
-                    {
-                        id: 0,
-                        artistImg: 'images/Add_small@2x.png'
-                    },
-                    {
-                        id: 0,
-                        artistImg: 'images/Add_small@2x.png'
-                    }
-                ]
-
-            },
-            {
-                id: 0,
-                title: 'Romantic Ballads',
-                imgUrl: 'http://placehold.it/150x200',
-                eventText: 'Read, out with friends, listen to music, draw and learn new things.',
-                eventType: 'Concert',
-                eventLocation: 'UK, London',
-                eventDate: '12 nov 2016, 22:00 - 5:00',
-                eventArtist: [
-                    {
-                        id: 1,
-                        artistImg: 'http://placehold.it/60x60'
-                    },
-                    {
-                        id: 1,
-                        artistImg: 'http://placehold.it/60x60'
-                    },
-                    {
-                        id: 0,
-                        artistImg: 'images/Add_small@2x.png'
-                    },
-                    {
-                        id: 0,
-                        artistImg: 'images/Add_small@2x.png'
-                    },
-                    {
-                        id: 0,
-                        artistImg: 'images/Add_small@2x.png'
-                    }
-                ]
-
-            },
-            {
-                id: 0,
-                title: 'Romantic Ballads',
-                imgUrl: 'http://placehold.it/150x200',
-                eventText: 'Read, out with friends, listen to music, draw and learn new things.',
-                eventType: 'Concert',
-                eventLocation: 'UK, London',
-                eventDate: '12 nov 2016, 22:00 - 5:00',
-                eventArtist: [
-                    {
-                        id: 1,
-                        artistImg: 'http://placehold.it/60x60'
-                    },
-                    {
-                        id: 1,
-                        artistImg: 'http://placehold.it/60x60'
-                    },
-                    {
-                        id: 1,
-                        artistImg: 'http://placehold.it/60x60'
-                    },
-                    {
-                        id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
                         id: 0,
@@ -156,9 +80,9 @@ angular.module('iConnectApp')
 
             },
             {
-                id: 0,
+                id: 2,
                 title: 'Romantic Ballads',
-                imgUrl: 'http://placehold.it/150x200',
+                imgUrl: 'images/placeholder.svg',
                 eventText: 'Read, out with friends, listen to music, draw and learn new things.',
                 eventType: 'Concert',
                 eventLocation: 'UK, London',
@@ -166,55 +90,11 @@ angular.module('iConnectApp')
                 eventArtist: [
                     {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
-                    },
-                    {
-                        id: 1,
-                        artistImg: 'http://placehold.it/60x60'
-                    },
-                    {
-                        id: 0,
-                        artistImg: 'images/Add_small@2x.png'
-                    },
-                    {
-                        id: 0,
-                        artistImg: 'images/Add_small@2x.png'
-                    }
-                ]
-
-            },
-            {
-                id: 0,
-                title: 'Romantic Ballads',
-                imgUrl: 'http://placehold.it/150x200',
-                eventText: 'Read, out with friends, listen to music, draw and learn new things.',
-                eventType: 'Concert',
-                eventLocation: 'UK, London',
-                eventDate: '12 nov 2016, 22:00 - 5:00',
-                eventArtist: [
-                    {
-                        id: 1,
-                        artistImg: 'http://placehold.it/60x60'
-                    },
-                    {
-                        id: 1,
-                        artistImg: 'http://placehold.it/60x60'
-                    },
-                    {
-                        id: 1,
-                        artistImg: 'http://placehold.it/60x60'
-                    },
-                    {
-                        id: 1,
-                        artistImg: 'http://placehold.it/60x60'
-                    },
-                    {
-                        id: 0,
-                        artistImg: 'images/Add_small@2x.png'
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
                         id: 0,
@@ -232,9 +112,9 @@ angular.module('iConnectApp')
 
             },
             {
-                id: 0,
+                id: 3,
                 title: 'Romantic Ballads',
-                imgUrl: 'http://placehold.it/150x200',
+                imgUrl: 'images/placeholder.svg',
                 eventText: 'Read, out with friends, listen to music, draw and learn new things.',
                 eventType: 'Concert',
                 eventLocation: 'UK, London',
@@ -242,15 +122,27 @@ angular.module('iConnectApp')
                 eventArtist: [
                     {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        artistImg: 'images/placeholder.svg'
+                    },
+                    {
+                        id: 1,
+                        artistImg: 'images/placeholder.svg'
+                    },
+                    {
+                        id: 0,
+                        artistImg: 'images/Add_small@2x.png'
+                    },
+                    {
+                        id: 0,
+                        artistImg: 'images/Add_small@2x.png'
                     },
                     {
                         id: 0,
@@ -264,9 +156,9 @@ angular.module('iConnectApp')
 
             },
             {
-                id: 0,
+                id: 4,
                 title: 'Romantic Ballads',
-                imgUrl: 'http://placehold.it/150x200',
+                imgUrl: 'images/placeholder.svg',
                 eventText: 'Read, out with friends, listen to music, draw and learn new things.',
                 eventType: 'Concert',
                 eventLocation: 'UK, London',
@@ -274,19 +166,127 @@ angular.module('iConnectApp')
                 eventArtist: [
                     {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        artistImg: 'images/placeholder.svg'
+                    },
+                    {
+                        id: 0,
+                        artistImg: 'images/Add_small@2x.png'
+                    },
+                    {
+                        id: 0,
+                        artistImg: 'images/Add_small@2x.png'
+                    }
+                ]
+
+            },
+            {
+                id: 5,
+                title: 'Romantic Ballads',
+                imgUrl: 'images/placeholder.svg',
+                eventText: 'Read, out with friends, listen to music, draw and learn new things.',
+                eventType: 'Concert',
+                eventLocation: 'UK, London',
+                eventDate: '12 nov 2016, 22:00 - 5:00',
+                eventArtist: [
+                    {
+                        id: 1,
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        artistImg: 'images/placeholder.svg'
+                    },
+                    {
+                        id: 1,
+                        artistImg: 'images/placeholder.svg'
+                    },
+                    {
+                        id: 1,
+                        artistImg: 'images/placeholder.svg'
+                    },
+                    {
+                        id: 0,
+                        artistImg: 'images/Add_small@2x.png'
+                    },
+                    {
+                        id: 0,
+                        artistImg: 'images/Add_small@2x.png'
+                    },
+                    {
+                        id: 0,
+                        artistImg: 'images/Add_small@2x.png'
+                    },
+                    {
+                        id: 0,
+                        artistImg: 'images/Add_small@2x.png'
+                    }
+                ]
+
+            },
+            {
+                id: 6,
+                title: 'Romantic Ballads',
+                imgUrl: 'images/placeholder.svg',
+                eventText: 'Read, out with friends, listen to music, draw and learn new things.',
+                eventType: 'Concert',
+                eventLocation: 'UK, London',
+                eventDate: '12 nov 2016, 22:00 - 5:00',
+                eventArtist: [
+                    {
+                        id: 1,
+                        artistImg: 'images/placeholder.svg'
+                    },
+                    {
+                        id: 1,
+                        artistImg: 'images/placeholder.svg'
+                    },
+                    {
+                        id: 1,
+                        artistImg: 'images/placeholder.svg'
+                    },
+                    {
+                        id: 0,
+                        artistImg: 'images/Add_small@2x.png'
+                    },
+                    {
+                        id: 0,
+                        artistImg: 'images/Add_small@2x.png'
+                    }
+                ]
+
+            },
+            {
+                id: 7,
+                title: 'Romantic Ballads',
+                imgUrl: 'images/placeholder.svg',
+                eventText: 'Read, out with friends, listen to music, draw and learn new things.',
+                eventType: 'Concert',
+                eventLocation: 'UK, London',
+                eventDate: '12 nov 2016, 22:00 - 5:00',
+                eventArtist: [
+                    {
+                        id: 1,
+                        artistImg: 'images/placeholder.svg'
+                    },
+                    {
+                        id: 1,
+                        artistImg: 'images/placeholder.svg'
+                    },
+                    {
+                        id: 1,
+                        artistImg: 'images/placeholder.svg'
+                    },
+                    {
+                        id: 1,
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
                         id: 0,

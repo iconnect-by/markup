@@ -32,7 +32,7 @@ angular.module('iConnectApp')
             {
                 id: 0,
                 title: 'Romantic Ballads',
-                imgUrl: 'http://placehold.it/150x200',
+                imgUrl: 'images/placeholder.svg',
                 eventText: 'Read, out with friends, listen to music, draw and learn new things.',
                 eventType: 'Concert',
                 eventLocation: 'UK, London',
@@ -40,11 +40,11 @@ angular.module('iConnectApp')
                 eventArtist: [
                     {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
                         id: 0,
@@ -64,7 +64,7 @@ angular.module('iConnectApp')
             {
                 id: 0,
                 title: 'Romantic Ballads',
-                imgUrl: 'http://placehold.it/150x200',
+                imgUrl: 'images/placeholder.svg',
                 eventText: 'Read, out with friends, listen to music, draw and learn new things.',
                 eventType: 'Concert',
                 eventLocation: 'UK, London',
@@ -72,19 +72,19 @@ angular.module('iConnectApp')
                 eventArtist: [
                     {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
                         id: 0,
@@ -108,7 +108,7 @@ angular.module('iConnectApp')
             {
                 id: 0,
                 title: 'Romantic Ballads',
-                imgUrl: 'http://placehold.it/150x200',
+                imgUrl: 'images/placeholder.svg',
                 eventText: 'Read, out with friends, listen to music, draw and learn new things.',
                 eventType: 'Concert',
                 eventLocation: 'UK, London',
@@ -116,19 +116,19 @@ angular.module('iConnectApp')
                 eventArtist: [
                     {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
                         id: 0,

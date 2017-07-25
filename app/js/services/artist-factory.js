@@ -4,52 +4,52 @@ angular.module('iConnectApp')
     .service('artistFactory', function () {
         var artists = [
             {
-                type: "Signer",
+                type: "Singer",
                 artistTops: [
                     {
                         id: 0,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 1,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 2,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 3,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 4,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     }
                 ]
             },
@@ -61,45 +61,45 @@ angular.module('iConnectApp')
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 1,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 2,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 3,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 4,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     }
                 ]
             },
@@ -111,45 +111,45 @@ angular.module('iConnectApp')
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 1,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 2,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 3,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 4,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     }
                 ]
             },
@@ -161,45 +161,45 @@ angular.module('iConnectApp')
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 1,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 2,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 3,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 4,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                 ]
             },
@@ -211,45 +211,45 @@ angular.module('iConnectApp')
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 1,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 2,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 3,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 4,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                 ]
             },
@@ -261,45 +261,45 @@ angular.module('iConnectApp')
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 1,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        firstName: "John",
+                        lastName: "Cena",
+                        country: "America",
+                        style: "Singer",
+                        description: "The Cenation Leader, The Champ, The Face of the WWE, The Hustle Loyalty & Respect Soldier, The Chain Gang Soldier, The Doctor of Thuganomics, Mr. Money in the Bank, Mr. P, The Prototype.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 2,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
+                        firstName: "Lana",
+                        lastName: "Del Rey",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 3,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 4,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     }
                 ]
             }
@@ -311,45 +311,45 @@ angular.module('iConnectApp')
                 firstName: "Nicole",
                 lastName: "Pearson",
                 country: "Belarus",
-                style: "Signer",
-                discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                photo: "http://placehold.it/100x100"
+                style: "Singer",
+                description: "Read, out with friends, listen to music, draw and learn new things.",
+                photo: "images/placeholder.svg"
             },
             {
                 id: 1,
                 firstName: "Nicole",
                 lastName: "Pearson",
                 country: "Belarus",
-                style: "Signer",
-                discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                photo: "http://placehold.it/100x100"
+                style: "Singer",
+                description: "Read, out with friends, listen to music, draw and learn new things.",
+                photo: "images/placeholder.svg"
             },
             {
                 id: 2,
                 firstName: "Nicole",
                 lastName: "Pearson",
                 country: "Belarus",
-                style: "Signer",
-                discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                photo: "http://placehold.it/100x100"
+                style: "Singer",
+                description: "Read, out with friends, listen to music, draw and learn new things.",
+                photo: "images/placeholder.svg"
             },
             {
                 id: 3,
                 firstName: "Nicole",
                 lastName: "Pearson",
                 country: "Belarus",
-                style: "Signer",
-                discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                photo: "http://placehold.it/100x100"
+                style: "Singer",
+                description: "Read, out with friends, listen to music, draw and learn new things.",
+                photo: "images/placeholder.svg"
             },
             {
                 id: 4,
                 firstName: "Nicole",
                 lastName: "Pearson",
                 country: "Belarus",
-                style: "Signer",
-                discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                photo: "http://placehold.it/100x100"
+                style: "Singer",
+                description: "Read, out with friends, listen to music, draw and learn new things.",
+                photo: "images/placeholder.svg"
             }
         ];
 
@@ -369,52 +369,52 @@ angular.module('iConnectApp')
         };
 
         var allArtists = {
-            "Signer": {
+            "Singer": {
                 artistList: [
                     {
                         id: 0,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 1,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 2,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 3,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 4,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     }
                 ]
             },
@@ -426,8 +426,8 @@ angular.module('iConnectApp')
                         lastName: "Pearson",
                         country: "Belarus",
                         style: "Dj's",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 1,
@@ -435,8 +435,8 @@ angular.module('iConnectApp')
                         lastName: "Pearson",
                         country: "Belarus",
                         style: "Dj's",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 2,
@@ -444,8 +444,8 @@ angular.module('iConnectApp')
                         lastName: "Pearson",
                         country: "Belarus",
                         style: "Dj's",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 3,
@@ -453,8 +453,8 @@ angular.module('iConnectApp')
                         lastName: "Pearson",
                         country: "Belarus",
                         style: "Dj's",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 4,
@@ -462,8 +462,8 @@ angular.module('iConnectApp')
                         lastName: "Pearson",
                         country: "Belarus",
                         style: "Dj's",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     }
                 ]
             },
@@ -475,44 +475,44 @@ angular.module('iConnectApp')
                         lastName: "Pearson",
                         country: "Belarus",
                         style: "Music Band",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 1,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 2,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 3,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 4,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     }
                 ]
             },
@@ -524,44 +524,44 @@ angular.module('iConnectApp')
                         lastName: "Pearson",
                         country: "Belarus",
                         style: "MC",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 1,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 2,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 3,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 4,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                 ]
             },
@@ -573,44 +573,44 @@ angular.module('iConnectApp')
                         lastName: "Pearson",
                         country: "Belarus",
                         style: "Dancer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 1,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 2,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 3,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 4,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                 ]
             },
@@ -622,44 +622,44 @@ angular.module('iConnectApp')
                         lastName: "Pearson",
                         country: "Belarus",
                         style: "Painter",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 1,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 2,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 3,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     },
                     {
                         id: 4,
                         firstName: "Nicole",
                         lastName: "Pearson",
                         country: "Belarus",
-                        style: "Signer",
-                        discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "http://placehold.it/100x100"
+                        style: "Singer",
+                        description: "Read, out with friends, listen to music, draw and learn new things.",
+                        photo: "images/placeholder.svg"
                     }
                 ]
             }

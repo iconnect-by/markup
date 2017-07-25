@@ -9,108 +9,116 @@ angular.module('iConnectApp')
                 firstName: "Nicole",
                 lastName: "Pearson",
                 country: "Belarus",
-                style: "Signer",
-                discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                photo: "http://placehold.it/100x100"
+                style: "Singer",
+                description: "Read, out with friends, listen to music, draw and learn new things.",
+                photo: "images/placeholder.svg"
             },
             {
                 id: 1,
+                firstName: "John",
+                lastName: "Cena",
+                country: "America",
+                style: "Singer",
+                description: "The Cenation Leader, The Champ, The Face of the WWE, The Hustle Loyalty & Respect Soldier, The Chain Gang Soldier, The Doctor of Thuganomics, Mr. Money in the Bank, Mr. P, The Prototype.",
+                photo: "images/placeholder.svg"
+            },
+            {
+                id: 2,
+                firstName: "Lana",
+                lastName: "Del Rey",
+                country: "Belarus",
+                style: "Singer",
+                description: "Read, out with friends, listen to music, draw and learn new things.",
+                photo: "images/placeholder.svg"
+            },
+            {
+                id: 3,
                 firstName: "Nicole",
                 lastName: "Pearson",
                 country: "Belarus",
-                style: "Signer",
-                discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                photo: "http://placehold.it/100x100"
+                style: "Singer",
+                description: "Read, out with friends, listen to music, draw and learn new things.",
+                photo: "images/placeholder.svg"
+            },
+            {
+                id: 4,
+                firstName: "Nicole",
+                lastName: "Pearson",
+                country: "Belarus",
+                style: "Singer",
+                description: "Read, out with friends, listen to music, draw and learn new things.",
+                photo: "images/placeholder.svg"
+            },
+            {
+                id: 5,
+                firstName: "Nicole",
+                lastName: "Pearson",
+                country: "Belarus",
+                style: "Singer",
+                description: "Read, out with friends, listen to music, draw and learn new things.",
+                photo: "images/placeholder.svg"
             }];
         $scope.organizationList = [
             {
                 id: 0,
                 title: "Sura Records",
                 location: "Belarus",
-                discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                photo: "http://placehold.it/100x100"
+                description: "Read, out with friends, listen to music, draw and learn new things.",
+                photo: "images/placeholder.svg"
             },
             {
                 id: 1,
                 title: "Pary Rai",
                 location: "Belarus",
-                discrabe: "Read, out with friends, listen to music, draw and learn new things.",
-                photo: "http://placehold.it/100x100"
+                description: "Read, out with friends, listen to music, draw and learn new things.",
+                photo: "images/placeholder.svg"
             }
         ];
         $scope.eventsArt = [
             {
                 id: 0,
                 title: 'Romantic Ballads',
-                imgUrl: 'http://placehold.it/150x200',
-                eventText: 'Read, out with friends, listen to music, draw and learn new things.',
+                imgUrl: 'images/placeholder.svg',
+                eventText: '<p>A purpose is the eternal condition for success.Every former smoker can tell you just how hard it is to stop smoking cigarettes. </p> <p>A purpose is the eternal condition for success.Every former smoker can tell you just how hard it is to stop smoking cigarettes. </p> <p>A purpose is the eternal condition for success.Every former smoker can tell you just how hard it is to stop smoking cigarettes. </p>',
                 eventType: 'Concert',
                 eventLocation: 'UK, London',
                 eventDate: '12 nov 2016, 22:00 - 5:00',
                 eventArtist: [
                     {
+                        id: 0,
+                        artistImg: 'images/placeholder.svg'
+                    },
+                    {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
-                    },
-                    {
-                        id: 1,
-                        artistImg: 'http://placehold.it/60x60'
-                    },
-                    {
-                        id: 0,
-                        artistImg: 'images/Add_small@2x.png'
-                    },
-                    {
-                        id: 0,
-                        artistImg: 'images/Add_small@2x.png'
-                    },
-                    {
-                        id: 0,
-                        artistImg: 'images/Add_small@2x.png'
+                        artistImg: 'images/placeholder.svg'
                     }
                 ]
 
             },
             {
-                id: 0,
+                id: 1,
                 title: 'Romantic Ballads',
-                imgUrl: 'http://placehold.it/150x200',
+                imgUrl: 'images/placeholder.svg',
                 eventText: 'Read, out with friends, listen to music, draw and learn new things.',
                 eventType: 'Concert',
                 eventLocation: 'UK, London',
                 eventDate: '12 nov 2016, 22:00 - 5:00',
                 eventArtist: [
                     {
-                        id: 1,
-                        artistImg: 'http://placehold.it/60x60'
-                    },
-                    {
-                        id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        id: 0,
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
-                        id: 1,
-                        artistImg: 'http://placehold.it/60x60'
+                        id: 2,
+                        artistImg: 'images/placeholder.svg'
                     },
                     {
-                        id: 0,
-                        artistImg: 'images/Add_small@2x.png'
-                    },
-                    {
-                        id: 0,
-                        artistImg: 'images/Add_small@2x.png'
-                    },
-                    {
-                        id: 0,
-                        artistImg: 'images/Add_small@2x.png'
-                    },
-                    {
-                        id: 0,
-                        artistImg: 'images/Add_small@2x.png'
+                        id: 3,
+                        artistImg: 'images/placeholder.svg'
                     }
                 ]
 
@@ -248,6 +256,49 @@ angular.module('iConnectApp')
                     off: 'images/Add_small@2x.png'
                 }
             }
+        ];
+
+        $scope.icDocuments = [
+            {
+                id: 0,
+                title: 'Vinyl Banners',
+                date: '12 Nov 2016, 22:00 - 05:00'
+            },
+            {
+                id: 1,
+                title: 'Truck Side Advertising',
+                date: '12 Nov 2016, 22:00 - 05:00'
+            },
+            {
+                id: 2,
+                title: 'Converter Ipod Video',
+                date: '12 Nov 2016, 22:00 - 05:00'
+            },
+            {
+                id: 3,
+                title: 'Capt N Salsa',
+                date: '12 Nov 2016, 22:00 - 05:00'
+            },
+            {
+                id: 4,
+                title: 'Is Lasik Right For Me',
+                date: '12 Nov 2016, 22:00 - 05:00'
+            },
+            {
+                id: 5,
+                title: 'Barbeque Techniques',
+                date: '12 Nov 2016, 22:00 - 05:00'
+            },
+            {
+                id: 6,
+                title: 'When The Morning Dawns',
+                date: '12 Nov 2016, 22:00 - 05:00'
+            },
+            // {
+            //     id: 7,
+            //     title: 'How To Set Intentions',
+            //     date: '12 Nov 2016, 22:00 - 05:00'
+            // },
         ];
 
         $scope.getIcon = function (data) {

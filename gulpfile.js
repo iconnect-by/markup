@@ -67,7 +67,7 @@ gulp.task('fonts', function(){
         .src([
             'app/fonts/**/*.*'
         ])
-        .pipe(gulp.dest('dist/fonts'));
+        .pipe(gulp.dest(paths.dist + 'fonts/'));
 });
 
 gulp.task('video', function(){
@@ -75,7 +75,7 @@ gulp.task('video', function(){
         .src([
             'app/video/**/*.*'
         ])
-        .pipe(gulp.dest('dist/video'));
+        .pipe(gulp.dest(paths.dist + 'video/'));
 });
 
 gulp.task('watch', function() {

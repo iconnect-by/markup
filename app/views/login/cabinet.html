@@ -1,162 +1,322 @@
 <section class="cabinet-section" ng-controller="RegistrationController">
     <!-- card -->
-    <div class="container-fluid">
-        <div class="row row-content margin-top-15 padding-left-20 padding-right-20">
-            <div class="col-sm-4">
-                <img alt="user image" src="http://placehold.it/60x60" class="img-circle img-responsive card-photo pull-left margin-right-10">
-                <h2>Johnny van Djick</h2>
-                <h6><span>Standart Account</span> / <span>Balance $ 1 345.45 </span> </h6>
-            </div>
-            <div class="col-sm-8">
-                <div class="btn-group pull-right">
-                    <button class="btn btn-def margin-right-20">GET A PRO ACCOUNT</button>
-                    <button class="btn btn-aster"><i class="fa fa-cog fa-2x" aria-hidden="true"></i></button>
-                </div>
-            </div>
-        </div>
+    <div class="container">
+        <div class="row header-container">
 
-        <div class="row row-content margin-top-15">
-            <ul class="nav nav-tabs padding-left-20 padding-right-20" role="tablist">
-                <li class="active">
-                    <a data-target='#dashboard' aria-controls="dashboard" role="tab" data-toggle="tab">Dashboard</a>
-                </li>
-                <li>
-                    <a data-target='#your-artist' aria-controls="your-artist" role="tab" data-toggle="tab">Your
-                        Artist</a>
-                </li>
-                <li>
-                    <a data-target='#your-organization' aria-controls="your-organization" role="tab" data-toggle="tab">Your
-                        Organization</a>
-                </li>
-                <li>
-                    <a data-target='#your-events' aria-controls="your-events" role="tab" data-toggle="tab">Your
-                        Events</a>
-                </li>
+            <div class="col-md-8 user-info">
+                <div class="user-info-header">
+                    <div class="left-side">
+                        <img src="images/placeholder.svg" class="img-circle img-responsive" alt="user image">
+                    </div>
+                    <div class="right-side">
+                        <h2>Johnny van Djick</h2>
+                        <div class="ic-text text-grey medium">Standart Account / Balance $ 1 345.45</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 user-config-menu">
+                <a href="#" class="btn btn-config pull-right"><i class="fa fa-cog fa-lg" aria-hidden="true"></i></a>
+                <a href="#" class="ic-btn ic-btn-orange big pull-right">Get a pro account</a>
+            </div>
+
+        </div><!--.row-->
+
+        <div class="row">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="active"><a href="#" data-target='#dashboard' data-toggle="tab" onclick="return false;">Dashboard</a></li>
+                <li><a href="#" data-target='#artist' data-toggle="tab" onclick="return false;">Your Artist</a></li>
+                <li><a href="#" data-target='#organization' data-toggle="tab" onclick="return false;">Your Organization</a></li>
+                <li><a href="#" data-target='#events' data-toggle="tab" onclick="return false;">Your Events</a></li>
+                <li><a href="#" data-target='#documents' data-toggle="tab" onclick="return false;">Your Documents</a></li>
+                <li><a href="#" data-target='#statistics' data-toggle="tab" onclick="return false;">Statistics</a></li>
             </ul>
+
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane active in" id="dashboard">
-                    <div class="container-fluid padding-left-20 padding-right-20">
-                        <label class="section-title-black">New Artist</label>
-                        <div class="row row-content">
-                            <div class="col-sm-3 margin-top-10 padding-left-05 padding-right-05"
-                                 ng-repeat="art in artistList">
-                                <div class="first-signer">
-                                    <div class="divider">
-                                        <img ng-src="{{ art.photo }}" alt="" class="img-circle img-responsive">
-                                        <span class="display-span">{{ art.firstName}} {{ art.lastName}}
-                                      <span class="signer-describe">{{ art.discrabe}}</span></span>
-                                    </div>
-                                    <div class="artist-footer">
-                                        <span class="small-grey-text">{{ art.country}}</span>
-                                        <span class="pull-right small-default-text"><strong>{{ art.style}}</strong></span>
-                                    </div>
-                                </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>New Artist</h3>
                             </div>
-                        </div>
-                        <label class="margin-top-30 section-title-black">New Organization</label>
-                        <div class="row row-content">
-                            <div class="col-sm-3 margin-top-10" ng-repeat="org in organizationList">
+                        </div><!--.row-->
+                        <div class="row">
+                            <div class="col-md-3" ng-repeat="art in artistList">
+                                <div class="artist-card">
+                                    <div class="row card-header">
+                                        <div class="col-xs-7 artist-avatar">
+                                            <img src="{{ art.photo }}" class="img-responsive img-circle" alt="avatar">
+                                        </div>
+                                        <div class="col-xs-5 artist-info">
+                                            <div class="name">{{ art.firstName}} {{ art.lastName}}</div>
+                                            <div class="description">
+                                                <p>{{ art.description}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row card-footer">
+                                        <div class="col-xs-7 left-part">
+                                            <p>{{ art.country}}</p>
+                                        </div>
+                                        <div class="col-xs-5 right-part">
+                                            <p>{{ art.style}}</p>
+                                        </div>
+                                    </div>
+                                </div><!--.artist-card-->
+                            </div><!--.col-->
+                        </div><!--.row-->
 
-                            <div class="first-signer">
-                                <div class="divider">
-                                    <img ng-src="{{ org.photo }}" alt="" class="img-responsive">
-                                    <span class="display-span">{{ org.title}}
-                                        <span class="signer-describe">{{ org.discrabe}}</span>
-                                    </span>
-                                </div>
-                                <div class="artist-footer">
-                                    <span class="small-grey-text">{{ org.location}}</span>
-                                </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>New Organization</h3>
                             </div>
-                                </div>
-                        </div>
-                        <label class="margin-top-30 section-title-black">New Event</label>
-                        <div class="row row-content">
-                            <div class="col-sm-3 margin-top-10" ng-repeat="event in eventsArt">
-                                <ng-include src="'views/template/event.html'"/>
+                        </div><!--.row-->
+                        <div class="row">
+                            <div class="col-md-3" ng-repeat="org in organizationList">
+                                <div class="organization-card">
+                                    <div class="row card-header">
+                                        <div class="col-xs-7 organization-avatar">
+                                            <img src="{{ org.photo }}" class="img-responsive" alt="avatar">
+                                        </div>
+                                        <div class="col-xs-5 organization-info">
+                                            <div class="name">{{ org.title}}</div>
+                                            <div class="description">
+                                                <p>{{ org.description}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row card-footer">
+                                        <div class="col-xs-6 left-part">
+                                            <p>{{ org.location}}</p>
+                                        </div>
+                                        <div class="col-xs-6 right-part"></div>
+                                    </div>
+                                </div><!--.organization-card-->
+                            </div><!--.col-->
+                        </div><!--.row-->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>New Event</h3>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div role="tabpanel" class="tab-pane fade" id="your-artist">
+                        </div><!--.row-->
+                        <div class="row">
+                            <div class="col-md-3" ng-repeat="event in eventsArt">
+                                <div class="event-card">
+                                    <div class="container-fluid">
+                                        <div class="row card-header">
+                                            <div class="col-xs-12 event-avatar">
+                                                <img src="images/placeholder.svg" class="img-responsive" alt="avatar">
+                                            </div>
+                                            <div class="col-xs-12 event-info">
+                                                <h4 class="ic-title title-4 name">{{ event.title }}</h4>
+                                                <div class="ic-text text-grey small subtext">{{ event.eventDate }}</div>
+                                                <div class="description ic-text text-default small">
+                                                    <!--<p>{{ event.eventText }}</p>-->
+                                                    <p ng-bind-html="event.eventText"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="people">
+                                            <a href="#" class="people-link" ng-repeat="man in event.eventArtist">
+                                                <img src="{{ man.artistImg }}" class="img-responsive img-circle" alt="pavatar">
+                                            </a>
+                                            <a href="#" class="people-link-add">
+                                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                        <div class="row card-footer">
+                                            <div class="col-xs-6 left-part">
+                                                <p>{{event.eventLocation}}</p>
+                                            </div>
+                                            <div class="col-xs-6 right-part">
+                                                <p>{{event.eventType}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--.event-card-->
+                            </div><!--.col-->
+                        </div><!--.row-->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>New Document</h3>
+                            </div>
+                        </div><!--.row-->
+                        <div class="row">
+                            <div class="col-md-3" ng-repeat="doc in icDocuments">
+                                <div class="document-card">
+                                    <h4 class="ic-title title-4">{{ doc.title }}</h4>
+                                    <div class="ic-text text-grey small subtext">{{ doc.date }}</div>
+                                </div><!--.document-card-->
+                            </div><!--.col-->
+                        </div><!--.row-->
+
+                    </div><!--.container-fluid-->
+                </div><!--.tabpanel-->
+
+
+                <div role="tabpanel" class="tab-pane" id="artist">
                     <div class="container-fluid">
-                        <div class="row row-content padding-left-20 padding-right-20">
-                            <div class="col-sm-3 margin-top-10 padding-left-05 padding-right-05"
-                                 ng-repeat="art in artistList">
-                                <div class=" first-signer">
-                                    <div class="divider">
-                                        <img ng-src="{{ art.photo }}" alt="" class="img-circle img-responsive">
-                                        <span class="display-span">{{ art.firstName}} {{ art.lastName}}
-                                      <span class="signer-describe">{{ art.discrabe}}</span></span>
+                        <div class="row">
+                            <div class="col-md-3" ng-repeat="art in artistList">
+                                <div class="artist-card">
+                                    <div class="row card-header">
+                                        <div class="col-xs-7 artist-avatar">
+                                            <img src="{{ art.photo }}" class="img-responsive img-circle" alt="avatar">
+                                        </div>
+                                        <div class="col-xs-5 artist-info">
+                                            <div class="name">{{ art.firstName}} {{ art.lastName}}</div>
+                                            <div class="description">
+                                                <p>{{ art.description}}</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="artist-footer">
-                                        <span class="small-grey-text">{{ art.country}}</span>
-                                        <span class="pull-right small-default-text"><strong>{{ art.style}}</strong></span>
+                                    <div class="row card-footer">
+                                        <div class="col-xs-7 left-part">
+                                            <p>{{ art.country}}</p>
+                                        </div>
+                                        <div class="col-xs-5 right-part">
+                                            <p>{{ art.style}}</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3 margin-top-10 padding-left-05 padding-right-05">
-                                <div class="first-signer">
-                                    <div class="text-center padding-left-05 padding-right-05">
-                                        <span>Create a new Artist</span><br/>
-                                        <span class="signer-describe">This page presents you as an artist of the
-                                            chosen genre and allows you to work with the organization</span><br/>
-                                        <button class="btn btn-create-page margin-top-10" ui-sref="app.create-artist">Create Page</button>
+                                </div><!--.artist-card-->
+                            </div><!--.col-->
+                            <div class="col-md-3">
+                                <div class="add-new-card">
+                                    <div class="card-content">
+                                        <div class="title">Create a new artist page</div>
+                                        <p>This page presents you as an artist of the chosen genre and allows you to work with the organizers</p>
+                                        <button class="ic-btn ic-btn-blue big">Create page</button>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
+                                </div><!--.new-card-->
+                            </div><!--.col-->
+                        </div><!--.row-->
                     </div>
-                </div>
-                <div role="tabpanel" class="tab-pane fade" id="your-organization">
+                </div><!--.tabpanel-->
+
+
+                <div role="tabpanel" class="tab-pane" id="organization">
                     <div class="container-fluid">
-                        <div class="row row-content padding-left-20 padding-right-20">
-                            <div class="col-sm-3 margin-top-10" ng-repeat="org in organizationList">
-                                <div class="first-signer">
-                                    <div class="divider">
-                                        <img ng-src="{{ org.photo }}" alt="" class="img-responsive">
-                                        <span class="display-span">{{ org.title}}
-                                        <span class="signer-describe">{{ org.discrabe}}</span>
-                                    </span>
+                        <div class="row">
+                            <div class="col-md-3" ng-repeat="org in organizationList">
+                                <div class="organization-card">
+                                    <div class="row card-header">
+                                        <div class="col-xs-7 organization-avatar">
+                                            <img src="{{ org.photo }}" class="img-responsive" alt="avatar">
+                                        </div>
+                                        <div class="col-xs-5 organization-info">
+                                            <div class="name">{{ org.title}}</div>
+                                            <div class="description">
+                                                <p>{{ org.description}}</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="artist-footer">
-                                        <span class="small-grey-text">{{ org.location}}</span>
+                                    <div class="row card-footer">
+                                        <div class="col-xs-6 left-part">
+                                            <p>{{ org.location}}</p>
+                                        </div>
+                                        <div class="col-xs-6 right-part"></div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3 margin-top-10 padding-left-05 padding-right-05">
-                                <div class="first-signer">
-                                    <div class="text-center padding-left-05 padding-right-05">
-                                        <span>Create a new organization page</span><br/><br/>
-                                        <span class="signer-describe">This page presents you as an artist of the
-                                            chosen genre and allows you to work with the organization</span><br/>
-                                        <button class="btn btn-create-page margin-top-10" ui-sref="app.create-organization">Create Page</button>
+                                </div><!--.organization-card-->
+                            </div><!--.col-->
+                            <div class="col-md-3">
+                                <div class="add-new-card">
+                                    <div class="card-content">
+                                        <div class="title">Create a new organization page</div>
+                                        <p>This page presents you as an organization of the chosen type and allows you to work with the artists</p>
+                                        <button class="ic-btn ic-btn-blue big">Create page</button>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
+                                </div><!--.new-card-->
+                            </div><!--.col-->
+                        </div><!--.row-->
                     </div>
-                </div>
-                <div role="tabpanel" class="tab-pane fade" id="your-events">
+                </div><!--.tabpanel-->
+
+
+                <div role="tabpanel" class="tab-pane" id="events">
                     <div class="container-fluid">
-                        <div class="row row-content padding-left-20 padding-right-20">
-                            <div class="col-sm-3 margin-top-10" ng-repeat="event in eventsArt">
-                                <ng-include src="'views/template/event.html'"/>
-                            </div>
-                            <div class="col-sm-3 margin-top-10 padding-left-05 padding-right-05">
-                                <div class="first-signer">
-                                    <div class="text-center padding-left-05 padding-right-05">
-                                        <span>Create a new event</span><br/><br/>
-                                        <span class="signer-describe">This page presents you as an artist of the
-                                            chosen genre and allows you to work with the organization</span><br/>
-                                        <button class="btn btn-create-page margin-top-10">Create Page</button>
+                        <div class="row">
+                            <div class="col-md-3" ng-repeat="event in eventsArt">
+                                <div class="event-card">
+                                    <div class="container-fluid">
+                                        <div class="row card-header">
+                                            <div class="col-xs-12 event-avatar">
+                                                <img src="images/placeholder.svg" class="img-responsive" alt="avatar">
+                                            </div>
+                                            <div class="col-xs-12 event-info">
+                                                <h4 class="ic-title title-4 name">{{ event.title }}</h4>
+                                                <div class="ic-text text-grey small subtext">{{ event.eventDate }}</div>
+                                                <div class="description ic-text text-default small">
+                                                    <!--<p>{{ event.eventText }}</p>-->
+                                                    <p ng-bind-html="event.eventText"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="people">
+                                            <a href="#" class="people-link" ng-repeat="man in event.eventArtist">
+                                                <img src="{{ man.artistImg }}" class="img-responsive img-circle" alt="pavatar">
+                                            </a>
+                                            <a href="#" class="people-link-add">
+                                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                        <div class="row card-footer">
+                                            <div class="col-xs-6 left-part">
+                                                <p>{{event.eventLocation}}</p>
+                                            </div>
+                                            <div class="col-xs-6 right-part">
+                                                <p>{{event.eventType}}</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
+                                </div><!--.event-card-->
+                            </div><!--.col-->
+                            <div class="col-md-3">
+                                <div class="add-new-card">
+                                    <div class="card-content">
+                                        <div class="title">Create a new event</div>
+                                        <p>This page presents you as an organization of the chosen type and allows you to work with the artists</p>
+                                        <button class="ic-btn ic-btn-blue big">Create page</button>
+                                    </div>
+                                </div><!--.new-card-->
+                            </div><!--.col-->
+                        </div><!--.row-->
+                    </div>
+                </div><!--.tabpanel-->
+
+
+                <div role="tabpanel" class="tab-pane" id="documents">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3" ng-repeat="doc in icDocuments">
+                                <div class="document-card">
+                                    <h4 class="ic-title title-4">{{ doc.title }}</h4>
+                                    <div class="ic-text text-grey small subtext">{{ doc.date }}</div>
+                                </div><!--.document-card-->
+                            </div><!--.col-->
+
+                            <div class="col-md-3">
+                                <div class="add-new-card">
+                                    <div class="card-content">
+                                        <div class="title">Create a new doc</div>
+                                        <p>You can create the necessary documents for work using our templates</p>
+                                        <button class="ic-btn ic-btn-blue big">Create Document</button>
+                                    </div>
+                                </div><!--.new-card-->
+                            </div><!--.col-->
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                </div><!--.tabpanel-->
+
+
+                <div role="tabpanel" class="tab-pane" id="statistics">
+                    <div class="container-fluid">
+                        statistics
+                    </div>
+                </div><!--.tabpanel-->
+            </div><!--.tab-content-->
+        </div><!--.row-->
     </div>
 </section>

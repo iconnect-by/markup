@@ -1,7 +1,12 @@
 .navbar {
   &.navbar-default {
     background-color: @iConnect-white;
-    position: absolute;
+    //position: absolute;
+    //width: 100%;
+    border-color: transparent;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 0;
 
     &.transparent {
       background: transparent;
@@ -36,6 +41,7 @@
           line-height: 1.5;
           font-size: 16 * @rem;
           letter-spacing: .46px;
+          color: #333;
         }
       }
 
@@ -67,10 +73,12 @@
             font-weight: @fw-bold;
             letter-spacing: .29px;
 
-            &.search {
+            &.header-glifs {
               font-size: 16 * @rem;
               line-height: 3.66;
             }
+
+
           }
         }
       }
@@ -78,6 +86,32 @@
       .nav {
         &.navbar-nav {
           position: inherit;
+
+          &.navbar-right {
+            margin-right: 0;
+
+            .dropdown-menu {
+              padding-left: 20px;
+              padding-right: 20px;
+              border: none;
+
+              li {
+                &:not(:last-child) {
+                  border-bottom: 1px solid #fafafa;
+                }
+
+                a {
+                  font-family: @iConnect-font-semiBold;
+                  font-weight: @fw-semibold;
+                  font-size: 12 * @rem;
+                  line-height: 1.4167;
+                  letter-spacing: .34px;
+                  color: #333;
+                  padding: 16px 0 17px;
+                }
+              }
+            }
+          }
 
           .ic-btn {
             margin-top: (@top-menu-height - @max-button-height) / 2;
@@ -88,6 +122,22 @@
           &>a {
             border: 0;
             border-bottom: 2px solid transparent;
+            position: relative;
+            color: #333;
+
+            &.alerts {
+              span {
+                position: absolute;
+                background-color: #f00;
+                line-height: 1.363;
+                padding: 0 3.5px;
+                color: #fff;
+                font-size: 11 * @rem;
+                border-radius: 2px;
+                bottom: 15px;
+                right: -8px;
+              }
+            }
 
             &:hover, &:active, &:focus {
               color: @iConnect-orange;
@@ -100,10 +150,31 @@
         }
       }
 
+      .navbar-nav {
+        &>.open {
+          a {
+            background-color: transparent;
+            background-image: none;
+            box-shadow: none;
+
+            &:focus, &:hover {
+              background-color: transparent;
+              background-image: none;
+              box-shadow: none;
+            }
+          }
+        }
+      }
+
       .dropdown {
         &>.dropdown-toggle {
-          padding-top: 16px;
-          padding-bottom: 12px;
+          span {
+            img {
+              display: inline-block;
+              margin-right: 9px;
+              width: 30px;
+            }
+          }
         }
       }
     }
