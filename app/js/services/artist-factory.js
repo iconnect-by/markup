@@ -13,7 +13,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 1,
@@ -22,7 +22,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 2,
@@ -31,7 +31,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 3,
@@ -40,7 +40,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 4,
@@ -49,7 +49,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     }
                 ]
             },
@@ -63,7 +63,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 1,
@@ -72,7 +72,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 2,
@@ -81,7 +81,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 3,
@@ -90,7 +90,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 4,
@@ -99,7 +99,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     }
                 ]
             },
@@ -113,7 +113,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 1,
@@ -122,7 +122,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 2,
@@ -131,7 +131,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 3,
@@ -140,7 +140,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 4,
@@ -149,7 +149,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     }
                 ]
             },
@@ -163,7 +163,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 1,
@@ -172,7 +172,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 2,
@@ -181,7 +181,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 3,
@@ -190,7 +190,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 4,
@@ -199,7 +199,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                 ]
             },
@@ -213,7 +213,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 1,
@@ -222,7 +222,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 2,
@@ -231,7 +231,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 3,
@@ -240,7 +240,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 4,
@@ -249,7 +249,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                 ]
             },
@@ -263,7 +263,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 1,
@@ -272,7 +272,7 @@ angular.module('iConnectApp')
                         country: "America",
                         style: "Singer",
                         description: "The Cenation Leader, The Champ, The Face of the WWE, The Hustle Loyalty & Respect Soldier, The Chain Gang Soldier, The Doctor of Thuganomics, Mr. Money in the Bank, Mr. P, The Prototype.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 2,
@@ -281,7 +281,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 3,
@@ -290,7 +290,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 4,
@@ -299,7 +299,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     }
                 ]
             }
@@ -313,7 +313,7 @@ angular.module('iConnectApp')
                 country: "Belarus",
                 style: "Singer",
                 description: "Read, out with friends, listen to music, draw and learn new things.",
-                photo: "images/placeholder.svg"
+                photo: "../../images/placeholder.svg"
             },
             {
                 id: 1,
@@ -322,7 +322,7 @@ angular.module('iConnectApp')
                 country: "Belarus",
                 style: "Singer",
                 description: "Read, out with friends, listen to music, draw and learn new things.",
-                photo: "images/placeholder.svg"
+                photo: "../../images/placeholder.svg"
             },
             {
                 id: 2,
@@ -331,7 +331,7 @@ angular.module('iConnectApp')
                 country: "Belarus",
                 style: "Singer",
                 description: "Read, out with friends, listen to music, draw and learn new things.",
-                photo: "images/placeholder.svg"
+                photo: "../../images/placeholder.svg"
             },
             {
                 id: 3,
@@ -340,7 +340,7 @@ angular.module('iConnectApp')
                 country: "Belarus",
                 style: "Singer",
                 description: "Read, out with friends, listen to music, draw and learn new things.",
-                photo: "images/placeholder.svg"
+                photo: "../../images/placeholder.svg"
             },
             {
                 id: 4,
@@ -349,7 +349,7 @@ angular.module('iConnectApp')
                 country: "Belarus",
                 style: "Singer",
                 description: "Read, out with friends, listen to music, draw and learn new things.",
-                photo: "images/placeholder.svg"
+                photo: "../../images/placeholder.svg"
             }
         ];
 
@@ -378,7 +378,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 1,
@@ -387,7 +387,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 2,
@@ -396,7 +396,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 3,
@@ -405,7 +405,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 4,
@@ -414,7 +414,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     }
                 ]
             },
@@ -427,7 +427,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Dj's",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 1,
@@ -436,7 +436,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Dj's",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 2,
@@ -445,7 +445,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Dj's",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 3,
@@ -454,7 +454,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Dj's",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 4,
@@ -463,7 +463,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Dj's",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     }
                 ]
             },
@@ -476,7 +476,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Music Band",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 1,
@@ -485,7 +485,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 2,
@@ -494,7 +494,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 3,
@@ -503,7 +503,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 4,
@@ -512,7 +512,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     }
                 ]
             },
@@ -525,7 +525,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "MC",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 1,
@@ -534,7 +534,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 2,
@@ -543,7 +543,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 3,
@@ -552,7 +552,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 4,
@@ -561,7 +561,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                 ]
             },
@@ -574,7 +574,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Dancer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 1,
@@ -583,7 +583,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 2,
@@ -592,7 +592,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 3,
@@ -601,7 +601,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 4,
@@ -610,7 +610,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                 ]
             },
@@ -623,7 +623,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Painter",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 1,
@@ -632,7 +632,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 2,
@@ -641,7 +641,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 3,
@@ -650,7 +650,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     },
                     {
                         id: 4,
@@ -659,7 +659,7 @@ angular.module('iConnectApp')
                         country: "Belarus",
                         style: "Singer",
                         description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "images/placeholder.svg"
+                        photo: "../../images/placeholder.svg"
                     }
                 ]
             }

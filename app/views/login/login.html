@@ -6,7 +6,7 @@
                 $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
             }).trigger('blur');
         </script>
-        <video id="background-video" class="video" autoplay muted poster="images/background2.png">
+        <video id="background-video" class="video" autoplay muted poster="../../images/background2.png">
             <source src="video/video_background1.mp4" type="video/mp4">
             <!--<source src="video/demo.ogv" type="video/ogg">-->
             <!--<source src="video/demo.webm" type="video/webm">-->
@@ -42,7 +42,7 @@
 
                                     <div class="form-group pwd-group">
                                         <label class="control-label" for="signup-pass">Password</label>
-                                        <a href="#" class="see-pwd"><img src="images/eye.png" alt="eye"></a>
+                                        <a href="#" class="see-pwd"><img src="../../images/eye.png" alt="eye"></a>
                                         <input id="signup-pass" class="form-control" autocomplete="off" type="password" name="password" ng-attr-type="{{ showPassword ? 'text' : 'password' }}" ng-model="userReg.password" ng-required="true">
                                         <p class="error" ng-show="signup.password.$invalid && signup.email.$touched">Password is required</p>
                                     </div>
@@ -61,7 +61,7 @@
                                     </div>
                                     <div class="form-group pwd-group">
                                         <label class="control-label" for="signin-pass">Password</label>
-                                        <a href="#" class="see-pwd"><img src="images/eye.png" alt="eye"></a>
+                                        <a href="#" class="see-pwd"><img src="../../images/eye.png" alt="eye"></a>
                                         <input id="signin-pass" class="form-control" autocomplete="off" type="password" name="password" ng-model="user.password" ng-required="true">
                                         <p class="error" ng-show="signin.password.$invalid && signin.email.$touched">Password is required</p>
                                     </div>
@@ -75,32 +75,32 @@
                                 <ul class="social-icons list-unstyled">
                                     <li class="social-icons__item">
                                         <a href="#">
-                                            <img class="img-circle img-responsive" src="images/soundcloud@2x.png" alt="soundCloud">
+                                            <img class="img-circle img-responsive" src="../../images/soundcloud@2x.png" alt="soundCloud">
                                         </a>
                                     </li>
                                     <li class="social-icons__item">
                                         <a href="">
-                                            <img class="img-circle img-responsive" src="images/insta@2x.png" alt="instagram">
+                                            <img class="img-circle img-responsive" src="../../images/insta@2x.png" alt="instagram">
                                         </a>
                                     </li>
                                     <li class="social-icons__item">
                                         <a href="#">
-                                            <img class="img-circle img-responsive" src="images/vimeo@2x.png" alt="vimeo">
+                                            <img class="img-circle img-responsive" src="../../images/vimeo@2x.png" alt="vimeo">
                                         </a>
                                     </li>
                                     <li class="social-icons__item">
                                         <a href="#">
-                                            <img class="img-circle img-responsive" src="images/youtube@2x.png" alt="youtube">
+                                            <img class="img-circle img-responsive" src="../../images/youtube@2x.png" alt="youtube">
                                         </a>
                                     </li>
                                     <li class="social-icons__item">
                                         <a href="#">
-                                            <img class="img-circle img-responsive" src="images/twitter@2x.png" alt="twitter">
+                                            <img class="img-circle img-responsive" src="../../images/twitter@2x.png" alt="twitter">
                                         </a>
                                     </li>
                                     <li class="social-icons__item">
                                         <a href="#">
-                                            <img class="img-circle img-responsive" src="images/facebook@2x.png" alt="facebook">
+                                            <img class="img-circle img-responsive" src="../../images/facebook@2x.png" alt="facebook">
                                         </a>
                                     </li>
                                 </ul>

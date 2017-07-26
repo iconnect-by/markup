@@ -1,9 +1,9 @@
 <section class="profile-section" ng-controller="PersonalController">
-    <div class="container-fluid padding-left-20 padding-right-20">
-        <div class="row row-content margin-top-20">
-            <div class="col-sm-3 sidebar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
                 <div class="avatar text-center">
-                    <img src="images/placeholder.svg" alt="artist-img" class="img-circle img-responsive">
+                    <img src="../../images/placeholder.svg" alt="artist-img" class="img-circle img-responsive">
                 </div>
 
                 <div class="hero-actions">
@@ -15,13 +15,13 @@
                     <small class="hero-desc__caption">Singer</small>
                     <div class="artist-rating">
                         <ul class="list">
-                            <li class="item"><img src="images/Star_small_Full.png"></li>
-                            <li class="item"><img src="images/Star_small_Full.png"></li>
-                            <li class="item"><img src="images/Star_small_Full.png"></li>
-                            <li class="item"><img src="images/Star_small_Full.png"></li>
-                            <li class="item"><img src="images/Star_small_Full.png"></li>
-                            <li class="item"><img src="images/Star_small.png"></li>
-                            <li class="item"><img src="images/Star_small.png"></li>
+                            <li class="item"><img src="../../images/Star_small_Full.png"></li>
+                            <li class="item"><img src="../../images/Star_small_Full.png"></li>
+                            <li class="item"><img src="../../images/Star_small_Full.png"></li>
+                            <li class="item"><img src="../../images/Star_small_Full.png"></li>
+                            <li class="item"><img src="../../images/Star_small_Full.png"></li>
+                            <li class="item"><img src="../../images/Star_small.png"></li>
+                            <li class="item"><img src="../../images/Star_small.png"></li>
                         </ul>
                         <small class="value">Rating 5.35</small>
                     </div>
@@ -52,17 +52,17 @@
                         <ul class="social-icons">
                             <li class="social-icons__item">
                                 <a href="" id="share-fb-btn">
-                                    <img src="images/Facebook_icon.png" alt="facebook">
+                                    <img src="../../images/Facebook_icon.png" alt="facebook">
                                 </a>
                             </li>
                             <li class="social-icons__item">
                                 <a href="" id="share-twitter-btn">
-                                    <img src="images/Twitter_icon.png" alt="twitter">
+                                    <img src="../../images/Twitter_icon.png" alt="twitter">
                                 </a>
                             </li>
                             <li class="social-icons__item">
                                 <a href="">
-                                    <img src="images/YouTube_icon.png" alt="youtube" title="youtube">
+                                    <img src="../../images/YouTube_icon.png" alt="youtube" title="youtube">
                                 </a>
                             </li>
                         </ul>
@@ -70,7 +70,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-md-6">
                 <div class="row-content" ng-show="divShow == 'allMedia'">
                     <div class="col-sm-6">
                         <div class="media-content box-content">
@@ -82,28 +82,6 @@
                             <div class="empty">
                                 <div class="text">Upload a Photo</div>
                             </div>
-
-                            <!-- <div class="row">
-                                <div class="col-sm-4 h-photo-preview">
-                                 images<img src="http://placehold.it/75x75" alt="placeholder" width="75" height="75">
-                                </div>
-                                <div class="col-sm-4 h-photo-preview">
-                                 images<img src="http://placehold.it/75x75" alt="placeholder" width="75" height="75">
-                                </div>
-                                <div class="col-sm-4 h-photo-preview">
-                                 images<img src="http://placehold.it/75x75" alt="placeholder" width="75" height="75">
-                                </div>
-                                <div class="col-sm-4 h-photo-preview">
-                                 images<img src="http://placehold.it/75x75" alt="placeholder" width="75" height="75">
-                                </div>
-                                <div class="col-sm-4 h-photo-preview">
-                                 images<img src="http://placehold.it/75x75" alt="placeholder" width="75" height="75">
-                                </div>
-                                <div class="col-sm-4 h-photo-preview">
-                                 images<img src="http://placehold.it/75x75" alt="placeholder" width="75" height="75">
-                                </div>
-                            </div> -->
-
                             <div class="view-all">
                                 <a ng-click="showMedia('photo')">View All</a>
                             </div>
@@ -139,49 +117,15 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-sm-12 other-content margin-top-20">
-                        <label class="section-title-black">Other Activities of the organizer</label>
-                        <div class="row row-content">
-                        <div class="col-sm-6 margin-top-10" ng-repeat="event in eventsArt">
-                            <ng-include src="'views/template/event.html'"/>
-                        </div>
-                            </div>
-                    </div>
                 </div>
-                <div class="row-content" ng-show="divShow == 'photo'"
-                     ng-include="'views/template/photo-all.html'"></div>
-                <div class="row-content" ng-show="divShow == 'video'"
-                     ng-include="'views/template/video-all.html'"></div>
-                <div class="row-content" ng-show="divShow == 'music'"
-                     ng-include="'views/template/music-all.html'"></div>
+                <div class="row-content" ng-show="divShow == 'photo'" ng-include="'views/template/photo-all.html'"></div>
+                <div class="row-content" ng-show="divShow == 'video'" ng-include="'views/template/video-all.html'"></div>
+                <div class="row-content" ng-show="divShow == 'music'" ng-include="'views/template/music-all.html'"></div>
             </div>
 
-            <div class="col-sm-3 padding-00">
-                <div class="col-sm-12 box-content">
-                    <h3 class="box-content__title">Booking Artist's</h3>
-                    <div ui-calendar="uiConfig.calendar" ng-model="eventSources"></div>
-                    <form class="form-horizontal padding-bottom-10 margin-top-10" role="form">
-                        <fieldset>
-                            <div class="form-group">
-                                <label class="section-title-black col-sm-3 control-label" for="itunesSelect">Event</label>
-                                <div class="col-sm-9">
-                                    <select id="itunesSelect" ng-model="selecteditunesSelect"
-                                            ng-options="x for (x, y) in itunesSelect"></select>
-                                </div>
-                            </div>
-                            <div class="form-group ">
-                                <label class="section-title-black col-sm-3 control-label" for="bookCommit">Text</label>
-                                <div class="col-sm-9">
-                                    <textarea id="bookCommit" rows="4" cols="25" maxlength="140"></textarea>
-                                </div>
-                            </div>
-                            <div class="text-center">
-                                <button class="btn btn-block">Request to book</button>
-                            </div>
-                        </fieldset>
-                    </form>
-                </div>
+            <div class="col-md-3">
+                <img src="../../images/calendar-mock.png" class="img-responsive" alt="...">
+
                 <div class="col-sm-12 margin-top-10 box-content download">
                     <h3 class="box-content__title">Rider Download</h3>
                     <div class="btn-group text-center">

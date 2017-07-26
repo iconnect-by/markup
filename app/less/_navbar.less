@@ -1,35 +1,14 @@
 .navbar {
   &.navbar-default {
-    background-color: @iConnect-white;
-    //position: absolute;
-    //width: 100%;
+    background-color: @iConnect-white !important;
+    position: absolute;
     border-color: transparent;
     border-radius: 0;
     border: 0;
     margin-bottom: 0;
-
-    &.transparent {
-      background: transparent;
-      border-color: transparent;
-      color: #fff;
-
-      .navbar-brand {
-        color: @iConnect-white;
-        text-shadow: none;
-      }
-
-      .nav {
-        &>li {
-          &>a {
-            color: @iConnect-white;
-
-            &:hover, &:active, &:focus {
-              background: transparent;
-            }
-          }
-        }
-      }
-    }
+    box-shadow: none;
+    border-bottom: 1px solid #f2f2f2;
+    background-image: none;
 
     .navbar-content {
       border: 0;
@@ -58,7 +37,6 @@
       .nav {
         &>li {
           margin: 0 24px;
-          //line-height: 2;
 
           &:last-child {
             margin: 0 0 0 24px;
@@ -66,7 +44,6 @@
           &>a {
             text-transform: uppercase;
             padding: 0;
-            //line-height: 2;
             line-height: 5.8;
             display: inline-block;
             font-size: 10 * @rem;
@@ -190,6 +167,32 @@
               display: inline-block;
               margin-right: 9px;
               width: 30px;
+            }
+          }
+        }
+      }
+    }
+
+    &.transparent {
+      background: transparent !important;
+      border-color: transparent;
+      color: #fff;
+      border-bottom: 1px solid transparent;
+
+      .navbar-brand {
+        color: @iConnect-white !important;
+        text-shadow: none;
+      }
+
+      .nav {
+        &>li {
+          &>a {
+            color: @iConnect-white;
+            text-shadow: none;
+
+            &:hover, &:active, &:focus {
+              background: transparent;
+              color: @iConnect-orange;
             }
           }
         }

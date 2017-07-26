@@ -11,7 +11,7 @@ angular.module('iConnectApp')
                 country: "Belarus",
                 style: "Singer",
                 description: "Read, out with friends, listen to music, draw and learn new things.",
-                photo: "images/placeholder.svg"
+                photo: "../../images/placeholder.svg"
             },
             {
                 id: 1,
@@ -20,7 +20,7 @@ angular.module('iConnectApp')
                 country: "America",
                 style: "Singer",
                 description: "The Cenation Leader, The Champ, The Face of the WWE, The Hustle Loyalty & Respect Soldier, The Chain Gang Soldier, The Doctor of Thuganomics, Mr. Money in the Bank, Mr. P, The Prototype.",
-                photo: "images/placeholder.svg"
+                photo: "../../images/placeholder.svg"
             },
             {
                 id: 2,
@@ -29,7 +29,7 @@ angular.module('iConnectApp')
                 country: "Belarus",
                 style: "Singer",
                 description: "Read, out with friends, listen to music, draw and learn new things.",
-                photo: "images/placeholder.svg"
+                photo: "../../images/placeholder.svg"
             },
             {
                 id: 3,
@@ -38,7 +38,7 @@ angular.module('iConnectApp')
                 country: "Belarus",
                 style: "Singer",
                 description: "Read, out with friends, listen to music, draw and learn new things.",
-                photo: "images/placeholder.svg"
+                photo: "../../images/placeholder.svg"
             },
             {
                 id: 4,
@@ -47,7 +47,7 @@ angular.module('iConnectApp')
                 country: "Belarus",
                 style: "Singer",
                 description: "Read, out with friends, listen to music, draw and learn new things.",
-                photo: "images/placeholder.svg"
+                photo: "../../images/placeholder.svg"
             },
             {
                 id: 5,
@@ -56,7 +56,7 @@ angular.module('iConnectApp')
                 country: "Belarus",
                 style: "Singer",
                 description: "Read, out with friends, listen to music, draw and learn new things.",
-                photo: "images/placeholder.svg"
+                photo: "../../images/placeholder.svg"
             }];
         $scope.organizationList = [
             {
@@ -64,21 +64,21 @@ angular.module('iConnectApp')
                 title: "Sura Records",
                 location: "Belarus",
                 description: "Read, out with friends, listen to music, draw and learn new things.",
-                photo: "images/placeholder.svg"
+                photo: "../../images/placeholder.svg"
             },
             {
                 id: 1,
                 title: "Pary Rai",
                 location: "Belarus",
                 description: "Read, out with friends, listen to music, draw and learn new things.",
-                photo: "images/placeholder.svg"
+                photo: "../../images/placeholder.svg"
             }
         ];
         $scope.eventsArt = [
             {
                 id: 0,
                 title: 'Romantic Ballads',
-                imgUrl: 'images/placeholder.svg',
+                imgUrl: '../../images/placeholder.svg',
                 eventText: '<p>A purpose is the eternal condition for success.Every former smoker can tell you just how hard it is to stop smoking cigarettes. </p> <p>A purpose is the eternal condition for success.Every former smoker can tell you just how hard it is to stop smoking cigarettes. </p> <p>A purpose is the eternal condition for success.Every former smoker can tell you just how hard it is to stop smoking cigarettes. </p>',
                 eventType: 'Concert',
                 eventLocation: 'UK, London',
@@ -86,11 +86,11 @@ angular.module('iConnectApp')
                 eventArtist: [
                     {
                         id: 0,
-                        artistImg: 'images/placeholder.svg'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'images/placeholder.svg'
+                        artistImg: '../../images/placeholder.svg'
                     }
                 ]
 
@@ -98,7 +98,7 @@ angular.module('iConnectApp')
             {
                 id: 1,
                 title: 'Romantic Ballads',
-                imgUrl: 'images/placeholder.svg',
+                imgUrl: '../../images/placeholder.svg',
                 eventText: 'Read, out with friends, listen to music, draw and learn new things.',
                 eventType: 'Concert',
                 eventLocation: 'UK, London',
@@ -106,19 +106,19 @@ angular.module('iConnectApp')
                 eventArtist: [
                     {
                         id: 0,
-                        artistImg: 'images/placeholder.svg'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'images/placeholder.svg'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 2,
-                        artistImg: 'images/placeholder.svg'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 3,
-                        artistImg: 'images/placeholder.svg'
+                        artistImg: '../../images/placeholder.svg'
                     }
                 ]
 
@@ -130,64 +130,64 @@ angular.module('iConnectApp')
                 id: 0,
                 name: 'Dj',
                 icon: {
-                    on: 'images/Add_full@2x.png',
-                    off: 'images/Add_small@2x.png'
+                    on: '../../images/Add_full@2x.png',
+                    off: '../../images/Add_small@2x.png'
                 }
             },
             {
                 id: 1,
                 name: 'Musician',
                 icon: {
-                    on: 'images/Add_full@2x.png',
-                    off: 'images/Add_small@2x.png'
+                    on: '../../images/Add_full@2x.png',
+                    off: '../../images/Add_small@2x.png'
                 }
             },
             {
                 id: 2,
                 name: 'Vocalist',
                 icon: {
-                    on: 'images/Add_full@2x.png',
-                    off: 'images/Add_small@2x.png'
+                    on: '../../images/Add_full@2x.png',
+                    off: '../../images/Add_small@2x.png'
                 }
             },
             {
                 id: 3,
                 name: 'MC',
                 icon: {
-                    on: 'images/Add_full@2x.png',
-                    off: 'images/Add_small@2x.png'
+                    on: '../../images/Add_full@2x.png',
+                    off: '../../images/Add_small@2x.png'
                 }
             },
             {
                 id: 4,
                 name: 'Promoter',
                 icon: {
-                    on: 'images/Add_full@2x.png',
-                    off: 'images/Add_small@2x.png'
+                    on: '../../images/Add_full@2x.png',
+                    off: '../../images/Add_small@2x.png'
                 }
             },
             {
                 id: 5,
                 name: 'Event Leader',
                 icon: {
-                    on: 'images/Add_full@2x.png',
-                    off: 'images/Add_small@2x.png'
+                    on: '../../images/Add_full@2x.png',
+                    off: '../../images/Add_small@2x.png'
                 }
             },
             {
                 id: 6,
                 name: 'Musical group',
                 icon: {
-                    on: 'images/Add_full@2x.png',
-                    off: 'images/Add_small@2x.png'
+                    on: '../../images/Add_full@2x.png',
+                    off: '../../images/Add_small@2x.png'
                 }
             },
             {
                 id: 7,
                 name: 'Dancer',
                 icon: {
-                    on: 'images/Add_full@2x.png',
-                    off: 'images/Add_small@2x.png'
+                    on: '../../images/Add_full@2x.png',
+                    off: '../../images/Add_small@2x.png'
                 }
             }
         ];
@@ -196,64 +196,64 @@ angular.module('iConnectApp')
                 id: 0,
                 name: 'NightClub',
                 icon: {
-                    on: 'images/Add_full@2x.png',
-                    off: 'images/Add_small@2x.png'
+                    on: '../../images/Add_full@2x.png',
+                    off: '../../images/Add_small@2x.png'
                 }
             },
             {
                 id: 1,
                 name: 'Wedding',
                 icon: {
-                    on: 'images/Add_full@2x.png',
-                    off: 'images/Add_small@2x.png'
+                    on: '../../images/Add_full@2x.png',
+                    off: '../../images/Add_small@2x.png'
                 }
             },
             {
                 id: 2,
                 name: 'Birthday',
                 icon: {
-                    on: 'images/Add_full@2x.png',
-                    off: 'images/Add_small@2x.png'
+                    on: '../../images/Add_full@2x.png',
+                    off: '../../images/Add_small@2x.png'
                 }
             },
             {
                 id: 3,
                 name: 'Festival',
                 icon: {
-                    on: 'images/Add_full@2x.png',
-                    off: 'images/Add_small@2x.png'
+                    on: '../../images/Add_full@2x.png',
+                    off: '../../images/Add_small@2x.png'
                 }
             },
             {
                 id: 4,
                 name: 'Daytime Party',
                 icon: {
-                    on: 'images/Add_full@2x.png',
-                    off: 'images/Add_small@2x.png'
+                    on: '../../images/Add_full@2x.png',
+                    off: '../../images/Add_small@2x.png'
                 }
             },
             {
                 id: 5,
                 name: 'Private Party',
                 icon: {
-                    on: 'images/Add_full@2x.png',
-                    off: 'images/Add_small@2x.png'
+                    on: '../../images/Add_full@2x.png',
+                    off: '../../images/Add_small@2x.png'
                 }
             },
             {
                 id: 6,
                 name: 'Underground Party',
                 icon: {
-                    on: 'images/Add_full@2x.png',
-                    off: 'images/Add_small@2x.png'
+                    on: '../../images/Add_full@2x.png',
+                    off: '../../images/Add_small@2x.png'
                 }
             },
             {
                 id: 7,
                 name: 'Corporate Event',
                 icon: {
-                    on: 'images/Add_full@2x.png',
-                    off: 'images/Add_small@2x.png'
+                    on: '../../images/Add_full@2x.png',
+                    off: '../../images/Add_small@2x.png'
                 }
             }
         ];

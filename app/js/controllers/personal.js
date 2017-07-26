@@ -32,7 +32,7 @@ angular.module('iConnectApp')
             {
                 id: 0,
                 title: 'Romantic Ballads',
-                imgUrl: 'images/placeholder.svg',
+                imgUrl: '../../images/placeholder.svg',
                 eventText: 'Read, out with friends, listen to music, draw and learn new things.',
                 eventType: 'Concert',
                 eventLocation: 'UK, London',
@@ -40,23 +40,23 @@ angular.module('iConnectApp')
                 eventArtist: [
                     {
                         id: 1,
-                        artistImg: 'images/placeholder.svg'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'images/placeholder.svg'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: 'images/Add_small@2x.png'
+                        artistImg: '../../images/Add_small@2x.png'
                     },
                     {
                         id: 0,
-                        artistImg: 'images/Add_small@2x.png'
+                        artistImg: '../../images/Add_small@2x.png'
                     },
                     {
                         id: 0,
-                        artistImg: 'images/Add_small@2x.png'
+                        artistImg: '../../images/Add_small@2x.png'
                     }
                 ]
 
@@ -64,7 +64,7 @@ angular.module('iConnectApp')
             {
                 id: 0,
                 title: 'Romantic Ballads',
-                imgUrl: 'images/placeholder.svg',
+                imgUrl: '../../images/placeholder.svg',
                 eventText: 'Read, out with friends, listen to music, draw and learn new things.',
                 eventType: 'Concert',
                 eventLocation: 'UK, London',
@@ -72,35 +72,35 @@ angular.module('iConnectApp')
                 eventArtist: [
                     {
                         id: 1,
-                        artistImg: 'images/placeholder.svg'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'images/placeholder.svg'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'images/placeholder.svg'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'images/placeholder.svg'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: 'images/Add_small@2x.png'
+                        artistImg: '../../images/Add_small@2x.png'
                     },
                     {
                         id: 0,
-                        artistImg: 'images/Add_small@2x.png'
+                        artistImg: '../../images/Add_small@2x.png'
                     },
                     {
                         id: 0,
-                        artistImg: 'images/Add_small@2x.png'
+                        artistImg: '../../images/Add_small@2x.png'
                     },
                     {
                         id: 0,
-                        artistImg: 'images/Add_small@2x.png'
+                        artistImg: '../../images/Add_small@2x.png'
                     }
                 ]
 
@@ -108,7 +108,7 @@ angular.module('iConnectApp')
             {
                 id: 0,
                 title: 'Romantic Ballads',
-                imgUrl: 'images/placeholder.svg',
+                imgUrl: '../../images/placeholder.svg',
                 eventText: 'Read, out with friends, listen to music, draw and learn new things.',
                 eventType: 'Concert',
                 eventLocation: 'UK, London',
@@ -116,35 +116,35 @@ angular.module('iConnectApp')
                 eventArtist: [
                     {
                         id: 1,
-                        artistImg: 'images/placeholder.svg'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'images/placeholder.svg'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'images/placeholder.svg'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        artistImg: 'images/placeholder.svg'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: 'images/Add_small@2x.png'
+                        artistImg: '../../images/Add_small@2x.png'
                     },
                     {
                         id: 0,
-                        artistImg: 'images/Add_small@2x.png'
+                        artistImg: '../../images/Add_small@2x.png'
                     },
                     {
                         id: 0,
-                        artistImg: 'images/Add_small@2x.png'
+                        artistImg: '../../images/Add_small@2x.png'
                     },
                     {
                         id: 0,
-                        artistImg: 'images/Add_small@2x.png'
+                        artistImg: '../../images/Add_small@2x.png'
                     }
                 ]
 
