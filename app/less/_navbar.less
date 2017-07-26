@@ -91,13 +91,23 @@
             margin-right: 0;
 
             .dropdown-menu {
-              padding-left: 20px;
-              padding-right: 20px;
               border: none;
+              min-width: 260px;
+              box-shadow: 0 2px 4px fade(#000, 50%);
+              right: -50%;
 
               li {
+                border-left: 2px solid transparent;
+
                 &:not(:last-child) {
                   border-bottom: 1px solid #fafafa;
+                }
+
+                &:hover {
+                  border-left: 2px solid @iConnect-orange;
+                  a {
+                    color: lighten(#333, 20%);
+                  }
                 }
 
                 a {
@@ -107,7 +117,14 @@
                   line-height: 1.4167;
                   letter-spacing: .34px;
                   color: #333;
-                  padding: 16px 0 17px;
+                  padding: 16px 20px 17px;
+
+                  img {
+                    width: 20px;
+                    height: 20px;
+                    display: inline-block;
+                    margin-right: 19px;
+                  }
                 }
               }
             }

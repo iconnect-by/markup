@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-14.4%" y="-8.9%" width="129.2%" height="129.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="User-Menu---DONE" filter="url(#filter-1)" transform="translate(-21.000000, -219.000000)" fill="#F2F2F2">
+            <g id="5" transform="translate(21.000000, 219.000000)">
+                <path d="M7.1,12.6 L8.5,14 L13.5,9 L8.5,4 L7.1,5.4 L9.7,8 L0,8 L0,10 L9.7,10 L7.1,12.6 L7.1,12.6 Z M16,0 L2,0 C0.9,0 0,0.9 0,2 L0,6 L2,6 L2,2 L16,2 L16,16 L2,16 L2,12 L0,12 L0,16 C0,17.1 0.9,18 2,18 L16,18 C17.1,18 18,17.1 18,16 L18,2 C18,0.9 17.1,0 16,0 L16,0 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
