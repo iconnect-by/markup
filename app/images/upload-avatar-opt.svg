@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="21px" viewBox="0 0 16 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-7.2%" y="-24.2%" width="114.3%" height="171.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-2" x="0" y="0" width="300" height="60" rx="4"></rect>
+        <filter x="-2.3%" y="-8.3%" width="104.7%" height="123.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2_1_Personal-Page---Artist---DONE" transform="translate(-132.000000, -359.000000)">
+            <g id="Login---DONE" filter="url(#filter-1)" transform="translate(90.000000, 340.000000)">
+                <g id="Avatar_BG">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+                <path d="M46.5714286,34.169884 L46.5714286,27.9400388 L42.9919319,27.9400388 C42.4550389,27.9400388 42.3053756,27.6177923 42.6820755,27.220281 L49.3179245,20.2178238 C49.6961594,19.8186928 50.3053756,19.8203126 50.6820755,20.2178238 L57.3179245,27.220281 C57.6961594,27.619412 57.555897,27.9400388 57.0080681,27.9400388 L53.4285714,27.9400388 L53.4285714,34.169884 C53.4285714,34.7233728 52.9821602,35.1760155 52.431484,35.1760155 L47.568516,35.1760155 C47.0213449,35.1760155 46.5714286,34.7255551 46.5714286,34.169884 Z M43.0008717,37.5880078 L56.9991283,37.5880078 C57.5553691,37.5880078 58,38.0397195 58,38.5969341 L58,38.9910736 C58,39.5576034 57.5518945,40 56.9991283,40 L43.0008717,40 C42.4446309,40 42,39.5482883 42,38.9910736 L42,38.5969341 C42,38.0304043 42.4481055,37.5880078 43.0008717,37.5880078 Z" id="Combined-Shape" fill="#4A90E2"></path>
+                <g id="1499305852_bin_cancel_close_cross_delete_empty_exit_garbage_minus_out_recycle_remove_trash" transform="translate(44.000000, 20.000000)"></g>
+                <g id="1499305867_cascade_display_layout_stack_sw_view" transform="translate(43.000000, 20.000000)"></g>
+            </g>
+        </g>
+    </g>
+</svg>

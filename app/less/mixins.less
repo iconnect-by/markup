@@ -32,6 +32,22 @@
   font-weight: @fw-semibold;
 }
 
+.section-title () {
+  font-size: 10 * @rem;
+  text-transform: uppercase;
+  font-weight: @fw-semibold;
+  line-height: 1.5;
+}
+.section-title-black () {
+  .section-title;
+  color: @iConnect-black;
+}
+.section-title-blue () {
+  .section-title;
+  color: @iConnect-blue;
+}
+
+
 /* Text */
 .text () {
   line-height: 1.5;
@@ -41,6 +57,8 @@
   .text;
   font-weight: @fw-regular;
   color: @iConnect-black;
+  font-size: 10 * @rem;
+  letter-spacing: .29px;
 }
 
 .text-grey () {

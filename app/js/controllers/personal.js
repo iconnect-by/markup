@@ -3,7 +3,9 @@
 angular.module('iConnectApp')
     .controller('PersonalController', ['$scope', function($scope) {
         $scope.divShow = "allMedia";
-        $scope.showMedia = function(arg) {
+
+        $scope.showMedia = function(arg, e) {
+            e.preventDefault();
             $scope.divShow = arg;
         };
 
@@ -149,8 +151,9 @@ angular.module('iConnectApp')
                 ]
 
             }
-            ]
+        ]
 
         $scope.artistRole = ['Singer', 'Dj' , 'Dancer', 'Vocalist', 'Musician', 'MC', 'Promoter', 'Event Leader', 'Musical group'];
-        $scope.organizationRole = ['POP', 'jAZZ', 'Blues', 'Comedy', 'Country', 'Folk', 'Hip Hop', 'Rock', 'Electronic', 'R&B and Soul' ];
+        $scope.organizationRole = ['POP', 'jAZZ', 'Blues', 'Comedy', 'Country', 'Folk', 'Hip Hop', 'Rock', 'Electronic', 'R&B and Soul'];
+        $scope.genres = ['POP', 'jAZZ', 'Blues', 'Comedy', 'Country', 'Folk', 'Hip Hop', 'Rock', 'Electronic', 'R&B and Soul'];
     }]);
