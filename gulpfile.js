@@ -3,7 +3,6 @@ var gulp = require('gulp'),
     less = require('gulp-less'),
     uglify = require('gulp-uglify'),
     del = require('del'),
-    bower = require('gulp-bower'),
     cssmin = require('gulp-cssmin'),
     rename = require('gulp-rename'),
     browserSync = require('browser-sync'),
@@ -21,11 +20,6 @@ gulp.task('clean', function () {
     del(paths.dist);
     del(paths.lib);
 });
-
-gulp.task('bower', function () {
-    return bower();
-});
-
 
 gulp.task('scripts', function () {
     return gulp.src('app/js/**/*.js')
@@ -85,7 +79,7 @@ gulp.task('watch', function() {
   gulp.watch('app/images/**/*.*', ['images']);
 });
 
-gulp.task("build", ["bower", "lessStyles", "scripts", "fonts", "images", "html", "files", "video"]);
+gulp.task("build", ["lessStyles", "scripts", "fonts", "images", "html", "files", "video"]);
 
 gulp.task('browser-sync', ['build'], function () {
     var files = [
@@ -100,7 +94,7 @@ gulp.task('browser-sync', ['build'], function () {
    browserSync.init(files, {
       server: {
          baseDir: "dist",
-         routes: {"/bower_components": "bower_components"},
+         routes: {"/node_modules": "node_modules"},
          index: "index.html"
       }
    });

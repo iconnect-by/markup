@@ -1,7 +1,7 @@
-@import "reset";
-@import "mixins";
+@import "_reset";
+@import "_mixins";
 
-@import "../../bower_components/bootstrap/less/bootstrap";
+@import "../../node_modules/bootstrap/less/bootstrap";
 @container-tablet: (810px + @grid-gutter-width);
 @container-sm: @container-tablet;
 @container-desktop: (1030px + @grid-gutter-width);
@@ -11,14 +11,20 @@
 @navbar-height: @top-menu-height;
 @font-size-base: @context-pt;
 
-@import "common";
+@import "../../node_modules/bootstrap/dist/css/bootstrap-theme.min.css";
+@import "../../node_modules/font-awesome/css/font-awesome.min.css";
+@import "../../node_modules/angular-ui-select/select.min.css";
+@import "../../node_modules/fullcalendar/dist/fullcalendar.min.css";
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i&amp;subset=cyrillic";
+
+@import "_common";
 
 @import "_vars";
-@import "_default";
 @import "_navbar";
 @import "_login";
 @import "_events";
 @import "_personal_page";
 @import "_top_artists";
 @import "_cabinet";
-@import "_create";
+@import "_create_artist";
+@import "_create_organization";

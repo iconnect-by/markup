@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="50px" viewBox="0 0 51 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1_9_create-artist" transform="translate(-935.000000, -330.000000)">
+            <g id="Content" transform="translate(420.000000, 326.000000)">
+                <g id="Icon" transform="translate(32.000000, 0.000000)">
+                    <g id="Group-3" transform="translate(483.000000, 4.000000)">
+                        <path d="M0,16.3454545 L0,33.2545455 L11.2727273,33.2545455 L25.3636364,47.3454545 L25.3636364,2.25454545 L11.2727273,16.3454545 L0,16.3454545 L0,16.3454545 Z" id="Shape" fill="#8C96AA"></path>
+                        <path d="M38.0454545,24.8 C38.0454545,19.7272727 35.2272727,15.5 31,13.5272727 L31,36.0727273 C35.2272727,34.1 38.0454545,29.8727273 38.0454545,24.8 L38.0454545,24.8 Z" id="Path" fill="#DDE0E7"></path>
+                        <path d="M31,0 L31,5.91818182 C39.1727273,8.45454545 45.0909091,15.7818182 45.0909091,24.8 C45.0909091,33.8181818 39.1727273,41.1454545 31,43.6818182 L31,49.6 C42.2727273,47.0636364 50.7272727,36.9181818 50.7272727,24.8 C50.7272727,12.6818182 42.2727273,2.53636364 31,0 L31,0 Z" id="Path" fill="#DDE0E7"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

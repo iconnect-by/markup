@@ -126,136 +126,145 @@ angular.module('iConnectApp')
         ];
 
         $scope.changeInformPerson = [
-            {
-                id: 0,
-                name: 'Dj',
-                icon: {
-                    on: '../../images/Add_full@2x.png',
-                    off: '../../images/Add_small@2x.png'
+           [
+               {
+                   id: 0,
+                   name: 'Dj',
+                   icon: {
+                       on: '../../images/create-dj-icon-filled.svg',
+                       off: '../../images/create-dj-icon.svg'
+                   }
+               },
+               {
+                   id: 1,
+                   name: 'Musician',
+                   icon: {
+                       on: '../../images/create-musician-icon-filled.svg',
+                       off: '../../images/create-musician-icon.svg'
+                   }
+               },
+               {
+                   id: 2,
+                   name: 'Vocalist',
+                   icon: {
+                       on: '../../images/create-vocalist-icon-filled.svg',
+                       off: '../../images/create-vocalist-icon.svg'
+                   }
+               },
+               {
+                   id: 3,
+                   name: 'MC',
+                   icon: {
+                       on: '../../images/create-mc-icon-filled.svg',
+                       off: '../../images/create-mc-icon.svg'
+                   }
+               }
+           ],
+            [
+                {
+                    id: 4,
+                    name: 'Promoter',
+                    icon: {
+                        on: '../../images/create-promouter-icon-filled.svg',
+                        off: '../../images/create-promouter-icon.svg'
+                    }
+                },
+                {
+                    id: 5,
+                    name: 'Event Leader',
+                    icon: {
+                        on: '../../images/create-eleader-icon-filled.svg',
+                        off: '../../images/create-eleader-icon.svg'
+                    }
+                },
+                {
+                    id: 6,
+                    name: 'Musical group',
+                    icon: {
+                        on: '../../images/create-musical-group-icon-filled.svg',
+                        off: '../../images/create-musical-group-icon.svg'
+                    }
+                },
+                {
+                    id: 7,
+                    name: 'Dancer',
+                    icon: {
+                        on: '../../images/create-dancer-icon-filled.svg',
+                        off: '../../images/create-dancer-icon.svg'
+                    }
                 }
-            },
-            {
-                id: 1,
-                name: 'Musician',
-                icon: {
-                    on: '../../images/Add_full@2x.png',
-                    off: '../../images/Add_small@2x.png'
-                }
-            },
-            {
-                id: 2,
-                name: 'Vocalist',
-                icon: {
-                    on: '../../images/Add_full@2x.png',
-                    off: '../../images/Add_small@2x.png'
-                }
-            },
-            {
-                id: 3,
-                name: 'MC',
-                icon: {
-                    on: '../../images/Add_full@2x.png',
-                    off: '../../images/Add_small@2x.png'
-                }
-            },
-            {
-                id: 4,
-                name: 'Promoter',
-                icon: {
-                    on: '../../images/Add_full@2x.png',
-                    off: '../../images/Add_small@2x.png'
-                }
-            },
-            {
-                id: 5,
-                name: 'Event Leader',
-                icon: {
-                    on: '../../images/Add_full@2x.png',
-                    off: '../../images/Add_small@2x.png'
-                }
-            },
-            {
-                id: 6,
-                name: 'Musical group',
-                icon: {
-                    on: '../../images/Add_full@2x.png',
-                    off: '../../images/Add_small@2x.png'
-                }
-            },
-            {
-                id: 7,
-                name: 'Dancer',
-                icon: {
-                    on: '../../images/Add_full@2x.png',
-                    off: '../../images/Add_small@2x.png'
-                }
-            }
+            ]
         ];
+
         $scope.changeInformOrganization = [
-            {
-                id: 0,
-                name: 'NightClub',
-                icon: {
-                    on: '../../images/Add_full@2x.png',
-                    off: '../../images/Add_small@2x.png'
-                }
-            },
-            {
-                id: 1,
-                name: 'Wedding',
-                icon: {
-                    on: '../../images/Add_full@2x.png',
-                    off: '../../images/Add_small@2x.png'
-                }
-            },
-            {
-                id: 2,
-                name: 'Birthday',
-                icon: {
-                    on: '../../images/Add_full@2x.png',
-                    off: '../../images/Add_small@2x.png'
-                }
-            },
-            {
-                id: 3,
-                name: 'Festival',
-                icon: {
-                    on: '../../images/Add_full@2x.png',
-                    off: '../../images/Add_small@2x.png'
-                }
-            },
-            {
-                id: 4,
-                name: 'Daytime Party',
-                icon: {
-                    on: '../../images/Add_full@2x.png',
-                    off: '../../images/Add_small@2x.png'
-                }
-            },
-            {
-                id: 5,
-                name: 'Private Party',
-                icon: {
-                    on: '../../images/Add_full@2x.png',
-                    off: '../../images/Add_small@2x.png'
-                }
-            },
-            {
-                id: 6,
-                name: 'Underground Party',
-                icon: {
-                    on: '../../images/Add_full@2x.png',
-                    off: '../../images/Add_small@2x.png'
-                }
-            },
-            {
-                id: 7,
-                name: 'Corporate Event',
-                icon: {
-                    on: '../../images/Add_full@2x.png',
-                    off: '../../images/Add_small@2x.png'
-                }
-            }
+            [
+                {
+                    id: 0,
+                    name: 'NightClub',
+                    icon: {
+                        on: '../../images/create-dj-icon-filled.svg',
+                        off: '../../images/create-dj-icon.svg'
+                    }
+                },
+                {
+                    id: 1,
+                    name: 'Wedding',
+                    icon: {
+                        on: '../../images/create-musician-icon-filled.svg',
+                        off: '../../images/create-musician-icon.svg'
+                    }
+                },
+                {
+                    id: 2,
+                    name: 'Birthday',
+                    icon: {
+                        on: '../../images/create-vocalist-icon-filled.svg',
+                        off: '../../images/create-vocalist-icon.svg'
+                    }
+                },
+                {
+                    id: 3,
+                    name: 'Festival',
+                    icon: {
+                        on: '../../images/create-mc-icon-filled.svg',
+                        off: '../../images/create-mc-icon.svg'
+                    }
+                },
+            ],
+          [
+              {
+                  id: 4,
+                  name: 'Daytime Party',
+                  icon: {
+                      on: '../../images/create-promouter-icon-filled.svg',
+                      off: '../../images/create-promouter-icon.svg'
+                  }
+              },
+              {
+                  id: 5,
+                  name: 'Private Party',
+                  icon: {
+                      on: '../../images/create-eleader-icon-filled.svg',
+                      off: '../../images/create-eleader-icon.svg'
+                  }
+              },
+              {
+                  id: 6,
+                  name: 'Underground Party',
+                  icon: {
+                      on: '../../images/create-musical-group-icon-filled.svg',
+                      off: '../../images/create-musical-group-icon.svg'
+                  }
+              },
+              {
+                  id: 7,
+                  name: 'Corporate Event',
+                  icon: {
+                      on: '../../images/create-dancer-icon-filled.svg',
+                      off: '../../images/create-dancer-icon.svg'
+                  }
+              }
+          ]
         ];
 
         $scope.icDocuments = [
@@ -302,9 +311,13 @@ angular.module('iConnectApp')
         ];
 
         $scope.getIcon = function (data) {
+
             if (data.icon) {
-                if (data.isChecked) return data.icon.on;
-                else return data.icon.off;
+                if (data.isChecked) {
+                    return data.icon.on;
+                } else {
+                    return data.icon.off;
+                }
             }
         };
 
