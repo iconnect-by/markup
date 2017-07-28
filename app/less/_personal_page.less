@@ -12,13 +12,17 @@
   .artist-avatar {
     position: relative;
     min-height: 285px;
-    background-color: #fafafa;
     display: block;
     border-radius: 50%;
-    background-image: url('../images/photo-empy-icon.svg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 50px 45px;
+
+    &.empty {
+      border: 1px dashed #e5e5e5;
+      background-color: #fafafa;
+      background-image: url('../images/photo-empy-icon.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50px 45px;
+    }
 
     img {
       display: block;
