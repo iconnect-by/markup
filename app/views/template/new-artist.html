@@ -1,8 +1,10 @@
-<span class="section-title">New Artist</span>
-<div class="artist-new">
-    <div class="cards-small" ng-repeat="art in newArtists">
-        <img src="{{art.photo}}" class="img-circle img-responsive card-photo"  alt="user image">
-        <span class="name">{{art.firstName}} {{art.lastName}}
+<div class="new-artist-section">
+    <div class="section-title">New Artist</div>
+    <div class="artist-new">
+        <div class="cards-small" ng-repeat="art in newArtists">
+            <img src="{{art.photo}}" class="img-circle img-responsive card-photo"  alt="user image">
+            <span class="name">{{art.firstName}} {{art.lastName}}
         <span class="info">{{art.country}} | {{art.style}}</span></span>
+        </div>
     </div>
 </div>

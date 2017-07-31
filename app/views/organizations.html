@@ -1,31 +1,73 @@
-<section class="organizations-section" ng-controller="OrganizationController">
-    <div class="container-fluid padding-left-20 padding-right-20 filter-section padding-bottom-10 padding-top-10">
-        <div class="pull-right search-content">
-            <label>Location</label><input type="text"/>
-            <label>Genres</label><select ng-model="selectedallArtist" ng-options="x for (x, y) in {Festival :[], Show:[]}"></select>
-            <button class="btn btn-search">Search</button>
+<section class="top-artists-section-open" ng-controller="OrganizationController">
+    <div class="navbar-fixed-top filter-section">
+        <div class="container">
+            <div class="search-content">
+                <form action="" class="form-inline search-form">
+                    <span class="fg-divider"></span>
+                    <div class="form-group">
+                        <label>From</label>
+                        <input type="date"/>
+                    </div>
+                    <div class="form-group">
+                        <label>To</label>
+                        <input type="date"/>
+                    </div>
+                    <span class="fg-divider"></span>
+
+                    <div class="form-group">
+                        <label>Location</label>
+                        <input type="text"/>
+                    </div>
+                    <span class="fg-divider"></span>
+
+                    <div class="form-group">
+                        <label>Type</label>
+                        <select ng-model="selectedallArtist" ng-options="x for (x, y) in {Festival :[], Show:[]}"></select>
+                    </div>
+                    <span class="fg-divider"></span>
+
+                    <button class="ic-btn ic-btn-blue">Search</button>
+                </form>
+            </div>
         </div>
     </div>
-    <div class="container-fluid padding-left-20 padding-right-20">
-        <div class="row row-content">
-            <div class="col-sm-9 margin-top-05">
-                <div class="col-sm-4 margin-top-10" ng-repeat="org in organizationList">
-                    <div class="first-signer">
-                        <div class="divider">
-                            <img ng-src="{{ org.photo }}" alt="" class="img-responsive">
-                            <span class="display-span">{{ org.title}}
-                                        <span class="signer-describe">{{ org.description}}</span>
-                                    </span>
-                        </div>
-                        <div class="artist-footer">
-                            <span class="small-grey-text">{{ org.location}}</span>
-                        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <a href="#" ui-sref="app" class="back-link">Find {{organizationList.length}} organization</a>
+
+                <div class="row">
+                    <div class="col-md-4" ng-repeat="org in organizationList">
+                        <div class="artist-card">
+                            <div class="row card-header">
+                                <div class="col-xs-7 artist-avatar">
+                                    <img ng-src="{{ org.photo }}" class="img-responsive" alt="avatar">
+                                </div>
+                                <div class="col-xs-5 artist-info">
+                                    <div class="name">{{ org.title}}</div>
+                                    <div class="description">
+                                        <p>{{ org.description}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row card-footer">
+                                <div class="col-xs-7 left-part">
+                                    <p>{{ org.location}}</p>
+                                </div>
+                            </div>
+                        </div><!--.artist-card-->
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3 margin-top-05">
+
+            <div class="col-md-3">
                 <ng-include src="'/views/template/new-artist.html'"/>
+
+                <div class="banner">
+                    <img src="../../images/banner.png" class="img-responsive" alt="...">
+                </div>
             </div>
         </div>
+
     </div>
 </section>
