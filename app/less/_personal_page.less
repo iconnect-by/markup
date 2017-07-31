@@ -13,7 +13,6 @@
     position: relative;
     min-height: 285px;
     display: block;
-    border-radius: 50%;
 
     &.empty {
       border: 1px dashed #e5e5e5;
@@ -32,8 +31,12 @@
         height: auto;
         border-radius: 4px;
       }
+    }
 
-      &.avatar-img-circle {
+    &.circle {
+      border-radius: 50%;
+
+      .avatar-img {
         img {
           border-radius: 50%;
         }
@@ -42,19 +45,21 @@
 
     &:hover {
       .avatar-options {
-        display: block !important;
+        opacity: 1 !important;
+        bottom: 0;
       }
     }
 
     .avatar-options {
       height: 60px;
-      display: none;
+      opacity: 0;
       box-shadow: 0 10px 25px fade(#000, 10%);
       border-radius: 4px;
       position: absolute;
-      bottom: 0;
+      bottom: -20px;
       background-color: #fff;
       width: 100%;
+      transition: opacity .1s ease-in-out .1s, bottom .2s ease-in-out;
 
       ul {
         display: flex;
