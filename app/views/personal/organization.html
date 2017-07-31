@@ -1,86 +1,215 @@
 <section class="profile-section" ng-controller="PersonalController">
-    <div class="container-fluid padding-left-20 padding-right-20">
-        <div class="row row-content margin-top-20">
-            <div class="col-sm-3 sidebar">
-                <div class="avatar text-center">
-                    <img src="../../images/placeholder.svg" alt="artist-img" class="img-responsive">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+
+                <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
+                <!--<div class="hero-avatar empty">-->
+                <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
+
+                <div class="hero-avatar">
+                    <div class="avatar-img">
+                        <img src="../../images/placeholder.svg" alt="artist-img">
+                    </div>
+
+                    <div class="avatar-options">
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="upload-avatar-opt" title="Upload">&nbsp;</a></li>
+                            <li><a href="#" class="cut-avatar-opt" title="Cut">&nbsp;</a></li>
+                            <li><a href="#" class="trash-avatar-opt" title="Delete">&nbsp;</a></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="hero-actions">
-                    <button class="btn btn-block" ui-sref="app.personal-organization.config">Change profile information</button>
+                    <button class="ic-btn ic-btn-blue" ui-sref="app.personal-artist.config">Change profile information</button>
                 </div>
 
                 <div class="hero-desc box-content">
-                    <h1 class="hero-desc__name">The Needle Groove</h1>
-                    <small class="hero-desc__caption">Corporate Events, NightClub, Private Party</small>
-                    <div class="artist-rating">
-                        <ul class="list">
-                            <li class="item"><img src="../../images/Star_small_Full.png"></li>
-                            <li class="item"><img src="../../images/Star_small_Full.png"></li>
-                            <li class="item"><img src="../../images/Star_small_Full.png"></li>
-                            <li class="item"><img src="../../images/Star_small_Full.png"></li>
-                            <li class="item"><img src="../../images/Star_small_Full.png"></li>
-                            <li class="item"><img src="../../images/Star_small.png"></li>
-                            <li class="item"><img src="../../images/Star_small.png"></li>
-                        </ul>
-                        <small class="value">Rating 5.35</small>
-                    </div>
-                    <p class="hero-desc__about">Read, out with friends, listen to music, draw and learn new things.</p>
+                    <div class="hero-descr-block">
+                        <h1 class="hero-desc-name">The Needle Groove</h1>
+                        <small class="hero-desc-caption">Corporate Events, NightClub, Private Party</small>
+                        <div class="artist-rating">
+                            <ul class="list-unstyled">
+                                <li><span class="star active">&nbsp;</span></li>
+                                <li><span class="star active">&nbsp;</span></li>
+                                <li><span class="star active">&nbsp;</span></li>
+                                <li><span class="star active">&nbsp;</span></li>
+                                <li><span class="star active">&nbsp;</span></li>
+                                <li><span class="star">&nbsp;</span></li>
+                                <li><span class="star">&nbsp;</span></li>
+                            </ul>
+                            <span class="rating-value">Rating 5.35</span>
+                        </div>
+                        <div class="hero-desc-about">
+                            <p>
+                                This article covers the basics of Astrology and how they are inter-related.
+                                Astrology is defined as ‘the art or practice of determining the supposed influences of the planets
+                                and their motions on human affairs and human disposition’.
+                            </p>
+                        </div>
 
-                    <div class="hero-desc__list">
+                    </div>
+
+                    <div class="hero-desc-list">
                         <div class="item">
-                            <span class="title">Saudi Arabia</span>
-                            <span class="value">Bronx ST,34</span>
+                            <span class="title">Location</span>
+                            <span class="value">Belarus&nbsp;<img src="../../images/flag-british-icon.svg" alt="UK"></span>
                         </div>
                     </div>
 
-                    <div class="hero-desc__social">
-                        <ul class="social-icons">
+                    <div class="hero-desc-social">
+                        <ul class="social-icons list-unstyled">
                             <li class="social-icons__item">
-                                <a href="" id="share-fb-btn">
-                                    <img src="../../images/Facebook_icon.png" alt="facebook">
-                                </a>
-                            </li>
-                            <li class="social-icons__item">
-                                <a href="" id="share-twitter-btn">
-                                    <img src="../../images/Twitter_icon.png" alt="twitter">
+                                <a href="#">
+                                    <img class="img-circle img-responsive" src="../../images/soundcloud@2x.png" alt="soundCloud">
                                 </a>
                             </li>
                             <li class="social-icons__item">
                                 <a href="">
-                                    <img src="../../images/YouTube_icon.png" alt="youtube" title="youtube">
+                                    <img class="img-circle img-responsive" src="../../images/insta@2x.png" alt="instagram">
+                                </a>
+                            </li>
+                            <li class="social-icons__item">
+                                <a href="#">
+                                    <img class="img-circle img-responsive" src="../../images/vimeo@2x.png" alt="vimeo">
+                                </a>
+                            </li>
+                            <li class="social-icons__item">
+                                <a href="#">
+                                    <img class="img-circle img-responsive" src="../../images/youtube@2x.png" alt="youtube">
+                                </a>
+                            </li>
+                            <li class="social-icons__item">
+                                <a href="#">
+                                    <img class="img-circle img-responsive" src="../../images/twitter@2x.png" alt="twitter">
+                                </a>
+                            </li>
+                            <li class="social-icons__item">
+                                <a href="#">
+                                    <img class="img-circle img-responsive" src="../../images/facebook@2x.png" alt="facebook">
                                 </a>
                             </li>
                         </ul>
                     </div>
+
+
                 </div>
             </div>
 
-            <div class="col-sm-9">
-                <label class="section-title-black">Recent Events</label>
-                <div class="row margin-bottom-10">
-                    <div class="col-sm-4 margin-top-10" ng-repeat="event in eventsArt">
-                        <!--<ng-include src="'views/template/event.html'"/>-->
+            <div class="col-md-9">
+                <div class="row row-content-events">
+                    <div class="col-md-12 event-title">
+                        <h2>Recent events</h2>
+                    </div>
+
+                    <div class="col-md-4" ng-repeat="event in eventsArt">
+                        <div class="event-card">
+                            <div class="container-fluid">
+                                <div class="row card-header">
+                                    <div class="col-xs-12 event-avatar">
+                                        <img src="{{event.imgUrl}}" class="img-responsive" alt="avatar">
+                                    </div>
+                                    <div class="col-xs-12 event-info">
+                                        <h4 class="ic-title title-4 name">{{event.title}}</h4>
+                                        <div class="ic-text text-grey small subtext">{{event.eventDate}}</div>
+                                        <div class="description ic-text text-default small">
+                                            <p>{{event.eventText}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="people">
+                                    <a href="#" class="people-link" ng-repeat="artist in event.eventArtist">
+                                        <img src="{{artist.artistImg}}" class="img-responsive img-circle" alt="pavatar">
+                                    </a>
+                                    <a href="#" class="people-link-add">
+                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" class="people-link-add">
+                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="row card-footer">
+                                    <div class="col-xs-6 left-part">
+                                        <p>{{event.eventLocation}}</p>
+                                    </div>
+                                    <div class="col-xs-6 right-part">
+                                        <p>{{event.eventType}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--.event-card-->
+                    </div><!--.col-->
+                </div>
+
+                <div class="row row-content-events">
+                    <div class="col-md-12 event-title">
+                        <h2>Artists collaborating with the organizer</h2>
+                    </div>
+
+                    <div class="col-md-4" ng-repeat="artist in colloborateArts">
+                        <div class="coloborating-card">
+                            <div class="avatar img-circle">
+                                <img ng-src="{{artist.photo}}" alt="...">
+                            </div>
+                            <div class="description">
+                                <div class="name">{{artist.firstName}} {{artist.lastName}}</div>
+                                <div class="info">{{artist.country}} | {{artist.style}}</div>
+                            </div>
+
+                            <div class="next">
+                                <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <label class="section-title-black">Artists collaborating with the organizer</label>
-                <div class="row margin-bottom-10">
-                    <div class="col-sm-4 margin-top-10" ng-repeat="event in eventsArt">
-                    <div class="panel-artist-org">
-                        <img alt="user image" src="../../images/placeholder.svg" class="img-circle img-responsive card-photo pull-left margin-right-10">
-                        <h4>Johnny van Djick</h4>
-                        <h6><span>London</span> | <span>Jaz</span> </h6>
-                        <a class="pull-right"><i class="fa fa-angle-right"></i></a>
+
+                <div class="row row-content-events">
+                    <div class="col-md-12 event-title">
+                        <h2>Past events</h2>
                     </div>
-                    </div>
+
+                    <div class="col-md-4" ng-repeat="event in eventsArt">
+                        <div class="event-card">
+                            <div class="container-fluid">
+                                <div class="row card-header">
+                                    <div class="col-xs-12 event-avatar">
+                                        <img src="{{event.imgUrl}}" class="img-responsive" alt="avatar">
+                                    </div>
+                                    <div class="col-xs-12 event-info">
+                                        <h4 class="ic-title title-4 name">{{event.title}}</h4>
+                                        <div class="ic-text text-grey small subtext">{{event.eventDate}}</div>
+                                        <div class="description ic-text text-default small">
+                                            <p>{{event.eventText}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="people">
+                                    <a href="#" class="people-link" ng-repeat="artist in event.eventArtist">
+                                        <img src="{{artist.artistImg}}" class="img-responsive img-circle" alt="pavatar">
+                                    </a>
+                                    <a href="#" class="people-link-add">
+                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" class="people-link-add">
+                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="row card-footer">
+                                    <div class="col-xs-6 left-part">
+                                        <p>{{event.eventLocation}}</p>
+                                    </div>
+                                    <div class="col-xs-6 right-part">
+                                        <p>{{event.eventType}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--.event-card-->
+                    </div><!--.col-->
                 </div>
-                <label class="section-title-black">Past Event</label>
-                <div class="row margin-bottom-10">
-                    <div class="col-sm-4 margin-top-10" ng-repeat="event in eventsArt">
-                        <!--<ng-include src="'views/template/event.html'"/>-->
-                    </div>
-                </div>
+
             </div>
+
         </div>
     </div>
 </section>
