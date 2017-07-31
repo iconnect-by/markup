@@ -50,15 +50,15 @@ angular.module('iConnectApp')
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: './../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: './../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: './../images/placeholder.svg'
                     }
                 ]
 
@@ -90,19 +90,19 @@ angular.module('iConnectApp')
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: './../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: './../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: './../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: './../images/placeholder.svg'
                     }
                 ]
 
@@ -134,19 +134,19 @@ angular.module('iConnectApp')
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: './../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: './../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: './../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: './../images/placeholder.svg'
                     }
                 ]
 
@@ -154,7 +154,6 @@ angular.module('iConnectApp')
         ];
 
         $scope.organizationRole = ['POP', 'jAZZ', 'Blues', 'Comedy', 'Country', 'Folk', 'Hip Hop', 'Rock', 'Electronic', 'R&B and Soul'];
-        // $scope.genres = ['POP', 'jAZZ', 'Blues', 'Comedy', 'Country', 'Folk', 'Hip Hop', 'Rock', 'Electronic', 'R&B and Soul'];
         $scope.genres = [
             {
                 title: 'POP',
@@ -206,6 +205,33 @@ angular.module('iConnectApp')
             {
                 title: 'Musician',
                 status: ''
+            }
+        ];
+
+        $scope.colloborateArts = [
+            {
+                id: 0,
+                firstName: "Nicole",
+                lastName: "Pearson",
+                country: "Belarus",
+                style: "Singer",
+                photo: "../../images/placeholder.svg"
+            },
+            {
+                id: 1,
+                firstName: "John",
+                lastName: "Dou",
+                country: "UK",
+                style: "Singer",
+                photo: "../../images/placeholder.svg"
+            },
+            {
+                id: 2,
+                firstName: "David",
+                lastName: "Mathew",
+                country: "USA",
+                style: "Singer",
+                photo: "../../images/placeholder.svg"
             }
         ];
     }]);

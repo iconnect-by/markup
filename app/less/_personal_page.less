@@ -597,4 +597,55 @@
     }
 
   }
+
+  .event-title {
+    h2 {
+      .section-title-black;
+      margin-top: 0;
+      margin-bottom: 17px;
+    }
+  }
+
+  .coloborating-card {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    height: 100px;
+    max-height: 100px;
+    align-items: center;
+    justify-content: space-around;
+
+    .avatar {
+      img {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+      }
+
+      &.img-circle {
+        img {
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .description {
+      .name {
+        .title-H4;
+      }
+      .info {
+        .text-grey-small;
+      }
+    }
+    .next {
+      a {
+        color: @iConnect-black;
+      }
+    }
+  }
+
+  .row-content-events {
+    padding-bottom: 37px;
+  }
 }
