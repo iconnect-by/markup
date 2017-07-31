@@ -1,0 +1,88 @@
+.ngdialog {
+  &.ngdialog-theme-default {
+    .ngdialog-content {
+      background-color: #fff;
+    }
+  }
+}
+
+.ngdialog-content {
+  border-radius: 4px;
+  box-shadow: 0 8px 30px fade(#000, 50%);
+  padding: 20px;
+
+  .dialog-inner {
+    .title {
+      .section-title-black;
+      border-bottom: 1px solid #f2f2f2;
+      margin: 0;
+      padding: 0 0 17px 0;
+    }
+    .dialog-body {
+      .content {
+        .text-default;
+        padding: 17px 0 36px 0;
+      }
+
+      .content-media {
+        border: 1px solid #f2f2f2;
+        background-color: #fafafa;
+        .text-default;
+        min-height: 110px;
+        padding: 7px 10px;
+        margin-bottom: 20px;
+        word-wrap: break-word;
+      }
+
+      .content-icon {
+        padding: 7px 10px;
+        display: block;
+        margin: 17px;
+
+        .icon {
+          display: block;
+          margin-bottom: 20px;
+
+          img {
+            display: block;
+            margin: 0 auto;
+            width: 60px;
+            max-width: 60px;
+            height: auto;
+          }
+        }
+        .message {
+          display: block;
+          text-align: center;
+          margin: 0 auto;
+          .text-default;
+        }
+      }
+
+      .helper {
+        .text-grey-small;
+        color: #f00;
+        font-weight: @fw-regular;
+        margin-bottom: 20px;
+      }
+
+      .ic-btn {
+        display: block;
+        margin: 10px auto 0;
+        width: 100%;
+
+      }
+    }
+  }
+
+  .progress {
+    height: 4px;
+    background-color: #fafafa;
+    margin-bottom: 36px;
+
+    .progress-bar {
+      background-color: #00B700;
+    }
+  }
+
+}

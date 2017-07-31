@@ -1,6 +1,116 @@
-<section class="common">
+<section class="common" ng-controller="CommonController">
 
     <div class="container-fluid">
+        <div class="separate-block">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="#" class="ic-btn ic-btn-blue" ng-click="popUp($event);">Send SMS Code</a>
+                </div>
+                <div class="col-md-3">
+                    <div class="ngdialog-content" role="document">
+                        <div class="dialog-inner">
+                            <div class="title">Choose a file to upload</div>
+                            <div class="dialog-body">
+                                <div class="content">Your audio file may not exceed 200 MB and has to be in MP3 format.
+                                    Your audio file must not violate copyright laws.</div>
+                                <a href="#" class="ic-btn ic-btn-blue">Select a file</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--.col-->
+                <div class="col-md-3">
+                    <div class="ngdialog-content" role="document">
+                        <div class="dialog-inner">
+                            <div class="title">Choose a file to upload</div>
+                            <div class="dialog-body">
+                                <div class="content">
+                                    Your audio file may not exceed 200 MB and has to be in MP3 format.
+                                    Your audio file must not violate copyright laws.
+                                </div>
+
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                         aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                        <span class="sr-only">70% Complete</span>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="ic-btn ic-btn-blue">Select a file</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--.col-->
+                <div class="col-md-3">
+                    <div class="ngdialog-content" role="document">
+                        <div class="dialog-inner">
+                            <div class="title">Embed media code</div>
+                            <div class="dialog-body">
+                                <div class="content-media">
+                                    &lt;iframe width=«560» height=«315» src=«https://www.youtube.com/embed/tpsdqMcnaaw» frameborder=«0» allowfullscreen&gt;&lt;/iframe&gt;
+                                </div>
+
+                                <div class="helper">Error 123: lorem ipsum sit dolot amet</div>
+
+                                <a href="#" class="ic-btn ic-btn-blue">Add video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--.col-->
+                <div class="col-md-3">
+                    <div class="ngdialog-content" role="document">
+                        <div class="dialog-inner">
+                            <div class="title">Saving failed</div>
+                            <div class="dialog-body">
+                                <div class="content-icon">
+                                    <div class="icon">
+                                        <img src="../images/saving-failed-icon.svg" alt="...">
+                                    </div>
+                                    <span class="message">An unknown error occurred. Try again saving.</span>
+                                </div>
+
+                                <a href="#" class="ic-btn ic-btn-white">Ok, I understood</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--.col-->
+                <div class="col-md-3">
+                    <div class="ngdialog-content" role="document">
+                        <div class="dialog-inner">
+                            <div class="title">Are you sure want to delete?</div>
+                            <div class="dialog-body">
+                                <div class="content-icon">
+                                    <div class="icon">
+                                        <img src="../images/delete-confirm-icon.png" alt="...">
+                                    </div>
+                                    <span class="message">You can not undo or roll back this action, the event or page will be completely deleted.</span>
+                                </div>
+
+                                <a href="#" class="ic-btn ic-btn-blue">Save & post</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--.col-->
+                <div class="col-md-3">
+                    <div class="ngdialog-content" role="document">
+                        <div class="dialog-inner">
+                            <div class="title">The track was successfully uploaded</div>
+                            <div class="dialog-body">
+                                <div class="content-icon">
+                                    <div class="icon">
+                                        <img src="../images/uploaded-success-icon.svg" alt="...">
+                                    </div>
+                                    <span class="message">Would you like to place it in our filing cabinet?</span>
+                                </div>
+
+                                <a href="#" class="ic-btn ic-btn-blue">Save & post</a>
+                                <a href="#" class="ic-btn ic-btn-white">Only save</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--.col-->
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-md-6">
                 <div class="separate-block">
