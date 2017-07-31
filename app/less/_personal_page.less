@@ -14,6 +14,7 @@
     min-height: 285px;
     display: block;
     border-radius: 50%;
+    padding-bottom: 30px;
 
     &.empty {
       border: 1px dashed #e5e5e5;
@@ -52,7 +53,7 @@
       box-shadow: 0 2px 4px fade(#000, 50%);
       border-radius: 4px;
       position: absolute;
-      bottom: 0;
+      bottom: 20px;
       background-color: #fff;
       width: 100%;
 
@@ -98,7 +99,7 @@
   }
 
   .hero-actions {
-    padding: 20px 0;
+    padding: 0 0 20px;
 
     .ic-btn {
       width: 100%;
@@ -459,5 +460,141 @@
       letter-spacing: .29px;
       line-height: 1.4;
     }
+  }
+
+  .settings-block {
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+
+    h1 {
+      .section-title-black;
+      padding: 16px 20px;
+      margin: 0;
+      border-bottom: 1px solid #f2f2f2;
+    }
+
+    .form-group {
+      padding: 16px 5px;
+      border-bottom: 1px solid #f2f2f2;
+      width: 100%;
+
+      label {
+        .text-default;
+        font-size: 12 * @rem;
+        font-weight: @fw-semibold;
+      }
+
+      .form-value {
+        .text-default;
+        font-size: 12 * @rem;
+      }
+
+      .add-more-social {
+        .text-grey-medium;
+        font-weight: @fw-regular;
+      }
+
+      .artist-role-block {
+        display: inline-block;
+        padding: 0 11px;
+        margin: 0 10px 10px 0;
+        background-color: #fafafa;
+        border: 1px dashed #e5e5e5;
+        border-radius: 20px;
+        cursor: pointer;
+        min-width: 70px;
+        text-align: center;
+        height: 30px;
+
+        .role-name {
+          color: #fff;
+          .text-default;
+          font-weight: @fw-semibold;
+          text-transform: uppercase;
+          line-height: 28px;
+        }
+
+        .role-switch {
+          display: none;
+          color: #333;
+        }
+
+        &:hover, &:active, &:focus {
+          background-color: lighten(#fafafa, 20%);
+        }
+
+        &.active {
+          background-color: #4A90E2;
+          border: 1px solid #4A90E2;
+          text-align: left;
+
+          .role-name {
+            color: #fff;
+          }
+
+          .role-switch {
+            float: right;
+            display: inline;
+            color: #fff;
+            margin-left: 9px;
+
+            .fa {
+              font-size: 14 * @rem;
+              line-height: 28px;
+            }
+          }
+
+          &:hover, &:active, &:focus {
+            background-color: darken(#4A90E2, 20%);
+          }
+        }
+
+      }
+
+      .ic-btn-orange {
+        margin-right: 20px;
+      }
+
+      .ic-btn-delete {
+        color: #f00;
+      }
+
+      .help-info {
+        display: block;
+        .text-grey-small;
+        font-weight: @fw-regular;
+        margin-top: 14px;
+      }
+
+      .social-block {
+        display: block;
+        margin-bottom: 20px;
+
+        img {
+          border-radius: 50%;
+          width: 30px;
+          height: 30px;
+          display: inline-block;
+          margin-right: 16px;
+        }
+        .social-name {
+          .text-default;
+          font-weight: @fw-semibold;
+          text-transform: uppercase;
+          max-width: 200px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+        .remove {
+          color: #f00;
+          float: right;
+        }
+      }
+    }
+
   }
 }

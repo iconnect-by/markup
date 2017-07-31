@@ -151,9 +151,61 @@ angular.module('iConnectApp')
                 ]
 
             }
-        ]
+        ];
 
-        $scope.artistRole = ['Singer', 'Dj' , 'Dancer', 'Vocalist', 'Musician', 'MC', 'Promoter', 'Event Leader', 'Musical group'];
         $scope.organizationRole = ['POP', 'jAZZ', 'Blues', 'Comedy', 'Country', 'Folk', 'Hip Hop', 'Rock', 'Electronic', 'R&B and Soul'];
-        $scope.genres = ['POP', 'jAZZ', 'Blues', 'Comedy', 'Country', 'Folk', 'Hip Hop', 'Rock', 'Electronic', 'R&B and Soul'];
+        // $scope.genres = ['POP', 'jAZZ', 'Blues', 'Comedy', 'Country', 'Folk', 'Hip Hop', 'Rock', 'Electronic', 'R&B and Soul'];
+        $scope.genres = [
+            {
+                title: 'POP',
+                status: 'active'
+            },
+            {
+                title: 'jAZZ',
+                status: ''
+            },
+            {
+                title: 'Blues',
+                status: 'active'
+            },
+            {
+                title: 'Comedy',
+                status: 'active'
+            },
+            {
+                title: 'Country',
+                status: ''
+            },
+            {
+                title: 'Folk',
+                status: 'active'
+            },
+            {
+                title: 'Hip Hop',
+                status: 'active'
+            }
+        ];
+
+        $scope.artistRole = [
+            {
+                title: 'Singer',
+                status: 'active'
+            },
+            {
+                title: 'Dj',
+                status: ''
+            },
+            {
+                title: 'Dancer',
+                status: 'active'
+            },
+            {
+                title: 'Vocalist',
+                status: 'active'
+            },
+            {
+                title: 'Musician',
+                status: ''
+            }
+        ];
     }]);
