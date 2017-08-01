@@ -42,7 +42,9 @@ gulp.task('lessStyles', function () {
 });
 
 gulp.task('html', function () {
-  return gulp.src('app/**/*.html')
+  return gulp.src([
+      'app/**/*.html'
+  ])
     .pipe(gulp.dest(paths.dist));
 });
 
@@ -54,6 +56,11 @@ gulp.task('images', function () {
 gulp.task('files', function () {
     gulp.src("app/files/*.*")
     .pipe(gulp.dest(paths.dist + "files/"));
+});
+
+gulp.task('version', function () {
+    gulp.src('app/version.txt')
+        .pipe(gulp.dest(paths.dist));
 });
 
 gulp.task('fonts', function(){
@@ -77,9 +84,10 @@ gulp.task('watch', function() {
   gulp.watch('app/less/*.less', ['lessStyles']);
   gulp.watch(['app/*.html', 'app/**/*.html'], ['html']);
   gulp.watch('app/images/**/*.*', ['images']);
+  gulp.watch('app/version.txt', ['version']);
 });
 
-gulp.task("build", ["lessStyles", "scripts", "fonts", "images", "html", "files", "video"]);
+gulp.task("build", ["lessStyles", "scripts", "fonts", "images", "html", "files", "video", "version"]);
 
 gulp.task('browser-sync', ['build'], function () {
     var files = [
@@ -88,7 +96,8 @@ gulp.task('browser-sync', ['build'], function () {
       'app/images/**/*.png',
       'app/video/**/*',
       'app/js/**/*.js',
-      'dist/**/*'
+      'dist/**/*',
+      'app/version.txt'
    ];
     
    browserSync.init(files, {
