@@ -1,21 +1,4 @@
 .security-form {
-  label {
-    font-family: @iConnect-font-regular;
-    font-size: 12 * @rem;
-    font-weight: 400;
-    margin-bottom: 0;
-  }
-
-  .form-group {
-    margin-bottom: 37px;
-
-    .error {
-      color: @iConnect-red;
-      font-size: 11 * @rem;
-      margin: 7px 0;
-    }
-  }
-
   input,
   input [type=tel],
   input [type=email],
@@ -35,6 +18,7 @@
       border-bottom: 1px solid @iConnect-orange;
     }
   }
+
   .pwd-group {
     position: relative;
 
@@ -61,40 +45,44 @@
   .form-group {
     display: flex;
     height: 55px;
+    margin-bottom: 55px;
+    position: relative;
     flex-direction: column;
+
+    .error {
+      color: @iConnect-red;
+      font-size: 11 * @rem;
+      margin: 7px 0;
+    }
+
+    &.focused {
+      .control-label {
+        opacity: 1;
+        top: -10px;
+        transform: scale(0.75);
+      }
+    }
   }
 
   .control-label {
-    font-size: 16px;
-    font-weight: 400;
-    opacity: 0.4;
+    color: #fff;
+    font-family: @iConnect-font-regular;
+    font-size: 16 * @rem;
+    font-weight: @fw-regular;
+    line-height: 1.125;
+    letter-spacing: .46px;
+    margin-bottom: 0;
+    opacity: .5;
     pointer-events: none;
     position: absolute;
-    transform: translate3d(6px, 22px, 0) scale(1);
+    top: 18px;
+    transform: scale(1);
     transform-origin: left top;
-    transition: 240ms;
-  }
-
-  .form-group.focused .control-label {
-    opacity: 1;
-    transform: scale(0.75);
+    transition: all .2s ease-in-out;
   }
 
   .form-control {
     align-self: flex-end;
-  }
-
-  .form-control::-webkit-input-placeholder {
-    color: transparent;
-    transition: 240ms;
-  }
-
-  .form-control:focus::-webkit-input-placeholder {
-    transition: none;
-  }
-
-  #floating-label .form-group.focused .form-control::-webkit-input-placeholder {
-    color: #bbb;
   }
 }
 
@@ -156,15 +144,6 @@
     }
 
     .security-form {
-      label {
-        color: #fff;
-        opacity: 1;
-        font-weight: @fw-regular;
-        font-size: 16 * @rem;
-        line-height: 1.125;
-        letter-spacing: .46px;
-      }
-
       input,
       input [type=tel],
       input [type=email],
@@ -175,6 +154,17 @@
 
         &:focus {
           color: #fff;
+        }
+      }
+    }
+
+    // redeclare default bootstrap classes to make ot work with angular custom components
+    .tab-content {
+      .tab-pane {
+        display: none;
+
+        &.active {
+          display: block;
         }
       }
     }
