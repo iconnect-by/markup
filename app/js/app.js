@@ -3,7 +3,7 @@
 angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.select', 'ngSanitize', 'ngDialog'])
     .config(function ($stateProvider, $urlRouterProvider) {
         $stateProvider
-        // route for the home page
+            // route for the home page
             .state('app', {
                 url: '/',
                 views: {
@@ -11,12 +11,21 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.sel
                         templateUrl: 'views/header.html'
                     },
                     'content': {
-                        templateUrl: 'views/artist/artist-tops.html',
-                        controller: 'ArtistTopsController'
+                        templateUrl: 'views/temp.html'
                     }
                     // 'footer': {
                     //     templateUrl: 'views/footer.html',
                     // }
+                }
+            })
+
+            .state('app.artist-tops', {
+                url: 'artist-tops',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/artist/artist-tops.html',
+                        controller: 'ArtistTopsController'
+                    }
                 }
             })
 
