@@ -267,6 +267,77 @@ angular.module('iConnectApp')
           ]
         ];
 
+        $scope.events = [
+            [
+                {
+                    id: 0,
+                    name: 'Concert or Performance',
+                    icon: {
+                        on: '../../images/create-dj-icon-filled.svg',
+                        off: '../../images/create-dj-icon.svg'
+                    }
+                },
+                {
+                    id: 1,
+                    name: 'Festival or Fair',
+                    icon: {
+                        on: '../../images/create-musician-icon-filled.svg',
+                        off: '../../images/create-musician-icon.svg'
+                    }
+                },
+                {
+                    id: 2,
+                    name: 'Party or Social Gathering',
+                    icon: {
+                        on: '../../images/create-vocalist-icon-filled.svg',
+                        off: '../../images/create-vocalist-icon.svg'
+                    }
+                },
+                {
+                    id: 3,
+                    name: 'Tradeshow or Consumer Show',
+                    icon: {
+                        on: '../../images/create-mc-icon-filled.svg',
+                        off: '../../images/create-mc-icon.svg'
+                    }
+                }
+            ],
+            [
+                {
+                    id: 4,
+                    name: 'Class, Training or Workshop',
+                    icon: {
+                        on: '../../images/create-promouter-icon-filled.svg',
+                        off: '../../images/create-promouter-icon.svg'
+                    }
+                },
+                {
+                    id: 5,
+                    name: 'Appearance or Singing',
+                    icon: {
+                        on: '../../images/create-eleader-icon-filled.svg',
+                        off: '../../images/create-eleader-icon.svg'
+                    }
+                },
+                {
+                    id: 6,
+                    name: 'Tour',
+                    icon: {
+                        on: '../../images/create-musical-group-icon-filled.svg',
+                        off: '../../images/create-musical-group-icon.svg'
+                    }
+                },
+                {
+                    id: 7,
+                    name: 'Other',
+                    icon: {
+                        on: '../../images/create-dancer-icon-filled.svg',
+                        off: '../../images/create-dancer-icon.svg'
+                    }
+                }
+            ]
+        ];
+
         $scope.icDocuments = [
             {
                 id: 0,

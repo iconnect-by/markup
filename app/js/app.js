@@ -31,6 +31,17 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.sel
                 }
             })
 
+            // route for the create-event page
+            .state('app.create-event', {
+                url: 'create-event',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/login/create-event.html',
+                        controller: 'RegistrationController'
+                    }
+                }
+            })
+
             // route for the artist-open page
             .state('app.artist-open', {
                 url: 'artist-open',
