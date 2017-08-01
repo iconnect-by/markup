@@ -178,6 +178,17 @@
         }
       }
     }
+
+    // redeclare default bootstrap classes to make ot work with angular custom components
+    .tab-content {
+      .tab-pane {
+        display: none;
+
+        &.active {
+          display: block;
+        }
+      }
+    }
   }
 
   .social-content {
