@@ -6,13 +6,12 @@
 
                 <div class="title">
                     <h1>Set artist name here</h1>
-                    <h2>Add a artist name</h2>
                 </div>
 
                 <div class="col-md-offset-4 col-md-4">
                     <fieldset>
-                        <div class="form-group">
-                            <input class="form-control" autocomplete="off" type="text" name="artist-name" ng-model="user.name" ng-required="true">
+                        <div class="form-group styled-placeholder">
+                            <input class="form-control" placeholder="Add a artist name" autocomplete="off" type="text" name="artist-name" ng-model="user.name" ng-required="true">
                             <p class="error" ng-show="signin.email.$invalid && signin.email.$touched">Must be a valid email</p>
                         </div>
                     </fieldset>
