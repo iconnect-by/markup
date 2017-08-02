@@ -115,8 +115,13 @@ html, body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  transition: opacity .2s;
+  transition: opacity .2s, background-color .2s ease, color .2s ease;
   outline: none;
+
+  &[disabled] {
+    cursor: default;
+    pointer-events: none;
+  }
 
   &.ic-btn-blue {
     background-color: @iConnect-blue;
@@ -131,7 +136,7 @@ html, body {
     &:visited {
       background-color: @iConnect-blue;
     }
-    &:hover, &:active, &:focus {
+    &:hover, &:active, &:focus, &[disabled] {
       color: @iConnect-white;
       background-color: lighten(@iConnect-blue, @lighten-percentage);
     }
@@ -145,7 +150,7 @@ html, body {
     &:visited {
       color: @iConnect-black;
     }
-    &:hover, &:active, &:focus {
+    &:hover, &:active, &:focus, &[disabled] {
       color: lighten(@iConnect-black, @lighten-percentage);
     }
   }
@@ -163,11 +168,10 @@ html, body {
     &:visited {
       background-color: @iConnect-orange;
     }
-    &:hover, &:active, &:focus {
+    &:hover, &:active, &:focus, &[disabled] {
       color: @iConnect-white;
       background-color: lighten(@iConnect-orange, @lighten-percentage);
     }
-
   }
 
   &.ic-btn-red {
@@ -177,7 +181,7 @@ html, body {
     &:visited {
       background-color: @iConnect-red;
     }
-    &:hover, &:active, &:focus {
+    &:hover, &:active, &:focus, &[disabled] {
       color: @iConnect-white;
       background-color: lighten(@iConnect-red, @lighten-percentage);
     }
@@ -190,7 +194,7 @@ html, body {
       color: @iConnect-white;
       background-color: @iConnect-green;
     }
-    &:hover, &:active, &:focus {
+    &:hover, &:active, &:focus, &[disabled] {
       color: @iConnect-white;
       background-color: lighten(@iConnect-green, @lighten-percentage);
     }
