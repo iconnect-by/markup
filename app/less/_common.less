@@ -130,7 +130,7 @@ html, body {
     &.big {
       line-height: 3.5;
       padding: 0 110px;
-      max-height: 42px;
+      max-height: 40px;
     }
 
     &:visited {
@@ -162,7 +162,7 @@ html, body {
     &.big {
       line-height: 3.5;
       padding: 0 110px;
-      max-height: 42px;
+      max-height: 40px;
     }
 
     &:visited {
@@ -213,11 +213,10 @@ html, body {
 .artist-card {
   border: 1px solid #f2f2f2;
   border-radius: 4px;
-  padding: 20px;
+  padding: 20px 20px 19px 20px;
   display: inline-block;
   position: relative;
   cursor: pointer;
-  margin-top: 10px;
   margin-bottom: 15px;
   transition: box-shadow .15s ease-in-out;
 
@@ -233,8 +232,6 @@ html, body {
       padding-right: 0;
     }
     .artist-info {
-      padding-right: 0;
-
       .name {
         @font-size: 14 * @rem;
         @line-height: 1.357;
@@ -259,6 +256,7 @@ html, body {
         font-size: 10 * @rem;
         letter-spacing: .29px;
         line-height: 1.2;
+        word-wrap: break-word;
 
         p {
           @font-size: 10 * @rem;
@@ -315,11 +313,10 @@ html, body {
 .organization-card {
   border: 1px solid #f2f2f2;
   border-radius: 4px;
-  padding: 20px;
+  padding: 20px 20px 19px 20px;
   display: inline-block;
   position: relative;
   cursor: pointer;
-  margin-top: 10px;
   margin-bottom: 15px;
   transition: box-shadow .15s ease-in-out;
 
@@ -330,13 +327,7 @@ html, body {
   .card-header {
     padding-bottom: 20px;
 
-    .organization-avatar {
-      width: 145px;
-      padding-right: 0;
-    }
     .organization-info {
-      padding-right: 0;
-
       .name {
         @font-size: 14 * @rem;
         @line-height: 1.357;
@@ -361,6 +352,7 @@ html, body {
         font-size: 10 * @rem;
         letter-spacing: .29px;
         line-height: 1.2;
+        word-wrap: break-word;
 
         p {
           @font-size: 10 * @rem;
@@ -417,11 +409,10 @@ html, body {
 .event-card {
   border: 1px solid #f2f2f2;
   border-radius: 2px;
-  //padding: 20px;
+  padding: 0;
   display: inline-block;
   position: relative;
   cursor: pointer;
-  margin-top: 10px;
   margin-bottom: 15px;
   transition: box-shadow .15s ease-in-out;
 
@@ -430,8 +421,6 @@ html, body {
   }
 
   .card-header {
-    //padding-bottom: 20px;
-
     .event-avatar {
       padding-left: 0;
       padding-right: 0;
@@ -469,6 +458,7 @@ html, body {
         font-size: 10 * @rem;
         letter-spacing: .29px;
         line-height: 1.2;
+        word-wrap: break-word;
       }
     }
   }
@@ -481,6 +471,7 @@ html, body {
     align-content: center;
     justify-content: flex-start;
     margin: 20px 0;
+    padding: 0 10px;
 
     .people-link {
       flex-basis: 50px;

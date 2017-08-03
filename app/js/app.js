@@ -23,7 +23,7 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.sel
                 url: 'artist-tops',
                 views: {
                     'content@': {
-                        templateUrl: 'views/artist/artist-tops.html',
+                        templateUrl: 'views/artist-tops.html',
                         controller: 'ArtistTopsController'
                     }
                 }
@@ -45,7 +45,7 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.sel
                 url: 'create-event',
                 views: {
                     'content@': {
-                        templateUrl: 'views/login/create-event.html',
+                        templateUrl: 'views/profile/event/create-event.html',
                         controller: 'RegistrationController'
                     }
                 }
@@ -109,7 +109,7 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.sel
                 url: 'create-artist',
                 views: {
                     'content@': {
-                        templateUrl: 'views/login/create-artist.html',
+                        templateUrl: 'views/profile/artist/create-artist.html',
                         controller: 'RegistrationController'
                     }
                 }
@@ -119,7 +119,7 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.sel
                 url: 'create-organization',
                 views: {
                     'content@': {
-                        templateUrl: 'views/login/create-organization.html',
+                        templateUrl: 'views/profile/oranization/create-organization.html',
                         controller: 'RegistrationController'
                     }
                 }
@@ -130,7 +130,7 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.sel
                 url: 'personal-artist',
                 views: {
                     'content@': {
-                        templateUrl: 'views/personal/artist.html',
+                        templateUrl: 'views/profile/artist/artist.html',
                         controller: 'PersonalController'
                     }
                 }
@@ -140,7 +140,7 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.sel
                 url: '/config',
                 views: {
                     'content@': {
-                        templateUrl: 'views/personal/artist-config.html',
+                        templateUrl: 'views/profile/artist/artist-config.html',
                         controller: 'PersonalController'
                     }
                 }
@@ -150,7 +150,7 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.sel
                 url: 'personal-organization',
                 views: {
                     'content@': {
-                        templateUrl: 'views/personal/organization.html',
+                        templateUrl: 'views/profile/oranization/organization.html',
                         controller: 'PersonalController'
                     }
                 }
@@ -160,7 +160,7 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.sel
                 url: '/config',
                 views: {
                     'content@': {
-                        templateUrl: 'views/personal/organization-config.html',
+                        templateUrl: 'views/profile/organization/organization-config.html',
                         controller: 'PersonalController'
                     }
                 }

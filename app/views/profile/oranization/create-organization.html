@@ -1,18 +1,17 @@
-<section class="create-artist-section" ng-controller="RegistrationController">
+<section class="create-initial-section organization-section" ng-controller="RegistrationController">
     <div class="container">
 
-        <form class="create-artist" name="create-form" novalidate>
+        <form class="create-organization" name="create-form" novalidate>
             <div class="row">
 
                 <div class="title">
-                    <h1>Set artist name here</h1>
-                    <h2>Add a artist name</h2>
+                    <h1>Set a organization name here</h1>
                 </div>
 
                 <div class="col-md-offset-4 col-md-4">
                     <fieldset>
-                        <div class="form-group">
-                            <input class="form-control" autocomplete="off" type="text" name="artist-name" ng-model="user.name" ng-required="true">
+                        <div class="form-group styled-placeholder">
+                            <input class="form-control" type="text" placeholder="Add a organization name" autocomplete="off" name="organization-name" ng-model="user.name" ng-required="true">
                             <p class="error" ng-show="signin.email.$invalid && signin.email.$touched">Must be a valid email</p>
                         </div>
                     </fieldset>
@@ -21,7 +20,7 @@
 
             <div class="row">
                 <div class="col-md-offset-3 col-md-6 options">
-                    <div class="row artist-option" ng-repeat="items in changeInformPerson">
+                    <div class="row organization-option" ng-repeat="items in changeInformOrganization">
                         <div class="col-md-3 content" ng-repeat="item in items">
                             <input type="checkbox" ng-attr-id="{{'info' + item.id}}" ng-model="item.isChecked"/>
                             <label ng-attr-for="{{'info' +item.id}}"><img ng-src="{{getIcon(item)}}"></label>

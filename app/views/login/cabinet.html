@@ -10,7 +10,7 @@
                     </div>
                     <div class="right-side">
                         <h2>Johnny van Djick</h2>
-                        <div class="ic-text text-grey medium">Standart Account / Balance $ 1 345.45</div>
+                        <div class="balance-info">Standart Account / Balance $ 1 345.45</div>
                     </div>
                 </div>
 
@@ -45,10 +45,10 @@
                             <div class="col-md-3" ng-repeat="art in artistList">
                                 <div class="artist-card">
                                     <div class="row card-header">
-                                        <div class="col-xs-7 artist-avatar">
+                                        <div class="col-xs-6 artist-avatar">
                                             <img src="{{ art.photo }}" class="img-responsive img-circle" alt="avatar">
                                         </div>
-                                        <div class="col-xs-5 artist-info">
+                                        <div class="col-xs-6 artist-info">
                                             <div class="name">{{ art.firstName}} {{ art.lastName}}</div>
                                             <div class="description">
                                                 <p>{{ art.description}}</p>
@@ -56,10 +56,10 @@
                                         </div>
                                     </div>
                                     <div class="row card-footer">
-                                        <div class="col-xs-7 left-part">
+                                        <div class="col-xs-6 left-part">
                                             <p>{{ art.country}}</p>
                                         </div>
-                                        <div class="col-xs-5 right-part">
+                                        <div class="col-xs-6 right-part">
                                             <p>{{ art.style}}</p>
                                         </div>
                                     </div>
@@ -76,10 +76,10 @@
                             <div class="col-md-3" ng-repeat="org in organizationList">
                                 <div class="organization-card">
                                     <div class="row card-header">
-                                        <div class="col-xs-7 organization-avatar">
+                                        <div class="col-xs-6 organization-avatar">
                                             <img src="{{ org.photo }}" class="img-responsive" alt="avatar">
                                         </div>
-                                        <div class="col-xs-5 organization-info">
+                                        <div class="col-xs-6 organization-info">
                                             <div class="name">{{ org.title}}</div>
                                             <div class="description">
                                                 <p>{{ org.description}}</p>
@@ -138,21 +138,6 @@
                                 </div><!--.event-card-->
                             </div><!--.col-->
                         </div><!--.row-->
-
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h3>New Document</h3>
-                            </div>
-                        </div><!--.row-->
-                        <div class="row">
-                            <div class="col-md-3" ng-repeat="doc in icDocuments">
-                                <div class="document-card">
-                                    <h4 class="ic-title title-4">{{ doc.title }}</h4>
-                                    <div class="ic-text text-grey small subtext">{{ doc.date }}</div>
-                                </div><!--.document-card-->
-                            </div><!--.col-->
-                        </div><!--.row-->
-
                     </div><!--.container-fluid-->
                 </div><!--.tabpanel-->
 
@@ -163,10 +148,10 @@
                             <div class="col-md-3" ng-repeat="art in artistList">
                                 <div class="artist-card">
                                     <div class="row card-header">
-                                        <div class="col-xs-7 artist-avatar">
+                                        <div class="col-xs-6 artist-avatar">
                                             <img src="{{ art.photo }}" class="img-responsive img-circle" alt="avatar">
                                         </div>
-                                        <div class="col-xs-5 artist-info">
+                                        <div class="col-xs-6 artist-info">
                                             <div class="name">{{ art.firstName}} {{ art.lastName}}</div>
                                             <div class="description">
                                                 <p>{{ art.description}}</p>
@@ -174,10 +159,10 @@
                                         </div>
                                     </div>
                                     <div class="row card-footer">
-                                        <div class="col-xs-7 left-part">
+                                        <div class="col-xs-6 left-part">
                                             <p>{{ art.country}}</p>
                                         </div>
-                                        <div class="col-xs-5 right-part">
+                                        <div class="col-xs-6 right-part">
                                             <p>{{ art.style}}</p>
                                         </div>
                                     </div>
@@ -203,10 +188,10 @@
                             <div class="col-md-3" ng-repeat="org in organizationList">
                                 <div class="organization-card">
                                     <div class="row card-header">
-                                        <div class="col-xs-7 organization-avatar">
+                                        <div class="col-xs-6 organization-avatar">
                                             <img src="{{ org.photo }}" class="img-responsive" alt="avatar">
                                         </div>
-                                        <div class="col-xs-5 organization-info">
+                                        <div class="col-xs-6 organization-info">
                                             <div class="name">{{ org.title}}</div>
                                             <div class="description">
                                                 <p>{{ org.description}}</p>

@@ -42,7 +42,9 @@ gulp.task('lessStyles', function () {
 });
 
 gulp.task('html', function () {
-  return gulp.src('app/**/*.html')
+  return gulp.src([
+      'app/**/*.html'
+  ])
     .pipe(gulp.dest(paths.dist));
 });
 
