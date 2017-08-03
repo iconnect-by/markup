@@ -33,6 +33,7 @@
     "angular-sanitize": "^1.4.0",
     "angular-touch": "^1.4.0",
     "angular-ui-calendar": "latest",
+    "angular-ui-notification": "^0.3.6",
     "angular-ui-router": "^0.3.2",
     "angular-ui-select": "latest",
     "bootstrap": "^3.2.0",

@@ -1,5 +1,5 @@
-.create-organization-section {
-  padding-top: 105px;
+.create-initial-section {
+  padding-top: @section-padding-top;
 
   .title {
     text-align: center;
@@ -49,8 +49,10 @@
     }
   }
 
-  .create-organization {
+  .create-event {
     .form-group {
+      margin-bottom: 37px;
+
       .error {
         color: @iConnect-red;
         font-size: 11 * @rem;
@@ -77,7 +79,7 @@
   .options {
     padding-top: 92px;
 
-    .organization-option {
+    .event-option {
       text-align: center;
 
       input[type=checkbox] {
@@ -102,4 +104,12 @@
     margin: 72px auto;
   }
 
+  .hover-container:hover {
+    svg path {
+      fill: @iConnect-orange;
+    }
+    .title {
+      color: @iConnect-orange;;
+    }
+  }
 }

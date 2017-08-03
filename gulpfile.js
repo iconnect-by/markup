@@ -58,11 +58,6 @@ gulp.task('files', function () {
     .pipe(gulp.dest(paths.dist + "files/"));
 });
 
-gulp.task('version', function () {
-    gulp.src('app/version.txt')
-        .pipe(gulp.dest(paths.dist));
-});
-
 gulp.task('fonts', function(){
     return gulp
         .src([
@@ -84,10 +79,9 @@ gulp.task('watch', function() {
   gulp.watch('app/less/*.less', ['lessStyles']);
   gulp.watch(['app/*.html', 'app/**/*.html'], ['html']);
   gulp.watch('app/images/**/*.*', ['images']);
-  gulp.watch('app/version.txt', ['version']);
 });
 
-gulp.task("build", ["lessStyles", "scripts", "fonts", "images", "html", "files", "video", "version"]);
+gulp.task("build", ["lessStyles", "scripts", "fonts", "images", "html", "files", "video"]);
 
 gulp.task('browser-sync', ['build'], function () {
     var files = [
@@ -96,8 +90,7 @@ gulp.task('browser-sync', ['build'], function () {
       'app/images/**/*.png',
       'app/video/**/*',
       'app/js/**/*.js',
-      'dist/**/*',
-      'app/version.txt'
+      'dist/**/*'
    ];
     
    browserSync.init(files, {
