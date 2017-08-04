@@ -22,15 +22,15 @@ angular.module('iConnectApp')
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: '../../images/placeholder.svg'
                     }
                 ]
 
@@ -62,19 +62,19 @@ angular.module('iConnectApp')
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: '../../images/placeholder.svg'
                     }
                 ]
 
@@ -98,15 +98,15 @@ angular.module('iConnectApp')
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: '../../images/placeholder.svg'
                     }
                 ]
 
@@ -138,19 +138,19 @@ angular.module('iConnectApp')
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: '../../images/placeholder.svg'
                     }
                 ]
 
@@ -178,11 +178,11 @@ angular.module('iConnectApp')
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: '../../images/placeholder.svg'
                     }
                 ]
 
@@ -214,19 +214,19 @@ angular.module('iConnectApp')
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: '../../images/placeholder.svg'
                     }
                 ]
 
@@ -254,11 +254,11 @@ angular.module('iConnectApp')
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: '../../images/placeholder.svg'
                     }
                 ]
 
@@ -290,19 +290,19 @@ angular.module('iConnectApp')
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: '../../images/placeholder.svg'
                     },
                     {
                         id: 0,
-                        artistImg: '../../images/Add_small@2x.png'
+                        artistImg: '../../images/placeholder.svg'
                     }
                 ]
 

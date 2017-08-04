@@ -133,7 +133,8 @@ angular.module('iConnectApp')
                    icon: {
                        on: '../../images/create-dj-icon-filled.svg',
                        off: '../../images/create-dj-icon.svg'
-                   }
+                   },
+                   literal: 'fa fa-pied-piper-alt'
                },
                {
                    id: 1,
@@ -141,7 +142,8 @@ angular.module('iConnectApp')
                    icon: {
                        on: '../../images/create-musician-icon-filled.svg',
                        off: '../../images/create-musician-icon.svg'
-                   }
+                   },
+                   literal: 'fa fa-user-secret'
                },
                {
                    id: 2,
@@ -149,7 +151,8 @@ angular.module('iConnectApp')
                    icon: {
                        on: '../../images/create-vocalist-icon-filled.svg',
                        off: '../../images/create-vocalist-icon.svg'
-                   }
+                   },
+                   literal: 'fa fa-users'
                },
                {
                    id: 3,
@@ -157,7 +160,8 @@ angular.module('iConnectApp')
                    icon: {
                        on: '../../images/create-mc-icon-filled.svg',
                        off: '../../images/create-mc-icon.svg'
-                   }
+                   },
+                   literal: 'fa fa-star'
                }
            ],
             [
@@ -167,7 +171,8 @@ angular.module('iConnectApp')
                     icon: {
                         on: '../../images/create-promouter-icon-filled.svg',
                         off: '../../images/create-promouter-icon.svg'
-                    }
+                    },
+                    literal: 'fa fa-microphone'
                 },
                 {
                     id: 5,
@@ -175,7 +180,8 @@ angular.module('iConnectApp')
                     icon: {
                         on: '../../images/create-eleader-icon-filled.svg',
                         off: '../../images/create-eleader-icon.svg'
-                    }
+                    },
+                    literal: 'fa fa-diamond'
                 },
                 {
                     id: 6,
@@ -183,7 +189,8 @@ angular.module('iConnectApp')
                     icon: {
                         on: '../../images/create-musical-group-icon-filled.svg',
                         off: '../../images/create-musical-group-icon.svg'
-                    }
+                    },
+                    literal: 'fa fa-podcast'
                 },
                 {
                     id: 7,
@@ -191,7 +198,8 @@ angular.module('iConnectApp')
                     icon: {
                         on: '../../images/create-dancer-icon-filled.svg',
                         off: '../../images/create-dancer-icon.svg'
-                    }
+                    },
+                    literal: 'fa fa-hand-peace-o'
                 }
             ]
         ];
@@ -204,7 +212,8 @@ angular.module('iConnectApp')
                     icon: {
                         on: '../../images/create-dj-icon-filled.svg',
                         off: '../../images/create-dj-icon.svg'
-                    }
+                    },
+                    literal: 'fa fa-pied-piper-alt'
                 },
                 {
                     id: 1,
@@ -212,7 +221,8 @@ angular.module('iConnectApp')
                     icon: {
                         on: '../../images/create-musician-icon-filled.svg',
                         off: '../../images/create-musician-icon.svg'
-                    }
+                    },
+                    literal: 'fa fa-user-secret'
                 },
                 {
                     id: 2,
@@ -220,7 +230,8 @@ angular.module('iConnectApp')
                     icon: {
                         on: '../../images/create-vocalist-icon-filled.svg',
                         off: '../../images/create-vocalist-icon.svg'
-                    }
+                    },
+                    literal: 'fa fa-users'
                 },
                 {
                     id: 3,
@@ -228,7 +239,8 @@ angular.module('iConnectApp')
                     icon: {
                         on: '../../images/create-mc-icon-filled.svg',
                         off: '../../images/create-mc-icon.svg'
-                    }
+                    },
+                    literal: 'fa fa-star'
                 },
             ],
           [
@@ -238,7 +250,8 @@ angular.module('iConnectApp')
                   icon: {
                       on: '../../images/create-promouter-icon-filled.svg',
                       off: '../../images/create-promouter-icon.svg'
-                  }
+                  },
+                  literal: 'fa fa-microphone'
               },
               {
                   id: 5,
@@ -246,7 +259,8 @@ angular.module('iConnectApp')
                   icon: {
                       on: '../../images/create-eleader-icon-filled.svg',
                       off: '../../images/create-eleader-icon.svg'
-                  }
+                  },
+                  literal: 'fa fa-diamond'
               },
               {
                   id: 6,
@@ -254,7 +268,8 @@ angular.module('iConnectApp')
                   icon: {
                       on: '../../images/create-musical-group-icon-filled.svg',
                       off: '../../images/create-musical-group-icon.svg'
-                  }
+                  },
+                  literal: 'fa fa-podcast'
               },
               {
                   id: 7,
@@ -262,7 +277,8 @@ angular.module('iConnectApp')
                   icon: {
                       on: '../../images/create-dancer-icon-filled.svg',
                       off: '../../images/create-dancer-icon.svg'
-                  }
+                  },
+                  literal: 'fa fa-hand-peace-o'
               }
           ]
         ];
@@ -275,7 +291,8 @@ angular.module('iConnectApp')
                     icon: {
                         on: '../../images/create-dj-icon-filled.svg',
                         off: '../../images/create-dj-icon.svg'
-                    }
+                    },
+                    literal: 'fa fa-pied-piper-alt'
                 },
                 {
                     id: 1,
@@ -283,7 +300,8 @@ angular.module('iConnectApp')
                     icon: {
                         on: '../../images/create-musician-icon-filled.svg',
                         off: '../../images/create-musician-icon.svg'
-                    }
+                    },
+                    literal: 'fa fa-user-secret'
                 },
                 {
                     id: 2,
@@ -291,7 +309,8 @@ angular.module('iConnectApp')
                     icon: {
                         on: '../../images/create-vocalist-icon-filled.svg',
                         off: '../../images/create-vocalist-icon.svg'
-                    }
+                    },
+                    literal: 'fa fa-users'
                 },
                 {
                     id: 3,
@@ -299,7 +318,8 @@ angular.module('iConnectApp')
                     icon: {
                         on: '../../images/create-mc-icon-filled.svg',
                         off: '../../images/create-mc-icon.svg'
-                    }
+                    },
+                    literal: 'fa fa-star'
                 }
             ],
             [
@@ -309,7 +329,8 @@ angular.module('iConnectApp')
                     icon: {
                         on: '../../images/create-promouter-icon-filled.svg',
                         off: '../../images/create-promouter-icon.svg'
-                    }
+                    },
+                    literal: 'fa fa-microphone'
                 },
                 {
                     id: 5,
@@ -317,7 +338,8 @@ angular.module('iConnectApp')
                     icon: {
                         on: '../../images/create-eleader-icon-filled.svg',
                         off: '../../images/create-eleader-icon.svg'
-                    }
+                    },
+                    literal: 'fa fa-diamond'
                 },
                 {
                     id: 6,
@@ -325,7 +347,8 @@ angular.module('iConnectApp')
                     icon: {
                         on: '../../images/create-musical-group-icon-filled.svg',
                         off: '../../images/create-musical-group-icon.svg'
-                    }
+                    },
+                    literal: 'fa fa-podcast'
                 },
                 {
                     id: 7,
@@ -333,7 +356,8 @@ angular.module('iConnectApp')
                     icon: {
                         on: '../../images/create-dancer-icon-filled.svg',
                         off: '../../images/create-dancer-icon.svg'
-                    }
+                    },
+                    literal: 'fa fa-hand-peace-o'
                 }
             ]
         ];
@@ -382,7 +406,7 @@ angular.module('iConnectApp')
         ];
 
         $scope.getIcon = function (data) {
-
+            console.log(data);
             if (data.icon) {
                 if (data.isChecked) {
                     return data.icon.on;

@@ -38,27 +38,7 @@
 
         <div class="row">
             <div class="col-md-3" ng-repeat="art in allArtist['Singer'].artistList">
-                <div class="artist-card">
-                    <div class="row card-header">
-                        <div class="col-xs-7 artist-avatar">
-                            <img ng-src="{{ art.photo }}" class="img-responsive img-circle" alt="avatar">
-                        </div>
-                        <div class="col-xs-5 artist-info">
-                            <div class="name">{{ art.firstName}} {{ art.lastName}}</div>
-                            <div class="description">
-                                <p>{{ art.description}}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row card-footer">
-                        <div class="col-xs-7 left-part">
-                            <p>{{ art.country}}</p>
-                        </div>
-                        <div class="col-xs-5 right-part">
-                            <p>{{ art.style}}</p>
-                        </div>
-                    </div>
-                </div><!--.artist-card-->
+                <profile-preview data="art"></profile-preview>
             </div>
         </div>
 

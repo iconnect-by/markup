@@ -72,12 +72,12 @@
                             </li>
                             <li class="social-icons__item">
                                 <a href="#">
-                                    <img class="img-circle img-responsive" src="../../images/vimeo@2x.png" alt="vimeo">
+                                    <img class="img-circle img-responsive" src="../../../images/Vimeo@2x.png" alt="vimeo">
                                 </a>
                             </li>
                             <li class="social-icons__item">
                                 <a href="#">
-                                    <img class="img-circle img-responsive" src="../../images/youtube@2x.png" alt="youtube">
+                                    <img class="img-circle img-responsive" src="../../../images/Youtube@2x.png" alt="youtube">
                                 </a>
                             </li>
                             <li class="social-icons__item">
@@ -104,41 +104,7 @@
                     </div>
 
                     <div class="col-md-4" ng-repeat="event in eventsArt">
-                        <div class="event-card">
-                            <div class="container-fluid">
-                                <div class="row card-header">
-                                    <div class="col-xs-12 event-avatar">
-                                        <img src="{{event.imgUrl}}" class="img-responsive" alt="avatar">
-                                    </div>
-                                    <div class="col-xs-12 event-info">
-                                        <h4 class="ic-title title-4 name">{{event.title}}</h4>
-                                        <div class="ic-text text-grey small subtext">{{event.eventDate}}</div>
-                                        <div class="description ic-text text-default small">
-                                            <p>{{event.eventText}}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="people">
-                                    <a href="#" class="people-link" ng-repeat="artist in event.eventArtist">
-                                        <img src="{{artist.artistImg}}" class="img-responsive img-circle" alt="pavatar">
-                                    </a>
-                                    <a href="#" class="people-link-add">
-                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#" class="people-link-add">
-                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                                <div class="row card-footer">
-                                    <div class="col-xs-6 left-part">
-                                        <p>{{event.eventLocation}}</p>
-                                    </div>
-                                    <div class="col-xs-6 right-part">
-                                        <p>{{event.eventType}}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--.event-card-->
+                        <event-card data="event"></event-card>
                     </div><!--.col-->
                 </div>
 
@@ -148,19 +114,7 @@
                     </div>
 
                     <div class="col-md-4" ng-repeat="artist in colloborateArts">
-                        <div class="coloborating-card">
-                            <div class="avatar img-circle">
-                                <img ng-src="{{artist.photo}}" alt="...">
-                            </div>
-                            <div class="description">
-                                <div class="name">{{artist.firstName}} {{artist.lastName}}</div>
-                                <div class="info">{{artist.country}} | {{artist.style}}</div>
-                            </div>
-
-                            <div class="next">
-                                <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
+                        <coloborating-card data="artist"></coloborating-card>
                     </div>
                 </div>
 
@@ -170,41 +124,7 @@
                     </div>
 
                     <div class="col-md-4" ng-repeat="event in eventsArt">
-                        <div class="event-card">
-                            <div class="container-fluid">
-                                <div class="row card-header">
-                                    <div class="col-xs-12 event-avatar">
-                                        <img src="{{event.imgUrl}}" class="img-responsive" alt="avatar">
-                                    </div>
-                                    <div class="col-xs-12 event-info">
-                                        <h4 class="ic-title title-4 name">{{event.title}}</h4>
-                                        <div class="ic-text text-grey small subtext">{{event.eventDate}}</div>
-                                        <div class="description ic-text text-default small">
-                                            <p>{{event.eventText}}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="people">
-                                    <a href="#" class="people-link" ng-repeat="artist in event.eventArtist">
-                                        <img src="{{artist.artistImg}}" class="img-responsive img-circle" alt="pavatar">
-                                    </a>
-                                    <a href="#" class="people-link-add">
-                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#" class="people-link-add">
-                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                                <div class="row card-footer">
-                                    <div class="col-xs-6 left-part">
-                                        <p>{{event.eventLocation}}</p>
-                                    </div>
-                                    <div class="col-xs-6 right-part">
-                                        <p>{{event.eventType}}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--.event-card-->
+                        <event-card data="event"></event-card>
                     </div><!--.col-->
                 </div>
 

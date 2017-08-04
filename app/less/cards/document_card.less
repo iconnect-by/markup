@@ -1,0 +1,33 @@
+.document-card {
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  padding: 49px 44px 28px;
+  position: relative;
+  cursor: pointer;
+  background-image: url('@{ic-path-images}/document_bg.svg');
+  background-repeat: no-repeat;
+  background-size: 27%;
+  background-position: 50% 31%;
+  text-align: center;
+  height: 230px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 10px auto 15px;
+  transition: box-shadow .15s ease-in-out;
+
+  .subtext {
+    .text-grey-small;
+  }
+
+  .title {
+    .title-H4;
+  }
+
+  &:hover {
+    box-shadow: 0 10px 25px fade(#000, 10%);
+  }
+
+}

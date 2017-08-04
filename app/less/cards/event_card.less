@@ -1,0 +1,139 @@
+.event-card {
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: box-shadow .15s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 10px 25px fade(#000, 10%);
+  }
+
+  .card-header {
+    .event-avatar {
+      padding-left: 0;
+      padding-right: 0;
+      max-height: 200px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+      }
+    }
+    .event-info {
+      padding: 0 20px;
+
+      .subtext {
+        margin-bottom: 13px;
+      }
+
+      .name {
+        @font-size: 14 * @rem;
+        @line-height: 1.5;
+        @lines-to-show: 1;
+
+        height: @font-size * @line-height * @lines-to-show;
+        -webkit-line-clamp: @lines-to-show;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        line-height: @line-height;
+        padding-top: 5 * @rem;
+        margin-bottom: 15 * @rem;
+        font-weight: @fw-semibold;
+      }
+      .description {
+        font-size: 10 * @rem;
+        letter-spacing: .29px;
+        line-height: 1.2;
+        word-wrap: break-word;
+      }
+    }
+  }
+
+  .people {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: flex-start;
+    margin: 20px 0;
+    padding: 0 10px;
+
+    .people-link {
+      flex-basis: 50px;
+      margin: auto 0;
+      margin-bottom: 11px;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .people-link-add {
+      margin: auto 0;
+      margin-bottom: 11px;
+      border: 1px dashed #f2f2f2;
+      border-radius: 50%;
+      padding: 10px;
+      width: 40px;
+      height: 40px;
+      line-height: 1;
+      margin-right: 10px;
+      text-align: end;
+
+      .fa {
+        color: #e5e5e5;
+        font-size: 20 * @rem;
+      }
+
+      &:hover, &:focus, &:active {
+        border-color: darken(@iConnect-lightGrey, 20%);
+
+        .fa {
+          color: darken(@iConnect-lightGrey, 20%);
+        }
+      }
+    }
+  }
+
+  .card-footer {
+    border-top: 1px solid #f2f2f2;
+    padding: 19px 0 20px 0;
+    margin: 0;
+
+    p {
+      margin: 0;
+      max-width: 130px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: inline-block;
+    }
+
+    .left-part {
+      color: #999;
+      font-size: 10 * @rem;
+      letter-spacing: .29px;
+      text-align: left;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .right-part {
+      font-family: @iConnect-font-semiBold;
+      font-weight: 600;
+      color: #333;
+      font-size: 10 * @rem;
+      letter-spacing: .29px;
+      text-transform: uppercase;
+      text-align: right;
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}

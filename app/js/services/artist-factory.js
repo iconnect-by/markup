@@ -8,7 +8,7 @@ angular.module('iConnectApp')
                 artistTops: [
                     {
                         id: 0,
-                        firstName: "Nicole",
+                        firstName: "Nicole1",
                         lastName: "Pearson",
                         country: "Belarus",
                         style: "Singer",
@@ -17,7 +17,7 @@ angular.module('iConnectApp')
                     },
                     {
                         id: 1,
-                        firstName: "Nicole",
+                        firstName: "Nicole2",
                         lastName: "Pearson",
                         country: "Belarus",
                         style: "Singer",
@@ -58,7 +58,7 @@ angular.module('iConnectApp')
                 artistTops: [
                     {
                         id: 0,
-                        firstName: "Nicole",
+                        firstName: "Nicole1",
                         lastName: "Pearson",
                         country: "Belarus",
                         style: "Singer",

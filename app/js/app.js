@@ -8,7 +8,8 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.sel
                 url: '/',
                 views: {
                     'header': {
-                        templateUrl: 'views/header.html'
+                        templateUrl: 'views/header.html',
+                        // controller: 'HeaderController'
                     },
                     'content': {
                         templateUrl: 'views/temp.html'
@@ -76,6 +77,9 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.sel
             // route for the login page
             .state('app.login', {
                 url: 'login',
+                // data: {
+                //     isHeaderTransparent: true
+                // },
                 views: {
                     'content@': {
                         templateUrl: 'views/login/login.html',
@@ -160,7 +164,7 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.sel
                 url: '/config',
                 views: {
                     'content@': {
-                        templateUrl: 'views/profile/organization/organization-config.html',
+                        templateUrl: 'views/profile/oranization/organization-config.html',
                         controller: 'PersonalController'
                     }
                 }

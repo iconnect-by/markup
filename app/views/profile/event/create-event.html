@@ -1,17 +1,20 @@
 <section class="create-initial-section event-section" ng-controller="RegistrationController">
     <div class="container">
 
-        <form class="create-event" name="create-form" novalidate>
-            <div class="row">
+        <script>
+            $('.form-control').on('focus blur', function (e) {
+                $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+            }).trigger('blur');
+        </script>
 
-                <div class="title">
-                    <h1>Set an event name here</h1>
-                </div>
+        <form class="create-form" name="create-form" novalidate>
+            <div class="row">
 
                 <div class="col-md-offset-4 col-md-4">
                     <fieldset>
                         <div class="form-group styled-placeholder">
-                            <input class="form-control" placeholder="Add an event name" autocomplete="off" type="text" name="event-name" ng-model="event.name" ng-required="true">
+                            <label class="control-label">Add an event name</label>
+                            <input class="form-control" autocomplete="off" type="text" name="event-name" ng-model="event.name" ng-required="true">
                             <p class="error" ng-show="signin.email.$invalid && signin.email.$touched">Must be a valid name</p>
                         </div>
                     </fieldset>
@@ -20,12 +23,14 @@
 
             <div class="row">
                 <div class="col-md-offset-3 col-md-6 options">
-                    <div class="row event-option" ng-repeat="items in events">
+                    <div class="row settings-option" ng-repeat="items in events">
                         <div class="col-md-3 content" ng-repeat="item in items">
-                            <div class="hover-container">
-                                <input type="checkbox" ng-attr-id="{{'info' + item.id}}" ng-model="item.isChecked"/>
-                                <label ng-attr-for="{{'info' +item.id}}"><img class="svg" ng-src="{{getIcon(item)}}"></label>
-                                <div class="title">{{item.name}}</div>
+                            <div class="hover-container" ng-class="item.isChecked ? 'checked' : ''">
+                                <input type="checkbox" ng-attr-id="{{'info' + item.id}}" ng-model="item.isChecked" />
+                                <label ng-attr-for="{{'info' +item.id}}" ng-click="getIcon(item)">
+                                    <div class="{{item.literal}}"></div>
+                                    <div class="title">{{item.name}}</div>
+                                </label>
                             </div>
                         </div>
                     </div>

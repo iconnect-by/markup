@@ -77,7 +77,7 @@ gulp.task('video', function(){
 gulp.task('watch', function() {
   gulp.watch('app/js/**/*', ['scripts']);
   gulp.watch('app/less/*.less', ['lessStyles']);
-  gulp.watch(['app/*.html', 'app/**/*.html'], ['html']);
+  gulp.watch(['app/*.html', 'app/**/*.html', 'app/**/**/*.html'], ['html']);
   gulp.watch('app/images/**/*.*', ['images']);
 });
 
@@ -86,6 +86,7 @@ gulp.task("build", ["lessStyles", "scripts", "fonts", "images", "html", "files",
 gulp.task('browser-sync', ['build'], function () {
     var files = [
       'app/**/*.html',
+      'app/**/**/*.html',
       'app/less/**/*.css',
       'app/images/**/*.png',
       'app/video/**/*',

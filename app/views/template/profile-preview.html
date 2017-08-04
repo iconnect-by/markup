@@ -1,0 +1,23 @@
+<div class="profile-card">
+    <div class="row card-header">
+        <div class="col-xs-6 hero-avatar" ng-class="$ctrl.avatarTypeClass ? $ctrl.avatarTypeClass : ''">
+            <img ng-src="{{ $ctrl.data.photo }}" class="img-responsive" alt="avatar">
+        </div>
+        <div class="col-xs-6 profile-info">
+            <div class="name">
+                {{ $ctrl.data.firstName ? $ctrl.data.firstName : $ctrl.data.title }} {{ $ctrl.data.lastName ? $ctrl.data.lastName : '' }}
+            </div>
+            <div class="description">
+                <p>{{ $ctrl.data.description}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="row card-footer">
+        <div class="col-xs-6 left-part">
+            <p>{{ $ctrl.data.country ? $ctrl.data.country : $ctrl.data.location }}</p>
+        </div>
+        <div class="col-xs-6 right-part">
+            <p>{{ $ctrl.data.style}}</p>
+        </div>
+    </div>
+</div><!--.artist-card-->
