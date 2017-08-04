@@ -3,6 +3,7 @@
 angular.module('iConnectApp')
     .controller('PersonalController', ['$scope', function($scope) {
         $scope.divShow = "allMedia";
+        $scope.locationEditable = false;
 
         $scope.showMedia = function(arg, e) {
             e.preventDefault();
@@ -12,6 +13,17 @@ angular.module('iConnectApp')
         $scope.itunesSelect = {
             "Itunes Festival":[1,2,3],
             "Itunes Show":[1,2,3]
+        };
+
+        $scope.edit = function (e) {
+            e.preventDefault();
+
+            if (true === $scope.locationEditable) {
+                $scope.locationEditable = false;
+            } else {
+                $scope.locationEditable = true;
+            }
+
         };
 
         $scope.eventSources = [];

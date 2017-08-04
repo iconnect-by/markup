@@ -53,11 +53,6 @@ gulp.task('images', function () {
         .pipe(gulp.dest(paths.dist + "images/"));
 });
 
-gulp.task('files', function () {
-    gulp.src("app/files/*.*")
-    .pipe(gulp.dest(paths.dist + "files/"));
-});
-
 gulp.task('fonts', function(){
     return gulp
         .src([
@@ -77,18 +72,17 @@ gulp.task('video', function(){
 gulp.task('watch', function() {
   gulp.watch('app/js/**/*', ['scripts']);
   gulp.watch('app/less/*.less', ['lessStyles']);
-  gulp.watch(['app/*.html', 'app/**/*.html', 'app/**/**/*.html'], ['html']);
+  gulp.watch(['app/*.html', 'app/**/*.html'], ['html']);
   gulp.watch('app/images/**/*.*', ['images']);
 });
 
-gulp.task("build", ["lessStyles", "scripts", "fonts", "images", "html", "files", "video"]);
+gulp.task("build", ["lessStyles", "scripts", "fonts", "images", "html", "video"]);
 
 gulp.task('browser-sync', ['build'], function () {
     var files = [
       'app/**/*.html',
-      'app/**/**/*.html',
       'app/less/**/*.css',
-      'app/images/**/*.png',
+      'app/images/**/*.*',
       'app/video/**/*',
       'app/js/**/*.js',
       'dist/**/*'
