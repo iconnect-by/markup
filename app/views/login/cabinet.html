@@ -43,27 +43,7 @@
                         </div><!--.row-->
                         <div class="row">
                             <div class="col-md-3" ng-repeat="art in artistList">
-                                <div class="artist-card">
-                                    <div class="row card-header">
-                                        <div class="col-xs-6 artist-avatar">
-                                            <img src="{{ art.photo }}" class="img-responsive img-circle" alt="avatar">
-                                        </div>
-                                        <div class="col-xs-6 artist-info">
-                                            <div class="name">{{ art.firstName}} {{ art.lastName}}</div>
-                                            <div class="description">
-                                                <p>{{ art.description}}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row card-footer">
-                                        <div class="col-xs-6 left-part">
-                                            <p>{{ art.country}}</p>
-                                        </div>
-                                        <div class="col-xs-6 right-part">
-                                            <p>{{ art.style}}</p>
-                                        </div>
-                                    </div>
-                                </div><!--.artist-card-->
+                                <profile-preview data="art" avatar-type-class="'avatar-circle'"></profile-preview>
                             </div><!--.col-->
                         </div><!--.row-->
 
@@ -74,25 +54,7 @@
                         </div><!--.row-->
                         <div class="row">
                             <div class="col-md-3" ng-repeat="org in organizationList">
-                                <div class="organization-card">
-                                    <div class="row card-header">
-                                        <div class="col-xs-6 organization-avatar">
-                                            <img src="{{ org.photo }}" class="img-responsive" alt="avatar">
-                                        </div>
-                                        <div class="col-xs-6 organization-info">
-                                            <div class="name">{{ org.title}}</div>
-                                            <div class="description">
-                                                <p>{{ org.description}}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row card-footer">
-                                        <div class="col-xs-6 left-part">
-                                            <p>{{ org.location}}</p>
-                                        </div>
-                                        <div class="col-xs-6 right-part"></div>
-                                    </div>
-                                </div><!--.organization-card-->
+                                <profile-preview data="org"></profile-preview>
                             </div><!--.col-->
                         </div><!--.row-->
 
@@ -103,39 +65,7 @@
                         </div><!--.row-->
                         <div class="row">
                             <div class="col-md-3" ng-repeat="event in eventsArt">
-                                <div class="event-card">
-                                    <div class="container-fluid">
-                                        <div class="row card-header">
-                                            <div class="col-xs-12 event-avatar">
-                                                <img src="../../images/placeholder.svg" class="img-responsive" alt="avatar">
-                                            </div>
-                                            <div class="col-xs-12 event-info">
-                                                <h4 class="ic-title title-4 name">{{ event.title }}</h4>
-                                                <div class="ic-text text-grey small subtext">{{ event.eventDate }}</div>
-                                                <div class="description ic-text text-default small">
-                                                    <!--<p>{{ event.eventText }}</p>-->
-                                                    <p ng-bind-html="event.eventText"></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="people">
-                                            <a href="#" class="people-link" ng-repeat="man in event.eventArtist">
-                                                <img src="{{ man.artistImg }}" class="img-responsive img-circle" alt="pavatar">
-                                            </a>
-                                            <a href="#" class="people-link-add">
-                                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                                            </a>
-                                        </div>
-                                        <div class="row card-footer">
-                                            <div class="col-xs-6 left-part">
-                                                <p>{{event.eventLocation}}</p>
-                                            </div>
-                                            <div class="col-xs-6 right-part">
-                                                <p>{{event.eventType}}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!--.event-card-->
+                                <event-card data="event"></event-card>
                             </div><!--.col-->
                         </div><!--.row-->
                     </div><!--.container-fluid-->
@@ -146,36 +76,16 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-3" ng-repeat="art in artistList">
-                                <div class="artist-card">
-                                    <div class="row card-header">
-                                        <div class="col-xs-6 artist-avatar">
-                                            <img src="{{ art.photo }}" class="img-responsive img-circle" alt="avatar">
-                                        </div>
-                                        <div class="col-xs-6 artist-info">
-                                            <div class="name">{{ art.firstName}} {{ art.lastName}}</div>
-                                            <div class="description">
-                                                <p>{{ art.description}}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row card-footer">
-                                        <div class="col-xs-6 left-part">
-                                            <p>{{ art.country}}</p>
-                                        </div>
-                                        <div class="col-xs-6 right-part">
-                                            <p>{{ art.style}}</p>
-                                        </div>
-                                    </div>
-                                </div><!--.artist-card-->
+                                <profile-preview data="art" avatar-type-class="'avatar-circle'"></profile-preview>
                             </div><!--.col-->
                             <div class="col-md-3">
-                                <div class="add-new-card">
-                                    <div class="card-content">
-                                        <div class="title">Create a new artist page</div>
-                                        <p>This page presents you as an artist of the chosen genre and allows you to work with the organizers</p>
-                                        <button class="ic-btn ic-btn-blue big">Create page</button>
-                                    </div>
-                                </div><!--.new-card-->
+                                <create-card
+                                        data="{
+                                            title: 'Create a new artist page',
+                                            content: 'This page presents you as an artist of the chosen genre and allows you to work with the organizers',
+                                            btn_label: 'Create page'
+                                        }"
+                                ></create-card>
                             </div><!--.col-->
                         </div><!--.row-->
                     </div>
@@ -186,34 +96,16 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-3" ng-repeat="org in organizationList">
-                                <div class="organization-card">
-                                    <div class="row card-header">
-                                        <div class="col-xs-6 organization-avatar">
-                                            <img src="{{ org.photo }}" class="img-responsive" alt="avatar">
-                                        </div>
-                                        <div class="col-xs-6 organization-info">
-                                            <div class="name">{{ org.title}}</div>
-                                            <div class="description">
-                                                <p>{{ org.description}}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row card-footer">
-                                        <div class="col-xs-6 left-part">
-                                            <p>{{ org.location}}</p>
-                                        </div>
-                                        <div class="col-xs-6 right-part"></div>
-                                    </div>
-                                </div><!--.organization-card-->
+                                <profile-preview data="org"></profile-preview>
                             </div><!--.col-->
                             <div class="col-md-3">
-                                <div class="add-new-card">
-                                    <div class="card-content">
-                                        <div class="title">Create a new organization page</div>
-                                        <p>This page presents you as an organization of the chosen type and allows you to work with the artists</p>
-                                        <button class="ic-btn ic-btn-blue big">Create page</button>
-                                    </div>
-                                </div><!--.new-card-->
+                                <create-card
+                                        data="{
+                                            title: 'Create a new organization page',
+                                            content: 'This page presents you as an organization of the chosen type and allows you to work with the artists',
+                                            btn_label: 'Create page'
+                                        }"
+                                ></create-card>
                             </div><!--.col-->
                         </div><!--.row-->
                     </div>
@@ -224,48 +116,16 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-3" ng-repeat="event in eventsArt">
-                                <div class="event-card">
-                                    <div class="container-fluid">
-                                        <div class="row card-header">
-                                            <div class="col-xs-12 event-avatar">
-                                                <img src="../../images/placeholder.svg" class="img-responsive" alt="avatar">
-                                            </div>
-                                            <div class="col-xs-12 event-info">
-                                                <h4 class="ic-title title-4 name">{{ event.title }}</h4>
-                                                <div class="ic-text text-grey small subtext">{{ event.eventDate }}</div>
-                                                <div class="description ic-text text-default small">
-                                                    <!--<p>{{ event.eventText }}</p>-->
-                                                    <p ng-bind-html="event.eventText"></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="people">
-                                            <a href="#" class="people-link" ng-repeat="man in event.eventArtist">
-                                                <img src="{{ man.artistImg }}" class="img-responsive img-circle" alt="pavatar">
-                                            </a>
-                                            <a href="#" class="people-link-add">
-                                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                                            </a>
-                                        </div>
-                                        <div class="row card-footer">
-                                            <div class="col-xs-6 left-part">
-                                                <p>{{event.eventLocation}}</p>
-                                            </div>
-                                            <div class="col-xs-6 right-part">
-                                                <p>{{event.eventType}}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!--.event-card-->
+                                <event-card data="event"></event-card>
                             </div><!--.col-->
                             <div class="col-md-3">
-                                <div class="add-new-card">
-                                    <div class="card-content">
-                                        <div class="title">Create a new event</div>
-                                        <p>This page presents you as an organization of the chosen type and allows you to work with the artists</p>
-                                        <button class="ic-btn ic-btn-blue big">Create page</button>
-                                    </div>
-                                </div><!--.new-card-->
+                                <create-card
+                                        data="{
+                                            title: 'Create a new event',
+                                            content: 'This page presents you as an organization of the chosen type and allows you to work with the artists',
+                                            btn_label: 'Create page'
+                                        }"
+                                ></create-card>
                             </div><!--.col-->
                         </div><!--.row-->
                     </div>
@@ -276,25 +136,21 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-3" ng-repeat="doc in icDocuments">
-                                <div class="document-card">
-                                    <h4 class="ic-title title-4">{{ doc.title }}</h4>
-                                    <div class="ic-text text-grey small subtext">{{ doc.date }}</div>
-                                </div><!--.document-card-->
+                                <document-card data="doc"></document-card>
                             </div><!--.col-->
 
                             <div class="col-md-3">
-                                <div class="add-new-card">
-                                    <div class="card-content">
-                                        <div class="title">Create a new doc</div>
-                                        <p>You can create the necessary documents for work using our templates</p>
-                                        <button class="ic-btn ic-btn-blue big">Create Document</button>
-                                    </div>
-                                </div><!--.new-card-->
+                                <create-card
+                                        data="{
+                                            title: 'Create a new doc',
+                                            content: 'You can create the necessary documents for work using our templates',
+                                            btn_label: 'Create Document'
+                                        }"
+                                ></create-card>
                             </div><!--.col-->
                         </div>
                     </div>
                 </div><!--.tabpanel-->
-
 
                 <div role="tabpanel" class="tab-pane" id="statistics">
                     <div class="container-fluid">

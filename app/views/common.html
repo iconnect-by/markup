@@ -292,164 +292,85 @@
 
             <div class="row">
                 <div class="col-md-3">
-
-                    <div class="artist-card">
-                        <div class="row card-header">
-                            <div class="col-xs-7 artist-avatar">
-                                <img src="../../images/placeholder.svg" class="img-responsive img-circle" alt="avatar">
-                            </div>
-                            <div class="col-xs-5 artist-info">
-                                <div class="name">Helen Sullivan</div>
-                                <div class="description">
-                                    <p>A purpose is the eternal condition for success.
-                                        Every former smoker can tell you just how hard it is to stop smoking cigarettes.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row card-footer">
-                            <div class="col-xs-7 left-part">
-                                <p>Bouvet Island (Bouvetoya)</p>
-                            </div>
-                            <div class="col-xs-5 right-part">
-                                <p>Deep House</p>
-                            </div>
-                        </div>
-                    </div><!--.artist-card-->
-
+                    <profile-preview
+                                    data="{
+                                        photo: '../../images/placeholder.svg',
+                                        firstName: 'Helen',
+                                        lastName: 'Sullivan',
+                                        description: 'A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes.',
+                                        country: 'Bouvet Island (Bouvetoya)',
+                                        style: 'Deep House'
+                                    }"
+                                     avatar-type-class="'avatar-circle'"
+                    ></profile-preview>
                 </div><!--.col-->
                 <div class="col-md-3">
-                    <div class="artist-card">
-                        <div class="row card-header">
-                            <div class="col-xs-6 artist-avatar">
-                                <img src="../../images/placeholder.svg" class="img-responsive img-circle" alt="avatar">
-                            </div>
-                            <div class="col-xs-6 artist-info">
-                                <div class="name">Lawrence Lambert</div>
-                                <div class="description">
-                                    <p>A purpose is the eternal condition for success.
-                                        Every former smoker can tell you just how hard it is to stop smoking cigarettes.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row card-footer">
-                            <div class="col-xs-6 left-part">
-                                <p>Madagascar</p>
-                            </div>
-                            <div class="col-xs-6 right-part">
-                                <p>Dubstep</p>
-                            </div>
-                        </div>
-                    </div><!--.artist-card-->
+                    <profile-preview
+                                    data="{
+                                        photo: '../../images/placeholder.svg',
+                                        title: 'SURA RECORDS',
+                                        description: 'A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes.',
+                                        location: 'Palau'
+                                    }"
+                    ></profile-preview>
                 </div><!--.col-->
 
+
                 <div class="col-md-3">
-                    <div class="organization-card">
-                        <div class="row card-header">
-                            <div class="col-xs-7 organization-avatar">
-                                <img src="../../images/placeholder.svg" class="img-responsive" alt="avatar">
-                            </div>
-                            <div class="col-xs-5 organization-info">
-                                <div class="name">SURA RECORDS</div>
-                                <div class="description">
-                                    <p>A purpose is the eternal condition for success.
-                                        Every former smoker can tell you just how hard it is to stop smoking cigarettes.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row card-footer">
-                            <div class="col-xs-6 left-part">
-                                <p>Palau</p>
-                            </div>
-                            <div class="col-xs-6 right-part"></div>
-                        </div>
-                    </div><!--.organization-card-->
+                    <event-card
+                            data="{
+                                id: 0,
+                                title: 'Romantic Ballads',
+                                imgUrl: '../../images/placeholder.svg',
+                                eventText: '<p>A purpose is the eternal condition for success.Every former smoker can tell you just how hard it is to stop smoking cigarettes. </p> <p>A purpose is the eternal condition for success.Every former smoker can tell you just how hard it is to stop smoking cigarettes. </p> <p>A purpose is the eternal condition for success.Every former smoker can tell you just how hard it is to stop smoking cigarettes. </p>',
+                                eventType: 'Concert',
+                                eventLocation: 'UK, London',
+                                eventDate: '12 nov 2016, 22:00 - 5:00',
+                                eventArtist: [
+                                    {
+                                        id: 1,
+                                        artistImg: '../../images/placeholder.svg'
+                                    },
+                                    {
+                                        id: 1,
+                                        artistImg: '../../images/placeholder.svg'
+                                    },
+                                    {
+                                        id: 0,
+                                        artistImg: '../../images/Add_small@2x.png'
+                                    },
+                                    {
+                                        id: 0,
+                                        artistImg: '../../images/Add_small@2x.png'
+                                    },
+                                    {
+                                        id: 0,
+                                        artistImg: '../../images/Add_small@2x.png'
+                                    }
+                                ]
+
+                            }"
+                    ></event-card>
+
                 </div><!--.col-->
 
                 <div class="col-md-3">
-                    <div class="event-card">
-                        <div class="container-fluid">
-                            <div class="row card-header">
-                                <div class="col-xs-12 event-avatar">
-                                    <img src="../../images/placeholder.svg" class="img-responsive" alt="avatar">
-                                </div>
-                                <div class="col-xs-12 event-info">
-                                    <h4 class="ic-title title-4 name">Romantic Ballads</h4>
-                                    <div class="ic-text text-grey small subtext">12 Nov 2016, 22:00 - 05:00</div>
-                                    <div class="description ic-text text-default small">
-                                        <p>
-                                            A purpose is the eternal condition for success.
-                                            Every former smoker can tell you just how hard it is to stop smoking cigarettes.
-                                        </p>
-                                        <p>
-                                            A purpose is the eternal condition for success.
-                                            Every former smoker can tell you just how hard it is to stop smoking cigarettes.
-                                        </p>
-                                        <p>
-                                            A purpose is the eternal condition for success.
-                                            Every former smoker can tell you just how hard it is to stop smoking cigarettes.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="people">
-                                <a href="#" class="people-link">
-                                    <img src="../../images/placeholder.svg" class="img-responsive img-circle" alt="pavatar">
-                                </a>
-                                <a href="#" class="people-link">
-                                    <img src="../../images/placeholder.svg" class="img-responsive img-circle" alt="pavatar">
-                                </a>
-                                <a href="#" class="people-link">
-                                    <img src="../../images/placeholder.svg" class="img-responsive img-circle" alt="pavatar">
-                                </a>
-                                <a href="#" class="people-link">
-                                    <img src="../../images/placeholder.svg" class="img-responsive img-circle" alt="pavatar">
-                                </a>
-                                <a href="#" class="people-link">
-                                    <img src="../../images/placeholder.svg" class="img-responsive img-circle" alt="pavatar">
-                                </a>
-                                <a href="#" class="people-link">
-                                    <img src="../../images/placeholder.svg" class="img-responsive img-circle" alt="pavatar">
-                                </a>
-                                <a href="#" class="people-link">
-                                    <img src="../../images/placeholder.svg" class="img-responsive img-circle" alt="pavatar">
-                                </a>
-                                <a href="#" class="people-link">
-                                    <img src="../../images/placeholder.svg" class="img-responsive img-circle" alt="pavatar">
-                                </a>
-                                <a href="#" class="people-link-add">
-                                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="people-link-add">
-                                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                            <div class="row card-footer">
-                                <div class="col-xs-6 left-part">
-                                    <p>London, UK</p>
-                                </div>
-                                <div class="col-xs-6 right-part">
-                                    <p>Concert</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--.event-card-->
+                    <document-card
+                            data="{
+                                title: 'Vinyl Banners',
+                                date: '12 Nov 2016, 22:00 - 05:00'
+                            }"
+                    ></document-card>
                 </div><!--.col-->
 
                 <div class="col-md-3">
-                    <div class="document-card">
-                        <h4 class="ic-title title-4">Vinyl Banners</h4>
-                        <div class="ic-text text-grey small subtext">12 Nov 2016, 22:00 - 05:00</div>
-                    </div><!--.document-card-->
-                </div><!--.col-->
-
-                <div class="col-md-3">
-                    <div class="add-new-card">
-                        <div class="card-content">
-                            <div class="title">Create a new artist page</div>
-                            <p>This page presents you as an artist of the chosen genre and allows you to work with the organizers</p>
-                            <button class="ic-btn ic-btn-blue big">Create page</button>
-                        </div>
-                    </div><!--.new-card-->
+                    <create-card
+                            data="{
+                                title: 'Create a new doc',
+                                content: 'You can create the necessary documents for work using our templates',
+                                btn_label: 'Create Document'
+                            }"
+                    ></create-card>
                 </div><!--.col-->
 
 

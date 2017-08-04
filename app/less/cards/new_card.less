@@ -1,0 +1,49 @@
+.add-new-card {
+  border: 1px dashed #f2f2f2;
+  border-radius: 4px;
+  padding: 30px 35px 29px;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  min-height: 230px;
+  max-height: 230px;
+  height: 230px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+
+  .card-content {
+    .title {
+      text-align: center;
+      font-family: @iConnect-font-semiBold;
+      color: #333;
+      font-size: 14 * @rem;
+      letter-spacing: .4px;
+      line-height: 1.357;
+      margin-bottom: 13px;
+    }
+    p {
+      @font-size: 10 * @rem;
+      @line-height: 1.2;
+      @lines-to-show: 3;
+
+      height: @font-size * @line-height * @lines-to-show;
+      -webkit-line-clamp: @lines-to-show;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      color: #333;
+      font-size: @font-size;
+      letter-spacing: .29px;
+      line-height: @line-height;
+      text-align: center;
+      margin-bottom: 43px;
+    }
+
+    .ic-btn {
+      display: block;
+      margin: 0 auto;
+      padding: 0 65px;
+    }
+  }
+}

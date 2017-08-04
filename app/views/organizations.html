@@ -38,30 +38,23 @@
 
                 <div class="row">
                     <div class="col-md-4" ng-repeat="org in organizationList">
-                        <div class="artist-card">
-                            <div class="row card-header">
-                                <div class="col-xs-7 artist-avatar">
-                                    <img ng-src="{{ org.photo }}" class="img-responsive" alt="avatar">
-                                </div>
-                                <div class="col-xs-5 artist-info">
-                                    <div class="name">{{ org.title}}</div>
-                                    <div class="description">
-                                        <p>{{ org.description}}</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row card-footer">
-                                <div class="col-xs-7 left-part">
-                                    <p>{{ org.location}}</p>
-                                </div>
-                            </div>
-                        </div><!--.artist-card-->
+                        <profile-preview data="org"></profile-preview>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-3">
-                <ng-include src="'/views/template/new-artist.html'"/>
+                <div class="new-artist-section">
+                    <div class="section-title">New Artist</div>
+
+                    <div class="artist-new">
+                        <mini-profile-preview
+                                ng-repeat="artist in newArtists"
+                                data="artist"
+                                show-index="0"
+                        ></mini-profile-preview>
+                    </div>
+                </div>
 
                 <div class="banner">
                     <img src="../../images/banner.png" class="img-responsive" alt="...">

@@ -1,15 +1,6 @@
 .create-initial-section {
   padding-top: @section-padding-top;
 
-  .title {
-    text-align: center;
-
-    h1 {
-      .section-title-black;
-      margin: 0 0 9px;
-    }
-  }
-
   .styled-placeholder {
 
     &.form-group {
@@ -19,6 +10,46 @@
       border-bottom: 1px solid #f2f2f2;
       border-radius: 0;
       margin-bottom: 0;
+
+      &.focused {
+        .control-label {
+          opacity: 1;
+          top: -20px;
+          transform: scale(1);
+          color: @iConnect-orange;
+        }
+
+        input {
+          background-color: transparent;
+          box-shadow: none;
+          outline: none;
+          border-bottom: 1px solid @iConnect-orange !important;
+        }
+      }
+    }
+
+    .control-label {
+      .title-H2;
+      color: #999;
+      font-family: @iConnect-font-regular;
+      font-size: 16 * @rem;
+      font-weight: @fw-regular;
+      line-height: 1.125;
+      letter-spacing: .46px;
+      margin-bottom: 0;
+      opacity: .5;
+      pointer-events: none;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: 18px;
+      transform: scale(1);
+      transform-origin: center top;
+      transition: all .2s ease-in-out;
+    }
+
+    .form-control {
+      align-self: flex-end;
     }
 
     input {
@@ -28,31 +59,13 @@
       font-weight: @fw-regular;
       text-align: center;
       height: 65px;
-      padding-bottom: 35px;
       border-radius: 0;
-
-      &:focus {
-        background-color: transparent;
-        box-shadow: none;
-        outline: none;
-        border-bottom: 1px solid @iConnect-orange;
-
-      }
-
-      &::placeholder {
-        .title-H2;
-        color: #999;
-        margin: 0;
-        font-weight: @fw-regular;
-        text-align: center;
-      }
+      border-bottom: 1px solid transparent !important;
     }
   }
 
-  .create-event {
+  .create-form {
     .form-group {
-      margin-bottom: 37px;
-
       .error {
         color: @iConnect-red;
         font-size: 11 * @rem;
@@ -77,39 +90,71 @@
   }
 
   .options {
-    padding-top: 92px;
+    padding-top: 100px;
 
-    .event-option {
+    .settings-option {
       text-align: center;
 
-      input[type=checkbox] {
-        display:none;
+      .content {
+
+        .hover-container {
+          transition: all .2s ease-in-out;
+
+          &.checked {
+            label {
+              .title {
+                color: @iConnect-orange;
+              }
+              .fa {
+                color: @iConnect-orange;
+              }
+            }
+          }
+
+          &:hover {
+            label {
+              .title {
+                color: @iConnect-orange;
+              }
+              .fa {
+                color: @iConnect-orange;
+              }
+            }
+          }
+
+          input[type=checkbox] {
+            display:none;
+          }
+
+          label {
+            cursor: pointer;
+            margin-bottom: 90px;
+
+            .fa {
+              font-size: 50 * @rem;
+              color: #8c96aa;
+              display: block;
+              transition: all .2s ease-in-out;
+            }
+
+            .title {
+              display: block;
+              margin-top: 65px;
+              .title-H4;
+              font-weight: @fw-regular;
+              transition: all .2s ease-in-out;
+            }
+          }
+        }
+
       }
 
-      label {
-        margin-bottom: 60px;
-        cursor: pointer;
-        height: 45px;
-        .title-H4;
-      }
-
-      .title {
-        margin-bottom: 88px;
-      }
     }
   }
 
   .ic-btn {
     display: block;
-    margin: 72px auto;
+    margin: 0 auto 90px;
   }
 
-  .hover-container:hover {
-    svg path {
-      fill: @iConnect-orange;
-    }
-    .title {
-      color: @iConnect-orange;;
-    }
-  }
 }

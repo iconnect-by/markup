@@ -1,0 +1,104 @@
+.profile-card {
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  padding: 20px 20px 19px 20px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: box-shadow .15s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 10px 25px fade(#000, 10%);
+  }
+
+  .card-header {
+    padding-bottom: 20px;
+
+    .hero-avatar {
+      border-radius: 2px;
+      &.avatar-circle  {
+        img {
+          border-radius: 50%;
+        }
+      }
+    }
+    .profile-info {
+      .name {
+        @font-size: 14 * @rem;
+        @line-height: 1.357;
+        @lines-to-show: 1;
+
+        height: @font-size * @line-height * @lines-to-show;
+        -webkit-line-clamp: @lines-to-show;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        font-family: @iConnect-font-semiBold;
+        color: #333;
+        font-size: @font-size;
+        letter-spacing: .4px;
+        line-height: @line-height;
+        padding-top: 5 * @rem;
+        margin-bottom: 13 * @rem;
+        font-weight: @fw-semibold;
+      }
+      .description {
+        font-size: 10 * @rem;
+        letter-spacing: .29px;
+        line-height: 1.2;
+        word-wrap: break-word;
+
+        p {
+          @font-size: 10 * @rem;
+          @line-height: 1.2;
+          @lines-to-show: 6;
+
+          height: @font-size * @line-height * @lines-to-show;
+          -webkit-line-clamp: @lines-to-show;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          line-height: @line-height;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .card-footer {
+    border-top: 1px solid #f2f2f2;
+    padding: 16px 0 0 0;
+    margin: 0;
+
+    p {
+      margin: 0;
+      max-width: 100px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: inline-block;
+    }
+
+    .left-part {
+      color: #999;
+      font-size: 10 * @rem;
+      letter-spacing: .29px;
+      text-align: left;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .right-part {
+      font-family: @iConnect-font-semiBold;
+      font-weight: 600;
+      color: #333;
+      font-size: 10 * @rem;
+      letter-spacing: .29px;
+      text-transform: uppercase;
+      text-align: right;
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}

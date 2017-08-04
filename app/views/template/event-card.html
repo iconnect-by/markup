@@ -1,0 +1,32 @@
+<div class="event-card">
+    <div class="container-fluid">
+        <div class="row card-header">
+            <div class="col-xs-12 event-avatar">
+                <img ng-src="{{ $ctrl.data.imgUrl }}" class="img-responsive" alt="avatar">
+            </div>
+            <div class="col-xs-12 event-info">
+                <h4 class="ic-title title-4 name">{{ $ctrl.data.title }}</h4>
+                <div class="ic-text text-grey small subtext">{{ $ctrl.data.eventDate }}</div>
+                <div class="description ic-text text-default small">
+                    <p ng-bind-html="$ctrl.data.eventText"></p>
+                </div>
+            </div>
+        </div>
+        <div class="people">
+            <a href="#" class="people-link" ng-repeat="man in $ctrl.data.eventArtist">
+                <img ng-src="{{ man.artistImg }}" class="img-responsive img-circle" alt="pavatar">
+            </a>
+            <a href="#" class="people-link-add">
+                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="row card-footer">
+            <div class="col-xs-6 left-part">
+                <p>{{$ctrl.data.eventLocation}}</p>
+            </div>
+            <div class="col-xs-6 right-part">
+                <p>{{$ctrl.data.eventType}}</p>
+            </div>
+        </div>
+    </div>
+</div><!--.event-card-->
