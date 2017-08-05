@@ -42,6 +42,16 @@ angular.module('iConnectApp', ['ui.router', 'ngDialog'])
                 }
             })
 
+            .state('app.event-page', {
+                url: 'personal-event',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/profile/event/event-page.html',
+                        controller: 'EventsController'
+                    }
+                }
+            })
+
             // route for the create-event page
             .state('app.create-event', {
                 url: 'create-event',

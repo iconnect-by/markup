@@ -13,23 +13,23 @@ angular.module('iConnectApp')
                 eventDate: '12 nov 2016, 22:00 - 5:00',
                 eventArtist: [
                     {
+                        id: 0,
+                        artistImg: '../../images/placeholder.svg'
+                    },
+                    {
                         id: 1,
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
-                        id: 1,
+                        id: 2,
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
-                        id: 0,
+                        id: 3,
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
-                        id: 0,
-                        artistImg: '../../images/placeholder.svg'
-                    },
-                    {
-                        id: 0,
+                        id: 4,
                         artistImg: '../../images/placeholder.svg'
                     }
                 ]
@@ -45,15 +45,7 @@ angular.module('iConnectApp')
                 eventDate: '12 nov 2016, 22:00 - 5:00',
                 eventArtist: [
                     {
-                        id: 1,
-                        artistImg: '../../images/placeholder.svg'
-                    },
-                    {
-                        id: 1,
-                        artistImg: '../../images/placeholder.svg'
-                    },
-                    {
-                        id: 1,
+                        id: 0,
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
@@ -61,19 +53,27 @@ angular.module('iConnectApp')
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
-                        id: 0,
+                        id: 2,
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
-                        id: 0,
+                        id: 3,
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
-                        id: 0,
+                        id: 4,
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
-                        id: 0,
+                        id: 5,
+                        artistImg: '../../images/placeholder.svg'
+                    },
+                    {
+                        id: 6,
+                        artistImg: '../../images/placeholder.svg'
+                    },
+                    {
+                        id: 7,
                         artistImg: '../../images/placeholder.svg'
                     }
                 ]
@@ -89,23 +89,23 @@ angular.module('iConnectApp')
                 eventDate: '12 nov 2016, 22:00 - 5:00',
                 eventArtist: [
                     {
+                        id: 0,
+                        artistImg: '../../images/placeholder.svg'
+                    },
+                    {
                         id: 1,
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
-                        id: 1,
+                        id: 2,
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
-                        id: 0,
+                        id: 3,
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
-                        id: 0,
-                        artistImg: '../../images/placeholder.svg'
-                    },
-                    {
-                        id: 0,
+                        id: 4,
                         artistImg: '../../images/placeholder.svg'
                     }
                 ]
@@ -121,15 +121,7 @@ angular.module('iConnectApp')
                 eventDate: '12 nov 2016, 22:00 - 5:00',
                 eventArtist: [
                     {
-                        id: 1,
-                        artistImg: '../../images/placeholder.svg'
-                    },
-                    {
-                        id: 1,
-                        artistImg: '../../images/placeholder.svg'
-                    },
-                    {
-                        id: 1,
+                        id: 0,
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
@@ -137,19 +129,27 @@ angular.module('iConnectApp')
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
-                        id: 0,
+                        id: 2,
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
-                        id: 0,
+                        id: 3,
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
-                        id: 0,
+                        id: 4,
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
-                        id: 0,
+                        id: 5,
+                        artistImg: '../../images/placeholder.svg'
+                    },
+                    {
+                        id: 6,
+                        artistImg: '../../images/placeholder.svg'
+                    },
+                    {
+                        id: 7,
                         artistImg: '../../images/placeholder.svg'
                     }
                 ]
@@ -165,23 +165,23 @@ angular.module('iConnectApp')
                 eventDate: '12 nov 2016, 22:00 - 5:00',
                 eventArtist: [
                     {
-                        id: 1,
-                        artistImg: '../../images/placeholder.svg'
-                    },
-                    {
-                        id: 1,
-                        artistImg: '../../images/placeholder.svg'
-                    },
-                    {
-                        id: 1,
-                        artistImg: '../../images/placeholder.svg'
-                    },
-                    {
                         id: 0,
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
-                        id: 0,
+                        id: 1,
+                        artistImg: '../../images/placeholder.svg'
+                    },
+                    {
+                        id: 2,
+                        artistImg: '../../images/placeholder.svg'
+                    },
+                    {
+                        id: 3,
+                        artistImg: '../../images/placeholder.svg'
+                    },
+                    {
+                        id: 4,
                         artistImg: '../../images/placeholder.svg'
                     }
                 ]
@@ -197,15 +197,7 @@ angular.module('iConnectApp')
                 eventDate: '12 nov 2016, 22:00 - 5:00',
                 eventArtist: [
                     {
-                        id: 1,
-                        artistImg: '../../images/placeholder.svg'
-                    },
-                    {
-                        id: 1,
-                        artistImg: '../../images/placeholder.svg'
-                    },
-                    {
-                        id: 1,
+                        id: 0,
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
@@ -213,19 +205,27 @@ angular.module('iConnectApp')
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
-                        id: 0,
+                        id: 2,
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
-                        id: 0,
+                        id: 3,
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
-                        id: 0,
+                        id: 4,
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
-                        id: 0,
+                        id: 5,
+                        artistImg: '../../images/placeholder.svg'
+                    },
+                    {
+                        id: 6,
+                        artistImg: '../../images/placeholder.svg'
+                    },
+                    {
+                        id: 7,
                         artistImg: '../../images/placeholder.svg'
                     }
                 ]
@@ -241,23 +241,23 @@ angular.module('iConnectApp')
                 eventDate: '12 nov 2016, 22:00 - 5:00',
                 eventArtist: [
                     {
-                        id: 1,
-                        artistImg: '../../images/placeholder.svg'
-                    },
-                    {
-                        id: 1,
-                        artistImg: '../../images/placeholder.svg'
-                    },
-                    {
-                        id: 1,
-                        artistImg: '../../images/placeholder.svg'
-                    },
-                    {
                         id: 0,
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
-                        id: 0,
+                        id: 1,
+                        artistImg: '../../images/placeholder.svg'
+                    },
+                    {
+                        id: 2,
+                        artistImg: '../../images/placeholder.svg'
+                    },
+                    {
+                        id: 3,
+                        artistImg: '../../images/placeholder.svg'
+                    },
+                    {
+                        id: 4,
                         artistImg: '../../images/placeholder.svg'
                     }
                 ]
@@ -273,15 +273,7 @@ angular.module('iConnectApp')
                 eventDate: '12 nov 2016, 22:00 - 5:00',
                 eventArtist: [
                     {
-                        id: 1,
-                        artistImg: '../../images/placeholder.svg'
-                    },
-                    {
-                        id: 1,
-                        artistImg: '../../images/placeholder.svg'
-                    },
-                    {
-                        id: 1,
+                        id: 0,
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
@@ -289,19 +281,27 @@ angular.module('iConnectApp')
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
-                        id: 0,
+                        id: 2,
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
-                        id: 0,
+                        id: 3,
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
-                        id: 0,
+                        id: 4,
                         artistImg: '../../images/placeholder.svg'
                     },
                     {
-                        id: 0,
+                        id: 5,
+                        artistImg: '../../images/placeholder.svg'
+                    },
+                    {
+                        id: 6,
+                        artistImg: '../../images/placeholder.svg'
+                    },
+                    {
+                        id: 7,
                         artistImg: '../../images/placeholder.svg'
                     }
                 ]
