@@ -1,6 +1,7 @@
 'use strict';
 
-angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.select', 'ngSanitize', 'ngDialog'])
+// angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.select', 'ngSanitize', 'ngDialog'])
+angular.module('iConnectApp', ['ui.router', 'ngDialog'])
     .config(function ($stateProvider, $urlRouterProvider) {
         $stateProvider
             // route for the home page
@@ -8,7 +9,7 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.sel
                 url: '/',
                 views: {
                     'header': {
-                        templateUrl: 'views/header.html',
+                        templateUrl: 'views/header.html'
                         // controller: 'HeaderController'
                     },
                     'content': {
@@ -36,6 +37,16 @@ angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.sel
                 views: {
                     'content@': {
                         templateUrl: 'views/events.html',
+                        controller: 'EventsController'
+                    }
+                }
+            })
+
+            .state('app.event-page', {
+                url: 'personal-event',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/profile/event/event-page.html',
                         controller: 'EventsController'
                     }
                 }

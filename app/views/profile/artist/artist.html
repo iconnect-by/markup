@@ -1,4 +1,12 @@
 <section class="profile-section" ng-controller="PersonalController">
+    <script>
+        $('.hero-desc-about').readmore({
+            speed: 75,
+            lessLink: '<a href="#" class="reader-btn"><i class="fa fa-angle-up" aria-hidden="true"></i></a>',
+            moreLink: '<a href="#" class="reader-btn"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>',
+            collapsedHeight: 48
+        });
+    </script>
     <div class="container">
         <div class="row">
             <div class="col-md-3">
@@ -212,7 +220,7 @@
             </div>
 
             <div class="col-md-3">
-                <img src="../../../images/calendar-mock.png" style="display: inline-block; margin-bottom: 30px;" class="img-responsive" alt="...">
+                <img src="../../../images/calendar-mock.png" style="display: inline-block; margin-bottom: 20px;" class="img-responsive" alt="...">
 
                 <div class="rider-block box-content download">
                     <div class="title">Rider Download</div>

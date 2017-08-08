@@ -1,0 +1,150 @@
+<section class="event-page-section profile-section" ng-controller="EventsController">
+    <div class="container top-banner-container">
+        <div class="row">
+
+            <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
+            <!--<div class="banner-image empty">-->
+            <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
+
+            <div class="banner-image empty">
+                <!--<img src="../../../images/event-page-top-image.png" alt="...">-->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+
+                <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
+                <!--<div class="hero-avatar empty">-->
+                <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
+
+                <div class="hero-avatar empty">
+                    <div class="avatar-img">
+                        <!--<img src="../../../images/placeholder.svg" alt="artist-img">-->
+                    </div>
+                </div>
+
+                <div class="hero-desc box-content">
+                    <div class="hero-descr-block">
+                        <h1 class="hero-desc-name">Transnation</h1>
+                        <small class="hero-desc-caption">Festival</small>
+
+                        <div class="hero-desc-about">
+                            <p>
+                                This article covers the basics of Astrology and how they are inter-related.
+                                Astrology is defined as ‘the art or practice of determining the supposed influences
+                                of the planets and their motions on human affairs and human disposition’.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hero-organizator">
+                        <div class="title">Organizator:</div>
+                        <mini-profile-preview
+                                data="{
+                                    id: '0',
+                                    photo: '../../../images/placeholder.svg',
+                                    title: 'Walter Gonzales',
+                                    country: 'Corporate events, Night Clubs'
+                                }"
+                                show-index="0"
+                        ></mini-profile-preview>
+                    </div>
+
+                    <div class="hero-desc-list">
+                        <div class="item">
+                            <span class="icon"><img src="../../../images/map-baloon-icon.svg" alt="..."></span>
+                            <span class="title">Saudi Arabia</span>
+                            <span class="value">Bronx st, 34</span>
+                        </div>
+                        <div class="item">
+                            <span class="icon"><img src="../../../images/start-date-icon.svg" alt="..."></span>
+                            <span class="title">Date Start</span>
+                            <span class="value text-blue">22 Sep 2016</span>
+                        </div>
+                        <div class="item">
+                            <span class="icon"><img src="../../../images/end-date-icon.svg" alt="..."></span>
+                            <span class="title">Date End</span>
+                            <span class="value text-orange">24 Sep 2016</span>
+                        </div>
+                        <div class="item">
+                            <span class="icon"><img src="../../../images/time-icon.svg" alt="..."></span>
+                            <span class="title">Time</span>
+                            <span class="value text-orange">22:00 - 04:00</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!--.col-->
+
+            <div class="col-md-9">
+                <div class="event-content">
+                    <span class="section-title">Artists taking part in the event</span>
+
+                    <div class="person-interested-in-block">
+                        <div class="row">
+                            <div class="col-md-4" ng-repeat="item in [1,2,3,4,5,6]">
+                                <mini-profile-preview
+                                        data="{
+                                            id: item,
+                                            photo: '../../../images/placeholder.svg',
+                                            title: 'Walter Gonzales',
+                                            country: 'London',
+                                            style: 'Jazz',
+                                            showLink: true,
+                                            cssClass: 'person-interested-in'
+                                        }"
+                                        show-index="0"
+                                ></mini-profile-preview>
+                            </div>
+                        </div>
+                    </div>
+
+                    <span class="section-title">Other activities of the organizer</span>
+
+                    <div class="row">
+                        <div class="col-md-4" ng-repeat="item in [1,2,3]">
+                            <event-card
+                                    data="{
+                                id: 0,
+                                title: 'Romantic Ballads',
+                                imgUrl: '../../images/placeholder.svg',
+                                eventText: '<p>A purpose is the eternal condition for success.Every former smoker can tell you just how hard it is to stop smoking cigarettes. </p> <p>A purpose is the eternal condition for success.Every former smoker can tell you just how hard it is to stop smoking cigarettes. </p> <p>A purpose is the eternal condition for success.Every former smoker can tell you just how hard it is to stop smoking cigarettes. </p>',
+                                eventType: 'Concert',
+                                eventLocation: 'UK, London',
+                                eventDate: '12 nov 2016, 22:00 - 5:00',
+                                eventArtist: [
+                                    {
+                                        id: 1,
+                                        artistImg: '../../images/placeholder.svg'
+                                    },
+                                    {
+                                        id: 1,
+                                        artistImg: '../../images/placeholder.svg'
+                                    },
+                                    {
+                                        id: 0,
+                                        artistImg: '../../images/Add_small@2x.png'
+                                    },
+                                    {
+                                        id: 0,
+                                        artistImg: '../../images/Add_small@2x.png'
+                                    },
+                                    {
+                                        id: 0,
+                                        artistImg: '../../images/Add_small@2x.png'
+                                    }
+                                ]
+
+                            }"
+                            ></event-card>
+                        </div>
+                    </div>
+                </div>
+            </div><!--.col-->
+
+        </div><!--.row-->
+
+    </div><!--.container-->
+</section>
