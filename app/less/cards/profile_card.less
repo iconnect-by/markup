@@ -17,9 +17,14 @@
 
     .hero-avatar {
       border-radius: 2px;
+      overflow: hidden;
+
       &.avatar-circle  {
-        img {
+        .img-responsive, .h-aspect-ratio {
           border-radius: 50%;
+        }
+        .h-aspect-ratio {
+          overflow: hidden;
         }
       }
     }
