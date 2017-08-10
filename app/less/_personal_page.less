@@ -42,47 +42,41 @@
   }
 
   .hero-avatar {
-    position: relative;
-    min-height: 285px;
     display: block;
+    min-height: 300px;
     margin-bottom: 20px;
+    position: relative;
+    z-index: 15;
 
     &.empty {
       border: 1px dashed #e5e5e5;
+      border-radius: 4px;
       background-color: #fafafa;
       background-image: url('@{ic-path-images}/photo-empy-icon.svg');
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 50px 45px;
-    }
 
-    &.circle {
-      .avatar-img {
+      &.circle {
         border-radius: 50%;
-
-        img {
-          border-radius: 50%;
-        }
       }
     }
 
-    .avatar-img {
+    .progressive-image {
       border-radius: 4px;
       overflow: hidden;
+    }
 
-      img {
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-        height: auto;
-        border-radius: 4px;
+    &.circle {
+      .progressive-image {
+        border-radius: 50%;
       }
     }
 
     &:hover {
       .avatar-options {
         opacity: 1 !important;
-        bottom: -5px;
+        bottom: 0;
       }
     }
 
@@ -95,6 +89,7 @@
       width: 100%;
       position: absolute;
       bottom: -20px;
+      z-index: 20;
       transition: opacity .1s ease-in-out .1s, bottom .2s ease-in-out;
 
       ul {

@@ -221,6 +221,11 @@ html, body {
     position: relative;
     width: 100%;
 
+    .aspect-ratio-fill {
+      padding-bottom: 100%;
+      background-color: #fafafa;
+    }
+
     .image {
       position: absolute;
       top: 0;
@@ -237,6 +242,24 @@ html, body {
         height: 100%;
         margin: auto;
         box-sizing: border-box;
+
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s linear 0s, opacity .4s 0s;
+      }
+
+      &.canvas-loaded {
+        .canvas-thumbnail {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+
+      &.image-loaded {
+        .image-original {
+          visibility: visible;
+          opacity: 1;
+        }
       }
     }
   }
