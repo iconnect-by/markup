@@ -141,12 +141,9 @@
                                 <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
 
                                 <div class="mc-content photo">
-                                    <img src="../../../images/placeholder.svg" alt="...">
-                                    <img src="../../../images/placeholder.svg" alt="...">
-                                    <img src="../../../images/placeholder.svg" alt="...">
-                                    <img src="../../../images/placeholder.svg" alt="...">
-                                    <img src="../../../images/placeholder.svg" alt="...">
-                                    <img src="../../../images/placeholder.svg" alt="...">
+                                    <div class="photo-item" ng-repeat="i in [0, 1, 2, 3, 4, 5]">
+                                        <img src="../../../images/placeholder.svg" alt="...">
+                                    </div>
                                 </div>
 
                                 <a href="#" class="view-all" ng-click="showMedia('photo', $event)">View All</a>
