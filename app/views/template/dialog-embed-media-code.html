@@ -1,12 +1,19 @@
 <div class="dialog-inner">
     <div class="title">Embed media code</div>
     <div class="dialog-body">
-        <div class="content-media">
-            &lt;iframe width=«560» height=«315» src=«https://www.youtube.com/embed/tpsdqMcnaaw» frameborder=«0» allowfullscreen&gt;&lt;/iframe&gt;
-        </div>
+        <form name="video">
+            <div class="form-group">
+                <label for="video-url">Url</label>
+                <input type="text" class="form-control" id="video-url">
+                <p class="helper">Error 123: lorem ipsum sit dolot amet</p>
+            </div>
+            <div class="form-group">
+                <label for="video-url-1">Url 1</label>
+                <textarea class="form-control" id="video-url-1"></textarea>
+                <p class="helper">Error 123: lorem ipsum sit dolot amet</p>
+            </div>
 
-        <div class="helper">Error 123: lorem ipsum sit dolot amet</div>
-
-        <a href="#" class="ic-btn ic-btn-blue">Add video</a>
+            <a href="#" class="ic-btn ic-btn-blue">Add video</a>
+        </form>
     </div>
 </div>
