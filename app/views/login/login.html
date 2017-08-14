@@ -1,3 +1,18 @@
+<script>
+    $(document).ready(function () {
+        $('.navbar.navbar-default').addClass('transparent');
+    });
+
+    $(document).scroll(function(){
+        if($(window).scrollTop() > 0) {
+            $('.navbar.navbar-default').removeClass('transparent');
+        } else {
+            $('.navbar.navbar-default').addClass('transparent');
+        }
+    });
+</script>
+
+
 <section class="login-section">
     <div class="login-container" ng-controller="RegistrationController">
 
@@ -24,35 +39,16 @@
                 <div class="col-md-offset-3 col-md-6">
                     <ul class="nav nav-tabs list-unstyled" role="tablist">
                         <li class="active">
-                            <a data-target='#signup' aria-controls="signup" role="tab" data-toggle="tab">Registration</a>
+                            <a data-target='#signin' aria-controls="signin" role="tab" data-toggle="tab">Login</a>
                         </li>
                         <li>
-                            <a data-target='#signin' aria-controls="signin" role="tab" data-toggle="tab">Login</a>
+                            <a data-target='#signup' aria-controls="signup" role="tab" data-toggle="tab">Registration</a>
                         </li>
                     </ul>
 
                     <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active in" id="signup">
-                            <form name="signup" ng-submit="register()" class="security-form clearfix" novalidate autocomplete="off">
-                                <fieldset>
-                                    <div class="form-group">
-                                        <label class="control-label" for="signup-email">Email Address</label>
-                                        <input id="signup-email" class="form-control" autocomplete="off" type="email" name="email" ng-model="userReg.email" ng-required="true">
-                                        <p class="error" ng-show="signup.email.$invalid && signup.email.$touched">Must be a valid email</p>
-                                    </div>
 
-                                    <div class="form-group pwd-group">
-                                        <label class="control-label" for="signup-pass">Password</label>
-                                        <a href="#" class="see-pwd"><img src="../../images/eye.png" alt="eye"></a>
-                                        <input id="signup-pass" class="form-control" autocomplete="off" type="password" name="password" ng-attr-type="{{ showPassword ? 'text' : 'password' }}" ng-model="userReg.password" ng-required="true">
-                                        <p class="error" ng-show="signup.password.$invalid && signup.email.$touched">Password is required</p>
-                                    </div>
-                                </fieldset>
-                                <button type="submit" class="ic-btn ic-btn-blue big pull-right" ng-disabled="signup.$invalid">Registration</button>
-                            </form>
-                        </div>
-
-                        <div role="tabpanel" class="tab-pane fade" id="signin">
+                        <div role="tabpanel" class="tab-pane active in" id="signin">
                             <form name="signin" ng-submit="login()" class="security-form clearfix" novalidate>
                                 <fieldset>
                                     <div class="form-group">
@@ -67,7 +63,14 @@
                                         <p class="error" ng-show="signin.password.$invalid && signin.email.$touched">Password is required</p>
                                     </div>
                                 </fieldset>
-                                <button type="submit" class="ic-btn ic-btn-blue big pull-right" ng-disabled="signin.$invalid">Login</button>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <a href="#" class="link">Forgot password</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button type="submit" class="ic-btn ic-btn-blue big pull-right" ng-disabled="signin.$invalid">Login</button>
+                                    </div>
+                                </div>
                             </form>
 
                             <div class="social-content">
@@ -107,7 +110,29 @@
                                 </ul>
                             </div>
                         </div>
+
+                        <div role="tabpanel" class="tab-pane fade" id="signup">
+                            <form name="signup" ng-submit="register()" class="security-form clearfix" novalidate>
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label class="control-label" for="signup-email">Email Address</label>
+                                        <input id="signup-email" class="form-control" type="email" name="email" ng-model="userReg.email" ng-required="true">
+                                        <p class="error" ng-show="signup.email.$invalid && signup.email.$touched">Must be a valid email</p>
+                                    </div>
+
+                                    <div class="form-group pwd-group">
+                                        <label class="control-label" for="signup-pass">Password</label>
+                                        <a href="#" class="see-pwd"><img src="../../images/eye.png" alt="eye"></a>
+                                        <input id="signup-pass" class="form-control" autocomplete="new-password" type="password" name="password" ng-attr-type="{{ showPassword ? 'text' : 'password' }}" ng-model="userReg.password" ng-required="true">
+                                        <p class="error" ng-show="signup.password.$invalid && signup.email.$touched">Password is required</p>
+                                    </div>
+                                </fieldset>
+                                <button type="submit" class="ic-btn ic-btn-blue big pull-right" ng-disabled="signup.$invalid">Registration</button>
+                            </form>
+                        </div>
+
                     </div>
+
                 </div>
             </div>
         </div>

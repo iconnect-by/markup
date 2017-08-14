@@ -5,6 +5,15 @@
             $('.form-control').on('focus blur', function (e) {
                 $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
             }).trigger('blur');
+
+            function resizable (el, factor) {
+                var int = Number(factor) || 7.7;
+                function resize() {el.style.width = ((el.value.length+1) * int) + 'px'}
+                var e = 'keyup,keypress,change'.split(',');
+                for (var i in e) el.addEventListener(e[i],resize,false);
+                resize();
+            }
+            resizable(document.getElementsByName('event-name')[0],7);
         </script>
 
         <form class="create-form" name="create-form" novalidate>
