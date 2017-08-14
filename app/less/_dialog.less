@@ -26,13 +26,39 @@
       }
 
       .content-media {
-        border: 1px solid #f2f2f2;
-        background-color: #fafafa;
-        .text-default;
-        min-height: 110px;
-        padding: 7px 10px;
-        margin-bottom: 20px;
-        word-wrap: break-word;
+        margin-top: 20px;
+
+        .form-group {
+          label {
+            .text-grey-small;
+            color: @iConnect-black;
+          }
+
+          .form-control {
+            .text-default;
+
+            border: 1px solid #f2f2f2;
+            border-radius: 2px;
+            box-shadow: none;
+            background-color: #fafafa;
+
+            padding: 7px 10px;
+            margin-bottom: 20px;
+            word-wrap: break-word;
+
+            transition: background-color .1s linear;
+
+            &:focus {
+              background-color: @iConnect-white;
+              outline: none;
+            }
+
+            &[disabled] {
+              background-color: #fafafa;
+              cursor: default;
+            }
+          }
+        }
       }
 
       .content-icon {
