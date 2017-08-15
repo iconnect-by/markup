@@ -180,6 +180,15 @@ angular.module('iConnectApp', ['ui.router', 'ngDialog'])
                     }
                 }
             })
+            .state('app.terms-of-use', {
+                url: 'terms-of-use',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/login/terms-of-use.html'
+                    }
+                }
+            })
+
             // Commmon elements
             .state('app.common', {
                 url: 'common',

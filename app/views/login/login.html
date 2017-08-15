@@ -1,6 +1,37 @@
 <script>
     $(document).ready(function () {
         $('.navbar.navbar-default').addClass('transparent');
+
+        $('.form-control').on('focus blur', function (e) {
+            $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+        }).trigger('blur');
+
+        $('.nav-tabs li a').on('click', function (e) {
+            var data = [];
+
+            $.each($('form[name="signin"] input, form[name="signup"] input'), function (i, v) {
+                var tid = $(this).attr('id');
+                var val = $(this).val();
+                var temp = {};
+
+                if ('undefined' !== tid && 'undefined' !== val) {
+                    temp.id = '#' + tid;
+                    temp.val = val;
+                    data.push(temp);
+                }
+            });
+
+            $('form[name="signin"]')[0].reset();
+            $('form[name="signup"]')[0].reset();
+
+            $.each(data, function (i, d) {
+                $(d.id).val(d.val);
+                delete data[i];
+            });
+
+
+            console.log(data);
+        });
     });
 
     $(document).scroll(function(){
@@ -16,11 +47,6 @@
 <section class="login-section">
     <div class="login-container" ng-controller="RegistrationController">
 
-        <script>
-            $('.form-control').on('focus blur', function (e) {
-                $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
-            }).trigger('blur');
-        </script>
         <video id="background-video" class="video" autoplay muted poster="../../images/background2.png">
             <source src="video/video_background1.mp4" type="video/mp4">
             <!--<source src="video/demo.ogv" type="video/ogg">-->
@@ -53,13 +79,13 @@
                                 <fieldset>
                                     <div class="form-group">
                                         <label class="control-label" for="signin-email">Email Address</label>
-                                        <input id="signin-email" class="form-control" autocomplete="off" type="email" name="email" ng-model="user.email" ng-required="true">
+                                        <input id="signin-email" class="form-control"  autofill="off" autocomplete="off" type="email" name="email" ng-model="user.email" ng-required="true">
                                         <p class="error" ng-show="signin.email.$invalid && signin.email.$touched">Must be a valid email</p>
                                     </div>
                                     <div class="form-group pwd-group">
                                         <label class="control-label" for="signin-pass">Password</label>
                                         <a href="#" class="see-pwd"><img src="../../images/eye.png" alt="eye"></a>
-                                        <input id="signin-pass" class="form-control" autocomplete="off" type="password" name="password" ng-model="user.password" ng-required="true">
+                                        <input id="signin-pass" class="form-control" autofill="off" autocomplete="off" type="password" name="password" ng-model="user.password" ng-required="true">
                                         <p class="error" ng-show="signin.password.$invalid && signin.email.$touched">Password is required</p>
                                     </div>
                                 </fieldset>
@@ -116,14 +142,14 @@
                                 <fieldset>
                                     <div class="form-group">
                                         <label class="control-label" for="signup-email">Email Address</label>
-                                        <input id="signup-email" class="form-control" type="email" name="email" ng-model="userReg.email" ng-required="true">
+                                        <input id="signup-email" class="form-control" autofill="off" autocomplete="off" type="email" name="email" ng-model="userReg.email" ng-required="true">
                                         <p class="error" ng-show="signup.email.$invalid && signup.email.$touched">Must be a valid email</p>
                                     </div>
 
                                     <div class="form-group pwd-group">
                                         <label class="control-label" for="signup-pass">Password</label>
                                         <a href="#" class="see-pwd"><img src="../../images/eye.png" alt="eye"></a>
-                                        <input id="signup-pass" class="form-control" autocomplete="new-password" type="password" name="password" ng-attr-type="{{ showPassword ? 'text' : 'password' }}" ng-model="userReg.password" ng-required="true">
+                                        <input id="signup-pass" class="form-control"  autofill="off" autocomplete="off" type="password" name="password" ng-attr-type="{{ showPassword ? 'text' : 'password' }}" ng-model="userReg.password" ng-required="true">
                                         <p class="error" ng-show="signup.password.$invalid && signup.email.$touched">Password is required</p>
                                     </div>
                                 </fieldset>

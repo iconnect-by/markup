@@ -126,79 +126,55 @@ angular.module('iConnectApp')
         ];
 
         $scope.changeInformPerson = [
-           [
-               {
-                   id: 0,
-                   name: 'Dj',
-                   icon: {
-                       on: '../../images/create-dj-icon-filled.svg',
-                       off: '../../images/create-dj-icon.svg'
-                   },
-                   literal: 'fa fa-pied-piper-alt'
-               },
-               {
-                   id: 1,
-                   name: 'Musician',
-                   icon: {
-                       on: '../../images/create-musician-icon-filled.svg',
-                       off: '../../images/create-musician-icon.svg'
-                   },
-                   literal: 'fa fa-user-secret'
-               },
-               {
-                   id: 2,
-                   name: 'Vocalist',
-                   icon: {
-                       on: '../../images/create-vocalist-icon-filled.svg',
-                       off: '../../images/create-vocalist-icon.svg'
-                   },
-                   literal: 'fa fa-users'
-               },
-               {
-                   id: 3,
-                   name: 'MC',
-                   icon: {
-                       on: '../../images/create-mc-icon-filled.svg',
-                       off: '../../images/create-mc-icon.svg'
-                   },
-                   literal: 'fa fa-star'
-               }
-           ],
+            [
+                {
+                    id: 0,
+                    name: 'Dj',
+                    icon: {
+                        on: '../../images/create-dj-icon-filled.svg',
+                        off: '../../images/create-dj-icon.svg'
+                    },
+                    literal: 'fa fa-pied-piper-alt'
+                },
+                {
+                    id: 1,
+                    name: 'Musician',
+                    icon: {
+                        on: '../../images/create-musician-icon-filled.svg',
+                        off: '../../images/create-musician-icon.svg'
+                    },
+                    literal: 'fa fa-user-secret'
+                },
+                {
+                    id: 2,
+                    name: 'Vocalist',
+                    literal: 'fa fa-users'
+                },
+                {
+                    id: 3,
+                    name: 'MC',
+                    literal: 'fa fa-star'
+                }
+            ],
             [
                 {
                     id: 4,
                     name: 'Promoter',
-                    icon: {
-                        on: '../../images/create-promouter-icon-filled.svg',
-                        off: '../../images/create-promouter-icon.svg'
-                    },
                     literal: 'fa fa-microphone'
                 },
                 {
                     id: 5,
                     name: 'Event Leader',
-                    icon: {
-                        on: '../../images/create-eleader-icon-filled.svg',
-                        off: '../../images/create-eleader-icon.svg'
-                    },
                     literal: 'fa fa-diamond'
                 },
                 {
                     id: 6,
                     name: 'Musical group',
-                    icon: {
-                        on: '../../images/create-musical-group-icon-filled.svg',
-                        off: '../../images/create-musical-group-icon.svg'
-                    },
                     literal: 'fa fa-podcast'
                 },
                 {
                     id: 7,
                     name: 'Dancer',
-                    icon: {
-                        on: '../../images/create-dancer-icon-filled.svg',
-                        off: '../../images/create-dancer-icon.svg'
-                    },
                     literal: 'fa fa-hand-peace-o'
                 }
             ]
@@ -209,78 +185,46 @@ angular.module('iConnectApp')
                 {
                     id: 0,
                     name: 'NightClub',
-                    icon: {
-                        on: '../../images/create-dj-icon-filled.svg',
-                        off: '../../images/create-dj-icon.svg'
-                    },
-                    literal: 'fa fa-pied-piper-alt'
+                    literal: 'fa fa-nightclub'
                 },
                 {
                     id: 1,
                     name: 'Wedding',
-                    icon: {
-                        on: '../../images/create-musician-icon-filled.svg',
-                        off: '../../images/create-musician-icon.svg'
-                    },
-                    literal: 'fa fa-user-secret'
+                    literal: 'fa fa-wedding'
                 },
                 {
                     id: 2,
                     name: 'Birthday',
-                    icon: {
-                        on: '../../images/create-vocalist-icon-filled.svg',
-                        off: '../../images/create-vocalist-icon.svg'
-                    },
                     literal: 'fa fa-users'
                 },
                 {
                     id: 3,
                     name: 'Festival',
-                    icon: {
-                        on: '../../images/create-mc-icon-filled.svg',
-                        off: '../../images/create-mc-icon.svg'
-                    },
                     literal: 'fa fa-star'
                 },
             ],
-          [
-              {
-                  id: 4,
-                  name: 'Daytime Party',
-                  icon: {
-                      on: '../../images/create-promouter-icon-filled.svg',
-                      off: '../../images/create-promouter-icon.svg'
-                  },
-                  literal: 'fa fa-microphone'
-              },
-              {
-                  id: 5,
-                  name: 'Private Party',
-                  icon: {
-                      on: '../../images/create-eleader-icon-filled.svg',
-                      off: '../../images/create-eleader-icon.svg'
-                  },
-                  literal: 'fa fa-diamond'
-              },
-              {
-                  id: 6,
-                  name: 'Underground Party',
-                  icon: {
-                      on: '../../images/create-musical-group-icon-filled.svg',
-                      off: '../../images/create-musical-group-icon.svg'
-                  },
-                  literal: 'fa fa-podcast'
-              },
-              {
-                  id: 7,
-                  name: 'Corporate Event',
-                  icon: {
-                      on: '../../images/create-dancer-icon-filled.svg',
-                      off: '../../images/create-dancer-icon.svg'
-                  },
-                  literal: 'fa fa-hand-peace-o'
-              }
-          ]
+            [
+                {
+                    id: 4,
+                    name: 'Daytime Party',
+                    literal: 'fa fa-microphone'
+                },
+                {
+                    id: 5,
+                    name: 'Private Party',
+                    literal: 'fa fa-diamond'
+                },
+                {
+                    id: 6,
+                    name: 'Underground Party',
+                    literal: 'fa fa-podcast'
+                },
+                {
+                    id: 7,
+                    name: 'Corporate Event',
+                    literal: 'fa fa-hand-peace-o'
+                }
+            ]
         ];
 
         $scope.events = [
@@ -288,37 +232,21 @@ angular.module('iConnectApp')
                 {
                     id: 0,
                     name: 'Concert or Performance',
-                    icon: {
-                        on: '../../images/create-dj-icon-filled.svg',
-                        off: '../../images/create-dj-icon.svg'
-                    },
                     literal: 'fa fa-pied-piper-alt'
                 },
                 {
                     id: 1,
                     name: 'Festival or Fair',
-                    icon: {
-                        on: '../../images/create-musician-icon-filled.svg',
-                        off: '../../images/create-musician-icon.svg'
-                    },
                     literal: 'fa fa-user-secret'
                 },
                 {
                     id: 2,
                     name: 'Party or Social Gathering',
-                    icon: {
-                        on: '../../images/create-vocalist-icon-filled.svg',
-                        off: '../../images/create-vocalist-icon.svg'
-                    },
                     literal: 'fa fa-users'
                 },
                 {
                     id: 3,
                     name: 'Tradeshow or Consumer Show',
-                    icon: {
-                        on: '../../images/create-mc-icon-filled.svg',
-                        off: '../../images/create-mc-icon.svg'
-                    },
                     literal: 'fa fa-star'
                 }
             ],
@@ -326,37 +254,21 @@ angular.module('iConnectApp')
                 {
                     id: 4,
                     name: 'Class, Training or Workshop',
-                    icon: {
-                        on: '../../images/create-promouter-icon-filled.svg',
-                        off: '../../images/create-promouter-icon.svg'
-                    },
                     literal: 'fa fa-microphone'
                 },
                 {
                     id: 5,
                     name: 'Appearance or Singing',
-                    icon: {
-                        on: '../../images/create-eleader-icon-filled.svg',
-                        off: '../../images/create-eleader-icon.svg'
-                    },
                     literal: 'fa fa-diamond'
                 },
                 {
                     id: 6,
                     name: 'Tour',
-                    icon: {
-                        on: '../../images/create-musical-group-icon-filled.svg',
-                        off: '../../images/create-musical-group-icon.svg'
-                    },
                     literal: 'fa fa-podcast'
                 },
                 {
                     id: 7,
                     name: 'Other',
-                    icon: {
-                        on: '../../images/create-dancer-icon-filled.svg',
-                        off: '../../images/create-dancer-icon.svg'
-                    },
                     literal: 'fa fa-hand-peace-o'
                 }
             ]
