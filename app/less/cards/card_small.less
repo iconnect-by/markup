@@ -19,6 +19,12 @@
       max-width: 100%;
     }
 
+    &.square {
+      img {
+        border-radius: 4px;
+      }
+    }
+
     &.avatar-circle {
       img {
         border-radius: 50%;
@@ -28,12 +34,43 @@
   }
 
   .name {
-    display: block;
-    .title-H4;
-    margin-bottom: 2px;
+    a {
+      display: block;
+      .title-H4;
+      margin-bottom: 2px;
+      color: #333;
+
+      &:hover {
+        color: @iConnect-orange;
+      }
+    }
   }
   .info {
     display: block;
     .text-grey-small;
+  }
+
+  .next-link {
+    align-self: center;
+    margin: 0 auto;
+    margin-right: 0;
+
+    .lnk {
+      color: #333;
+    }
+  }
+
+  &.dashed {
+    border: 1px dashed #f2f2f2;
+    padding: 21.5px 20px;
+    margin: 0 0 20px 0;
+    border-radius: 4px;
+
+    .next-link {
+      .lnk {
+        color: #e5e5e5;
+        font-size:40 * @rem;
+      }
+    }
   }
 }

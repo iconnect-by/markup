@@ -1,9 +1,10 @@
 <div class="card-small" ng-class="$ctrl.data.cssClass">
     <div ng-show="$ctrl.showIndex" class="counter-place">{{ $ctrl.data.id + 1 }}</div>
-    <div class="avatar avatar-circle">
+    <div class="avatar" ng-class="$ctrl.data.imgClass ? $ctrl.data.imgClass : 'avatar-circle'">
         <img ng-src="{{ $ctrl.data.photo }}" alt="...">
     </div>
-    <div class="name">{{ $ctrl.data.firstName ? $ctrl.data.firstName : $ctrl.data.title }} {{ $ctrl.data.lastName ? $ctrl.data.lastName : '' }}
+    <div class="name">
+        <a href="#">{{ $ctrl.data.firstName ? $ctrl.data.firstName : $ctrl.data.title }} {{ $ctrl.data.lastName ? $ctrl.data.lastName : '' }}</a>
         <div class="info">{{ $ctrl.data.country }}{{ $ctrl.data.style ? " | " + $ctrl.data.style : '' }}</div>
     </div>
     <div ng-show="$ctrl.data.showLink" class="next-link">
