@@ -133,9 +133,17 @@
             &:hover, &:active, &:focus {
               color: @iConnect-orange;
               border: 0;
-              border-bottom: 2px solid @iConnect-orange;
+              border-bottom: 2px solid transparent;
               background-color: transparent;
               text-shadow: none;
+            }
+          }
+
+          &.active {
+            border-bottom: 2px solid @iConnect-orange;
+
+            a {
+              background-color: transparent;
             }
           }
         }
