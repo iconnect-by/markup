@@ -185,12 +185,12 @@ angular.module('iConnectApp')
                 {
                     id: 0,
                     name: 'NightClub',
-                    literal: 'fa fa-nightclub'
+                    literal: 'fa fa-pied-piper-alt'
                 },
                 {
                     id: 1,
                     name: 'Wedding',
-                    literal: 'fa fa-wedding'
+                    literal: 'fa fa-user-secret'
                 },
                 {
                     id: 2,
