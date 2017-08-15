@@ -154,7 +154,7 @@
                                                 <input type="text" placeholder="City..." value="">
                                             </div>
                                             <div class="col-xs-6">
-                                                <select name="location_countries" id="location_countries" ng-model="user.contry">
+                                                <select name="location_countries" id="location_countries" ng-model="user.country">
                                                     <option value="" selected disabled>Select country...</option>
                                                     <option value="1">London</option>
                                                     <option value="2">USA</option>
@@ -163,7 +163,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12">
-                                                <select name="location_state" id="location_state" ng-show="user.contry == 2">
+                                                <select name="location_state" id="location_state" ng-show="user.country == 2">
                                                     <option value="" selected disabled>Select state...</option>
                                                     <option value="1">MI</option>
                                                     <option value="2">NY</option>

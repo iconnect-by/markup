@@ -1,0 +1,72 @@
+<script>
+    $(document).ready(function () {
+        $('.form-control').on('focus blur', function (e) {
+            $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+        }).trigger('blur');
+    });
+</script>
+
+<section class="registration-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6">
+                <h1>Registration is almost complete</h1>
+
+                <div class="content">
+                    <p>To access your private office, enter your name, surname, and location.
+                        This is necessary so that we can prepare the most relevant information for you</p>
+                </div>
+
+                <div class="form-block">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label class="control-label" for="first-name">First Name</label>
+                                        <input id="first-name" class="form-control" autocomplete="off" ng-model="user.firstname" ng-required="true">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="last-name">Last Name</label>
+                                        <input id="last-name" class="form-control" autocomplete="off" ng-model="user.lastname" ng-required="true">
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <select name="location_countries" id="location_countries" ng-model="user.country">
+                                        <option value="" selected disabled class="label">Country</option>
+                                        <option value="1">London</option>
+                                        <option value="2">USA</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label" for="city">City</label>
+                                    <input id="city" class="form-control" autocomplete="off" ng-model="user.city" ng-required="true">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <select name="location_state" id="location_state">
+                                        <option value="" selected disabled class="label">State* (Optional)</option>
+                                        <option value="1">MI</option>
+                                        <option value="2">NY</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="submit" class="ic-btn ic-btn-blue big pull-right">Go to my account</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

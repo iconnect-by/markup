@@ -188,6 +188,14 @@ angular.module('iConnectApp', ['ui.router', 'ngDialog'])
                     }
                 }
             })
+            .state('app.registration-complete', {
+                url: 'registration-complete',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/registration/registration-complete.html'
+                    }
+                }
+            })
 
             // Commmon elements
             .state('app.common', {
