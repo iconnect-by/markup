@@ -1,3 +1,14 @@
+<script>
+    $(window).scroll(function() {
+        if($(window).scrollTop() + $(window).height() === $(document).height()) {
+            $('#submit_btn').prop('disabled', false);
+        } else {
+            $('#submit_btn').prop('disabled', true);
+        }
+    });
+</script>
+
+
 <section class="text-block">
 
     <div class="container">
@@ -31,8 +42,8 @@
                 </div>
 
                 <div class="btns-block pull-right">
-                    <a href="#" class="ic-btn ic-btn-white big">Close</a>
-                    <a href="#" class="ic-btn ic-btn-blue big">I agree</a>
+                    <button class="ic-btn ic-btn-white big">Close</button>
+                    <button class="ic-btn ic-btn-blue big" id="submit_btn" disabled="disabled">I agree</button>
                 </div>
             </div>
         </div>
