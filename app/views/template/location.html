@@ -1,0 +1,24 @@
+<div class="location-picker">
+    <div class="content">
+        <div class="title">Select location</div>
+        <div class="row">
+            <div class="col-xs-4">
+                <select name="location_countries" ng-model="user.countryPop">
+                    <option value="" selected disabled>Select country...</option>
+                    <option value="1">London</option>
+                    <option value="2">USA</option>
+                </select>
+            </div>
+            <div class="col-xs-4">
+                <input type="text" placeholder="City..." value="">
+            </div>
+            <div class="col-xs-4">
+                <select name="location_state" ng-show="user.countryPop == 2">
+                    <option value="" selected disabled>Select state...</option>
+                    <option value="1">MI</option>
+                    <option value="2">NY</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div><!--.location-picker-->

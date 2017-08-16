@@ -13,6 +13,11 @@ angular.module('iConnectApp')
             ngDialog.open({ template: 'views/template/datepicker.html', className: 'ngdialog-theme-default' });
         };
 
+        $scope.locationPopUp = function (e) {
+            e.preventDefault();
+            ngDialog.open({ template: 'views/template/location.html', className: 'ngdialog-theme-default', width: '40%' });
+        };
+
         $scope.eventsArt = [
             {
                 id: 0,
