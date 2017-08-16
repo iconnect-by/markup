@@ -51,8 +51,8 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <select name="location_state" id="location_state">
-                                        <option value="" selected disabled class="label">State* (Optional)</option>
+                                    <select name="location_state" id="location_state" ng-show="user.country == 2">
+                                        <option value="" selected disabled class="label">State</option>
                                         <option value="1">MI</option>
                                         <option value="2">NY</option>
                                     </select>

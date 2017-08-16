@@ -1,0 +1,167 @@
+<section class="event-page-section profile-section event-page-settings-section" ng-controller="EventsController">
+    <div class="container top-banner-container">
+        <div class="row">
+
+            <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
+            <!--<div class="banner-image empty">-->
+            <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
+
+            <div class="banner-image empty">
+                <!--<img src="../../../images/event-page-top-image.png" alt="...">-->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+
+                <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
+                <!--<div class="hero-avatar empty">-->
+                <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
+
+                <div class="hero-avatar empty">
+                    <div class="avatar-img">
+                        <!--<img src="../../../images/placeholder.svg" alt="artist-img">-->
+                    </div>
+                </div>
+
+                <div class="hero-desc box-content">
+                    <div class="hero-descr-block">
+                        <h1 class="hero-desc-name">Transnation</h1>
+                        <small class="hero-desc-caption">Festival</small>
+
+                        <div class="hero-desc-about">
+                            <span class="empty">Enter information about your event ...</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-organizator">
+                        <div class="title">Organizator:</div>
+                        <mini-profile-preview
+                                data="{
+                                id: '0',
+                                photo: '',
+                                title: 'Walter Gonzales',
+                                country: 'Corporate events, Night Clubs',
+                                showLink: true,
+                                imgClass: 'square'
+                            }"
+                                show-index="0"
+                        ></mini-profile-preview>
+                    </div>
+
+                    <div class="hero-desc-list">
+                        <div class="item">
+                            <span class="icon"><img src="../../../images/map-baloon-icon.svg" alt="..."></span>
+                            <span class="title">Location</span>
+                            <span class="value"><a href="#" class="not-indicated">not indicated</a></span>
+                        </div>
+                        <div class="item">
+                            <span class="icon"><img src="../../../images/start-date-icon.svg" alt="..."></span>
+                            <span class="title">Date Start</span>
+                            <span class="value text-blue"><a href="#" class="not-indicated" ng-click="iDatePicker($event)">not indicated</a></span>
+                        </div>
+                        <div class="item">
+                            <span class="icon"><img src="../../../images/end-date-icon.svg" alt="..."></span>
+                            <span class="title">Date End</span>
+                            <span class="value text-orange"><a href="#" class="not-indicated" ng-click="iDatePicker($event)">not indicated</a></span>
+                        </div>
+                        <div class="item">
+                            <span class="icon"><img src="../../../images/time-icon.svg" alt="..."></span>
+                            <span class="title">Time</span>
+                            <span class="value text-orange"><a href="#" class="not-indicated" ng-click="iTimePicker($event)">not indicated</a></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!--.col-->
+
+            <div class="col-md-9">
+                <div class="event-content">
+
+                    <div class="settings-block">
+
+                        <h1>Profile Information Setting</h1>
+
+                        <form name="setting" ng-submit="save_event()" class="form-inline" novalidate>
+                            <fieldset>
+                                <div class="form-group">
+                                    <div class="col-xs-3">
+                                        <label>Event Type</label>
+                                    </div>
+                                    <div class="col-xs-9 multi">
+                                        <div class="artist-role-block {{genre.status}}" ng-repeat="genre in genres">
+                                            <span class="role-name">{{genre.title}}</span>
+                                            <span class="role-switch"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-3">
+                                        <label>About event</label>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <textarea class="form-control" ng-required="true">In the 80s, the hair accessory was invaluable. Almost every style involved some sort of hair accessory or embellishment to really set it off. Today, the hair accessory is not a part of everyday style and care should be taken as to when and how to use the look dated.</textarea>
+                                    </div>
+                                    <div class="col-xs-1 edit-section">
+                                        <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-3">
+                                        <label>Your Location</label>
+                                    </div>
+                                    <div class="col-xs-8 editable-form">
+                                        <span class="form-value" ng-show="!locationEditable" ng-click="edit($event)">London, United Kindom</span>
+                                        <div class="editable-block" ng-show="locationEditable">
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <input type="text" placeholder="City..." value="">
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <select name="location_countries" id="location_countries" ng-model="user.country">
+                                                        <option value="" selected disabled>Select country...</option>
+                                                        <option value="1">London</option>
+                                                        <option value="2">USA</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <select name="location_state" id="location_state" ng-show="user.country == 2">
+                                                        <option value="" selected disabled>Select state...</option>
+                                                        <option value="1">MI</option>
+                                                        <option value="2">NY</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <input type="text" class="address" placeholder="Address..." value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1 edit-section">
+                                        <a href="#" ng-click="edit($event)"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <div class="form-group">
+                                <div class="col-xs-12 edit-section2">
+                                    <button class="ic-btn ic-btn-white ic-btn-delete pull-left">Delete</button>
+                                    <button class="ic-btn ic-btn-white pull-right" ui-sref="app.event-page">Cancel</button>
+                                    <button type="submit" class="ic-btn ic-btn-orange pull-right" ng-disabled="setting.$invalid">Save</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!--.settings-block-->
+
+                </div>
+            </div><!--.col-->
+
+        </div><!--.row-->
+
+    </div><!--.container-->
+</section>

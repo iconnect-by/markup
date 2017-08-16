@@ -1,0 +1,27 @@
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<script>
+    $(document).ready(function () {
+        $('#datepicker').datepicker();
+    });
+</script>
+<style>
+    .ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+        display: block;
+        margin: 0 auto;
+    }
+</style>
+
+<div class="date-picker">
+    <div class="content">
+        <div class="title">Set a date</div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="datepicker"></div>
+            </div>
+        </div>
+
+    </div>
+</div><!--.date-picker-card-->

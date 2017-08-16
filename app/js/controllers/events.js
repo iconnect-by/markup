@@ -1,7 +1,18 @@
 'use strict';
 
 angular.module('iConnectApp')
-    .controller('EventsController', ['$scope', function ($scope) {
+    .controller('EventsController', ['$scope', 'ngDialog', function ($scope, ngDialog) {
+
+        $scope.iTimePicker = function (e) {
+            e.preventDefault();
+            ngDialog.open({ template: 'views/template/timepicker.html', className: 'ngdialog-theme-default' });
+        };
+
+        $scope.iDatePicker = function (e) {
+            e.preventDefault();
+            ngDialog.open({ template: 'views/template/datepicker.html', className: 'ngdialog-theme-default' });
+        };
+
         $scope.eventsArt = [
             {
                 id: 0,
@@ -306,6 +317,48 @@ angular.module('iConnectApp')
                     }
                 ]
 
+            }
+        ];
+
+        $scope.edit = function (e) {
+            e.preventDefault();
+
+            if (true === $scope.locationEditable) {
+                $scope.locationEditable = false;
+            } else {
+                $scope.locationEditable = true;
+            }
+
+        };
+
+        $scope.genres = [
+            {
+                title: 'POP',
+                status: 'active'
+            },
+            {
+                title: 'jAZZ',
+                status: ''
+            },
+            {
+                title: 'Blues',
+                status: 'active'
+            },
+            {
+                title: 'Comedy',
+                status: 'active'
+            },
+            {
+                title: 'Country',
+                status: ''
+            },
+            {
+                title: 'Folk',
+                status: 'active'
+            },
+            {
+                title: 'Hip Hop',
+                status: 'active'
             }
         ];
 

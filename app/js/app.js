@@ -196,6 +196,14 @@ angular.module('iConnectApp', ['ui.router', 'ngDialog'])
                     }
                 }
             })
+            .state('app.event-page-settings', {
+                url: 'event-page-settings',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/profile/event/event-page-settings.html'
+                    }
+                }
+            })
 
             // Commmon elements
             .state('app.common', {
