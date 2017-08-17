@@ -300,7 +300,6 @@
           .not-indicated {
             .text-grey-small;
             text-transform: lowercase;
-            cursor: pointer;
           }
         }
       }
@@ -753,6 +752,19 @@
             a {
               color: @iConnect-orange;
             }
+          }
+        }
+
+        &.separate {
+          text-align: center;
+          &:after {
+            content: '';
+            display: inline-block;
+            width: 1px;
+            height: 30px;
+            position: absolute;
+            border-right: 1px solid #f2f2f2;
+            right: 10px
           }
         }
       }

@@ -1,3 +1,13 @@
+<script>
+    $('document').ready(function() {
+        $('.dropdown-menu').on('click', function (event) {
+            $(this).parent().one('hide.bs.dropdown', function(e) {
+                e.preventDefault();
+            });
+        });
+    });
+</script>
+
 <section class="event-page-section profile-section event-page-settings-section" ng-controller="EventsController">
     <div class="container top-banner-container">
         <div class="row">
@@ -6,8 +16,8 @@
             <!--<div class="banner-image empty">-->
             <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
 
-            <div class="banner-image empty">
-                <!--<img src="../../../images/event-page-top-image.png" alt="...">-->
+            <div class="banner-image">
+                <img src="../../../images/event-page-top-image.png" alt="...">
             </div>
         </div>
     </div>
@@ -19,9 +29,9 @@
                 <!--<div class="hero-avatar empty">-->
                 <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
 
-                <div class="hero-avatar empty">
+                <div class="hero-avatar">
                     <div class="avatar-img">
-                        <!--<img src="../../../images/placeholder.svg" alt="artist-img">-->
+                        <img src="../../../images/placeholder.svg" alt="artist-img">
                     </div>
                 </div>
 
@@ -54,22 +64,22 @@
                         <div class="item">
                             <span class="icon"><img src="../../../images/map-baloon-icon.svg" alt="..."></span>
                             <span class="title">Location</span>
-                            <span class="value"><a href="#" class="not-indicated" ng-click="locationPopUp($event)">not indicated</a></span>
+                            <span class="value"><span class="not-indicated">not indicated</span></span>
                         </div>
                         <div class="item">
                             <span class="icon"><img src="../../../images/start-date-icon.svg" alt="..."></span>
                             <span class="title">Date Start</span>
-                            <span class="value text-blue"><a href="#" class="not-indicated" ng-click="iDatePicker($event)">not indicated</a></span>
+                            <span class="value text-blue"><span class="not-indicated">not indicated</span></span>
                         </div>
                         <div class="item">
                             <span class="icon"><img src="../../../images/end-date-icon.svg" alt="..."></span>
                             <span class="title">Date End</span>
-                            <span class="value text-orange"><a href="#" class="not-indicated" ng-click="iDatePicker($event)">not indicated</a></span>
+                            <span class="value text-orange"><span class="not-indicated">not indicated</span></span>
                         </div>
                         <div class="item">
                             <span class="icon"><img src="../../../images/time-icon.svg" alt="..."></span>
                             <span class="title">Time</span>
-                            <span class="value text-orange"><a href="#" class="not-indicated" ng-click="iTimePicker($event)">not indicated</a></span>
+                            <span class="value text-orange"><span class="not-indicated">not indicated</span></span>
                         </div>
                     </div>
 
@@ -146,6 +156,71 @@
                                         <a href="#" ng-click="edit($event)"><i class="fa fa-pencil" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
+
+                                <div class="form-group">
+                                    <div class="col-xs-3">
+                                        <label>Date Start</label>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <div class="dropdown">
+                                            <button class="dd-datetime" id="date_start" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                23 Oct 2017
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-form" aria-labelledby="date_start">
+                                                datePicker
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1 edit-section separate">
+                                        <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <label>Date Ended</label>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <button class="dd-datetime" id="date_ended" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            23 Oct 2017
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-form" aria-labelledby="date_ended">
+                                            datePicker
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1 edit-section">
+                                        <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-xs-3">
+                                        <label>Time Start</label>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <button class="dd-datetime" id="time_start" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            11:01 PM
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-form" aria-labelledby="time_start">
+                                            <div ng-include="'views/template/timepicker.html'" ng-init="headerTitle = 'Time Start'"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1 edit-section separate">
+                                        <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <label>Time Ended</label>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <button class="dd-datetime" id="time_ended" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            11:01 PM
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-form" aria-labelledby="time_ended">
+                                            <div ng-include="'views/template/timepicker.html'" onload="headerTitle = 'Time Ended'"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1 edit-section">
+                                        <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+
                             </fieldset>
 
                             <div class="form-group">
