@@ -1,5 +1,5 @@
 .registration-page {
-  padding-top: @section-padding-top;
+  padding-top: @top-menu-height + 97px;
 
   h1 {
     .title-H1-simple;
@@ -15,10 +15,24 @@
   .form-block {
     position: relative;
 
-    .ic-btn {
-      padding: 0 57px;
+    .btn-block {
+      display: inline-block;
       margin-top: 13px;
+      width: auto;
+      text-align: right;
+
+      .ic-btn {
+        padding: 0 57px;
+        display: inline-block;
+
+        &:first-child {
+          margin-right: 20px;
+          vertical-align: middle;
+        }
+      }
     }
+
+
 
     input,
     input [type=tel],

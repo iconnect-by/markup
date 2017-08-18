@@ -206,6 +206,15 @@ angular.module('iConnectApp', ['ui.router', 'ngDialog'])
                     }
                 }
             })
+            //sms-verification
+            .state('app.sms-verification', {
+                url: 'sms-verification',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/registration/sms-verification.html'
+                    }
+                }
+            })
             .state('app.event-page-settings', {
                 url: 'event-page-settings',
                 views: {
