@@ -1,22 +1,7 @@
 'use strict';
 
 angular.module('iConnectApp')
-    .controller('EventsController', ['$scope', 'ngDialog', function ($scope, ngDialog) {
-
-        $scope.iTimePicker = function (e) {
-            e.preventDefault();
-            ngDialog.open({ template: 'views/template/timepicker.html', className: 'ngdialog-theme-default' });
-        };
-
-        $scope.iDatePicker = function (e) {
-            e.preventDefault();
-            ngDialog.open({ template: 'views/template/datepicker.html', className: 'ngdialog-theme-default' });
-        };
-
-        $scope.locationPopUp = function (e) {
-            e.preventDefault();
-            ngDialog.open({ template: 'views/template/location.html', className: 'ngdialog-theme-default', width: '40%' });
-        };
+    .controller('EventsController', ['$scope', function ($scope) {
 
         $scope.eventsArt = [
             {

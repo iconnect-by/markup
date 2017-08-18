@@ -1,7 +1,8 @@
 'use strict';
 
 angular.module('iConnectApp')
-    .controller('CommonController', ['$scope', 'ngDialog', function($scope, ngDialog) {
+
+    .controller('CommonController', ['$scope', 'ngDialog', 'Notification', function($scope, ngDialog, Notification) {
 
         $scope.popUp = function (e) {
             e.preventDefault();
@@ -12,6 +13,10 @@ angular.module('iConnectApp')
                 plain: false
                 //controller: 'SomeController'
             });
+        };
+
+        $scope.BottomRight = function() {
+            Notification.error({message: 'Error Bottom Right', positionY: 'bottom', positionX: 'right'});
         };
 
     }]);
