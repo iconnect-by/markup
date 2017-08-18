@@ -233,6 +233,16 @@ angular.module('iConnectApp', ['ui.router', 'ngDialog'])
                     }
                 }
             })
+            //restore-password
+            .state('app.restore-password', {
+                url: 'restore-password',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/registration/restore-password.html'
+                    }
+                }
+            })
+
             .state('app.event-page-settings', {
                 url: 'event-page-settings',
                 views: {
