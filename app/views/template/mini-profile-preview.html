@@ -14,6 +14,8 @@
         <div class="info">{{ $ctrl.data.country }}{{ $ctrl.data.style ? " | " + $ctrl.data.style : '' }}</div>
     </div>
     <div ng-show="$ctrl.data.showLink" class="next-link">
-        <a href="#" class="lnk"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        <a href="#" class="lnk {{$ctrl.data.addedIconClass}}" style="color: {{ $ctrl.data.iconColor ? $ctrl.data.iconColor : '#333' }}">
+            <i class="{{ $ctrl.data.icon ? $ctrl.data.icon : 'fa fa-angle-right' }}" aria-hidden="true"></i>
+        </a>
     </div>
 </div>

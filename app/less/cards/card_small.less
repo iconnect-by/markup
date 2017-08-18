@@ -70,6 +70,13 @@
 
     .lnk {
       color: #333;
+      &.big {
+        font-size:40 * @rem;
+      }
+
+      &:hover {
+        color: darken(@iConnect-lightGrey, 20%) !important;
+      }
     }
   }
 
@@ -83,6 +90,10 @@
       .lnk {
         color: #e5e5e5;
         font-size:40 * @rem;
+
+        &:hover {
+          color: darken(@iConnect-lightGrey, 20%) !important;
+        }
       }
     }
   }

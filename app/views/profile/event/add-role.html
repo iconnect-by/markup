@@ -1,0 +1,136 @@
+<script>
+    $('document').ready(function() {
+        $('.dropdown-menu').on('click', function (event) {
+            $(this).parent().one('hide.bs.dropdown', function(e) {
+                e.preventDefault();
+            });
+        });
+    });
+</script>
+
+<section class="event-page-section profile-section event-page-settings-section add-role-section" ng-controller="EventsController">
+    <div class="container top-banner-container">
+        <div class="row">
+
+            <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
+            <!--<div class="banner-image empty">-->
+            <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
+
+            <div class="banner-image">
+                <img src="../../../images/event-page-top-image.png" alt="...">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+
+                <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
+                <!--<div class="hero-avatar empty">-->
+                <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
+
+                <div class="hero-avatar">
+                    <div class="avatar-img">
+                        <img src="../../../images/placeholder.svg" alt="artist-img">
+                    </div>
+                </div>
+
+                <div class="hero-desc box-content">
+                    <div class="hero-descr-block">
+                        <h1 class="hero-desc-name">Transnation</h1>
+                        <small class="hero-desc-caption">Festival</small>
+
+                        <div class="hero-desc-about">
+                            <span class="empty">Enter information about your event ...</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-organizator">
+                        <div class="title">Organizator:</div>
+                        <mini-profile-preview
+                                data="{
+                                id: '0',
+                                photo: '',
+                                title: 'Walter Gonzales',
+                                country: 'Corporate events, Night Clubs',
+                                showLink: true,
+                                imgClass: 'square'
+                            }"
+                                show-index="0"
+                        ></mini-profile-preview>
+                    </div>
+
+                    <div class="hero-desc-list">
+                        <div class="item">
+                            <span class="icon"><img src="../../../images/map-baloon-icon.svg" alt="..."></span>
+                            <span class="title">Location</span>
+                            <span class="value"><span class="not-indicated">not indicated</span></span>
+                        </div>
+                        <div class="item">
+                            <span class="icon"><img src="../../../images/start-date-icon.svg" alt="..."></span>
+                            <span class="title">Date Start</span>
+                            <span class="value text-blue"><span class="not-indicated">not indicated</span></span>
+                        </div>
+                        <div class="item">
+                            <span class="icon"><img src="../../../images/end-date-icon.svg" alt="..."></span>
+                            <span class="title">Date End</span>
+                            <span class="value text-orange"><span class="not-indicated">not indicated</span></span>
+                        </div>
+                        <div class="item">
+                            <span class="icon"><img src="../../../images/time-icon.svg" alt="..."></span>
+                            <span class="title">Time</span>
+                            <span class="value text-orange"><span class="not-indicated">not indicated</span></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!--.col-->
+
+            <div class="col-md-9">
+                <div class="event-content">
+
+                    <span class="section-title">Artists taking part in the event</span>
+
+                    <div class="person-interested-in-block">
+                        <div class="row">
+                            <div class="col-md-4" ng-repeat="item in [1,2,3]">
+                                <mini-profile-preview
+                                        data="{
+                                            id: item,
+                                            photo: '../../../images/placeholder.svg',
+                                            title: 'Walter Gonzales',
+                                            country: 'London',
+                                            style: 'Jazz',
+                                            showLink: true,
+                                            cssClass: 'person-interested-in',
+                                            icon: 'fa fa-times-circle',
+                                            iconColor: '#e5e5e5',
+                                            addedIconClass: 'big'
+                                        }"
+                                        show-index="0"
+                                ></mini-profile-preview>
+                            </div>
+                            <div class="col-md-4">
+                                <mini-profile-new data="{
+                                    cssClass: 'dashed'
+                                }"
+                                ></mini-profile-new>
+                            </div>
+                            <div class="col-md-4">
+                                <button id="add_place" class="add-place" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Add places for participants
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-form add-role-dropdown" aria-labelledby="add_place">
+                                    <div ng-include="'views/template/add-role-dropdown.html'"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!--.col-->
+
+        </div><!--.row-->
+
+    </div><!--.container-->
+</section>
