@@ -36,7 +36,7 @@
         @line-height: 1.357;
         @lines-to-show: 1;
 
-        height: @font-size * @line-height * @lines-to-show;
+        height: @font-size * @line-height * @lines-to-show + .3;
         -webkit-line-clamp: @lines-to-show;
         -webkit-box-orient: vertical;
         overflow: hidden;
@@ -48,8 +48,10 @@
         letter-spacing: .4px;
         line-height: @line-height;
         padding-top: 5 * @rem;
+        padding-bottom: 5 * @rem;
         margin-bottom: 13 * @rem;
         font-weight: @fw-semibold;
+        display: inline-block;
       }
       .description {
         font-size: 10 * @rem;
