@@ -36,8 +36,6 @@
       }
     }
 
-
-
     input,
     input [type=tel],
     input [type=email],
@@ -80,7 +78,37 @@
           transform: scale(0.75);
         }
       }
+
+      &.pwd-group {
+        position: relative;
+
+        input {
+          padding-right: 30px;
+        }
+
+        .see-pwd {
+          position: absolute;
+          padding: 19px 10px;
+          cursor: pointer;
+          right: 0;
+          bottom: 0;
+          top: auto;
+
+          .fa {
+            display: inline-block;
+            width: 14px;
+            height: 10px;
+            color: #e5e5e5;
+
+            &:hover {
+              color: @iConnect-orange;
+            }
+          }
+        }
+      }
     }
+
+
 
     .control-label {
       color: #333;
