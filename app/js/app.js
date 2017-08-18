@@ -215,6 +215,15 @@ angular.module('iConnectApp', ['ui.router', 'ngDialog'])
                     }
                 }
             })
+            //sms-confirmation
+            .state('app.sms-confirmation', {
+                url: 'sms-confirmation',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/registration/sms-confirmation.html'
+                    }
+                }
+            })
             .state('app.event-page-settings', {
                 url: 'event-page-settings',
                 views: {
