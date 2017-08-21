@@ -32,17 +32,6 @@ angular.module('iConnectApp', ['ui.router', 'ngDialog', 'ui-notification'])
                 }
             })
 
-            // route for the events page
-            .state('app.events', {
-                url: 'events',
-                views: {
-                    'content@': {
-                        templateUrl: 'views/events.html',
-                        controller: 'EventsController'
-                    }
-                }
-            })
-
             .state('app.event-page', {
                 url: 'personal-event',
                 views: {
@@ -105,17 +94,6 @@ angular.module('iConnectApp', ['ui.router', 'ngDialog', 'ui-notification'])
                 views: {
                     'content@': {
                         templateUrl: 'views/login/login.html',
-                        controller: 'RegistrationController'
-                    }
-                }
-            })
-
-            // route for the verification page
-            .state('app.verification', {
-                url: 'verification',
-                views: {
-                    'content@': {
-                        templateUrl: 'views/login/verification.html',
                         controller: 'RegistrationController'
                     }
                 }
