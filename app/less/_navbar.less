@@ -92,14 +92,57 @@
                   letter-spacing: .34px;
                   color: #333;
                   padding: 16px 20px 17px;
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
 
-                  img {
-                    width: 20px;
-                    height: 20px;
+                  .image {
+                    img {
+                      width: 25px;
+                      height: 25px;
+                      display: inline-block;
+                      margin-right: 19px;
+                    }
+
+                    &.rounded {
+                      img {
+                        border-radius: 4px;
+                      }
+                    }
+                    &.circle {
+                      img {
+                        border-radius: 50%;
+                      }
+                    }
+                  }
+
+                  .fa {
                     display: inline-block;
                     margin-right: 19px;
+                    font-size: 25 * @rem;
+                    color: #f2f2f2;
                   }
+
+                  .content-block {
+                    display: inline-block;
+
+                    .content {
+                      display: block;
+                    }
+                    .label {
+                      display: block;
+                      .text-grey-small;
+                      text-align: left;
+                      padding: 0;
+
+                      &.account-type {
+                        color: #2caa0c;
+                      }
+                    }
+                  }
+
                 }
+
               }
             }
           }
