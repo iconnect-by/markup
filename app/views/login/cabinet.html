@@ -26,6 +26,7 @@
         <div class="row">
             <ul class="nav nav-tabs" role="tablist">
                 <li class="active"><a href="#" data-target='#dashboard' data-toggle="tab" onclick="return false;">Dashboard</a></li>
+                <li><a href="#" data-target='#dashboard_empty' data-toggle="tab" onclick="return false;">Dashboard Empty</a></li>
                 <li><a href="#" data-target='#artist' data-toggle="tab" onclick="return false;">Your Artist</a></li>
                 <li><a href="#" data-target='#organization' data-toggle="tab" onclick="return false;">Your Organization</a></li>
                 <li><a href="#" data-target='#events' data-toggle="tab" onclick="return false;">Your Events</a></li>
@@ -71,6 +72,24 @@
                     </div><!--.container-fluid-->
                 </div><!--.tabpanel-->
 
+                <div role="tabpanel" class="tab-pane" id="dashboard_empty">
+                    <div class="container-fluid empty-tab">
+                        <div class="row">
+                            <div class="col-md-offset-3 col-md-6">
+                                <h2>Now we collect information...</h2>
+
+                                <div class="content">
+                                    <p>
+                                        Even at the next entrance, there will be updates that you mightinterested
+                                        in. In the meantime, look at our page of tops.
+                                    </p>
+                                </div>
+
+                                <a href="#" ui-sref="app.artist-tops" class="ic-btn ic-btn-blue big">Go to artist tops</a>
+                            </div>
+                        </div><!--.row-->
+                    </div><!--.container-fluid-->
+                </div><!--.tabpanel-->
 
                 <div role="tabpanel" class="tab-pane" id="artist">
                     <div class="container-fluid">
