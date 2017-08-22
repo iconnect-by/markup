@@ -1,0 +1,129 @@
+.ic-btn {
+  display: inline-block;
+  border: 1px solid transparent;
+  background-color: transparent;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12 * @rem;
+  line-height: 2.5;
+  color: @iConnect-white;
+  border-radius: 3px;
+  padding: 0 16px;
+  font-weight: @fw-semibold;
+  max-height: @max-button-height;
+  max-width: 370px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: opacity .2s, background-color .2s ease, color .2s ease;
+  outline: none;
+
+  &.big {
+    line-height: 3;
+    padding: 0 110px;
+    max-height: 40px;
+  }
+
+  &.ic-btn-blue {
+    background-color: #4a90e2;
+    padding: 0 65px;
+
+    &:visited {
+      color: @iConnect-white;
+      background-color: #4a90e2;
+    }
+    &:hover, &:focus {
+      color: @iConnect-white;
+      background-color: #2c72c4;
+    }
+    &:active {
+      color: @iConnect-white;
+      background-color: #2c72d8;
+    }
+
+  }
+
+  &.ic-btn-white {
+    border: 1px solid @iConnect-lightGrey;
+    color: @iConnect-black;
+    padding: 0 45px;
+
+    &:visited {
+      color: @iConnect-black;
+    }
+    &:hover, &:focus {
+      border: 1px solid #f2f2f2;
+      color: #ff5400;
+    }
+    &:active {
+      border: 1px solid #f2f2f2;
+      color: #f53600;
+    }
+  }
+
+  &.ic-btn-orange {
+    background-color: @iConnect-orange;
+    padding: 0 50px;
+
+    &:visited {
+      color: @iConnect-white;
+      background-color: @iConnect-orange;
+    }
+    &:hover, &:focus {
+      color: @iConnect-white;
+      background-color: #e13600;
+    }
+    &:active {
+      color: @iConnect-white;
+      background-color: #f53600;
+    }
+  }
+
+  &.ic-btn-red {
+    background-color: #d0021b;
+    padding: 0 50px;
+
+    &:visited {
+      color: @iConnect-white;
+      background-color: #d0021b;
+    }
+    &:hover, &:focus{
+      color: @iConnect-white;
+      background-color: #b20000;
+    }
+    &:active {
+      color: @iConnect-white;
+      background-color: #c20000;
+    }
+  }
+
+  &.ic-btn-green {
+    background-color: #00b700;
+
+    &:visited {
+      color: @iConnect-white;
+      background-color: #00b700;
+    }
+    &:hover, &:focus {
+      color: @iConnect-white;
+      background-color: #009900;
+    }
+    &:active {
+      color: @iConnect-white;
+      background-color: #00ad00;
+    }
+  }
+
+  &.ic-btn-delete {
+    color: #f00;
+  }
+
+
+
+  &[disabled] {
+    border: 1px solid #f2f2f2 !important;
+    background-color: #fafafa !important;
+    color: #e5e5e5 !important;
+  }
+}
