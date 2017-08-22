@@ -1,20 +1,27 @@
-<div class="event-card">
+<div class="event-card {{$ctrl.data.isDraft ? 'draft' : ''}}">
     <div class="container-fluid">
         <div class="row card-header">
-            <div class="col-xs-12 event-avatar">
+
+            <div class="col-xs-12 event-avatar" ng-if="$ctrl.data.imgUrl">
                 <img ng-src="{{ $ctrl.data.imgUrl }}" class="img-responsive" alt="avatar">
             </div>
+
+            <div class="col-xs-12 event-avatar empty" ng-if="!$ctrl.data.imgUrl">
+                <span class="draft-label" ng-if="$ctrl.data.isDraft">Draft Event</span>
+            </div>
+
             <div class="col-xs-12 event-info">
-                <h4 class="ic-title title-4 name">{{ $ctrl.data.title }}</h4>
-                <div class="ic-text text-grey small subtext">{{ $ctrl.data.eventDate }}</div>
-                <div class="description ic-text text-default small">
-                    <p ng-bind-html="$ctrl.data.eventText"></p>
+                <h4 class="name">{{ $ctrl.data.title }}</h4>
+                <div class="subtext">{{ $ctrl.data.eventDate }}</div>
+                <div class="description">
+                    <!--<p ng-bind-html="$ctrl.data.eventText">{{$ctrl.data.eventText}}</p>-->
+                    {{$ctrl.data.eventText}}
                 </div>
             </div>
         </div>
         <div class="people">
-            <a href="#" class="people-link" ng-repeat="man in $ctrl.data.eventArtist">
-                <img ng-src="{{ man.artistImg }}" class="img-responsive img-circle" alt="pavatar">
+            <a href="#" class="people-link circle" ng-repeat="man in $ctrl.data.eventArtist">
+                <img ng-src="{{ man.artistImg }}" alt="avatar">
             </a>
             <a href="#" class="people-link-add">
                 <i class="fa fa-plus-circle" aria-hidden="true"></i>

@@ -118,6 +118,29 @@
                             <div class="col-md-3" ng-repeat="event in eventsArt">
                                 <event-card data="event"></event-card>
                             </div><!--.col-->
+
+                            <div class="col-md-3">
+                                <event-card data="{
+                                    isDraft: true,
+                                    imgUrl: '',
+                                    title: 'Romantic Ballads',
+                                    eventDate: '12 nov 2016, 22:00 - 5:00',
+                                    eventText: 'A purpose is the eternal condition for success.',
+                                    eventArtist: [
+                                        {
+                                            id: 0,
+                                            artistImg: '../../images/placeholder.svg'
+                                        },
+                                        {
+                                            id: 1,
+                                            artistImg: '../../images/placeholder.svg'
+                                        }
+                                    ],
+                                    eventType: 'Concert',
+                                    eventLocation: 'UK, London'
+                                }"></event-card>
+                            </div><!--.col-->
+
                             <div class="col-md-3">
                                 <create-card
                                         data="{
