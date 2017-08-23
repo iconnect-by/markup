@@ -169,6 +169,17 @@ angular.module('iConnectApp', ['ui.router', 'ngDialog', 'ui-notification'])
                     }
                 }
             })
+
+            .state('app.account-settings', {
+                url: 'account-settings',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/profile/account-settings.html',
+                        controller: 'PersonalController'
+                    }
+                }
+            })
+
             .state('app.terms-of-use', {
                 url: 'terms-of-use',
                 views: {

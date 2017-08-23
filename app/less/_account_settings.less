@@ -1,0 +1,108 @@
+.account-settings {
+  .header-container {
+    .title {
+      .title-H2;
+    }
+  }
+
+  .btn-block {
+    padding-top: 30px;
+
+    .ic-btn {
+      &:last-child {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  input,
+  input [type=tel],
+  input [type=email],
+  input [type=number],
+  input [type=password] {
+    background-color: transparent !important;
+    height: auto;
+    padding: 15px 0;
+    border: 0;
+    border-bottom: 1px solid #f2f2f2;
+    border-radius: 0;
+    color: #333;
+    box-shadow: none;
+
+    &:focus {
+      background-color: transparent;
+      box-shadow: none;
+      outline: none;
+      border-bottom: 1px solid @iConnect-orange;
+    }
+  }
+
+  .form-group {
+    display: flex;
+    height: 55px;
+    margin-bottom: 27px;
+    position: relative;
+    flex-direction: column;
+
+    .error {
+      color: @iConnect-red;
+      font-size: 11 * @rem;
+      margin: 7px 0;
+    }
+
+    &.focused {
+      .control-label {
+        opacity: 1;
+        top: -10px;
+        transform: scale(0.75);
+        color: #d0021b;
+      }
+    }
+
+    .control-label {
+      color: #333;
+      font-family: @iConnect-font-regular;
+      font-size: 16 * @rem;
+      font-weight: @fw-regular;
+      line-height: 1.125;
+      letter-spacing: .46px;
+      margin-bottom: 0;
+      //opacity: .5;
+      pointer-events: none;
+      position: absolute;
+      top: 18px;
+      transform: scale(1);
+      transform-origin: left top;
+      transition: all .2s ease-in-out;
+    }
+
+    .form-control {
+      align-self: flex-end;
+    }
+
+    select {
+      display: block;
+      border-radius: 0;
+      box-shadow: none;
+      .text-default;
+      color: #333;
+      font-family: @iConnect-font-regular;
+      font-weight: @fw-regular;
+      font-size: 16 * @rem;
+      letter-spacing: .34px;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      background: transparent;
+      background-image: none;
+      width: 100%;
+      margin: 0;
+      outline: none;
+      height: auto;
+      padding: 14px 0;
+      border: 0;
+      border-bottom: 1px solid #f2f2f2;
+      //opacity: .5;
+    }
+  }
+}

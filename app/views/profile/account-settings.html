@@ -1,0 +1,135 @@
+<script>
+    $(document).ready(function () {
+        $('.form-control').on('focus blur', function (e) {
+            $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+        }).trigger('blur');
+    });
+</script>
+
+<section class="cabinet-section account-settings">
+    <div class="container">
+
+        <div class="row header-container">
+
+            <div class="col-md-12">
+                <h2 class="title">Account settings</h2>
+            </div>
+
+        </div><!--.row-->
+
+        <div class="row">
+            <ul class="nav nav-tabs" role="tablist">
+                <li><a href="#" data-target='#account' data-toggle="tab" onclick="return false;">Account</a></li>
+                <li class="active"><a href="#" data-target='#legal_info' data-toggle="tab" onclick="return false;">Legal information</a></li>
+                <li><a href="#" data-target='#billing_and_payments' data-toggle="tab" onclick="return false;">Billing and Payments</a></li>
+                <li><a href="#" data-target='#notification' data-toggle="tab" onclick="return false;">Notification</a></li>
+                <li><a href="#" data-target='#upgrade' data-toggle="tab" onclick="return false;">upgrade your account</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane" id="account">
+                    <div class="container-fluid">
+                        account
+                    </div><!--.container-fluid-->
+                </div><!--.tabpanel-->
+
+                <div role="tabpanel" class="tab-pane active in" id="legal_info">
+                    <div class="container-fluid">
+
+                        <div class="form-block">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <fieldset>
+                                            <div class="form-group">
+                                                <label class="control-label" for="entity_legal_name">Name of the legal entity</label>
+                                                <input id="entity_legal_name" class="form-control" autocomplete="off" ng-required="true">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label" for="account_number">Account number</label>
+                                                <input id="account_number" class="form-control" autocomplete="off" ng-required="true">
+                                            </div>
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <fieldset>
+                                            <div class="form-group">
+                                                <label class="control-label" for="payer_account_number">Payer account number</label>
+                                                <input id="payer_account_number" class="form-control" autocomplete="off" ng-required="true">
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <select name="location_countries" id="location_countries" ng-model="user.country">
+                                                <option value="" selected disabled class="label">Country</option>
+                                                <option value="1">London</option>
+                                                <option value="2">USA</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="control-label" for="city">City</label>
+                                            <input id="city" class="form-control" autocomplete="off" ng-model="user.city" ng-required="true">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <select name="location_state" id="location_state" ng-show="user.country == 2">
+                                                <option value="" selected disabled class="label">State</option>
+                                                <option value="1">MI</option>
+                                                <option value="2">NY</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <label class="control-label" for="legal_address">Legal address</label>
+                                            <input id="legal_address" class="form-control" autocomplete="off" ng-required="true">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group pull-right">
+                                            <div class="btn-block">
+                                                <button class="ic-btn ic-btn-orange big ">Save</button>
+                                                <button class="ic-btn ic-btn-white big">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div><!--.container-fluid-->
+                </div><!--.tabpanel-->
+
+                <div role="tabpanel" class="tab-pane" id="billing_and_payments">
+                    <div class="container-fluid">
+                        billing_and_payments
+                    </div>
+                </div><!--.tabpanel-->
+
+                <div role="tabpanel" class="tab-pane" id="notification">
+                    <div class="container-fluid">
+                        notification
+                    </div>
+                </div><!--.tabpanel-->
+
+                <div role="tabpanel" class="tab-pane" id="upgrade">
+                    <div class="container-fluid">
+                        upgrade
+                    </div>
+                </div><!--.tabpanel-->
+            </div><!--.tab-content-->
+        </div><!--.row-->
+    </div>
+</section>
