@@ -208,24 +208,59 @@
           }
         }
 
-        .dropdown {
-          &.open {
-            >a {
-              //border-bottom: 2px solid @iConnect-orange !important;
-            }
-          }
-        }
       }
 
       .dropdown {
         &>.dropdown-toggle {
-          span {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          //span {
+          //  img {
+          //    display: inline-block;
+          //    margin-right: 9px;
+          //    width: 30px;
+          //  }
+          //}
+
+          .image {
+            display: inline-block;
             img {
               display: inline-block;
               margin-right: 9px;
               width: 30px;
+              max-width: 100%;
+              height: auto;
+              border-radius: 4px;
+            }
+
+            &.circle {
+              img {
+                border-radius: 50%;
+              }
             }
           }
+
+          .content {
+            display: inline-block;
+            line-height: 1;
+            margin-right: 8px;
+
+            .title {
+
+            }
+            .account-type {
+              padding: 0;
+              display: block;
+              .text-grey-small;
+              color: @iConnect-orange;
+              text-transform: none;
+              text-align: left;
+              margin-top: 3px;
+            }
+          }
+
+
         }
       }
     }
