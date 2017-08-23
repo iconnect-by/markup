@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-11.0%" y="-8.4%" width="122.1%" height="128.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="15" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Audio-Upload-Finish---DONE" filter="url(#filter-1)" transform="translate(-145.000000, -78.000000)">
+            <rect id="Avatar_BG" fill="#FFFFFF" x="0" y="0" width="340" height="267" rx="4"></rect>
+            <path d="M159.75,98.25 L156.25,101.75 L167.5,113 L192.5,88 L189,84.5 L167.5,106 L159.75,98.25 L159.75,98.25 Z M190,103 C190,114 181,123 170,123 C159,123 150,114 150,103 C150,92 159,83 170,83 C172,83 173.75,83.25 175.5,83.75 L179.5,79.75 C176.5,78.75 173.25,78 170,78 C156.25,78 145,89.25 145,103 C145,116.75 156.25,128 170,128 C183.75,128 195,116.75 195,103 L190,103 L190,103 Z" id="Shape" fill="#00B700"></path>
+        </g>
+    </g>
+</svg>

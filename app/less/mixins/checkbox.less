@@ -1,0 +1,37 @@
+.ic-checkbox {
+  .text-default-small;
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  padding-top: 3px;
+  cursor: pointer;
+  text-align: left;
+  line-height: 38px;
+
+  input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .control_indicator {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    height: 20px;
+    width: 20px;
+    //background-image: url('@{ic-path-images}/check-off.svg');
+    //background-size: 100%;
+    border-radius: 50%;
+    border: 1px solid #f2f2f2;
+    background-repeat: no-repeat;
+  }
+
+  input:checked ~ .control_indicator {
+    border: none;
+    background-image: url('@{ic-path-images}/check-on.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}
