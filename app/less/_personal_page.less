@@ -74,62 +74,14 @@
     }
 
     &:hover {
-      .avatar-options {
+      .ic-image-selector {
         opacity: 1 !important;
         bottom: 0;
       }
     }
 
-    .avatar-options {
-      background-color: #fff;
-      box-shadow: 0 10px 25px fade(#000, 10%);
-      border-radius: 4px;
-      opacity: 0;
-      height: 60px;
-      width: 100%;
-      position: absolute;
+    .ic-image-selector {
       bottom: -20px;
-      z-index: 20;
-      transition: opacity .1s ease-in-out .1s, bottom .2s ease-in-out;
-
-      ul {
-        display: flex;
-        align-content: space-between;
-        justify-content: center;
-        width: 100%;
-        margin: 0;
-
-        li {
-          display: inline-block;
-          line-height: 60px;
-
-          &:not(:last-child) {
-            a {
-              border-right: 1px solid #f2f2f2;
-            }
-          }
-
-          a {
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center center;
-            padding: 0 40px;
-            line-height: 30px;
-
-            &.upload-avatar-opt {
-              background-image: url('@{ic-path-images}/upload-avatar-opt.svg');
-            }
-
-            &.cut-avatar-opt {
-              background-image: url('@{ic-path-images}/cut-avatar-opt.svg');
-            }
-            &.trash-avatar-opt {
-              background-image: url('@{ic-path-images}/trash-avatar-opt.svg');
-            }
-
-          }
-        }
-      }
     }
   }
 
@@ -869,6 +821,57 @@
     }
     .content {
 
+    }
+  }
+}
+
+.ic-image-selector {
+  background-color: #fff;
+  box-shadow: 0 10px 25px fade(#000, 10%);
+  border-radius: 4px;
+  opacity: 0;
+  height: 60px;
+  width: 100%;
+  max-width: 300px;
+  position: absolute;
+  z-index: 20;
+  transition: opacity .1s ease-in-out .1s, bottom .2s ease-in-out;
+
+  ul {
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+
+    li {
+      display: inline-block;
+      line-height: 60px;
+
+      &:not(:last-child) {
+        a {
+          border-right: 1px solid #f2f2f2;
+        }
+      }
+
+      a {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        padding: 0 40px;
+        line-height: 30px;
+
+        &.upload {
+          background-image: url('@{ic-path-images}/upload-avatar-opt.svg');
+        }
+
+        &.cut {
+          background-image: url('@{ic-path-images}/cut-avatar-opt.svg');
+        }
+        &.trash {
+          background-image: url('@{ic-path-images}/trash-avatar-opt.svg');
+        }
+      }
     }
   }
 }
