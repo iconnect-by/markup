@@ -188,6 +188,14 @@ angular.module('iConnectApp', ['ui.router', 'ngDialog', 'ui-notification'])
                     }
                 }
             })
+            .state('app.privacy-policy', {
+                url: 'privacy-policy',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/login/privacy-policy.html'
+                    }
+                }
+            })
             .state('app.registration-complete', {
                 url: 'registration-complete',
                 views: {

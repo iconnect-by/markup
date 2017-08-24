@@ -1,0 +1,102 @@
+.input-ddown-block {
+  position: relative;
+
+  .ddown-entity {
+    display: none;
+    position: absolute;
+    background-color: #ccc;
+    width: 100%;
+    padding: 0;
+    z-index: 9999;
+  }
+
+  .control-label {
+    .title-H2;
+    color: #999;
+    font-family: @iConnect-font-regular;
+    font-size: 16 * @rem;
+    font-weight: @fw-regular;
+    line-height: 1.125;
+    letter-spacing: .46px;
+    margin-bottom: 0;
+    opacity: .5;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 18px;
+    transform: scale(1);
+    transform-origin: center top;
+    transition: all .2s ease-in-out;
+  }
+
+  .form-group {
+    background-color: transparent;
+    height: auto;
+    border: 0;
+    border-bottom: 1px solid #f2f2f2;
+    border-radius: 0;
+    margin-bottom: 0;
+
+    &.focused {
+      .control-label {
+        opacity: 1;
+        top: -20px;
+        transform: scale(1);
+        color: #626875;
+      }
+    }
+  }
+
+  .input-field {
+    background-color: red !important;
+    .title-H2;
+    color: #333;
+    margin: 0;
+    font-weight: @fw-regular;
+    text-align: center;
+    height: 65px;
+    border-radius: 0;
+    border-bottom: 1px solid transparent !important;
+    min-width: 400px !important;
+    max-width: 99.99% !important;
+    transition: width 0.25s;
+    padding-right: 10px;
+    position: relative;
+  }
+
+  .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+
+    &:before, &:after {
+      content: '';
+      height: 1px;
+      width: 0;
+      bottom: -1px;
+      position: absolute;
+      background: @iConnect-orange;
+      transition: 0.2s ease all;
+      -moz-transition: 0.2s ease all;
+      -webkit-transition: 0.2s ease all;
+    }
+    &:before {
+      left: 50%;
+    }
+    &:after {
+      right: 50%;
+    }
+  }
+
+  input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+  }
+
+  .caret {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+  }
+}

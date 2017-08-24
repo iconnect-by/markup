@@ -102,18 +102,27 @@
   }
 
   .add-place {
-    background-color: #4a90e2;
-    border: 0;
+    background-color: transparent;
+    border: 1px dashed #f2f2f2;
     box-shadow: none;
-    .title-H4;
-    color: #fff;
-    padding: 23px 20px;
+    color: #00b700;
+    font-size: 2.5rem;
+    padding: 21.5px 20px;
     margin: 0 0 20px 0;
     border-radius: 4px;
-    line-height: 4;
     width: 100%;
     text-align: center;
     outline: none;
+
+    &:visited {
+      color: #00b700;
+    }
+    &:hover, &:focus {
+      color: #009900;
+    }
+    &:active {
+      color: #00ad00;
+    }
   }
 
   .add-role-dropdown {
@@ -123,6 +132,7 @@
     left: auto;
     padding: 0;
     top: 83%;
+    margin: 0;
 
     .header {
       padding: 16px 20px 17px 20px;
@@ -135,7 +145,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
-        top: -19px;
+        top: -18px;
         right: 0;
         display: inline-block;
         width: 140px;

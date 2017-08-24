@@ -18,6 +18,14 @@
 
             <div class="banner-image">
                 <img src="../../../images/event-page-top-image.png" alt="...">
+
+                <div class="save-event-form">
+                    <span class="title">Are you ready to publish the event?</span>
+                    <div class="btn-block">
+                        <a href="#" class="ic-btn ic-btn-white">Save as Draft</a>
+                        <a href="#" class="ic-btn ic-btn-green">Publish event</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -33,6 +41,10 @@
                     <div class="avatar-img">
                         <img src="../../../images/placeholder.svg" alt="artist-img">
                     </div>
+                </div>
+
+                <div class="hero-actions">
+                    <button class="ic-btn ic-btn-blue" ui-sref="app.personal-artist.config">Change event information</button>
                 </div>
 
                 <div class="hero-desc box-content">
@@ -67,14 +79,9 @@
                             <span class="value"><span class="not-indicated">not indicated</span></span>
                         </div>
                         <div class="item">
-                            <span class="icon"><img src="../../../images/start-date-icon.svg" alt="..."></span>
-                            <span class="title">Date Start</span>
-                            <span class="value text-blue"><span class="not-indicated">not indicated</span></span>
-                        </div>
-                        <div class="item">
-                            <span class="icon"><img src="../../../images/end-date-icon.svg" alt="..."></span>
-                            <span class="title">Date End</span>
-                            <span class="value text-orange"><span class="not-indicated">not indicated</span></span>
+                            <span class="icon"><img src="../../../images/date-start-end-icon.svg" alt="..."></span>
+                            <span class="title">Date Start / End</span>
+                            <span class="value text-blue">22 sep - 24 sep 2017</span>
                         </div>
                         <div class="item">
                             <span class="icon"><img src="../../../images/time-icon.svg" alt="..."></span>
@@ -117,9 +124,9 @@
                                 }"
                                 ></mini-profile-new>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-2">
                                 <button id="add_place" class="add-place" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Add places for participants
+                                    <i class="fa fa-plus-circle"></i>
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-form add-role-dropdown" aria-labelledby="add_place">
                                     <div ng-include="'views/template/add-role-dropdown.html'"></div>
