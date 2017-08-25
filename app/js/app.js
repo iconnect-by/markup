@@ -1,7 +1,7 @@
 'use strict';
 
 // angular.module('iConnectApp', ['ui.router', 'ngResource', 'ui.calendar', 'ui.select', 'ngSanitize', 'ngDialog'])
-angular.module('iConnectApp', ['ui.router', 'ngDialog', 'ui-notification'])
+angular.module('iConnectApp', ['ui.router', 'ngDialog', 'ui-notification', 'ui.bootstrap'])
     .config(function ($stateProvider, $urlRouterProvider) {
 
         $stateProvider

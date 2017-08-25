@@ -20,10 +20,10 @@
                 <img src="../../../images/event-page-top-image.png" alt="...">
 
                 <div class="save-event-form">
-                    <span class="title">You have an invitation to this event</span>
+                    <span class="title">Are you ready to publish the event?</span>
                     <div class="btn-block">
-                        <a href="#" class="ic-btn ic-btn-green">Accept request</a>
-                        <a href="#" class="ic-btn ic-btn-red">Cancel</a>
+                        <a href="#" class="ic-btn ic-btn-white">Save as Draft</a>
+                        <a href="#" class="ic-btn ic-btn-green">Publish event</a>
                     </div>
                 </div>
             </div>
@@ -41,6 +41,10 @@
                     <div class="avatar-img">
                         <img src="../../../images/placeholder.svg" alt="artist-img">
                     </div>
+                </div>
+
+                <div class="hero-actions">
+                    <button class="ic-btn ic-btn-green" ui-sref="app.event-page-settings">Manage participants</button>
                 </div>
 
                 <div class="hero-desc box-content">
@@ -75,14 +79,9 @@
                             <span class="value"><span class="not-indicated">not indicated</span></span>
                         </div>
                         <div class="item">
-                            <span class="icon"><img src="../../../images/start-date-icon.svg" alt="..."></span>
-                            <span class="title">Date Start</span>
-                            <span class="value text-blue"><span class="not-indicated">not indicated</span></span>
-                        </div>
-                        <div class="item">
-                            <span class="icon"><img src="../../../images/end-date-icon.svg" alt="..."></span>
-                            <span class="title">Date End</span>
-                            <span class="value text-orange"><span class="not-indicated">not indicated</span></span>
+                            <span class="icon"><img src="../../../images/date-start-end-icon.svg" alt="..."></span>
+                            <span class="title">Date Start / End</span>
+                            <span class="value text-blue">22 sep - 24 sep 2017</span>
                         </div>
                         <div class="item">
                             <span class="icon"><img src="../../../images/time-icon.svg" alt="..."></span>
@@ -120,6 +119,7 @@
                                     </div>
                                     <div class="col-xs-8">
                                         <textarea class="form-control" ng-required="true">In the 80s, the hair accessory was invaluable. Almost every style involved some sort of hair accessory or embellishment to really set it off. Today, the hair accessory is not a part of everyday style and care should be taken as to when and how to use the look dated.</textarea>
+                                        <span class="symbols-counter">There are 130 characters left to limit</span>
                                     </div>
                                     <div class="col-xs-1 edit-section">
                                         <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>

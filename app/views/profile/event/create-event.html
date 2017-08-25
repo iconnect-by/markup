@@ -30,21 +30,27 @@
                 </div>
 
                 <div class="col-md-4">
-                    <fieldset>
-                        <div class="form-group styled-placeholder">
-                            <select id="change_organizator">
-                                <option value="" selected disabled>Change organizator</option>
-                                <option value="1">Organizator1</option>
-                                <option value="2">Organizator2</option>
-                            </select>
-                            <span class="caret ic-ddown-caret"></span>
-                        </div>
-                    </fieldset>
-                </div>
+                    <script type="text/ng-template" id="customTemplate.html" class="ddown-entity">
+                        <a><span ng-bind-html="match.label | uibTypeaheadHighlight:query"></span></a>
+                    </script>
 
-                <!--<div class="col-md-12">-->
-                    <!--<input-dropdown></input-dropdown>-->
-                <!--</div>-->
+                    <div class="input-ddown-block">
+                        <div class="form-group">
+                            <label class="control-label">Choose organizator</label>
+                            <!--<pre>Model: {{customSelected | json}}</pre>-->
+                            <input ng-model="customSelected"
+                                   placeholder=""
+                                   uib-typeahead="artist as artist.firstName for artist in artistList | filter:{firstName:$viewValue}"
+                                   typeahead-template-url="customTemplate.html"
+                                   class="form-control input-field"
+                                   typeahead-show-hint="true"
+                                   typeahead-min-length="0"
+                            >
+                            <span class="bar"></span>
+                            <span class="caret"></span>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
