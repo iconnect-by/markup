@@ -1,0 +1,225 @@
+.ic-datepicker {
+  border: none;
+  background-color: #fff;
+
+  &.well {
+    box-shadow: none;
+    margin: 0;
+
+    &.well-sm {
+      padding: 0;
+      border-radius: 0;
+    }
+  }
+
+  .uib-daypicker {
+    outline: none;
+    * {
+      outline: none;
+    }
+
+    table {
+      thead {
+        tr {
+          &:first-child {
+            background-color: #f2f2f2;
+            border: none;
+
+            th {
+              float: none;
+
+              button {
+                border: none;
+                background-color: transparent;
+              }
+
+              &:first-child {
+                width: 10%;
+                height: 26px;
+
+                button {
+                  display: block;
+                }
+              }
+              &:nth-child(2) {
+                width: 80%;
+
+                button {
+                  .section-title-black;
+                  text-align: center;
+                  line-height: 1.7;
+                }
+              }
+              &:last-child {
+                width: 10%;
+                height: 26px;
+
+                button {
+                  display: block;
+                }
+              }
+            }
+          }
+
+          &:last-child {
+            .text-grey-big;
+            line-height: 5;
+          }
+
+        }
+      }
+
+      tbody {
+        .uib-day {
+          button {
+            border: 0;
+            padding: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            width: 25px;
+            display: inline-block;
+
+            .text-info, span {
+              .text-default-medium;
+              line-height: 25px;
+              width: 25px;
+              height: 25px;
+              display: block;
+            }
+
+            .text-muted {
+              color: #e5e5e5;
+            }
+
+            &.active, &:active {
+              box-shadow: none;
+              background-color: transparent;
+              border: none;
+
+              .text-info, span {
+                border-radius: 50%;
+                background-color: @iConnect-orange;
+                border: none;
+                color: #fff;
+              }
+
+            }
+
+            &:hover:not(.active) {
+              box-shadow: none;
+              background-color: transparent;
+              border: none;
+
+              span {
+                border-radius: 50%;
+                box-shadow: none;
+                background-color: fade(@iConnect-orange, 20%);
+              }
+
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+  .uib-monthpicker, .uib-yearpicker {
+    table {
+      thead {
+
+        tr {
+          &:first-child {
+            background-color: #f2f2f2;
+            border: none;
+
+            th {
+              float: none;
+
+              button {
+                border: none;
+                background-color: transparent;
+              }
+
+              &:first-child {
+                width: 10%;
+                height: 26px;
+
+                button {
+                  display: block;
+                }
+              }
+              &:nth-child(2) {
+                width: 80%;
+
+                button {
+                  .section-title-black;
+                  text-align: center;
+                  line-height: 1.7;
+                }
+              }
+              &:last-child {
+                width: 10%;
+                height: 26px;
+
+                button {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+
+      }
+
+      tbody {
+        .uib-month, .uib-year {
+          .btn {
+            &.btn-default {
+              border: none;
+              .text-default-medium;
+            }
+            .text-info, span {
+              .text-default-medium;
+              line-height: 25px;
+              width: 25px;
+              height: 25px;
+              padding: 5px;
+              border-radius: 4px;
+            }
+
+            .text-muted {
+              color: #e5e5e5;
+            }
+
+            &.active, &:active {
+              box-shadow: none;
+              background-color: transparent;
+              border: none;
+
+              .text-info, span {
+                background-color: @iConnect-orange;
+                border: none;
+                color: #fff;
+              }
+            }
+
+            &:hover:not(.active) {
+              box-shadow: none;
+              background-color: transparent;
+              border: none;
+
+              span {
+                box-shadow: none;
+                background-color: fade(@iConnect-orange, 20%);
+              }
+
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}

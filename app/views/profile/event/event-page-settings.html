@@ -174,10 +174,15 @@
                                     <div class="col-xs-2">
                                         <div class="dropdown">
                                             <button class="dd-datetime" id="date_start" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                23 Oct 2017
+                                                {{dt ? dt : dateNow | date:'d MMM y' }}
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-form" aria-labelledby="date_start">
-                                                datePicker
+                                                <div class="picker-title">
+                                                    Set a date start
+                                                </div>
+                                                <div style="display:inline-block;">
+                                                    <div uib-datepicker ng-model="dt" class="well well-sm ic-datepicker" datepicker-options="DatePickerOptions"></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -189,10 +194,15 @@
                                     </div>
                                     <div class="col-xs-2">
                                         <button class="dd-datetime" id="date_ended" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            23 Oct 2017
+                                            {{dte ? dte : dateNow | date:'d MMM y' }}
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-form" aria-labelledby="date_ended">
-                                            datePicker
+                                            <div class="picker-title">
+                                                Set a date ended
+                                            </div>
+                                            <div style="display:inline-block;">
+                                                <div uib-datepicker ng-model="dte" class="well well-sm ic-datepicker" datepicker-options="DatePickerEndOptions"></div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-xs-1 edit-section">

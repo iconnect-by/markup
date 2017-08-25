@@ -3,6 +3,19 @@
 angular.module('iConnectApp')
     .controller('EventsController', ['$scope', function ($scope) {
 
+        $scope.dateNow = new Date();
+
+        $scope.DatePickerOptions = {
+            showWeeks: false,
+            formatDayTitle: 'MMM yyyy'
+            // minDate: $scope.dte <--- opt for range
+        };
+        $scope.DatePickerEndOptions = {
+            showWeeks: false,
+            formatDayTitle: 'MMM yyyy'
+            // minDate: $scope.dt <--- opt for range
+        };
+
         $scope.eventsArt = [
             {
                 id: 0,
