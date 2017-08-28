@@ -14,4 +14,17 @@ angular.module('iConnectApp')
             $state.go('app.artist-open');
         };
 
+        $scope.dateNow = new Date();
+
+        $scope.DatePickerOptions = {
+            showWeeks: false,
+            formatDayTitle: 'MMM yyyy'
+            // minDate: $scope.dte <--- opt for range
+        };
+        $scope.DatePickerEndOptions = {
+            showWeeks: false,
+            formatDayTitle: 'MMM yyyy'
+            // minDate: $scope.dt <--- opt for range
+        };
+
     }]);
