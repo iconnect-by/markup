@@ -51,15 +51,67 @@
                     <span class="fg-divider"></span>
 
                     <div class="form-group">
-                        <label>Location</label>
-                        <input type="text"/>
+
+                        <div class="row location-block">
+                            <div class="col-xs-4">
+                                <label>Location</label>
+                            </div>
+                            <div class="col-xs-8">
+                                <script type="text/ng-template" id="customTemplate.html" class="ddown-entity">
+                                    <a><span ng-bind-html="match.label | uibTypeaheadHighlight:query"></span></a>
+                                </script>
+
+                                <div class="input-ddown-block">
+                                    <div class="form-group">
+                                        <!--<pre>Model: {{customSelected | json}}</pre>-->
+                                        <input ng-model="customSelected"
+                                               placeholder=""
+                                               uib-typeahead="location as location.country for location in locations | filter:{country:$viewValue}"
+                                               typeahead-template-url="customTemplate.html"
+                                               class="form-control input-field"
+                                               typeahead-show-hint="false"
+                                               typeahead-min-length="0"
+                                        >
+                                        <span class="fa fa-map-marker"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                     <span class="fg-divider"></span>
 
                     <div class="form-group">
-                        <label>Type</label>
-                        <select ng-model="selectedallArtist" ng-options="x for (x, y) in {Festival :[], Show:[]}"></select>
+
+                        <div class="row type-block">
+                            <div class="col-xs-4">
+                                <label>Type</label>
+                            </div>
+                            <div class="col-xs-8">
+                                <script type="text/ng-template" id="customTemplate1.html" class="ddown-entity">
+                                    <a><span ng-bind-html="match.label | uibTypeaheadHighlight:query"></span></a>
+                                </script>
+
+                                <div class="input-ddown-block">
+                                    <div class="form-group">
+                                        <!--<pre>Model: {{customSelected1 | json}}</pre>-->
+                                        <input ng-model="customSelected1"
+                                               placeholder=""
+                                               uib-typeahead="type as type.name for type in types | filter:{type:$viewValue}"
+                                               typeahead-template-url="customTemplate1.html"
+                                               class="form-control input-field"
+                                               typeahead-show-hint="false"
+                                               typeahead-min-length="0"
+                                        >
+                                        <span class="caret"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+
                     <span class="fg-divider"></span>
 
                     <button class="ic-btn ic-btn-blue">Search</button>

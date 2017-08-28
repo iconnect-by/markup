@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('iConnectApp')
-    .controller('ArtistTopsController', ['$scope', '$state', 'artistFactory', function($scope, $state, artistFactory) {
+    .controller('ArtistTopsController', ['$scope', '$state', 'artistFactory', 'organizationFactory', function($scope, $state, artistFactory, organizationFactory) {
         $scope.artists = artistFactory.getArtists();
         $scope.newArtists = artistFactory.getNewArtists();
         $scope.genres = "Dj's";
@@ -26,5 +26,8 @@ angular.module('iConnectApp')
             formatDayTitle: 'MMM yyyy'
             // minDate: $scope.dt <--- opt for range
         };
+
+        $scope.locations = organizationFactory.getLocationList();
+        $scope.types = organizationFactory.getTypesList();
 
     }]);

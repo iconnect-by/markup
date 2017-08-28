@@ -23,10 +23,11 @@
         flex-grow: 1;
 
         .form-group {
-          height: 72px;
           margin: auto;
           margin-left: 0;
           flex-grow: 2;
+          position: relative;
+          border: none;
 
           label {
             .text-grey-small;
@@ -89,6 +90,25 @@
       line-height: 72px;
       a {
         color: #e5e5e5;
+      }
+    }
+
+    .input-ddown-block {
+      .input-field {
+        height: auto;
+        min-width: 100% !important;
+      }
+    }
+
+    .location-block, .type-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      input {
+        border: none;
+        box-shadow: none;
+        text-align: left;
       }
     }
   }

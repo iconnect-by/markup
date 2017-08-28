@@ -17,4 +17,8 @@ angular.module('iConnectApp')
             formatDayTitle: 'MMM yyyy'
             // minDate: $scope.dt <--- opt for range
         };
+
+        $scope.locations = organizationFactory.getLocationList();
+        $scope.types = organizationFactory.getTypesList();
+
     }]);
