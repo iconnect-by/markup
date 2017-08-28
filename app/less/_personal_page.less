@@ -409,15 +409,51 @@
       column-gap: 3px;
 
       .grid-item {
+        position: relative;
         margin-bottom: 3px;
+        cursor: pointer;
 
         img, iframe {
           width: 100%;
           max-width: 100%;
         }
 
+        .delete-image {
+          display: none;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          width: 30px;
+          height: 30px;
+          background-color: fade(#000, 50%);
+          border-radius: 4px;
+          padding: 7px 9px;
+          z-index: 9999;
 
+          &:hover {
+            .fade-layer {
+              display: block !important;
+            }
+          }
+        }
 
+        .fade-layer {
+          display: none;
+          position: absolute;
+          z-index: 9998;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: #fff;
+          opacity: .5;
+        }
+
+        &:hover {
+          .delete-image {
+            display: block;
+          }
+        }
       }
     }
 
