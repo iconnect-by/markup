@@ -49,7 +49,58 @@ angular.module('iConnectApp')
 
         this.getOrganizationList = function(){
             return organizationList;
-        }
+        };
 
+        var locationList = [
+            {
+                id: 0,
+                country: 'USA',
+                city: 'Washington',
+                address: '1600 Pennsylvania Avenue NW'
+            },
+            {
+                id: 0,
+                country: 'Belarus',
+                city: 'Minsk',
+                address: 'Lenina str. 36'
+            },
+            {
+                id: 0,
+                country: 'Russia',
+                city: 'Moscow',
+                address: '1st Street SE'
+            },
+            {
+                id: 0,
+                country: 'Italy',
+                city: 'Rome',
+                address: '123 Maple Street'
+            },
+            {
+                id: 0,
+                country: 'Canada',
+                city: 'Toronto',
+                address: '456 Oak Lane'
+            }
+        ];
+
+        this.getLocationList = function(){
+            return locationList;
+        };
+
+        var types = [
+            {
+                id: 0,
+                name: 'Show'
+            },
+            {
+                id: 1,
+                name: 'Festival'
+            }
+        ];
+
+        this.getTypesList = function(){
+            return types;
+        };
     })
 ;

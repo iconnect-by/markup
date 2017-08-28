@@ -4,26 +4,114 @@
             <div class="search-content">
                 <form action="" class="form-inline search-form">
                     <span class="fg-divider"></span>
+
                     <div class="form-group">
-                        <label>From</label>
-                        <input type="date"/>
+                        <div class="col-xs-1">
+                            <label>From</label>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="dropdown">
+                                <button class="dd-datetime" id="date_start" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    {{dt ? dt : dateNow | date:'d MMM y' }}
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-form" aria-labelledby="date_start">
+                                    <div class="picker-title">
+                                        Set a date From
+                                    </div>
+                                    <div style="display:inline-block;">
+                                        <div uib-datepicker ng-model="dt" class="well well-sm ic-datepicker" datepicker-options="DatePickerOptions"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-1 edit-section separate">
+                            <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col-xs-1">
+                            <label>To</label>
+                        </div>
+                        <div class="col-xs-4">
+                            <button class="dd-datetime" id="date_ended" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{dte ? dte : dateNow | date:'d MMM y' }}
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-form" aria-labelledby="date_ended">
+                                <div class="picker-title">
+                                    Set a date To
+                                </div>
+                                <div style="display:inline-block;">
+                                    <div uib-datepicker ng-model="dte" class="well well-sm ic-datepicker" datepicker-options="DatePickerEndOptions"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-1 edit-section">
+                            <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                        </div>
                     </div>
+
+                    <span class="fg-divider"></span>
+
                     <div class="form-group">
-                        <label>To</label>
-                        <input type="date"/>
+
+                        <div class="row location-block">
+                            <div class="col-xs-4">
+                                <label>Location</label>
+                            </div>
+                            <div class="col-xs-8">
+                                <script type="text/ng-template" id="customTemplate.html" class="ddown-entity">
+                                    <a><span ng-bind-html="match.label | uibTypeaheadHighlight:query"></span></a>
+                                </script>
+
+                                <div class="input-ddown-block">
+                                    <div class="form-group">
+                                        <!--<pre>Model: {{customSelected | json}}</pre>-->
+                                        <input ng-model="customSelected"
+                                               placeholder=""
+                                               uib-typeahead="location as location.country for location in locations | filter:{country:$viewValue}"
+                                               typeahead-template-url="customTemplate.html"
+                                               class="form-control input-field"
+                                               typeahead-show-hint="false"
+                                               typeahead-min-length="0"
+                                        >
+                                        <span class="fa fa-map-marker"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                     <span class="fg-divider"></span>
 
                     <div class="form-group">
-                        <label>Location</label>
-                        <input type="text"/>
-                    </div>
-                    <span class="fg-divider"></span>
 
-                    <div class="form-group">
-                        <label>Type</label>
-                        <select ng-model="selectedallArtist" ng-options="x for (x, y) in {Festival :[], Show:[]}"></select>
+                        <div class="row type-block">
+                            <div class="col-xs-4">
+                                <label>Type</label>
+                            </div>
+                            <div class="col-xs-8">
+                                <script type="text/ng-template" id="customTemplate1.html" class="ddown-entity">
+                                    <a><span ng-bind-html="match.label | uibTypeaheadHighlight:query"></span></a>
+                                </script>
+
+                                <div class="input-ddown-block">
+                                    <div class="form-group">
+                                        <!--<pre>Model: {{customSelected1 | json}}</pre>-->
+                                        <input ng-model="customSelected1"
+                                               placeholder=""
+                                               uib-typeahead="type as type.name for type in types | filter:{type:$viewValue}"
+                                               typeahead-template-url="customTemplate1.html"
+                                               class="form-control input-field"
+                                               typeahead-show-hint="false"
+                                               typeahead-min-length="0"
+                                        >
+                                        <span class="caret"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+
                     <span class="fg-divider"></span>
 
                     <button class="ic-btn ic-btn-blue">Search</button>
