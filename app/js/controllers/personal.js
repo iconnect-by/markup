@@ -4,6 +4,7 @@ angular.module('iConnectApp')
     .controller('PersonalController', ['$scope', function($scope) {
         $scope.divShow = "allMedia";
         $scope.locationEditable = false;
+        $scope.isEditMusic = false;
 
         $scope.showMedia = function(arg, e) {
             e.preventDefault();
@@ -18,12 +19,19 @@ angular.module('iConnectApp')
         $scope.edit = function (e) {
             e.preventDefault();
 
-            if (true === $scope.locationEditable) {
-                $scope.locationEditable = false;
-            } else {
-                $scope.locationEditable = true;
-            }
+            $scope.locationEditable = true !== $scope.locationEditable
+            // if (true === $scope.locationEditable) {
+            //     $scope.locationEditable = false;
+            // } else {
+            //     $scope.locationEditable = true;
+            // }
 
+        };
+
+        $scope.actionEditMusic = function (e) {
+            e.preventDefault();
+
+            $scope.isEditMusic = true !== $scope.isEditMusic;
         };
 
         $scope.eventSources = [];
