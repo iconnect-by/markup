@@ -2,38 +2,6 @@
   padding-top: @section-padding-top;
   padding-bottom: 70px;
 
-  .hero-desc-about + [data-readmore-toggle], .hero-desc-about[data-readmore] {
-    display: block;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-
-    &:after {
-      content: '';
-      position: absolute;
-      z-index: 1;
-      bottom: 0;
-      left: 0;
-      pointer-events: none;
-      background-image: linear-gradient(to bottom,
-            rgba(255,255,255, 0),
-            rgba(255,255,255, 1) 90%);
-      width: 100%;
-      height: 1.5em;
-    }
-  }
-
-  .reader-btn {
-    display: inline-block;
-    font-size: 16 * @rem;
-    text-align: right;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 5;
-    color: #333;
-  }
-
   .box-content {
     border: 1px solid @iConnect-lightGrey;
     border-radius: 4px;
@@ -178,9 +146,41 @@
 
       .hero-desc-about {
         .text-default;
+
         p {
           .text-default;
+
+          margin: 0;
+          overflow: hidden;
+          position: relative;
+
+          &.collapsed:after {
+            content: ' ';
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            left: 0;
+            pointer-events: none;
+            background-image: linear-gradient(to bottom,
+            rgba(255,255,255, 0),
+            rgba(255,255,255, 1) 90%);
+            width: 100%;
+            height: 3em;
+          }
         }
+
+        .reader-btn {
+          display: block;
+          font-size: 22 * @rem;
+          text-align: right;
+          color: #333;
+          margin-top: -10px;
+
+          .fa {
+            vertical-align: bottom;
+          }
+        }
+
         .empty {
           .text-grey-small;
           display: block;
