@@ -54,7 +54,7 @@
 
                         <div class="row location-block">
                             <div class="col-xs-4">
-                                <label>Location</label>
+                                <label for="id_location">Location</label>
                             </div>
                             <div class="col-xs-8">
                                 <script type="text/ng-template" id="customTemplate.html" class="ddown-entity">
@@ -64,7 +64,7 @@
                                 <div class="input-ddown-block">
                                     <div class="form-group">
                                         <!--<pre>Model: {{customSelected | json}}</pre>-->
-                                        <input ng-model="customSelected"
+                                        <input id="id_location" ng-model="customSelected"
                                                placeholder=""
                                                uib-typeahead="location as location.country for location in locations | filter:{country:$viewValue}"
                                                typeahead-template-url="customTemplate.html"
@@ -86,7 +86,7 @@
 
                         <div class="row type-block">
                             <div class="col-xs-4">
-                                <label>Type</label>
+                                <label for="id_type">Type</label>
                             </div>
                             <div class="col-xs-8">
                                 <script type="text/ng-template" id="customTemplate1.html" class="ddown-entity">
@@ -96,7 +96,7 @@
                                 <div class="input-ddown-block">
                                     <div class="form-group">
                                         <!--<pre>Model: {{customSelected1 | json}}</pre>-->
-                                        <input ng-model="customSelected1"
+                                        <input id="id_type" ng-model="customSelected1"
                                                placeholder=""
                                                uib-typeahead="type as type.name for type in types | filter:{type:$viewValue}"
                                                typeahead-template-url="customTemplate1.html"
