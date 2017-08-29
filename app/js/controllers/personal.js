@@ -6,6 +6,34 @@ angular.module('iConnectApp')
         $scope.locationEditable = false;
         $scope.isEditMusic = false;
 
+        $scope.showPhoto = function (e) {
+            e.preventDefault();
+
+            if ($(e.target).hasClass('image-item')) {
+
+                var body = $('body');
+                var overlay = $('.overlay');
+                var overlayOpen = $(e.target).hasClass('open-overlay');
+
+                overlay.attr('aria-hidden', false);
+                body.addClass('noscroll');
+                overlay.scrollTop = 0;
+            }
+        };
+
+        $scope.photoBack = function (e) {
+            e.preventDefault();
+
+            if ($(e.target).hasClass('overlay') || $(e.target).hasClass('photo-close')) {
+                var body = $('body');
+                var overlay = $('.overlay');
+                var overlayOpen = $(e.target).hasClass('open-overlay');
+
+                overlay.attr('aria-hidden', true);
+                body.removeClass('noscroll');
+            }
+        };
+
         $scope.showMedia = function(arg, e) {
             e.preventDefault();
             $scope.divShow = arg;
