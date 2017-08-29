@@ -1,12 +1,4 @@
 <section class="profile-section" ng-controller="PersonalController">
-    <script>
-        $('.hero-desc-about').readmore({
-            speed: 75,
-            lessLink: '<a href="#" class="reader-btn"><i class="fa fa-angle-up" aria-hidden="true"></i></a>',
-            moreLink: '<a href="#" class="reader-btn"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>',
-            collapsedHeight: 48
-        });
-    </script>
     <div class="container">
         <div class="row">
             <div class="col-md-3">
@@ -55,10 +47,15 @@
                             </ul>
                             <span class="rating-value">Rating 5.35</span>
                         </div>
-                        <div class="hero-desc-about">
+                        <div class="hero-desc-about text-collapsed" data-id="hdc" ng-click="showCloseText($event, 'hdc')">
                             <p>
                                 This article covers the basics of Astrology and how they are inter-related.
                                 Astrology is defined as ‘the art or practice of determining the supposed influences of the planets
+                                and their motions on human affairs and human disposition’.
+                                and their motions on human affairs and human disposition’.
+                                and their motions on human affairs and human disposition’.
+                                and their motions on human affairs and human disposition’.
+                                and their motions on human affairs and human disposition’.
                                 and their motions on human affairs and human disposition’.
                             </p>
                         </div>

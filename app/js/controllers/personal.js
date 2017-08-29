@@ -34,6 +34,12 @@ angular.module('iConnectApp')
             }
         };
 
+        $scope.showCloseText = function (e, id) {
+            e.preventDefault();
+
+            $('[data-id="' + id + '"]').toggleClass('text-collapsed');
+        };
+
         $scope.showMedia = function(arg, e) {
             e.preventDefault();
             $scope.divShow = arg;

@@ -1,6 +1,7 @@
 {
   "name": "markup",
   "version": "1.0.0",
+  "license": "Apache-2.0",
   "description": "***",
   "repository": {
     "type": "git",
@@ -41,7 +42,6 @@
     "float-label-css": "^1.0.2",
     "font-awesome": "^4.7.0",
     "fullcalendar": "^3.4.0",
-    "ng-dialog": "^1.4.0",
-    "readmore-js": "^2.1.0"
+    "ng-dialog": "^1.4.0"
   }
 }
