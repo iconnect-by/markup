@@ -6,19 +6,16 @@ angular.module('iConnectApp')
         $scope.locationEditable = false;
         $scope.isEditMusic = false;
 
-        $scope.showPhoto = function (e) {
+        $scope.showPhoto = function (e, id) {
             e.preventDefault();
 
-            if ($(e.target).hasClass('image-item')) {
+            var body = $('body');
+            var overlay = $('.overlay');
+            var overlayOpen = $('[data-id="' + id + '"]').hasClass('open-overlay');
 
-                var body = $('body');
-                var overlay = $('.overlay');
-                var overlayOpen = $(e.target).hasClass('open-overlay');
-
-                overlay.attr('aria-hidden', false);
-                body.addClass('noscroll');
-                overlay.scrollTop = 0;
-            }
+            overlay.attr('aria-hidden', false);
+            body.addClass('noscroll');
+            overlay.scrollTop = 0;
         };
 
         $scope.photoBack = function (e) {
@@ -288,4 +285,56 @@ angular.module('iConnectApp')
                 photo: "../../images/placeholder.svg"
             }
         ];
+
+        $scope.galleryImages = [
+            {
+                id: 0,
+                src: '../../images/gallery-0.jpg',
+                width: '749',
+                height: '910'
+            },
+            {
+                id: 1,
+                src: '../../images/gallery-1.jpg',
+                width: '540',
+                height: '383'
+            },
+            {
+                id: 2,
+                src: '../../images/gallery-2.jpg',
+                width: '1440',
+                height: '900'
+            },
+            {
+                id: 3,
+                src: '../../images/gallery-3.jpg',
+                width: '2048',
+                height: '1360'
+            },
+            {
+                id: 4,
+                src: '../../images/gallery-4.jpg',
+                width: '604',
+                height: '604'
+            },
+            {
+                id: 5,
+                src: '../../images/gallery-5.jpg',
+                width: '600',
+                height: '734'
+            },
+            {
+                id: 6,
+                src: '../../images/gallery-6.jpg',
+                width: '542',
+                height: '542'
+            },
+            {
+                id: 7,
+                src: '../../images/gallery-7.jpg',
+                width: '602',
+                height: '295'
+            }
+        ]
+
     }]);

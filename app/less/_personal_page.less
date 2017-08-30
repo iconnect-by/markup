@@ -401,14 +401,22 @@
       column-count: 2;
       column-gap: 3px;
 
+
+
       .grid-item {
         position: relative;
         margin-bottom: 3px;
         cursor: pointer;
+        -webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid-column;
 
         img, iframe {
           width: 100%;
           max-width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
         }
 
         .delete-image {
@@ -422,6 +430,13 @@
           border-radius: 4px;
           padding: 7px 9px;
           z-index: 9999;
+
+          img {
+            display: block;
+            width: 12px;
+            height: 16px;
+            margin: 7px 9px;
+          }
 
           &:hover {
             .fade-layer {
