@@ -19,65 +19,15 @@
         </div>
 
         <div class="grid">
-            <div class="grid-item" ng-click="showPhoto($event)">
-                <img class="image-item" src="../../images/Avatar_BG_Copy.png" width="250" height="300" alt="...">
-                <div class="fade-layer"></div>
-                <a href="#" class="delete-image" title="Delete"><img src="../../images/trash-icon.svg" alt="..."></a>
-            </div>
-            <div class="grid-item">
-                <img src="../../images/placeholder.svg" alt="...">
-                <div class="fade-layer"></div>
-                <a href="#" class="delete-image" title="Delete"><img src="../../images/trash-icon.svg" alt="..."></a>
-            </div>
-            <div class="grid-item">
-                <img src="../../images/placeholder.svg" alt="...">
-                <div class="fade-layer"></div>
-                <a href="#" class="delete-image" title="Delete"><img src="../../images/trash-icon.svg" alt="..."></a>
-            </div>
-            <div class="grid-item">
-                <img src="../../images/placeholder.svg" width="250" height="350" alt="...">
-                <div class="fade-layer"></div>
-                <a href="#" class="delete-image" title="Delete"><img src="../../images/trash-icon.svg" alt="..."></a>
-            </div>
-            <div class="grid-item">
-                <img src="../../images/placeholder.svg" width="250" height="350" alt="...">
-                <div class="fade-layer"></div>
-                <a href="#" class="delete-image" title="Delete"><img src="../../images/trash-icon.svg" alt="..."></a>
-            </div>
-            <div class="grid-item">
-                <img src="../../images/placeholder.svg" alt="...">
-                <div class="fade-layer"></div>
-                <a href="#" class="delete-image" title="Delete"><img src="../../images/trash-icon.svg" alt="..."></a>
-            </div>
-            <div class="grid-item">
-                <img src="../../images/placeholder.svg" width="250" height="350" alt="...">
-                <div class="fade-layer"></div>
-                <a href="#" class="delete-image" title="Delete"><img src="../../images/trash-icon.svg" alt="..."></a>
-            </div>
-            <div class="grid-item">
-                <img src="../../images/placeholder.svg" width="250" height="350" alt="...">
-                <div class="fade-layer"></div>
-                <a href="#" class="delete-image" title="Delete"><img src="../../images/trash-icon.svg" alt="..."></a>
-            </div>
-            <div class="grid-item">
-                <img src="../../images/placeholder.svg" alt="...">
-                <div class="fade-layer"></div>
-                <a href="#" class="delete-image" title="Delete"><img src="../../images/trash-icon.svg" alt="..."></a>
-            </div>
-            <div class="grid-item">
-                <img src="../../images/placeholder.svg" alt="...">
-                <div class="fade-layer"></div>
-                <a href="#" class="delete-image" title="Delete"><img src="../../images/trash-icon.svg" alt="..."></a>
-            </div>
-            <div class="grid-item">
-                <img src="../../images/placeholder.svg" width="250" height="350" alt="...">
-                <div class="fade-layer"></div>
-                <a href="#" class="delete-image" title="Delete"><img src="../../images/trash-icon.svg" alt="..."></a>
-            </div>
-            <div class="grid-item">
-                <img src="../../images/placeholder.svg" alt="...">
-                <div class="fade-layer"></div>
-                <a href="#" class="delete-image" title="Delete"><img src="../../images/trash-icon.svg" alt="..."></a>
+            <div class="grid-item" ng-repeat="i in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15]" ng-click="showPhoto($event)">
+                <div class="h-aspect-ratio"> <!-- max-width: 100% -->
+                    <div class="aspect-ratio-fill" style="padding-bottom: 120%;"></div> <!-- 300 / 250 * 100% -->
+                    <div class="image">
+                        <img src="../../images/Avatar_BG_Copy.png" width="250" height="300" alt="..."> <!-- max-width: 100% -->
+                    </div>
+                    <div class="fade-layer"></div>
+                    <a class="delete-image" title="Delete"><img src="../../images/trash-icon.svg" alt="..."></a>
+                </div>
             </div>
         </div>
     </div>
