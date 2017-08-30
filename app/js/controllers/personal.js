@@ -1,10 +1,14 @@
 'use strict';
 
 angular.module('iConnectApp')
-    .controller('PersonalController', ['$scope', function($scope) {
+    .controller('PersonalController', ['$scope', '$timeout', function($scope, $timeout) {
         $scope.divShow = "allMedia";
         $scope.locationEditable = false;
         $scope.isEditMusic = false;
+
+        $scope.imageNum = 0;
+        $scope.countImages = 0;
+        // $scope.loadImage = true;
 
         $scope.showPhoto = function (e, id) {
             e.preventDefault();
@@ -12,10 +16,23 @@ angular.module('iConnectApp')
             var body = $('body');
             var overlay = $('.overlay');
             var overlayOpen = $('[data-id="' + id + '"]').hasClass('open-overlay');
+            var imgSrc = $('.vbnx-image').find('.image-item');
 
             overlay.attr('aria-hidden', false);
             body.addClass('noscroll');
             overlay.scrollTop = 0;
+
+            $scope.countImages = $scope.galleryImages.length;
+            $scope.imageNum = id;
+
+            // $scope.loadImage = false;
+            imgSrc.attr('src', $scope.galleryImages[id].src);
+
+
+            // $timeout(function(id) {
+            //     $scope.loadImage = false;
+            //     imgSrc.attr('src', $scope.galleryImages[id].src);
+            // }, 1000, $scope.imageNum);
         };
 
         $scope.photoBack = function (e) {
@@ -35,6 +52,28 @@ angular.module('iConnectApp')
             e.preventDefault();
 
             $('[data-id="' + id + '"]').toggleClass('text-collapsed');
+        };
+
+        $scope.slideToRight = function (e, id) {
+            e.preventDefault(id);
+
+            var imgSrc = $('.vbnx-image').find('.image-item');
+
+            if ($scope.galleryImages[id + 1]) {
+                imgSrc.attr('src', $scope.galleryImages[id + 1].src);
+                $scope.imageNum = id + 1;
+            }
+        };
+
+        $scope.slideToLeft = function (e, id) {
+            e.preventDefault();
+
+            var imgSrc = $('.vbnx-image').find('.image-item');
+
+            if ($scope.galleryImages[id - 1]) {
+                imgSrc.attr('src', $scope.galleryImages[id - 1].src);
+                $scope.imageNum = id - 1;
+            }
         };
 
         $scope.showMedia = function(arg, e) {

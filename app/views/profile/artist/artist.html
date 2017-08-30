@@ -275,18 +275,25 @@
     <div class="overlay" aria-hidden="true" ng-click="photoBack($event)">
         <div class="vnbx-container">
             <div class="vnbx-content">
-                <span class="photo-paginator">Photo 1 of 123</span>
+                <span class="photo-paginator">Photo {{imageNum + 1}} of {{countImages}}</span>
                 <a href="#" class="photo-close" ng-click="photoBack($event)">back to all</a>
             </div>
             <div class="vbnx-image">
-                <img class="image-item" src="../../../images/Avatar_BG_Copy.png" width="1000" height="1200" alt="...">
+                <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
+                <!--<div class="loading-block" ng-if="loadImage">-->
+                    <!--<i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>-->
+                    <!--<span class="sr-only">Loading...</span>-->
+                <!--</div>-->
+                <!--<img class="image-item" src="" alt="..."  ng-if="!loadImage">-->
+                <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
+                <img class="image-item" src="" alt="...">
 
                 <div class="control-block">
                     <div class="left-side">
-                        <a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                        <a href="#" ng-click="slideToLeft($event, imageNum)"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
                     </div>
                     <div class="right-side">
-                        <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        <a href="#" ng-click="slideToRight($event, imageNum)"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>

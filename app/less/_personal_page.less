@@ -965,13 +965,19 @@
     .vbnx-image {
       position: relative;
       display: block;
+      min-width: 85vh;
       max-width: 85vh;
       max-height: 85vh;
 
+      //min-height: 85vh;
+
       img {
         display: block;
+        min-width: 100%;
         max-width: 100%;
         height: auto;
+        margin: 0 auto;
+        margin-bottom: 50px;
       }
 
       .control-block {
@@ -1001,6 +1007,15 @@
           }
         }
       }
+    }
+
+    .loading-block {
+      display: block;
+      margin: 0 auto;
+      min-height: 300px;
+      line-height: 300px;
+      color: #fff;
+      text-align: center;
     }
   }
 }
