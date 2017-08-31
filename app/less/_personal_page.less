@@ -1086,3 +1086,34 @@
     }
   }
 }
+
+.ic-embed-audio-track {
+  margin-bottom: 14px;
+  position: relative;
+  height: 166px;
+  width: 100%;
+
+  .fill {
+    background: #f5f5f5;
+    border-radius: 5px;
+    height: 166px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+
+  iframe {
+    opacity: 0;
+    transition: opacity .3s;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
+
+  &.content-loaded {
+    iframe {
+      opacity: 1;
+    }
+  }
+}
