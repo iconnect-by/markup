@@ -255,7 +255,7 @@ angular.module('iConnectApp', ['ui.router', 'ngDialog', 'ui-notification', 'ui.b
                 url: 'calendar-for-you',
                 views: {
                     'content@': {
-                        templateUrl: 'views/profile/calendar/сalendar-for-you.html'
+                        templateUrl: 'views/profile/calendar/calendar-for-you.html'
                     }
                 }
             })
