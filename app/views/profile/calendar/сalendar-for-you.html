@@ -1,0 +1,370 @@
+<section class="top-artists-section-open" ng-controller="OrganizationController">
+    <div class="navbar-fixed-top filter-section">
+        <div class="container">
+            <div class="search-content">
+                <form action="" class="form-inline search-form">
+                    <span class="fg-divider"></span>
+
+                    <div class="form-group">
+                        <div class="col-xs-1">
+                            <label>From</label>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="dropdown">
+                                <button class="dd-datetime" id="date_start" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    {{dt ? dt : dateNow | date:'d MMM y' }}
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-form ddatetime" aria-labelledby="date_start">
+                                    <div class="picker-title">
+                                        Set a date From
+                                    </div>
+                                    <div style="display:inline-block;">
+                                        <div uib-datepicker ng-model="dt" class="well well-sm ic-datepicker" datepicker-options="DatePickerOptions"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-1 edit-section separate">
+                            <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col-xs-1">
+                            <label>To</label>
+                        </div>
+                        <div class="col-xs-4">
+                            <button class="dd-datetime" id="date_ended" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{dte ? dte : dateNow | date:'d MMM y' }}
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-form ddatetime" aria-labelledby="date_ended">
+                                <div class="picker-title">
+                                    Set a date To
+                                </div>
+                                <div style="display:inline-block;">
+                                    <div uib-datepicker ng-model="dte" class="well well-sm ic-datepicker" datepicker-options="DatePickerEndOptions"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-1 edit-section">
+                            <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
+                    <span class="fg-divider"></span>
+
+                    <div class="form-group">
+
+                        <div class="row location-block">
+                            <div class="col-xs-4">
+                                <label for="id_location">Location</label>
+                            </div>
+                            <div class="col-xs-8">
+                                <script type="text/ng-template" id="customTemplate.html" class="ddown-entity">
+                                    <a><span ng-bind-html="match.label | uibTypeaheadHighlight:query"></span></a>
+                                </script>
+
+                                <div class="input-ddown-block">
+                                    <div class="form-group">
+                                        <!--<pre>Model: {{customSelected | json}}</pre>-->
+                                        <input id="id_location" ng-model="customSelected"
+                                               placeholder=""
+                                               uib-typeahead="location as location.country for location in locations | filter:{country:$viewValue}"
+                                               typeahead-template-url="customTemplate.html"
+                                               class="form-control input-field"
+                                               typeahead-show-hint="false"
+                                               typeahead-min-length="0"
+                                        >
+                                        <span class="fa fa-map-marker"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <span class="fg-divider"></span>
+
+                    <div class="form-group">
+
+                        <div class="row type-block">
+                            <div class="col-xs-4">
+                                <label for="id_type">Type</label>
+                            </div>
+                            <div class="col-xs-8">
+                                <script type="text/ng-template" id="customTemplate1.html" class="ddown-entity">
+                                    <a><span ng-bind-html="match.label | uibTypeaheadHighlight:query"></span></a>
+                                </script>
+
+                                <div class="input-ddown-block">
+                                    <div class="form-group">
+                                        <!--<pre>Model: {{customSelected1 | json}}</pre>-->
+                                        <input id="id_type" ng-model="customSelected1"
+                                               placeholder=""
+                                               uib-typeahead="type as type.name for type in types | filter:{type:$viewValue}"
+                                               typeahead-template-url="customTemplate1.html"
+                                               class="form-control input-field"
+                                               typeahead-show-hint="false"
+                                               typeahead-min-length="0"
+                                        >
+                                        <span class="caret"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <span class="fg-divider"></span>
+
+                    <button class="ic-btn ic-btn-blue">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-9">
+            <div class="calendar-full-block">
+                <div class="headings">
+                    <div class="col col1">Mon</div>
+                    <div class="col col1">Tue</div>
+                    <div class="col col1">Wen</div>
+                    <div class="col col1">Thu</div>
+                    <div class="col col1">Fri</div>
+                    <div class="col col1">Sat</div>
+                    <div class="col col1">Sun</div>
+                </div>
+                <div class="month-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col col1 off-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="26">26</div>
+                                </div>
+                            </div>
+                            <div class="col col1 off-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="27">27</div>
+                                </div>
+                            </div>
+                            <div class="col col1 off-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="28">28</div>
+                                </div>
+                            </div>
+                            <div class="col col1 off-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="29">29</div>
+                                    <div class="calendar-events">
+                                        12 events
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col1 off-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="30">30</div>
+                                </div>
+                            </div>
+                            <div class="col col1 off-month weekend">
+                                <div class="cell-container">
+                                    <div class="dt" d="31">31</div>
+                                </div>
+                            </div>
+                            <div class="col col1 in-month weekend">
+                                <div class="cell-container">
+                                    <div class="dt" d="1">1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col1 in-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="2">2</div>
+                                </div>
+                            </div>
+                            <div class="col col1 in-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="3">3</div>
+                                </div>
+                            </div>
+                            <div class="col col1 in-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="4">4</div>
+                                </div>
+                            </div>
+                            <div class="col col1 in-month locked">
+                                <div class="cell-container">
+                                    <div class="dt" d="5">5</div>
+                                </div>
+                            </div>
+                            <div class="col col1 in-month today">
+                                <div class="cell-container">
+                                    <div class="dt" d="6">6</div>
+                                </div>
+                            </div>
+                            <div class="col col1 in-month weekend">
+                                <div class="cell-container">
+                                    <div class="dt" d="7">7</div>
+                                </div>
+                            </div>
+                            <div class="col col1 in-month weekend">
+                                <div class="cell-container">
+                                    <div class="dt" d="8">8</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col1 in-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="9">9</div>
+                                </div>
+                            </div>
+                            <div class="col col1 in-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="10">10</div>
+                                </div>
+                            </div>
+                            <div class="col col1 in-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="11">11</div>
+                                </div>
+                            </div>
+                            <div class="col col1 in-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="12">12</div>
+                                </div>
+                            </div>
+                            <div class="col col1 in-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="13">13</div>
+                                </div>
+                            </div>
+                            <div class="col col1 in-month weekend">
+                                <div class="cell-container">
+                                    <div class="dt" d="14">14</div>
+                                </div>
+                            </div>
+                            <div class="col col1 in-month weekend">
+                                <div class="cell-container">
+                                    <div class="dt" d="15">15</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col1 in-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="16">16</div>
+                                </div>
+                            </div>
+                            <div class="col col1 in-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="17">17</div>
+                                </div>
+                            </div>
+                            <div class="col col1 in-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="18">18</div>
+                                </div>
+                            </div>
+                            <div class="col col1 in-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="19">19</div>
+                                </div>
+                            </div>
+                            <div class="col col1 in-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="20">20</div>
+                                </div>
+                            </div>
+                            <div class="col col1 in-month weekend">
+                                <div class="cell-container">
+                                    <div class="dt" d="21">21</div>
+                                </div>
+                            </div>
+                            <div class="col col1 in-month weekend">
+                                <div class="cell-container">
+                                    <div class="dt" d="22">22</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col1 in-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="23">23</div>
+                                </div>
+                            </div>
+                            <div class="col col1 in-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="24">24</div>
+                                </div>
+                            </div>
+                            <div class="col col1 in-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="25">25</div>
+                                </div>
+                            </div>
+                            <div class="col col1 in-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="26">26</div>
+                                </div>
+                            </div>
+                            <div class="col col1 in-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="27">27</div>
+                                </div>
+                            </div>
+                            <div class="col col1 in-month weekend">
+                                <div class="cell-container">
+                                    <div class="dt" d="28">28</div>
+                                </div>
+                            </div>
+                            <div class="col col1 in-month weekend">
+                                <div class="cell-container">
+                                    <div class="dt" d="29">29</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col1 in-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="30">30</div>
+                                </div>
+                            </div>
+                            <div class="col col1 in-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="31">31</div>
+                                </div>
+                            </div>
+                            <div class="col col1 off-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="1">1</div>
+                                </div>
+                            </div>
+                            <div class="col col1 off-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="2">2</div>
+                                </div>
+                            </div>
+                            <div class="col col1 off-month">
+                                <div class="cell-container">
+                                    <div class="dt" d="3">3</div>
+                                </div>
+                            </div>
+                            <div class="col col1 off-month weekend">
+                                <div class="cell-container">
+                                    <div class="dt" d="4">4</div>
+                                </div>
+                            </div>
+                            <div class="col col1 off-month weekend">
+                                <div class="cell-container">
+                                    <div class="dt" d="5">5</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            sidebar
+        </div>
+    </div>
+</section>

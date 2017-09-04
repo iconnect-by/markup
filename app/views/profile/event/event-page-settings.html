@@ -194,7 +194,7 @@
                                             <button class="dd-datetime" id="date_start" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 {{dt ? dt : dateNow | date:'d MMM y' }}
                                             </button>
-                                            <div class="dropdown-menu dropdown-menu-form" aria-labelledby="date_start">
+                                            <div class="dropdown-menu dropdown-menu-form ddatetime" aria-labelledby="date_start">
                                                 <div class="picker-title">
                                                     Set a date start
                                                 </div>
@@ -214,7 +214,7 @@
                                         <button class="dd-datetime" id="date_ended" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             {{dte ? dte : dateNow | date:'d MMM y' }}
                                         </button>
-                                        <div class="dropdown-menu dropdown-menu-form" aria-labelledby="date_ended">
+                                        <div class="dropdown-menu dropdown-menu-form ddatetime" aria-labelledby="date_ended">
                                             <div class="picker-title">
                                                 Set a date ended
                                             </div>
@@ -236,7 +236,7 @@
                                         <button class="dd-datetime" id="time_start" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             11:01 PM
                                         </button>
-                                        <div class="dropdown-menu dropdown-menu-form" aria-labelledby="time_start">
+                                        <div class="dropdown-menu dropdown-menu-form ddatetime" aria-labelledby="time_start">
                                             <div ng-include="'views/template/timepicker.html'" ng-init="headerTitle = 'Time Start'"></div>
                                         </div>
                                     </div>
@@ -250,7 +250,7 @@
                                         <button class="dd-datetime" id="time_ended" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             11:01 PM
                                         </button>
-                                        <div class="dropdown-menu dropdown-menu-form" aria-labelledby="time_ended">
+                                        <div class="dropdown-menu dropdown-menu-form ddatetime" aria-labelledby="time_ended">
                                             <div ng-include="'views/template/timepicker.html'" onload="headerTitle = 'Time Ended'"></div>
                                         </div>
                                     </div>

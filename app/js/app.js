@@ -250,6 +250,16 @@ angular.module('iConnectApp', ['ui.router', 'ngDialog', 'ui-notification', 'ui.b
                 }
             })
 
+            //сalendar-for-you
+            .state('app.calendar-for-you', {
+                url: 'calendar-for-you',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/profile/calendar/сalendar-for-you.html'
+                    }
+                }
+            })
+
             // Commmon elements
             .state('app.common', {
                 url: 'common',
