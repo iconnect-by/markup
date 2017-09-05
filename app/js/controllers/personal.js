@@ -10,6 +10,90 @@ angular.module('iConnectApp')
         $scope.countImages = 0;
         // $scope.loadImage = true;
 
+
+        /* SET DATES FOR SIDEBAR CALENDAR */
+        $scope.sidebarDtOptions = {
+            customClass: getDayClass,
+            showWeeks: false,
+            formatDayTitle: 'MMM yyyy'
+        };
+
+        var tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+        var afterTomorrow = new Date(tomorrow);
+            afterTomorrow.setDate(afterTomorrow.getDate() + 1);
+        var afterAfterTomorrow = new Date(tomorrow);
+            afterAfterTomorrow.setDate(afterAfterTomorrow.getDate() + 2);
+        var afterAfterAfterTomorrow = new Date(tomorrow);
+            afterAfterAfterTomorrow.setDate(afterAfterAfterTomorrow.getDate() + 2);
+        var customDate = new Date(tomorrow);
+            customDate.setDate(customDate.getDate() + 6);
+console.log(customDate);
+        $scope.events = [
+            //Tue Sep 12 2017 17:47:17 GMT+0300 (+03)
+            {
+                date: tomorrow,
+                status: 'busy first'
+            },
+            {
+                date: afterTomorrow,
+                status: 'busy'
+            },
+            {
+                date: afterTomorrow,
+                status: 'busy'
+            },
+            {
+                date: afterAfterAfterTomorrow,
+                status: 'busy'
+            },
+            {
+                date: 'Tue Sep 9 2017 17:47:17 GMT+0300 (+03)',
+                status: 'busy'
+            },
+            {
+                date: 'Tue Sep 10 2017 17:47:17 GMT+0300 (+03)',
+                status: 'busy'
+            },
+            {
+                date: 'Tue Sep 11 2017 17:47:17 GMT+0300 (+03)',
+                status: 'busy last'
+            },
+            {
+                date: customDate,
+                status: 'booked'
+            },
+            {
+                date: 'Tue Sep 20 2017 17:47:17 GMT+0300 (+03)',
+                status: 'booked'
+            },
+            {
+                date: 'Tue Sep 21 2017 17:47:17 GMT+0300 (+03)',
+                status: 'booked'
+            }
+
+        ];
+
+        function getDayClass(data) {
+            var date = data.date,
+                mode = data.mode;
+            if (mode === 'day') {
+                var dayToCheck = new Date(date).setHours(0,0,0,0);
+
+                for (var i = 0; i < $scope.events.length; i++) {
+                    var currentDay = new Date($scope.events[i].date).setHours(0,0,0,0);
+
+                    if (dayToCheck === currentDay) {
+                        return $scope.events[i].status;
+                    }
+                }
+            }
+
+            return '';
+        }
+        /*-- SET DATES FOR SIDEBAR CALENDAR */
+
+
         $scope.showPhoto = function (e, id) {
             e.preventDefault();
 
