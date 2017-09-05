@@ -1,4 +1,49 @@
 .calendar-full-block {
+
+  .actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .switcher {
+      .prev, .next {
+        border: 1px solid #f2f2f2;
+        padding: 3px 10.5px;
+        border-radius: 4px;
+        color: #e5e5e5;
+        cursor: pointer;
+      }
+
+      .month-name {
+        .section-title-black;
+        margin-left: 20px;
+      }
+    }
+
+    .btns {
+      .show-all, .show-my {
+        .section-title-black;
+      }
+
+      .show-all {
+        margin-right: 60px;
+
+        &.active {
+          color: @iConnect-orange;
+        }
+      }
+    }
+  }
+
+  .sidebar-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .section-title-black;
+    line-height: 26px;
+    margin-bottom: 17px;
+  }
+
   .headings {
     display: flex;
     flex-wrap: wrap;
@@ -15,7 +60,6 @@
   }
 
   .month-body {
-
     .row {
       display: flex;
       flex-wrap: wrap;
@@ -44,6 +88,18 @@
           border-radius: 4px;
           text-align: center;
           position: absolute;
+          cursor: pointer;
+        }
+
+        &.selected {
+          background-color: fade(#4a90e2, 5%);
+          border: 2px solid #4a90e2;
+
+          .calendar-events {
+            border: 1px dashed transparent;
+            background-color: #4a90e2;
+            color: #fff;
+          }
         }
 
         &.in-month {
@@ -83,6 +139,12 @@
                         linear-gradient(to top right, #fff 26%, rgba(255, 255, 255, 0) 24%);
             background-size: 5px 5px;
             background-color: #f2f2f2;
+
+            .cell-container {
+              .dt {
+                color: @iConnect-orange;
+              }
+            }
           }
         }
 
@@ -104,4 +166,10 @@
     }
 
   }
+
 }
+
+.calendar-sidebar {
+
+}
+
