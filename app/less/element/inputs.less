@@ -1,0 +1,28 @@
+.with-verification {
+  position: relative;
+
+  .verification-message {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    //top: 50%;
+    //transform: translateY(-50%);
+    .section-title-black;
+
+    &.error {
+      color: #D0021B;
+    }
+
+    &.success {
+      color: #4A90E2;
+    }
+
+    &.info {
+      color: #00B700;
+    }
+  }
+
+  input {
+    padding-right: 150px;
+  }
+}

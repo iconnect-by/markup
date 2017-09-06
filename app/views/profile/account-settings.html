@@ -19,21 +19,135 @@
 
         <div class="row">
             <ul class="nav nav-tabs" role="tablist">
-                <li><a href="#" data-target='#account' data-toggle="tab" onclick="return false;">Account</a></li>
-                <li class="active"><a href="#" data-target='#legal_info' data-toggle="tab" onclick="return false;">Legal information</a></li>
+                <li class="active"><a href="#" data-target='#account' data-toggle="tab" onclick="return false;">Account</a></li>
+                <li><a href="#" data-target='#legal_info' data-toggle="tab" onclick="return false;">Legal information</a></li>
                 <li><a href="#" data-target='#billing_and_payments' data-toggle="tab" onclick="return false;">Billing and Payments</a></li>
                 <li><a href="#" data-target='#notification' data-toggle="tab" onclick="return false;">Notification</a></li>
                 <li><a href="#" data-target='#upgrade' data-toggle="tab" onclick="return false;">upgrade your account</a></li>
             </ul>
 
             <div class="tab-content">
-                <div role="tabpanel" class="tab-pane" id="account">
+                <div role="tabpanel" class="tab-pane    active in" id="account">
                     <div class="container-fluid">
-                        account
+
+                        <div class="form-block">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-md-3">
+
+                                        <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
+                                        <!--<div class="hero-avatar empty">-->
+                                        <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
+
+                                        <div class="hero-avatar circle">
+                                            <figure class="progressive-image">
+                                                <div class="h-aspect-ratio">
+                                                    <div class="aspect-ratio-fill" style="padding-bottom: 100%;"></div>
+                                                    <div class="image">
+                                                        <canvas class="canvas-thumbnail" width="20" height="20"></canvas>
+                                                        <img class="image-original" src="../../images/placeholder.svg" alt="avatar">
+                                                    </div>
+                                                </div>
+                                            </figure>
+
+                                            <div class="ic-image-selector">
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#" class="upload" title="Upload">&nbsp;</a></li>
+                                                    <li><a href="#" class="cut" title="Cut">&nbsp;</a></li>
+                                                    <li><a href="#" class="trash" title="Delete">&nbsp;</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="row user-name-block">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="first-name">First Name</label>
+                                                    <input id="first-name" class="form-control" autocomplete="off" ng-model="user.firstname" ng-required="true">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="last-name">Last Name</label>
+                                                    <input id="last-name" class="form-control" autocomplete="off" ng-model="user.lastname" ng-required="true">
+                                                    <p class="help-info">You must specify here only your real name, which coincides with the name in the passport</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <select name="location_countries1" id="location_countries1" ng-model="user.country">
+                                                        <option value="" selected disabled class="label">Country</option>
+                                                        <option value="1">London</option>
+                                                        <option value="2">USA</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="city1">City</label>
+                                                    <input id="city1" class="form-control" autocomplete="off" ng-model="user.city" ng-required="true">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <select name="location_state1" id="location_state1" ng-show="user.country == 2">
+                                                        <option value="" selected disabled class="label">State</option>
+                                                        <option value="1">MI</option>
+                                                        <option value="2">NY</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="email_address">Email address</label>
+                                                    <input id="email_address" class="form-control" autocomplete="off" ng-model="new.pwd" ng-required="true">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group with-verification">
+                                                    <label class="control-label" for="phone_number">Phone Number</label>
+                                                    <input id="phone_number" class="form-control" autocomplete="off" ng-model="phone.number" ng-required="true">
+                                                    <!--<span class="verification-message error">Number not verified</span>-->
+                                                    <!--<span class="verification-message success">Number verified</span>-->
+                                                    <span class="verification-message info">Verify number</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div><!--.row-->
+
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group pull-right">
+                                            <div class="btn-block">
+                                                <button class="ic-btn ic-btn-orange big ">Save</button>
+                                                <button class="ic-btn ic-btn-white big">Back to cabinet</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+
+
                     </div><!--.container-fluid-->
                 </div><!--.tabpanel-->
 
-                <div role="tabpanel" class="tab-pane active in" id="legal_info">
+                <div role="tabpanel" class="tab-pane" id="legal_info">
                     <div class="container-fluid">
 
                         <div class="form-block">
