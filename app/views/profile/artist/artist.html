@@ -126,7 +126,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6">
+            <div ng-class="divShow == 'photo' || divShow == 'video' ? 'col-md-9' : 'col-md-6'">
                 <div class="row-content" ng-show="divShow == 'allMedia'">
                     <div class="row">
                         <div class="col-md-6">
@@ -137,16 +137,16 @@
                                 </div>
 
                                 <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
-                                <div class="mc-content empty photo">
-                                    <span>Upload a Photo</span>
-                                </div>
+                                <!--<div class="mc-content empty photo">-->
+                                    <!--<span>Upload a Photo</span>-->
+                                <!--</div>-->
                                 <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
 
-                                <!--<div class="mc-content photo">-->
-                                    <!--<div class="photo-item" ng-repeat="i in [0, 1, 2]">-->
-                                        <!--<img src="../../../images/placeholder.svg" alt="...">-->
-                                    <!--</div>-->
-                                <!--</div>-->
+                                <div class="mc-content photo">
+                                    <div class="photo-item" ng-repeat="i in [0, 1, 2, 3, 4, 5]">
+                                        <img src="../../../images/placeholder.svg" alt="...">
+                                    </div>
+                                </div>
 
                                 <a href="#" class="view-all" ng-click="showMedia('photo', $event)">View All</a>
                             </div>
@@ -233,7 +233,7 @@
 
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3" ng-show="divShow == 'music' || divShow == 'allMedia'">
                 <!--<img src="../../../images/calendar-mock.png" style="display: inline-block; margin-bottom: 20px;" class="img-responsive" alt="...">-->
 
                 <div class="calendar-sidebar-block box-content">
