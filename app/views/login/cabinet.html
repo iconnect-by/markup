@@ -33,17 +33,17 @@
 
         <div class="row">
             <ul class="nav nav-tabs" role="tablist">
-                <li class="active"><a href="#" data-target='#dashboard' data-toggle="tab" onclick="return false;">Dashboard</a></li>
+                <li><a href="#" data-target='#dashboard' data-toggle="tab" onclick="return false;">Dashboard</a></li>
                 <li><a href="#" data-target='#dashboard_empty' data-toggle="tab" onclick="return false;">Dashboard Empty</a></li>
                 <li><a href="#" data-target='#artist' data-toggle="tab" onclick="return false;">Your Artist</a></li>
                 <li><a href="#" data-target='#organization' data-toggle="tab" onclick="return false;">Your Organization</a></li>
-                <li><a href="#" data-target='#events' data-toggle="tab" onclick="return false;">Your Events</a></li>
+                <li class="active"><a href="#" data-target='#events' data-toggle="tab" onclick="return false;">Your Events</a></li>
                 <li><a href="#" data-target='#documents' data-toggle="tab" onclick="return false;">Your Documents</a></li>
                 <li><a href="#" data-target='#statistics' data-toggle="tab" onclick="return false;">Statistics</a></li>
             </ul>
 
             <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active in" id="dashboard">
+                <div role="tabpanel" class="tab-pane" id="dashboard">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">
@@ -118,7 +118,6 @@
                     </div>
                 </div><!--.tabpanel-->
 
-
                 <div role="tabpanel" class="tab-pane" id="organization">
                     <div class="container-fluid">
                         <div class="row">
@@ -139,15 +138,70 @@
                 </div><!--.tabpanel-->
 
 
-                <div role="tabpanel" class="tab-pane" id="events">
+
+
+
+
+
+
+
+                <div role="tabpanel" class="tab-pane active in" id="events">
                     <div class="container-fluid">
                         <div class="row">
+                            <div class="col-md-12">
+                                <h3>Actualy event</h3>
+                            </div>
+                        </div><!--.row-->
+                        <div class="row">
                             <div class="col-md-3" ng-repeat="event in eventsArt">
-                                <event-card data="event"></event-card>
+                                <event-card-events data="event"></event-card-events>
                             </div><!--.col-->
 
                             <div class="col-md-3">
-                                <event-card data="{
+                                <event-card-events data="{
+                                    isDraft: true,
+                                    title: 'Romantic Ballads',
+                                    eventDate: '12 nov 2016, 22:00 - 5:00',
+                                    eventText: 'A purpose is the eternal condition for success.',
+                                    eventArtist: [
+                                        {
+                                            id: 0,
+                                            artistImg: '../../images/placeholder.svg'
+                                        },
+                                        {
+                                            id: 1,
+                                            artistImg: '../../images/placeholder.svg'
+                                        }
+                                    ],
+                                    eventType: 'Concert',
+                                    eventLocation: 'UK, London'
+                                }"></event-card-events>
+                            </div><!--.col-->
+
+                            <div class="col-md-3">
+                                <create-card
+                                        data="{
+                                            title: 'Create a new event',
+                                            content: 'This page presents you as an organization of the chosen type and allows you to work with the artists',
+                                            btn_label: 'Create page'
+                                        }"
+                                ></create-card>
+                            </div><!--.col-->
+                        </div><!--.row-->
+
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>Past event</h3>
+                            </div>
+                        </div><!--.row-->
+                        <div class="row">
+                            <div class="col-md-3" ng-repeat="event in eventsArt">
+                                <event-card-events data="event"></event-card-events>
+                            </div><!--.col-->
+
+                            <div class="col-md-3">
+                                <event-card-events data="{
                                     isDraft: true,
                                     imgUrl: '',
                                     title: 'Romantic Ballads',
@@ -165,7 +219,7 @@
                                     ],
                                     eventType: 'Concert',
                                     eventLocation: 'UK, London'
-                                }"></event-card>
+                                }"></event-card-events>
                             </div><!--.col-->
 
                             <div class="col-md-3">
@@ -178,8 +232,25 @@
                                 ></create-card>
                             </div><!--.col-->
                         </div><!--.row-->
+
                     </div>
                 </div><!--.tabpanel-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                 <div role="tabpanel" class="tab-pane" id="documents">

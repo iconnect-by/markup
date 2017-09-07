@@ -1,0 +1,32 @@
+<div class="event-card {{$ctrl.data.isDraft ? 'draft' : ''}}">
+    <div class="container-fluid">
+        <div class="row card-header">
+            <span class="draft-label" ng-if="$ctrl.data.isDraft">Draft Event</span>
+
+            <div class="col-xs-12 event-info">
+                <h4 class="name">{{ $ctrl.data.title }}</h4>
+                <div class="subtext">{{ $ctrl.data.eventDate }}</div>
+                <div class="description">
+                    <!--<p ng-bind-html="$ctrl.data.eventText">{{$ctrl.data.eventText}}</p>-->
+                    {{$ctrl.data.eventText}}
+                </div>
+            </div>
+        </div>
+        <div class="people">
+            <a href="#" class="people-link circle" ng-repeat="man in $ctrl.data.eventArtist">
+                <img ng-src="{{ man.artistImg }}" alt="avatar">
+            </a>
+            <a href="#" class="people-link-add">
+                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="row card-footer">
+            <div class="col-xs-6 left-part">
+                <p>{{$ctrl.data.eventLocation}}</p>
+            </div>
+            <div class="col-xs-6 right-part">
+                <p>{{$ctrl.data.eventType}}</p>
+            </div>
+        </div>
+    </div>
+</div><!--.event-card-->
