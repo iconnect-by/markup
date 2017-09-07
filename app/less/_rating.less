@@ -1,0 +1,131 @@
+.rating-section {
+  .title {
+    display: block;
+    text-align: center;
+  }
+
+  .info-text {
+    .text-default-big;
+    text-align: center;
+
+    .colored-label {
+      color: @iConnect-orange;
+    }
+  }
+
+  .rating-cats {
+    padding-top: 60px;
+
+    .cat-item {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      flex-direction: row;
+      border-bottom: 1px solid #f2f2f2;
+
+      .title {
+        .title-H3;
+        align-self: center;
+        max-width: 100px;
+        width: 100px;
+        text-align: left;
+      }
+
+      .rating-stars {
+        display: flex;
+        align-content: space-between;
+        justify-content: center;
+        align-items: center;
+        padding: 19px 0 20px 0;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+
+        ul {
+          display: flex;
+          align-content: space-between;
+          flex-wrap: nowrap;
+          align-items: flex-start;
+          flex-grow: 7;
+          margin: 0;
+
+          li {
+            cursor: pointer;
+
+            span {
+              line-height: 17px;
+              width: 17px;
+              display: inline-block;
+
+              &.star {
+                background-image: url('@{ic-path-images}/rating-grey-star.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center center;
+                margin-right: 9.86px;
+
+                &.active {
+                  background-image: url('@{ic-path-images}/rating-color-star.svg');
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .rating-word-value {
+      align-self: center;
+      max-width: 100px;
+      width: 100px;
+      text-align: right;
+
+      span {
+        .text-grey-big;
+
+        &.default {
+          color: #999;
+        }
+        &.succes {
+          color: #417505;
+        }
+        &.super {
+          color: #F5A623;
+        }
+      }
+    }
+  }
+
+  .comments-block {
+    padding-top: 36px;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 16px;
+
+    .title {
+      .text-grey-small;
+      text-align: left;
+      margin-bottom: 8px;
+    }
+    .info-text {
+      .text-default-big;
+      text-align: left;
+    }
+  }
+
+  .btns-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 0;
+
+    .rating-average {
+      .text-grey-big;
+
+      .rating-value {
+        color: @iConnect-green
+      }
+    }
+  }
+
+}

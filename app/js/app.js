@@ -269,6 +269,15 @@ angular.module('iConnectApp', ['ui.router', 'ngDialog', 'ui-notification', 'ui.b
                 }
             })
 
+            .state('app.rating', {
+                url: 'rating',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/profile/rating.html'
+                    }
+                }
+            })
+
             // Commmon elements
             .state('app.common', {
                 url: 'common',
