@@ -19,4 +19,26 @@ angular.module('iConnectApp')
             Notification.error({message: 'Error Bottom Right', positionY: 'bottom', positionX: 'right'});
         };
 
+        $scope.artistRole = [
+            {
+                title: 'Singer',
+                status: 'active'
+            },
+            {
+                title: 'Dj',
+                status: ''
+            },
+            {
+                title: 'Dancer',
+                status: 'active'
+            },
+            {
+                title: 'Vocalist',
+                status: 'active'
+            },
+            {
+                title: 'Musician',
+                status: ''
+            }
+        ];
     }]);
