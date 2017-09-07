@@ -188,6 +188,37 @@
       padding-right: 0;
       padding-left: 0;
     }
+
+    a {
+      .text-default-small;
+
+      &.show {
+        color: @iConnect-blue;
+
+        &:visited {
+          color: @iConnect-blue;
+        }
+        &:hover, &:focus {
+          color: #2c72c4;
+        }
+        &:active {
+          color: #2c72d8;
+        }
+      }
+      &.hide {
+        color: @iConnect-red;
+
+        &:visited {
+          color: #d0021b;
+        }
+        &:hover, &:focus{
+          color: #b20000;
+        }
+        &:active {
+          color: #c20000;
+        }
+      }
+    }
   }
 
   &.draft {

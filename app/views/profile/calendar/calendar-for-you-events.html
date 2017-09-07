@@ -1,0 +1,153 @@
+<section class="top-artists-section-open" ng-controller="OrganizationController">
+    <div class="navbar-fixed-top filter-section">
+        <div class="container">
+            <div class="search-content">
+                <form action="" class="form-inline search-form">
+                    <span class="fg-divider"></span>
+
+                    <div class="form-group">
+                        <div class="col-xs-1">
+                            <label>From</label>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="dropdown">
+                                <button class="dd-datetime" id="date_start" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    {{dt ? dt : dateNow | date:'d MMM y' }}
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-form ddatetime" aria-labelledby="date_start">
+                                    <div class="picker-title">
+                                        Set a date From
+                                    </div>
+                                    <div style="display:inline-block;">
+                                        <div uib-datepicker ng-model="dt" class="well well-sm ic-datepicker" datepicker-options="DatePickerOptions"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-1 edit-section separate">
+                            <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col-xs-1">
+                            <label>To</label>
+                        </div>
+                        <div class="col-xs-4">
+                            <button class="dd-datetime" id="date_ended" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{dte ? dte : dateNow | date:'d MMM y' }}
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-form ddatetime" aria-labelledby="date_ended">
+                                <div class="picker-title">
+                                    Set a date To
+                                </div>
+                                <div style="display:inline-block;">
+                                    <div uib-datepicker ng-model="dte" class="well well-sm ic-datepicker" datepicker-options="DatePickerEndOptions"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-1 edit-section">
+                            <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
+                    <span class="fg-divider"></span>
+
+                    <div class="form-group">
+
+                        <div class="row location-block">
+                            <div class="col-xs-4">
+                                <label for="id_location">Location</label>
+                            </div>
+                            <div class="col-xs-8">
+                                <script type="text/ng-template" id="customTemplate.html" class="ddown-entity">
+                                    <a><span ng-bind-html="match.label | uibTypeaheadHighlight:query"></span></a>
+                                </script>
+
+                                <div class="input-ddown-block">
+                                    <div class="form-group">
+                                        <!--<pre>Model: {{customSelected | json}}</pre>-->
+                                        <input id="id_location" ng-model="customSelected"
+                                               placeholder=""
+                                               uib-typeahead="location as location.country for location in locations | filter:{country:$viewValue}"
+                                               typeahead-template-url="customTemplate.html"
+                                               class="form-control input-field"
+                                               typeahead-show-hint="false"
+                                               typeahead-min-length="0"
+                                        >
+                                        <span class="fa fa-map-marker"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <span class="fg-divider"></span>
+
+                    <div class="form-group">
+
+                        <div class="row type-block">
+                            <div class="col-xs-4">
+                                <label for="id_type">Type</label>
+                            </div>
+                            <div class="col-xs-8">
+                                <script type="text/ng-template" id="customTemplate1.html" class="ddown-entity">
+                                    <a><span ng-bind-html="match.label | uibTypeaheadHighlight:query"></span></a>
+                                </script>
+
+                                <div class="input-ddown-block">
+                                    <div class="form-group">
+                                        <!--<pre>Model: {{customSelected1 | json}}</pre>-->
+                                        <input id="id_type" ng-model="customSelected1"
+                                               placeholder=""
+                                               uib-typeahead="type as type.name for type in types | filter:{type:$viewValue}"
+                                               typeahead-template-url="customTemplate1.html"
+                                               class="form-control input-field"
+                                               typeahead-show-hint="false"
+                                               typeahead-min-length="0"
+                                        >
+                                        <span class="caret"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <span class="fg-divider"></span>
+
+                    <button class="ic-btn ic-btn-blue">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="calendar-full-block">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="actions">
+                        <div class="switcher">
+                            <a href="#" class="prev"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                            <a href="#" class="next"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                            <span class="month-name">August 2017</span>
+                        </div>
+                        <div class="btns">
+                            <a href="#" class="show-all active">Show all</a>
+                            <a href="#" class="show-my">Only Your</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="events-container">
+                <div class="row">
+                    <div class="col-md-3" ng-class="($index + 1) % 5 == 0 ? 'clearfix' : ''" ng-repeat="event in eventsArt track by $index">
+                        <event-card-events-footer data="event"></event-card-events-footer>
+
+                    </div><!--.col-->
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
