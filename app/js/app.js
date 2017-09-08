@@ -278,6 +278,15 @@ angular.module('iConnectApp', ['ui.router', 'ngDialog', 'ui-notification', 'ui.b
                 }
             })
 
+            .state('app.notification', {
+                url: 'notification',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/profile/notification.html'
+                    }
+                }
+            })
+
             // Commmon elements
             .state('app.common', {
                 url: 'common',

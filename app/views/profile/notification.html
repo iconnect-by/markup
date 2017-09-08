@@ -1,0 +1,78 @@
+<section class="cabinet-section notification-section">
+    <div class="container">
+
+        <div class="row header-container">
+
+            <div class="col-md-12">
+                <h2 class="title">Notification</h2>
+            </div>
+
+        </div><!--.row-->
+
+        <div class="row">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="active"><a href="#" data-target='#all_activity' data-toggle="tab" onclick="return false;">All activity</a></li>
+                <li><a href="#" data-target='#request' data-toggle="tab" onclick="return false;">Request</a></li>
+                <li><a href="#" data-target='#rating' data-toggle="tab" onclick="return false;">Rating</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active in" id="all_activity">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <notification-card data="{
+                                    hands: true,
+                                    btns: false,
+                                    rating: false,
+                                    isNew: false
+                                }">
+                                </notification-card>
+                            </div>
+                            <div class="col-md-3">
+                                <notification-card data="{
+                                    hands: false,
+                                    btns: false,
+                                    rating: true,
+                                    isNew: true,
+                                }">
+                                </notification-card>
+                            </div>
+                            <div class="col-md-3">
+                                <notification-card data="{
+                                    hands: false,
+                                    rating: false,
+                                    btns: true,
+                                    isNew: true,
+                                }">
+                                </notification-card>
+                            </div>
+
+                            <div class="col-md-3" ng-repeat="i in [1,2,3,4,5,6,7,8,9]">
+                                <notification-card data="{
+                                    hands: false,
+                                    rating: false,
+                                    btns: true,
+                                    isNew: true,
+                                }">
+                                </notification-card>
+                            </div>
+                        </div>
+                    </div><!--.container-fluid-->
+                </div><!--.tabpanel-->
+
+                <div role="tabpanel" class="tab-pane" id="request">
+                    <div class="container-fluid">
+                        request
+                    </div><!--.container-fluid-->
+                </div><!--.tabpanel-->
+
+                <div role="tabpanel" class="tab-pane" id="rating">
+                    <div class="container-fluid">
+                        rating
+                    </div>
+                </div><!--.tabpanel-->
+            </div><!--.tab-content-->
+        </div><!--.row-->
+    </div>
+</section>
