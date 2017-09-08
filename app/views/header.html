@@ -1,3 +1,30 @@
+<script>
+    $(function() {
+        $('a[href="#search"]').on('click', function(event) {
+            event.preventDefault();
+
+            $('#search').addClass('open');
+            $('#search > form > input[type="search"]').focus();
+            $('section').addClass('blur-bg');
+        });
+
+        $('#search, #search .close').on('click keyup', function(event) {
+
+            if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+                $(this).removeClass('open');
+                $('section').removeClass('blur-bg');
+            }
+        });
+
+        $('.search-form').submit(function(event) {
+            event.preventDefault();
+
+            return false;
+        });
+    });
+</script>
+
+
 <!--.transparent1 - change it to .transparent, it makes menu transparent, for white menu bgc - remove it-->
 <!--<nav class="navbar navbar-default navbar-fixed-top transparent1" ng-class="{transparent: isHeaderTransparent}">-->
 <nav class="navbar navbar-default navbar-fixed-top transparent1">
@@ -100,9 +127,36 @@
                     <!--<button ui-sref="app.login" class="ic-btn ic-btn-orange">LOGIN</button>-->
                 <!--</li>-->
                 <li>
-                    <a href="#" class="search header-glifs"><i class="fa fa-search"></i></a>
+                    <a href="#search" class="search header-glifs"><i class="fa fa-search"></i></a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+
+
+<div id="search">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form class="search-form">
+                    <div class="title">What are you looking for?</div>
+                    <div class="control-block">
+                        <input type="search" value="" placeholder="SEARCH KEYWORD(s)">
+                        <a href="#" class="close" onclick="return false;"><i class="fa fa-times fa-lg"></i></a>
+                    </div>
+                </form>
+            </div>
+        </div><!--.row-->
+
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="results-items list-unstyled">
+                    <li class="item"><a href="#"><span class="counter">32</span><span class="result-title">Some text</span></a></li>
+                    <li class="item"><a href="#"><span class="counter">20</span><span class="result-title">Some text</span></a></li>
+                    <li class="item"><a href="#"><span class="counter">10</span><span class="result-title">Some text</span></a></li>
+                </ul>
+            </div>
+        </div><!--.row-->
+    </div>
+</div>
