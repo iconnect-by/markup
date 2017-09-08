@@ -3,6 +3,20 @@
     $('.form-control').on('focus blur', function (e) {
         $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
     }).trigger('blur');
+
+
+    $('input').on('keydown', function(e) {
+        $.each($('input'), function (i, element) {
+            if ($(element).val()) {
+                $(element).parents('.form-group').addClass('focused');
+            } else {
+                $(element).parents('.form-group').removeClass('focused');
+            }
+        });
+    });
+
+    var maskForInput = new AutoNumeric($('[name="event-proposal"]')[0], AutoNumeric.getPredefinedOptions().dollar);
+
 </script>
 
 <section class="common" ng-controller="CommonController">
