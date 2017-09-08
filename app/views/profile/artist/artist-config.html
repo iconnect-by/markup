@@ -1,3 +1,9 @@
+<script>
+    $('.form-control').on('focus blur', function (e) {
+        $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+</script>
+
 <section class="profile-section" ng-controller="PersonalController">
     <div class="container">
         <div class="row">
@@ -240,6 +246,12 @@
                                             <span class="edit-section remove">
                                                 <a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
                                             </span>
+                                        </div>
+
+                                        <div class="form-group styled-placeholder">
+                                            <label class="control-label">Paste here a link to the social network</label>
+                                            <input class="form-control" ng-required="true">
+                                            <span class="bar"></span>
                                         </div>
 
                                         <a href="#" class="add-more-social">+ Add more social network account</a>

@@ -905,6 +905,105 @@
 
     }
 
+
+    .styled-placeholder {
+      position: relative;
+      display: block;
+
+      &.form-group {
+        background-color: transparent;
+        height: auto;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+
+        &.focused {
+          .control-label {
+            opacity: 1;
+            top: -3px;
+            transform: scale(1);
+            color: #626875;
+          }
+        }
+      }
+
+      .control-label {
+        .title-H2;
+        color: #999;
+        font-family: @iConnect-font-regular;
+        font-size: 10 * @rem;
+        font-weight: @fw-regular;
+        line-height: 1.125;
+        letter-spacing: .46px;
+        margin-bottom: 0;
+        opacity: .5;
+        pointer-events: none;
+        position: absolute;
+        width: 100%;
+        text-align: left;
+        top: 23px;
+        transform: scale(1);
+        transform-origin: left top;
+        transition: all .2s ease-in-out;
+      }
+
+      .form-control {
+        align-self: flex-end;
+        border: none;
+        box-shadow: none;
+        line-height: 1;
+        border-bottom: 1px solid #f2f2f2;
+      }
+
+      input {
+        .text-default-medium;
+        color: #333;
+        margin: 0;
+        font-weight: @fw-regular;
+        text-align: left;
+        border-radius: 0;
+        padding-left: 0;
+        padding-right: 0;
+
+        max-width: 99.99% !important;
+        transition: width 0.25s;
+      }
+
+      .bar {
+        position: relative;
+        display: block;
+        width: 100%;
+
+        &:before, &:after {
+          content: '';
+          height: 1px;
+          width: 0;
+          bottom: -1px;
+          position: absolute;
+          background: @iConnect-orange;
+          transition: 0.2s ease all;
+          -moz-transition: 0.2s ease all;
+          -webkit-transition: 0.2s ease all;
+        }
+        &:before {
+          left: 50%;
+        }
+        &:after {
+          right: 50%;
+        }
+      }
+
+      /* active state */
+      input:focus ~ .bar:before, input:focus ~ .bar:after {
+        width:50%;
+      }
+
+    }
+
+
+
+
+
   }
 
   .event-card {
