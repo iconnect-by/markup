@@ -1,0 +1,31 @@
+<div class="card-small" ng-class="$ctrl.data.cssClass">
+    <div ng-show="$ctrl.showIndex" class="counter-place">{{ $ctrl.data.id + 1 }}</div>
+
+    <div class="avatar" ng-class="$ctrl.data.imgClass ? $ctrl.data.imgClass : 'avatar-circle'" ng-if="$ctrl.data.photo">
+        <div class="image">
+            <img ng-src="{{ $ctrl.data.photo }}" alt="...">
+        </div>
+    </div>
+
+    <div class="avatar" ng-if="!$ctrl.data.photo">
+        <div class="empty-placeholder">&nbsp;</div>
+    </div>
+
+    <div class="name">
+        <a href="#">{{ $ctrl.data.firstName ? $ctrl.data.firstName : $ctrl.data.title }} {{ $ctrl.data.lastName ? $ctrl.data.lastName : '' }}</a>
+        <div class="info">{{ $ctrl.data.style }}</div>
+        <div class="price">{{$ctrl.data.price}}</div>
+        <a href="#" type="button" data-toggle="dropdown" class="full-offer-link" aria-haspopup="true" aria-expanded="false" onclick="return false;">
+            full offer
+        </a>
+        <div class="dropdown-menu dropdown-menu-form full-offer-dropdown">
+            <div ng-include="'views/template/full-offer-dropdown.html'"></div>
+        </div>
+
+    </div>
+    <div ng-show="$ctrl.data.showLink" class="next-link">
+        <a href="#" class="lnk {{$ctrl.data.addedIconClass}}" style="color: {{ $ctrl.data.iconColor ? $ctrl.data.iconColor : '#333' }}">
+            <i class="{{ $ctrl.data.icon ? $ctrl.data.icon : 'fa fa-angle-right' }}" aria-hidden="true"></i>
+        </a>
+    </div>
+</div>
