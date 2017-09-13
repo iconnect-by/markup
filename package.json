@@ -43,6 +43,7 @@
     "float-label-css": "^1.0.2",
     "font-awesome": "^4.7.0",
     "fullcalendar": "^3.5.0",
+    "jquery-autosize": "^1.18.18",
     "masonry-layout": "^4.2.0",
     "ng-dialog": "^1.4.0"
   }
