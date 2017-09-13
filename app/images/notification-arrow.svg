@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="10px" viewBox="0 0 6 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="21" width="300" height="236" rx="4"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="5_3_Notification" transform="translate(-557.000000, -307.000000)">
+            <g id="Card" transform="translate(90.000000, 246.000000)">
+                <g id="1-copy-7" transform="translate(320.000000, 0.000000)">
+                    <g id="Avatar_BG">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect stroke="#F2F2F2" stroke-width="1" x="0.5" y="21.5" width="299" height="235" rx="4"></rect>
+                    </g>
+                    <path d="M148.915092,61.6952286 C148.520158,61.3112644 147.872095,61.3187968 147.488086,61.6921387 L147.711914,61.474528 C147.318735,61.8567856 147.322661,62.4803644 147.723181,62.8697591 L150.219676,65.2969076 C150.619078,65.6852148 150.620197,66.3136978 150.219676,66.7030924 L147.723181,69.1302409 C147.323779,69.5185481 147.327905,70.1521301 147.711914,70.525472 L147.488086,70.3078613 C147.881265,70.690119 148.521709,70.6872276 148.915092,70.3047714 L152.627765,66.6952286 C153.022699,66.3112644 153.021148,65.6872276 152.627765,65.3047714 L148.915092,61.6952286 Z" id="Shape" fill="#E5E5E5"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
