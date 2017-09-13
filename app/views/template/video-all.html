@@ -5,27 +5,22 @@
             <a href="#" ng-click="showMedia('allMedia', $event)">Close</a>
         </div>
 
-        <div class="grid">
-            <div class="grid-item">
-                <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=corycotton" width="100%" height="200" scrolling="no" frameborder="no"></iframe>
-            </div>
-            <div class="grid-item">
-                <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=corycotton" width="100%" height="200" scrolling="no" frameborder="no"></iframe>
-            </div>
-            <div class="grid-item">
-                <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=corycotton" width="100%" height="200" scrolling="no" frameborder="no"></iframe>
-            </div>
-            <div class="grid-item">
-                <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=corycotton" width="100%" height="200" scrolling="no" frameborder="no"></iframe>
-            </div>
-            <div class="grid-item">
-                <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=corycotton" width="100%" height="200" scrolling="no" frameborder="no"></iframe>
-            </div>
-            <div class="grid-item">
-                <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=corycotton" width="100%" height="200" scrolling="no" frameborder="no"></iframe>
-            </div>
-            <div class="grid-item">
-                <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=corycotton" width="100%" height="200" scrolling="no" frameborder="no"></iframe>
+        <div class="row">
+            <div class="col-md-4" ng-repeat="item in [1,2,3,4,5,6,7,8,9]">
+                <div class="video-item">
+                    <div class="actions">
+                        <a class="favourite-video active" title="Favourite"><i class="fa fa-star"></i></a>
+                        <a class="delete-video" title="Delete"><img src="../../images/trash-icon.svg" alt="..."></a>
+                    </div>
+
+                    <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=corycotton"
+                            width="100%" height="200" scrolling="no" frameborder="no"></iframe>
+
+                    <div class="title">
+                        Natural Beauty From Natural Ingredients Natural Beauty From Natural Ingredients
+                        Natural Beauty From Natural Ingredients Natural Beauty From Natural Ingredients
+                    </div>
+                </div>
             </div>
         </div>
     </div>

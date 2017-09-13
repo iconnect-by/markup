@@ -48,15 +48,15 @@ console.log(customDate);
                 status: 'busy'
             },
             {
-                date: 'Tue Sep 9 2017 17:47:17 GMT+0300 (+03)',
+                date: 'Tue Sep 15 2017 17:47:17 GMT+0300 (+03)',
                 status: 'busy'
             },
             {
-                date: 'Tue Sep 10 2017 17:47:17 GMT+0300 (+03)',
+                date: 'Tue Sep 16 2017 17:47:17 GMT+0300 (+03)',
                 status: 'busy'
             },
             {
-                date: 'Tue Sep 11 2017 17:47:17 GMT+0300 (+03)',
+                date: 'Tue Sep 17 2017 17:47:17 GMT+0300 (+03)',
                 status: 'busy last'
             },
             {
@@ -455,6 +455,36 @@ console.log(customDate);
             {
                 id: 7,
                 src: '../../images/gallery-7.jpg',
+                width: '602',
+                height: '295'
+            },
+            {
+                id: 8,
+                src: '../../images/Asmundur_at_his_Craft_in_Iceland_at_Sunset.jpg',
+                width: '602',
+                height: '295'
+            },
+            {
+                id: 9,
+                src: '../../images/MghPv9G13oM.jpg',
+                width: '602',
+                height: '295'
+            },
+            {
+                id: 10,
+                src: '../../images/file000267747089.jpg',
+                width: '602',
+                height: '295'
+            },
+            {
+                id: 11,
+                src: '../../images/file0002056219390.jpg',
+                width: '602',
+                height: '295'
+            },
+            {
+                id: 12,
+                src: '../../images/file0002056219390.jpg',
                 width: '602',
                 height: '295'
             }

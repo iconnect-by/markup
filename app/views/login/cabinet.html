@@ -37,8 +37,8 @@
                 <li><a href="#" data-target='#dashboard_empty' data-toggle="tab" onclick="return false;">Dashboard Empty</a></li>
                 <li><a href="#" data-target='#artist' data-toggle="tab" onclick="return false;">Your Artist</a></li>
                 <li><a href="#" data-target='#organization' data-toggle="tab" onclick="return false;">Your Organization</a></li>
-                <li class="active"><a href="#" data-target='#events' data-toggle="tab" onclick="return false;">Your Events</a></li>
-                <li><a href="#" data-target='#documents' data-toggle="tab" onclick="return false;">Your Documents</a></li>
+                <li><a href="#" data-target='#events' data-toggle="tab" onclick="return false;">Your Events</a></li>
+                <li class="active"><a href="#" data-target='#documents' data-toggle="tab" onclick="return false;">Your Documents</a></li>
                 <li><a href="#" data-target='#statistics' data-toggle="tab" onclick="return false;">Statistics</a></li>
             </ul>
 
@@ -138,14 +138,7 @@
                 </div><!--.tabpanel-->
 
 
-
-
-
-
-
-
-
-                <div role="tabpanel" class="tab-pane active in" id="events">
+                <div role="tabpanel" class="tab-pane" id="events">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">
@@ -237,25 +230,50 @@
                 </div><!--.tabpanel-->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <div role="tabpanel" class="tab-pane" id="documents">
+                <div role="tabpanel" class="tab-pane active in" id="documents">
                     <div class="container-fluid">
                         <div class="row">
+                            <div class="col-md-12">
+                                <h3>Main document</h3>
+                            </div>
+
+                            <div class="col-md-3">
+                                <document-card-initialized data="{
+                                    icon: '../../images/doc-home.svg',
+                                    title: 'Vinyl Banners',
+                                    date_interval: '12 Nov 2016, 22:00 - 05:00'
+                                }">
+                                </document-card-initialized>
+                            </div><!--.col-->
+                            <div class="col-md-3">
+                                <document-card-initialized data="{
+                                    icon: '../../images/doc-techrider.svg',
+                                    title: 'Vinyl Banners',
+                                    date_interval: '12 Nov 2016, 22:00 - 05:00'
+                                }">
+                                </document-card-initialized>
+                            </div><!--.col-->
+                            <div class="col-md-3">
+                                <document-card-initialized data="{
+                                    icon: '../../images/doc-passport.svg',
+                                    title: 'Vinyl Banners',
+                                    date_interval: '12 Nov 2016, 22:00 - 05:00'
+                                }">
+                                </document-card-initialized>
+                            </div><!--.col-->
+                            <div class="col-md-3">
+                                <document-card-initialized data="{
+                                    icon: '../../images/doc-poster.svg',
+                                    title: 'Vinyl Banners',
+                                    date_interval: '12 Nov 2016, 22:00 - 05:00'
+                                }">
+                                </document-card-initialized>
+                            </div><!--.col-->
+
+                            <div class="col-md-12">
+                                <h3>Other document</h3>
+                            </div>
+
                             <div class="col-md-3" ng-repeat="doc in icDocuments">
                                 <document-card data="doc"></document-card>
                             </div><!--.col-->

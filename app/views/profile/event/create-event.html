@@ -30,8 +30,14 @@
                 </div>
 
                 <div class="col-md-4">
-                    <script type="text/ng-template" id="customTemplate.html" class="ddown-entity">
-                        <a><span ng-bind-html="match.label | uibTypeaheadHighlight:query"></span></a>
+                    <script type="text/ng-template" id="customTemplate.html" class="ddown-entity event-choose">
+                        <a href="#" class="event-choose-lnk">
+                            <span class="image circle" ><img src="../../../images/placeholder.svg" alt="..."></span>
+                            <span class="content-block">
+                                    <span class="content" ng-bind-html="match.label | uibTypeaheadHighlight:query"></span>
+                                    <span class="label">Artist</span>
+                                </span>
+                        </a>
                     </script>
 
                     <div class="input-ddown-block">

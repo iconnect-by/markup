@@ -6,7 +6,7 @@
   cursor: pointer;
   background-image: url('@{ic-path-images}/document_bg.svg');
   background-repeat: no-repeat;
-  background-size: 27%;
+  background-size: 20%;
   background-position: 50% 31%;
   text-align: center;
   height: 220px;
@@ -31,4 +31,28 @@
     box-shadow: 0 10px 25px fade(#000, 10%);
   }
 
+  .delete-document {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: fade(#000, 10%);
+    border-radius: 4px;
+    padding: 7px 9px;
+    z-index: 99;
+
+    img {
+      display: block;
+      width: 12px;
+      height: 16px;
+    }
+  }
+
+  &:hover {
+    .delete-document {
+      display: block;
+    }
+  }
 }

@@ -8,8 +8,24 @@
                $(this).parent().find('.fade-layer').hide();
            })
        ;
+
+        var $container = $('.grid');
+
+        $container.imagesLoaded(function(){
+            $container.masonry({
+                itemSelector: '.grid-item',
+                gutter: 5
+            });
+        });
+
+        // FOR Appending photoes
+        // $newElems = $('<div class="grid-item"><img src="../../images/Asmundur_at_his_Craft_in_Iceland_at_Sunset.jpg" alt=""></div>');
+        //$container.masonry( 'appended', $newElems, true );
+
+
     });
 </script>
+
 
 <div class="col-xs-12">
     <div class="media-content box-content">
@@ -18,17 +34,15 @@
             <a href="#" ng-click="showMedia('allMedia', $event)">Close</a>
         </div>
 
-        <div class="grid">
+        <div class="grid transitions-enabled infinite-scroll clearfix">
+            <div class="grid-sizer"></div>
             <div class="grid-item" ng-repeat="image in galleryImages" ng-click="showPhoto($event, image.id)">
-                <div class="h-aspect-ratio"> <!-- max-width: 100% -->
-                    <div class="aspect-ratio-fill" style="padding-bottom: {{ image.height / image.width * 100 }}%"></div> <!-- 300 / 278 * 100% -->
-                    <div class="image">
-                        <img ng-src="{{image.src}}" data-id="{{image.id}}" alt="..."> <!-- max-width: 100% -->
-                    </div>
-                    <div class="fade-layer"></div>
-                    <a class="delete-image" title="Delete"><img src="../../images/trash-icon.svg" alt="..."></a>
-                </div>
+                <img src="{{ image.src }}" alt="">
+                <div class="fade-layer"></div>
+                <a class="delete-image" title="Delete"><img src="../../images/trash-icon.svg" alt="..."></a>
             </div>
         </div>
+
+
     </div>
 </div>

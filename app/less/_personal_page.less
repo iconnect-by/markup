@@ -412,30 +412,24 @@
     overflow: hidden;
 
     .grid {
-      line-height: 0;
-      -webkit-column-count: 3;
-      -webkit-column-gap: 3px;
-      -moz-column-count: 3;
-      -moz-column-gap: 3px;
-      column-count: 3;
-      column-gap: 3px;
 
-
+      &:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
 
       .grid-item {
         position: relative;
-        margin-bottom: 3px;
         cursor: pointer;
-        -webkit-column-break-inside: avoid;
-        page-break-inside: avoid;
-        break-inside: avoid-column;
+        width: 32%;
+        float: left;
 
         img, iframe {
           width: 100%;
           max-width: 100%;
-          position: absolute;
-          top: 0;
-          left: 0;
+          display: block;
+          margin-bottom: 5px;
         }
 
         .delete-image {
@@ -447,7 +441,6 @@
           height: 30px;
           background-color: fade(#000, 50%);
           border-radius: 4px;
-          padding: 7px 9px;
           z-index: 99;
 
           img {
@@ -663,6 +656,85 @@
       font-size: 10 * @rem;
       letter-spacing: .29px;
       line-height: 1.4;
+    }
+
+
+    .video-item {
+      .title {
+        .title-H4;
+        @font-size: 14 * @rem;
+        @line-height: 1.5;
+        @lines-to-show: 2;
+
+        height: @font-size * @line-height * @lines-to-show;
+        -webkit-line-clamp: @lines-to-show;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top: 15px;
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 21px;
+      }
+
+      .actions {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        z-index: 99;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        display: none;
+
+        .delete-video {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          background-color: fade(#000, 50%);
+          border-radius: 4px;
+          padding: 7px 9px;
+
+          img {
+            display: block;
+            width: 12px;
+            height: 16px;
+          }
+
+          &:hover {
+            .fade-layer {
+              display: block !important;
+            }
+          }
+        }
+
+        .favourite-video {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          background-color: fade(#000, 50%);
+          border-radius: 4px;
+          line-height: 30px;
+          text-align: center;
+          color: #fff;
+          margin-right: 10px;
+
+          &.active {
+            background-color: #fff;
+
+            .fa {
+              color: #FF9F00;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        .actions {
+          display: flex;
+        }
+      }
     }
   }
 
