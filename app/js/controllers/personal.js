@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('iConnectApp')
-    .controller('PersonalController', ['$scope', '$timeout', function($scope, $timeout) {
+    .controller('PersonalController', ['$scope', '$timeout', 'ngDialog', function($scope, $timeout, ngDialog) {
         $scope.divShow = "allMedia";
         $scope.locationEditable = false;
         $scope.isEditMusic = false;
@@ -28,7 +28,7 @@ angular.module('iConnectApp')
             afterAfterAfterTomorrow.setDate(afterAfterAfterTomorrow.getDate() + 2);
         var customDate = new Date(tomorrow);
             customDate.setDate(customDate.getDate() + 6);
-console.log(customDate);
+
         $scope.events = [
             //Tue Sep 12 2017 17:47:17 GMT+0300 (+03)
             {
@@ -93,6 +93,16 @@ console.log(customDate);
         }
         /*-- SET DATES FOR SIDEBAR CALENDAR */
 
+        $scope.showSocialDialog = function (e) {
+            e.preventDefault();
+
+            ngDialog.open({
+                template: '../../views/template/dialog-social.html',
+                className: 'ngdialog-theme-default',
+                plain: false
+                //controller: 'SomeController'
+            });
+        };
 
         $scope.showPhoto = function (e, id) {
             e.preventDefault();

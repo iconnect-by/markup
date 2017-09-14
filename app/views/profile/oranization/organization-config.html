@@ -1,3 +1,15 @@
+<script>
+    $('document').ready(function() {
+        $('.dropdown-menu').on('click', function (event) {
+            $(this).parent().one('hide.bs.dropdown', function(e) {
+                e.preventDefault();
+            });
+        });
+
+        $('textarea').autosize();
+    });
+</script>
+
 <section class="profile-section" ng-controller="PersonalController">
     <div class="container">
         <div class="row">
@@ -51,43 +63,10 @@
                             <span class="title">Location</span>
                             <span class="value">Belarus&nbsp;<img src="../../../images/flag-british-icon.svg" alt="UK"></span>
                         </div>
+                        <div class="item">
+                            <a href="#" class="share-profile-lnk" ng-click="showSocialDialog($event);">Share profile</a>
+                        </div>
                     </div>
-
-                    <div class="hero-desc-social">
-                        <ul class="social-icons list-unstyled">
-                            <li class="social-icons__item">
-                                <a href="#">
-                                    <img class="img-circle img-responsive" src="../../../images/soundcloud@2x.png" alt="soundCloud">
-                                </a>
-                            </li>
-                            <li class="social-icons__item">
-                                <a href="">
-                                    <img class="img-circle img-responsive" src="../../../images/insta@2x.png" alt="instagram">
-                                </a>
-                            </li>
-                            <li class="social-icons__item">
-                                <a href="#">
-                                    <img class="img-circle img-responsive" src="../../images/vimeo@2x.png" alt="vimeo">
-                                </a>
-                            </li>
-                            <!--<li class="social-icons__item">-->
-                                <!--<a href="#">-->
-                                    <!--<img class="img-circle img-responsive" src="../../images/youtube@2x.png" alt="youtube">-->
-                                <!--</a>-->
-                            <!--</li>-->
-                            <!--<li class="social-icons__item">-->
-                                <!--<a href="#">-->
-                                    <!--<img class="img-circle img-responsive" src="../../../images/twitter@2x.png" alt="twitter">-->
-                                <!--</a>-->
-                            <!--</li>-->
-                            <!--<li class="social-icons__item">-->
-                                <!--<a href="#">-->
-                                    <!--<img class="img-circle img-responsive" src="../../../images/facebook@2x.png" alt="facebook">-->
-                                <!--</a>-->
-                            <!--</li>-->
-                        </ul>
-                    </div>
-
 
                 </div>
             </div>
@@ -237,7 +216,10 @@
                 <!--<img src="../../../images/calendar-mock.png" style="display: inline-block; margin-bottom: 20px;" class="img-responsive" alt="...">-->
 
                 <div class="calendar-sidebar-block box-content">
-                    <div class="title">Booking artist’s</div>
+                    <div class="calendar-header">
+                        <div class="title">Booking organization</div>
+                        <a href="#" ui-sref="app.calendar-for-you" class="show-calendar">Big view</a>
+                    </div>
 
                     <div style="display:inline-block; min-height:290px;">
                         <div uib-datepicker ng-model="sidebarDt" class="well well-sm ic-datepicker" datepicker-options="sidebarDtOptions"></div>

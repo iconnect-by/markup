@@ -2,6 +2,8 @@
     $('.form-control').on('focus blur', function (e) {
         $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
     }).trigger('blur');
+
+    $('textarea').autosize();
 </script>
 
 <section class="profile-section" ng-controller="PersonalController">
@@ -71,43 +73,10 @@
                             <span class="title">Soundcloud</span>
                             <span class="value text-orange">SarahDawson</span>
                         </div>
+                        <div class="item">
+                            <a href="#" class="share-profile-lnk" ng-click="showSocialDialog($event);">Share profile</a>
+                        </div>
                     </div>
-
-                    <div class="hero-desc-social">
-                        <ul class="social-icons list-unstyled">
-                            <li class="social-icons__item">
-                                <a href="#">
-                                    <img class="img-circle img-responsive" src="../../../images/soundcloud@2x.png" alt="soundCloud">
-                                </a>
-                            </li>
-                            <li class="social-icons__item">
-                                <a href="">
-                                    <img class="img-circle img-responsive" src="../../../images/insta@2x.png" alt="instagram">
-                                </a>
-                            </li>
-                            <li class="social-icons__item">
-                                <a href="#">
-                                    <img class="img-circle img-responsive" src="../../../images/vimeo.png" alt="vimeo">
-                                </a>
-                            </li>
-                            <li class="social-icons__item">
-                                <a href="#">
-                                    <img class="img-circle img-responsive" src="../../../images/youtube.png" alt="youtube">
-                                </a>
-                            </li>
-                            <li class="social-icons__item">
-                                <a href="#">
-                                    <img class="img-circle img-responsive" src="../../../images/twitter@2x.png" alt="twitter">
-                                </a>
-                            </li>
-                            <li class="social-icons__item">
-                                <a href="#">
-                                    <img class="img-circle img-responsive" src="../../../images/facebook@2x.png" alt="facebook">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
 
                 </div>
             </div>
@@ -227,37 +196,6 @@
                                     <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <div class="col-xs-3">
-                                    <label>Social Networks</label>
-                                </div>
-                                <div class="col-xs-9">
-                                    <div class="social-network">
-                                        <div class="social-block">
-                                            <img src="../../../images/facebook@2x.png" alt="...">
-                                            <input type="text" class="form-control social-name" value="Dima Kaminsky">
-                                            <span class="edit-section remove">
-                                                <a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
-                                            </span>
-                                        </div>
-                                        <div class="social-block">
-                                            <img src="../../../images/twitter@2x.png" alt="...">
-                                            <input type="text" class="form-control social-name" value="Dima Kaminsky">
-                                            <span class="edit-section remove">
-                                                <a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
-                                            </span>
-                                        </div>
-
-                                        <div class="form-group styled-placeholder">
-                                            <label class="control-label">Paste here a link to the social network</label>
-                                            <input class="form-control" ng-required="true">
-                                            <span class="bar"></span>
-                                        </div>
-
-                                        <a href="#" class="add-more-social">+ Add more social network account</a>
-                                    </div>
-                                </div>
-                            </div>
 
                             <div class="form-group">
                                 <div class="col-xs-12">
@@ -277,7 +215,10 @@
                 <!--<img src="../../../images/calendar-mock.png" style="display: inline-block; margin-bottom: 20px;" class="img-responsive" alt="...">-->
 
                 <div class="calendar-sidebar-block box-content">
-                    <div class="title">Booking artist’s</div>
+                    <div class="calendar-header">
+                        <div class="title">Booking artist’s</div>
+                        <a href="#" ui-sref="app.calendar-for-you" class="show-calendar">Big view</a>
+                    </div>
 
                     <div style="display:inline-block; min-height:290px;">
                         <div uib-datepicker ng-model="sidebarDt" class="well well-sm ic-datepicker" datepicker-options="sidebarDtOptions"></div>
