@@ -3,7 +3,7 @@
 
   .ddown-entity, .dropdown-menu {
     width: 100%;
-    z-index: 99999;
+    z-index: 50;
     box-shadow: 0 9px 12px rgba(0, 0, 0, 0.2);
     border-radius: 0;
     border-bottom-left-radius: 4px;
@@ -11,6 +11,9 @@
     background-color: #fff;
     margin-top: 2px;
     border: none;
+    height: 350px;
+    overflow: hidden;
+    overflow-y: auto;
 
     li {
       width: 100%;
@@ -112,7 +115,7 @@
     transform: scale(1);
     transform-origin: center top;
     transition: all .2s ease-in-out;
-    z-index: 9999;
+    z-index: 55;
   }
 
   .form-group {
@@ -153,7 +156,7 @@
     position: relative;
     display: block;
     width: 100%;
-    z-index: 9999;
+    z-index: 51;
 
     &:before, &:after {
       content: '';

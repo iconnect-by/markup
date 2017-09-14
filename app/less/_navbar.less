@@ -70,7 +70,7 @@
               box-shadow: 0 10px 25px fade(#000, 10%);
               right: -50%;
 
-              li {
+              li:not(.non-fixed-list) {
                 border-left: 2px solid transparent;
 
                 &:not(:last-child) {
@@ -143,6 +143,18 @@
 
                 }
 
+              }
+
+              .non-fixed-list {
+                height: 200px;
+                overflow: hidden;
+                overflow-y: auto;
+
+                li {
+                  &:last-child {
+                    border-bottom: 1px solid #fafafa;
+                  }
+                }
               }
             }
           }
