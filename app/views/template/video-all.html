@@ -1,26 +1,35 @@
 <div class="col-xs-12">
     <div class="media-content box-content">
         <div class="mc-title">
-            <span>Video</span>
+            <span>Videos (9)</span>
             <a href="#" ng-click="showMedia('allMedia', $event)">Close</a>
         </div>
 
         <div class="row">
-            <div class="col-md-4" ng-repeat="item in [1,2,3,4,5,6,7,8,9]">
+            <div class="col-md-4" ng-repeat="video in [1,2,3,4,5,6,7,8,9]">
+
                 <div class="video-item">
-                    <div class="actions">
-                        <a class="favourite-video active" title="Favourite"><i class="fa fa-star"></i></a>
-                        <a class="delete-video" title="Delete"><img src="../../images/trash-icon.svg" alt="..."></a>
-                    </div>
-
-                    <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=corycotton"
-                            width="100%" height="200" scrolling="no" frameborder="no"></iframe>
-
-                    <div class="title">
-                        Natural Beauty From Natural Ingredients Natural Beauty From Natural Ingredients
-                        Natural Beauty From Natural Ingredients Natural Beauty From Natural Ingredients
+                    <a href="#" class="video-item-thumb-wrap">
+                        <div class="video-item-thumb" style="background-image: url('https://i.ytimg.com/vi/7pmw5gvWAf8/mqdefault.jpg');">
+                            <div class="video-item-thumb-actions">
+                                <div class="video-item-thumb-action favorite">
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="video-item-thumb-action remove">
+                                    <img src="../../images/trash-icon.svg" width="12" height="16" alt="remove"/>
+                                </div>
+                            </div>
+                            <div class="video-item-thumb-play">
+                                <i class="fa fa-play"></i>
+                            </div>
+                            <div class="video-item-thumb-label">2:49:44</div>
+                        </div>
+                    </a>
+                    <div class="video-item-info">
+                        <a href="#" class="video-item-title">OpenLecture #2017.1 - Let's Vue!</a>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
