@@ -4,302 +4,302 @@ angular.module('iConnectApp')
     .service('artistFactory', function () {
         var artists = [
             {
-                type: "Singer",
+                type: 'Singer',
                 artistTops: [
                     {
                         id: 0,
-                        firstName: "Nicole1",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole1',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        firstName: "Nicole2",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole2',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 2,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 3,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 4,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     }
                 ]
             },
             {
-                type: "Dj's",
+                type: 'Dj\'s',
                 artistTops: [
                     {
                         id: 0,
-                        firstName: "Nicole1",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole1',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 2,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 3,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 4,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     }
                 ]
             },
             {
-                type: "Music Band",
+                type: 'Music Band',
                 artistTops: [
                     {
                         id: 0,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 2,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 3,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 4,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     }
                 ]
             },
             {
-                type: "MC",
+                type: 'MC',
                 artistTops: [
                     {
                         id: 0,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 2,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 3,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 4,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                 ]
             },
             {
-                type: "Dancer",
+                type: 'Dancer',
                 artistTops: [
                     {
                         id: 0,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 2,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 3,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 4,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                 ]
             },
             {
-                type: "Painter",
+                type: 'Painter',
                 artistTops: [
                     {
                         id: 0,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        firstName: "John",
-                        lastName: "Cena",
-                        country: "America",
-                        style: "Singer",
-                        description: "The Cenation Leader, The Champ, The Face of the WWE, The Hustle Loyalty & Respect Soldier, The Chain Gang Soldier, The Doctor of Thuganomics, Mr. Money in the Bank, Mr. P, The Prototype.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'John',
+                        lastName: 'Cena',
+                        country: 'America',
+                        style: 'Singer',
+                        description: 'The Cenation Leader, The Champ, The Face of the WWE, The Hustle Loyalty & Respect Soldier, The Chain Gang Soldier, The Doctor of Thuganomics, Mr. Money in the Bank, Mr. P, The Prototype.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 2,
-                        firstName: "Lana",
-                        lastName: "Del Rey",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Lana',
+                        lastName: 'Del Rey',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 3,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 4,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     }
                 ]
             }
@@ -308,48 +308,48 @@ angular.module('iConnectApp')
         var newArtist = [
             {
                 id: 0,
-                firstName: "Nicole",
-                lastName: "Pearson",
-                country: "Belarus",
-                style: "Singer",
-                description: "Read, out with friends, listen to music, draw and learn new things.",
-                photo: "../../images/placeholder.svg"
+                firstName: 'Nicole',
+                lastName: 'Pearson',
+                country: 'Belarus',
+                style: 'Singer',
+                description: 'Read, out with friends, listen to music, draw and learn new things.',
+                photo: '../../images/placeholder.svg'
             },
             {
                 id: 1,
-                firstName: "Nicole",
-                lastName: "Pearson",
-                country: "Belarus",
-                style: "Singer",
-                description: "Read, out with friends, listen to music, draw and learn new things.",
-                photo: "../../images/placeholder.svg"
+                firstName: 'Nicole',
+                lastName: 'Pearson',
+                country: 'Belarus',
+                style: 'Singer',
+                description: 'Read, out with friends, listen to music, draw and learn new things.',
+                photo: '../../images/placeholder.svg'
             },
             {
                 id: 2,
-                firstName: "Nicole",
-                lastName: "Pearson",
-                country: "Belarus",
-                style: "Singer",
-                description: "Read, out with friends, listen to music, draw and learn new things.",
-                photo: "../../images/placeholder.svg"
+                firstName: 'Nicole',
+                lastName: 'Pearson',
+                country: 'Belarus',
+                style: 'Singer',
+                description: 'Read, out with friends, listen to music, draw and learn new things.',
+                photo: '../../images/placeholder.svg'
             },
             {
                 id: 3,
-                firstName: "Nicole",
-                lastName: "Pearson",
-                country: "Belarus",
-                style: "Singer",
-                description: "Read, out with friends, listen to music, draw and learn new things.",
-                photo: "../../images/placeholder.svg"
+                firstName: 'Nicole',
+                lastName: 'Pearson',
+                country: 'Belarus',
+                style: 'Singer',
+                description: 'Read, out with friends, listen to music, draw and learn new things.',
+                photo: '../../images/placeholder.svg'
             },
             {
                 id: 4,
-                firstName: "Nicole",
-                lastName: "Pearson",
-                country: "Belarus",
-                style: "Singer",
-                description: "Read, out with friends, listen to music, draw and learn new things.",
-                photo: "../../images/placeholder.svg"
+                firstName: 'Nicole',
+                lastName: 'Pearson',
+                country: 'Belarus',
+                style: 'Singer',
+                description: 'Read, out with friends, listen to music, draw and learn new things.',
+                photo: '../../images/placeholder.svg'
             }
         ];
 
@@ -369,297 +369,297 @@ angular.module('iConnectApp')
         };
 
         var allArtists = {
-            "Singer": {
+            'Singer': {
                 artistList: [
                     {
                         id: 0,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 2,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 3,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 4,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     }
                 ]
             },
-            "Dj's": {
+            'Dj\'s': {
                 artistList: [
                     {
                         id: 0,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Dj's",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Dj\'s',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Dj's",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Dj\'s',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 2,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Dj's",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Dj\'s',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 3,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Dj's",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Dj\'s',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 4,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Dj's",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Dj\'s',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     }
                 ]
             },
-            "Music Band": {
+            'Music Band': {
                 artistList: [
                     {
                         id: 0,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Music Band",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Music Band',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 2,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 3,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 4,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     }
                 ]
             },
-            "MC": {
+            'MC': {
                 artistList: [
                     {
                         id: 0,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "MC",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'MC',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 2,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 3,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 4,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                 ]
             },
-            "Dancer": {
+            'Dancer': {
                 artistList: [
                     {
                         id: 0,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Dancer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Dancer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 2,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 3,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 4,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                 ]
             },
-            "Painter": {
+            'Painter': {
                 artistList: [
                     {
                         id: 0,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Painter",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Painter',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 1,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 2,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 3,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     },
                     {
                         id: 4,
-                        firstName: "Nicole",
-                        lastName: "Pearson",
-                        country: "Belarus",
-                        style: "Singer",
-                        description: "Read, out with friends, listen to music, draw and learn new things.",
-                        photo: "../../images/placeholder.svg"
+                        firstName: 'Nicole',
+                        lastName: 'Pearson',
+                        country: 'Belarus',
+                        style: 'Singer',
+                        description: 'Read, out with friends, listen to music, draw and learn new things.',
+                        photo: '../../images/placeholder.svg'
                     }
                 ]
             }

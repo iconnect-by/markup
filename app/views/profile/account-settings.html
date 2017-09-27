@@ -78,13 +78,36 @@
 
                                         <div class="row">
                                             <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <select name="location_countries1" id="location_countries1" ng-model="user.country">
-                                                        <option value="" selected disabled class="label">Country</option>
-                                                        <option value="1">London</option>
-                                                        <option value="2">USA</option>
-                                                    </select>
+                                                <script type="text/ng-template" id="customTemplate.html" class="ddown-entity event-choose">
+                                                    <span class="content-block">
+                                                            <span class="content" ng-bind-html="match.label | uibTypeaheadHighlight:query"></span>
+                                                        </span>
+                                                </script>
+
+                                                <div class="input-ddown-block">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Country</label>
+                                                        <!--<pre>Model: {{userCountry | json}}</pre>-->
+                                                        <input ng-model="userCountry"
+                                                               placeholder=""
+                                                               uib-typeahead="country as country.name for country in [{
+                                                                    id: 1,
+                                                                    name: 'London',
+                                                                },
+                                                                {
+                                                                    id: 2,
+                                                                    name: 'USA',
+                                                                }] | filter:{name:$viewValue}"
+                                                               typeahead-template-url="customTemplate.html"
+                                                               class="form-control input-field"
+                                                               typeahead-show-hint="false"
+                                                               typeahead-min-length="0"
+                                                        >
+                                                        <span class="bar"></span>
+                                                        <span class="caret"></span>
+                                                    </div>
                                                 </div>
+
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
@@ -94,11 +117,29 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <select name="location_state1" id="location_state1" ng-show="user.country == 2">
-                                                        <option value="" selected disabled class="label">State</option>
-                                                        <option value="1">MI</option>
-                                                        <option value="2">NY</option>
-                                                    </select>
+                                                    <div class="input-ddown-block" ng-show="userCountry.id == 2">
+                                                        <div class="form-group">
+                                                            <label class="control-label">State</label>
+                                                            <!--<pre>Model: {{userState | json}}</pre>-->
+                                                            <input ng-model="userState"
+                                                                   placeholder=""
+                                                                   uib-typeahead="city as city.name for city in [{
+                                                                    id: 1,
+                                                                    name: 'MI',
+                                                                },
+                                                                {
+                                                                    id: 2,
+                                                                    name: 'NY',
+                                                                }] | filter:{name:$viewValue}"
+                                                                   typeahead-template-url="customTemplate.html"
+                                                                   class="form-control input-field"
+                                                                   typeahead-show-hint="false"
+                                                                   typeahead-min-length="0"
+                                                            >
+                                                            <span class="bar"></span>
+                                                            <span class="caret"></span>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -179,11 +220,29 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <select name="location_countries" id="location_countries" ng-model="user.country">
-                                                <option value="" selected disabled class="label">Country</option>
-                                                <option value="1">London</option>
-                                                <option value="2">USA</option>
-                                            </select>
+                                            <div class="input-ddown-block">
+                                                <div class="form-group">
+                                                    <label class="control-label">Country</label>
+                                                    <!--<pre>Model: {{userCountry | json}}</pre>-->
+                                                    <input ng-model="userCountry1"
+                                                           placeholder=""
+                                                           uib-typeahead="country as country.name for country in [{
+                                                                    id: 1,
+                                                                    name: 'London',
+                                                                },
+                                                                {
+                                                                    id: 2,
+                                                                    name: 'USA',
+                                                                }] | filter:{name:$viewValue}"
+                                                           typeahead-template-url="customTemplate.html"
+                                                           class="form-control input-field"
+                                                           typeahead-show-hint="false"
+                                                           typeahead-min-length="0"
+                                                    >
+                                                    <span class="bar"></span>
+                                                    <span class="caret"></span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
@@ -194,11 +253,29 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <select name="location_state" id="location_state" ng-show="user.country == 2">
-                                                <option value="" selected disabled class="label">State</option>
-                                                <option value="1">MI</option>
-                                                <option value="2">NY</option>
-                                            </select>
+                                            <div class="input-ddown-block" ng-show="userCountry1.id == 2">
+                                                <div class="form-group">
+                                                    <label class="control-label">State</label>
+                                                    <!--<pre>Model: {{userState1 | json}}</pre>-->
+                                                    <input ng-model="userState1"
+                                                           placeholder=""
+                                                           uib-typeahead="city as city.name for city in [{
+                                                                    id: 1,
+                                                                    name: 'MI',
+                                                                },
+                                                                {
+                                                                    id: 2,
+                                                                    name: 'NY',
+                                                                }] | filter:{name:$viewValue}"
+                                                           typeahead-template-url="customTemplate.html"
+                                                           class="form-control input-field"
+                                                           typeahead-show-hint="false"
+                                                           typeahead-min-length="0"
+                                                    >
+                                                    <span class="bar"></span>
+                                                    <span class="caret"></span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
 
