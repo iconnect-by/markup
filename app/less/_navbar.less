@@ -352,6 +352,19 @@ section {
       align-items: center;
       margin-top: 47px;
 
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 47px;
+        background-image: url('@{ic-path-images}/magnifier-glass.svg');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain;
+        height: 40px;
+        width: 40px;
+      }
+
       input[type="search"] {
         position: absolute;
         left: 0;
@@ -365,6 +378,7 @@ section {
         border: 0;
         margin: 0;
         outline: none;
+        padding-left: 78px;
       }
 
       .close {
@@ -377,6 +391,8 @@ section {
         padding: 0;
         font-size: 40px * @rem;
         line-height: 87px * @rem;
+        top: 40%;
+        transform: translateY(-50%);
       }
     }
 
