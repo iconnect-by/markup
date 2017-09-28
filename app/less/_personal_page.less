@@ -9,7 +9,8 @@
     position: relative;
 
     .video-item {
-      margin: 0!important;
+      margin: 0;
+      margin-bottom: 21px;
     }
   }
 
@@ -234,7 +235,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 17px 20px 18px;
+        padding: 17px 20px;
         border-top: 1px solid #f2f2f2;
         min-height: 51px;
         height: 51px;
@@ -254,6 +255,17 @@
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
+          color: #333;
+          letter-spacing: .29px;
+
+          a {
+            .section-title-blue;
+            outline: none !important;
+
+            &:hover {
+              color: @iConnect-orange;
+            }
+          }
 
           img {
             margin-left: 9px;
@@ -278,6 +290,11 @@
 
         .share-profile-lnk {
           .section-title-blue;
+          outline: none !important;
+
+          &:hover {
+            color: @iConnect-orange;
+          }
         }
       }
       .address {
@@ -357,6 +374,7 @@
           border-bottom: 1px solid #e5e5e5;
           border-radius: 0;
           padding: 18px 0;
+          margin-bottom: 0;
 
           .icon {
             justify-self: flex-start;
@@ -374,8 +392,10 @@
             text-align: left;
           }
 
-          .fa {
-            color: #d0021b;
+          a {
+            img {
+              vertical-align: inherit;
+            }
           }
 
           &:last-child {
@@ -402,13 +422,13 @@
       }
 
       .grid-sizer {
-        width: 33%;
+        width: 32%;
       }
 
       .grid-item {
         position: relative;
         cursor: pointer;
-        width: 33%;
+        width: 32%;
         float: left;
 
         .image {
@@ -435,17 +455,21 @@
           background-color: fade(#000, 50%);
           border-radius: 4px;
           z-index: 99;
+          text-align: center;
+          line-height: 32px;
 
-          img {
-            display: block;
-            width: 12px;
-            height: 16px;
-            margin: 7px 9px;
-          }
+          transition: 200ms;
+          transition-timing-function: ease-in-out;
+          -webkit-transition: 200ms;
+          -webkit-transition-timing-function: ease-in-out;
 
           &:hover {
-            .fade-layer {
-              display: block !important;
+            background-color: #fff;
+
+            svg {
+              #Shape {
+                fill: @iConnect-orange;
+              }
             }
           }
         }
@@ -724,25 +748,30 @@
             .video-item-thumb-action {
               display: inline-block;
               cursor: pointer;
-              background: rgba(0, 0, 0, .5);
+              background: fade(#000, 50%);
               border-radius: 3px;
-              -o-transition: background-color 100ms linear;
-              transition: background-color 100ms linear;
               width: 30px;
               height: 30px;
               line-height: 30px;
               margin: 3px;
               text-align: center;
 
-              &:hover {
-                background: rgba(0, 0, 0, .7);
-              }
+              transition: ease-in-out 200ms;
 
-              &.remove {
-                > img {
-                  margin-top: -5px;
+              &:hover {
+                background-color: #fff;
+
+                svg {
+                  #Shape {
+                    fill: @iConnect-orange;
+                  }
+
+                  #Shape_star {
+                    fill: #ff9f00;
+                  }
                 }
               }
+
             }
           }
 
@@ -755,14 +784,14 @@
             color: #fff;
             cursor: default;
             font-size: 12 * @rem;
-            background: rgba(0, 0, 0, .9);
+            background: fade(#000, 90%);
             border-radius: 3px;
           }
         }
       }
 
       .video-item-info {
-        padding: 7px 0 0;
+        padding: 15px 0 0;
 
         .video-item-title {
           .title-H4;
@@ -1331,6 +1360,18 @@
   position: absolute;
   z-index: 20;
   transition: opacity .1s ease-in-out .1s, bottom .2s ease-in-out;
+
+  &:before {
+    content: '';
+    background-image: url('@{ic-path-images}/wave_for_dropdown.svg');
+    position: absolute;
+    top: -21px;
+    width: 140px;
+    height: 22px;
+    background-repeat: no-repeat;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   ul {
     display: flex;

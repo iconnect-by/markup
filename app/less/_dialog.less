@@ -376,13 +376,20 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        align-content: space-between;
+        justify-content: space-around;
         margin: 0;
 
         .social-icons__item {
-          height: 30px;
-          width: 30px;
-          margin: 0 auto;
+          text-align: center;
+          display: inline-block;
+          height: 45px;
+          width: 45px;
+
+          img {
+            height: 45px;
+            width: 45px;
+            margin: 0 auto;
+          }
         }
       }
     }

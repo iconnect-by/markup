@@ -1,8 +1,10 @@
 <div class="profile-card">
     <div class="row card-header">
+        
         <div class="col-xs-6 hero-avatar" ng-class="$ctrl.avatarTypeClass ? $ctrl.avatarTypeClass : ''">
             <img ng-src="{{ $ctrl.data.photo }}" class="img-responsive" alt="avatar">
         </div>
+
         <div class="col-xs-6 profile-info">
             <div class="name">
                 {{ $ctrl.data.firstName ? $ctrl.data.firstName : $ctrl.data.title }} {{ $ctrl.data.lastName ? $ctrl.data.lastName : '' }}

@@ -13,7 +13,7 @@ angular.module('iConnectApp')
                         country: 'Belarus',
                         style: 'Singer',
                         description: 'Read, out with friends, listen to music, draw and learn new things.',
-                        photo: '../../images/placeholder.svg'
+                        photo: '../../images/placeholder-artist.svg'
                     },
                     {
                         id: 1,

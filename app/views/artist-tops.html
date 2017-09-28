@@ -6,10 +6,10 @@
                     <div class="col-md-4" ng-repeat="artist in artists">
                         <span class="section-title">TOP 5 {{artist.type}}</span>
 
-                        <profile-preview data="artist.artistTops[0]"></profile-preview>
+                        <profile-preview data="artist.artistTops[0]" avatar-type-class="'avatar-circle'"></profile-preview>
 
                         <mini-profile-preview
-                                ng-repeat="artist in artist.artistTops.slice(0, artist.artistTops.length)"
+                                ng-repeat="artist in artist.artistTops.slice(1, artist.artistTops.length)"
                                 data="artist"
                                 show-index="1"
                         ></mini-profile-preview>
