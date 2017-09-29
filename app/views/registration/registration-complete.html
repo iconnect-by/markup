@@ -13,118 +13,96 @@
                 <h1>Registration is almost complete</h1>
 
                 <div class="content">
-                    <p>To access your private office, enter your name, surname, and location.
-                        This is necessary so that we can prepare the most relevant information for you</p>
+                    <p>To access your private office, enter your name, surname, and location. <br> This is necessary so that we can prepare the most relevant information for you</p>
                 </div>
 
-                <div class="form-block">
-                    <form action="">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <fieldset>
-                                    <div class="form-group">
-                                        <label class="control-label" for="first-name">First Name</label>
-                                        <input id="first-name" class="form-control" autocomplete="off" ng-model="user.firstname" ng-required="true">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label" for="last-name">Last Name</label>
-                                        <input id="last-name" class="form-control" autocomplete="off" ng-model="user.lastname" ng-required="true">
-                                    </div>
-                                </fieldset>
+                <form action="" name="settings" autocomplete="off" class="form-block">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="control-label" for="first-name">First Name</label>
+                                <input id="first-name" name="first_name" class="form-control" ng-model="user.firstname" ng-required="true">
+                                <p class="error" ng-if="settings.first_name.$dirty && settings.first_name.$error.required">First name is required</p>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="last-name">Last Name</label>
+                                <input id="last-name" name="last_name" class="form-control" ng-model="user.lastname" ng-required="true">
+                                <p class="error" ng-if="settings.last_name.$dirty && settings.last_name.$error.required">Last name is required</p>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <script type="text/ng-template" id="customTemplate.html" class="ddown-entity event-choose">
-                                    <span class="content-block">
-                                        <span class="content" ng-bind-html="match.label | uibTypeaheadHighlight:query"></span>
-                                    </span>
-                                </script>
-                                <div class="form-group">
-                                    <div class="input-ddown-block">
-                                        <div class="form-group">
-                                            <label class="control-label">Country</label>
-                                            <!--<pre>Model: {{userCountry | json}}</pre>-->
-                                            <input ng-model="userCountry"
-                                                   placeholder=""
-                                                   uib-typeahead="country as country.name for country in [{
-                                                                    id: 1,
-                                                                    name: 'London',
-                                                                },
-                                                                {
-                                                                    id: 2,
-                                                                    name: 'USA',
-                                                                }] | filter:{name:$viewValue}"
-                                                   typeahead-template-url="customTemplate.html"
-                                                   class="form-control input-field"
-                                                   typeahead-show-hint="false"
-                                                   typeahead-min-length="0"
-                                            >
-                                            <span class="bar"></span>
-                                            <span class="caret"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label class="control-label" for="city">City</label>
-                                    <input id="city" class="form-control" autocomplete="off" ng-model="user.city" ng-required="true">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <div class="input-ddown-block" ng-show="userCountry.id == 2">
-                                        <div class="form-group">
-                                            <label class="control-label">State</label>
-                                            <!--<pre>Model: {{userState | json}}</pre>-->
-                                            <input ng-model="userState"
-                                                   placeholder=""
-                                                   uib-typeahead="city as city.name for city in [{
-                                                                    id: 1,
-                                                                    name: 'MI',
-                                                                },
-                                                                {
-                                                                    id: 2,
-                                                                    name: 'NY',
-                                                                }] | filter:{name:$viewValue}"
-                                                   typeahead-template-url="customTemplate.html"
-                                                   class="form-control input-field"
-                                                   typeahead-show-hint="false"
-                                                   typeahead-min-length="0"
-                                            >
-                                            <span class="bar"></span>
-                                            <span class="caret"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-7">
-                                <div class="control-group">
-                                    <div class="btn-block">
-                                        <label class="control control-checkbox ic-checkbox">I have read and agree to the
-                                            <a href="#" ui-sref="app.terms-of-use">Terms of use</a> &amp;
-                                            <a href="#" ui-sref="app.privacy-policy">Privacy Policy</a>
-                                            <input type="checkbox" />
-                                            <div class="control_indicator"></div>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5">
-                                <div class="form-group">
-                                    <div class="btn-block">
-                                        <button class="ic-btn ic-btn-blue big">Go to my account</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
 
+                        <div class="col-md-4">
+                            <script type="text/ng-template" id="locationDropdownOption.html" class="ddown-entity event-choose">
+                                <span class="content-block">
+                                    <span class="content" ng-bind-html="match.label | uibTypeaheadHighlight:query"></span>
+                                </span>
+                            </script>
+                            <div class="form-group">
+                                <div class="input-ddown-block">
+                                    <label class="control-label">Country</label>
+                                    <input ng-model="userCountry"
+                                           class="form-control"
+                                           uib-typeahead="country as country.name for country in [{
+                                                            id: 1,
+                                                            name: 'United Kingdom',
+                                                        },
+                                                        {
+                                                            id: 2,
+                                                            name: 'United States of America',
+                                                        }] | filter:{name:$viewValue}"
+                                           typeahead-template-url="locationDropdownOption.html"
+                                           typeahead-show-hint="false"
+                                           typeahead-min-length="0"
+                                    >
+                                    <span class="bar"></span>
+                                    <span class="caret"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label" for="city">City</label>
+                                <input id="city" name="city" class="form-control" ng-model="user.city" ng-required="true">
+                                <p class="error" ng-if="settings.city.$dirty && settings.city.$error.required">City is required</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <div class="input-ddown-block" ng-show="userCountry.id == 2">
+                                    <label class="control-label">State</label>
+                                    <input ng-model="userState"
+                                           class="form-control"
+                                           uib-typeahead="city as city.name for city in [{
+                                                            id: 1,
+                                                            name: 'MI',
+                                                        },
+                                                        {
+                                                            id: 2,
+                                                            name: 'NY',
+                                                        }] | filter:{name:$viewValue}"
+                                           typeahead-template-url="locationDropdownOption.html"
+                                           typeahead-show-hint="false"
+                                           typeahead-min-length="0"
+                                    >
+                                    <span class="bar"></span>
+                                    <span class="caret"></span>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="col-md-7">
+                            <label class="control control-checkbox ic-checkbox">I have read and agree to the
+                                <a href="#" ui-sref="app.terms-of-use">Terms of use</a> &amp;
+                                <a href="#" ui-sref="app.privacy-policy">Privacy Policy</a>
+                                <input type="checkbox" />
+                                <div class="control_indicator"></div>
+                            </label>
+                        </div>
+                        <div class="col-md-5">
+                            <button class="ic-btn ic-btn-blue big pull-right">Go to my account</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

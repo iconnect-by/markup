@@ -13,34 +13,25 @@
                 <h1>We glad to see you, <span class="header-username">Maxim Danilov</span></h1>
 
                 <div class="content">
-                    <p>Before the registration is completed, there is only one step, enter here the phone number
-                        to which we will send the code to confirm your identity.</p>
+                    <p>Before the registration is completed, there is only one step, enter here the phone number to which we will send the code to confirm your identity.</p>
                 </div>
 
-                <div class="form-block">
-                    <form action="">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <fieldset>
-                                    <div class="form-group">
-                                        <label class="control-label" for="phone_number">Phone Number</label>
-                                        <input id="phone_number" class="form-control" autocomplete="off" ng-model="phone.number" ng-required="true">
-                                    </div>
-                                </fieldset>
+                <form class="form-block" autocomplete="off">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="control-label" for="phone_number">Phone Number</label>
+                                <input id="phone_number" class="form-control" ng-model="phone.number" ng-required="true">
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <div class="btn-block">
-                                        <button type="submit" class="ic-btn ic-btn-white big ">Later</button>
-                                        <button type="submit" class="ic-btn ic-btn-blue big">Send sms code</button>
-                                    </div>
-                                </div>
+                        <div class="col-md-12">
+                            <div class="btn-block text-right">
+                                <button type="submit" class="ic-btn ic-btn-white big ">Later</button>
+                                <button type="submit" class="ic-btn ic-btn-blue big">Send sms code</button>
                             </div>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

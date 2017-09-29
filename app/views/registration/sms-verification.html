@@ -13,34 +13,25 @@
                 <h1>Enter the received code</h1>
 
                 <div class="content">
-                    <p>Before the registration is completed, there is only one step, enter here the phone number
-                        to which we will send the code to confirm your identity.</p>
+                    <p>Before the registration is completed, there is only one step, enter here the phone number to which we will send the code to confirm your identity.</p>
                 </div>
 
-                <div class="form-block">
-                    <form action="">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <fieldset>
-                                    <div class="form-group">
-                                        <label class="control-label" for="sms_code">Sms - code</label>
-                                        <input id="sms_code" class="form-control" autocomplete="off" ng-model="sms.code" ng-required="true">
-                                    </div>
-                                </fieldset>
+                <form action="" class="form-block" autocomplete="off">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="control-label" for="sms_code">Sms - code</label>
+                                <input id="sms_code" class="form-control" ng-model="sms.code" ng-required="true">
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <div class="btn-block">
-                                        <button type="submit" class="ic-btn ic-btn-white big ">Request another code</button>
-                                        <button type="submit" class="ic-btn ic-btn-blue big">Enter this code</button>
-                                    </div>
-                                </div>
+                        <div class="col-md-12">
+                            <div class="btn-block text-right">
+                                <button class="ic-btn ic-btn-white big ">Request another code</button>
+                                <button class="ic-btn ic-btn-blue big">Enter this code</button>
                             </div>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
