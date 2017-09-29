@@ -6,6 +6,12 @@
     });
 </script>
 
+<script type="text/ng-template" id="locationDropdownOption.html" class="ddown-entity event-choose">
+    <span class="content-block">
+        <span class="content" ng-bind-html="match.label | uibTypeaheadHighlight:query"></span>
+    </span>
+</script>
+
 <section class="registration-page">
     <div class="container">
         <div class="row">
@@ -32,11 +38,6 @@
                         </div>
 
                         <div class="col-md-4">
-                            <script type="text/ng-template" id="locationDropdownOption.html" class="ddown-entity event-choose">
-                                <span class="content-block">
-                                    <span class="content" ng-bind-html="match.label | uibTypeaheadHighlight:query"></span>
-                                </span>
-                            </script>
                             <div class="form-group">
                                 <div class="input-ddown-block">
                                     <label class="control-label">Country</label>
@@ -54,7 +55,6 @@
                                            typeahead-show-hint="false"
                                            typeahead-min-length="0"
                                     >
-                                    <span class="bar"></span>
                                     <span class="caret"></span>
                                 </div>
                             </div>
@@ -84,7 +84,6 @@
                                            typeahead-show-hint="false"
                                            typeahead-min-length="0"
                                     >
-                                    <span class="bar"></span>
                                     <span class="caret"></span>
                                 </div>
                             </div>
