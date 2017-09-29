@@ -77,6 +77,23 @@
         transform: scale(0.75);
       }
     }
+
+    &.with-addon {
+      position: relative;
+
+      input {
+        padding-right: 30px;
+      }
+
+      .addon {
+        font-size: 5 * @rem;
+        position: absolute;
+        padding: 19px 10px;
+        right: 0;
+        bottom: 0;
+        top: auto;
+      }
+    }
   }
 
   .control-label {
