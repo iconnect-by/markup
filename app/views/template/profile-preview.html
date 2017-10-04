@@ -7,7 +7,7 @@
 
         <div class="col-xs-6 profile-info">
             <div class="name">
-                {{ $ctrl.data.firstName ? $ctrl.data.firstName : $ctrl.data.title }} {{ $ctrl.data.lastName ? $ctrl.data.lastName : '' }}
+                <a href="#">{{ $ctrl.data.firstName ? $ctrl.data.firstName : $ctrl.data.title }} {{ $ctrl.data.lastName ? $ctrl.data.lastName : '' }}</a>
             </div>
             <div class="description">
                 <p>{{ $ctrl.data.description}}</p>
@@ -16,6 +16,7 @@
     </div>
     <div class="row card-footer">
         <div class="col-xs-6 left-part">
+            <i class="fa fa-map-marker map-marker" aria-hidden="true"></i>
             <p>{{ $ctrl.data.country ? $ctrl.data.country : $ctrl.data.location }}</p>
         </div>
         <div class="col-xs-6 right-part">

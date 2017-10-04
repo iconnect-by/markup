@@ -1,21 +1,68 @@
 .top-artists-section-open {
-  padding-top: @section-padding-top + 80px;
+  padding-top: @section-padding-top + 70px;
+  background-color: #fdfdfe;
 
-  .back-link {
-    .section-title-black;
-    margin-bottom: 17px;
-    display: block;
+
+  .top-artists-block {
+    border-top: 1px solid #f2f2f2;
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
+
+  .top-artists-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .back-link {
+      .section-title-blue;
+      margin-bottom: 16px;
+      display: block;
+      justify-self: flex-start;
+      margin-left: 0;
+      flex-grow: 2;
+
+      .left-arrow {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+
+      &:hover {
+        color: #b54914;
+
+        svg {
+          #back_lnk {
+            fill: #b54914;
+          }
+        }
+      }
+    }
+
+    .title {
+      .section-title-blue;
+      color: #333;
+      justify-self: flex-end;
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
+  }
+
+
 
   .filter-section {
     position: fixed;
-    height: 72px;
+    height: 70px;
     top: 61px;
     border-bottom: 1px solid #f2f2f2;
     width: 100%;
     background-color: #fff;
 
     .search-content {
+      padding: 19px 0;
       .search-form {
         display: flex;
         flex-direction: row;
@@ -23,40 +70,53 @@
         flex-grow: 1;
 
         .form-group {
-          margin: auto;
-          margin-left: 0;
+          margin: 0;
           flex-grow: 2;
           position: relative;
           border: none;
 
           label {
             .text-grey-small;
-            line-height: 72px;
             margin: 0;
+            vertical-align: middle;
           }
-          input, select {
+          input {
             border: 0;
             background-color: transparent;
             .section-title-black;
+            line-height: 2;
+            margin-top: 3px;
+            box-shadow: none;
+            text-align: left;
+            padding: 0;
+            min-width: 140px !important;
+          }
+
+          select {
+            border: 0;
+            background-color: transparent;
+            .section-title-black;
+            //margin-top: 5px;
           }
         }
       }
 
       .ic-btn {
-        padding: 0 30px;
+        padding: 0 46.4px;
+        width: 140px;
       }
 
       .fg-divider {
-        line-height: 32px;
-        height: 32px;
+        line-height: 30px;
+        height: 30px;
         border-right: 1px solid #f0f0f0;
         display: inline-block;
 
         &:not(:first-child) {
-          margin-left: 49px;
+          margin-left: 50px;
         }
         &:not(:last-child) {
-          margin-right: 49px;
+          margin-right: 50px;
         }
       }
     }
@@ -82,16 +142,17 @@
     .dd-datetime {
       border: none;
       background-color: transparent;
-      .text-default-medium;
+      .section-title-black;
       outline: none;
-      line-height: 72px;
+      //line-height: 70px;
       padding: 0 10px;
       margin: 1px auto 0;
       display: block;
       width: 95px;
+      line-height: 2;
     }
     .edit-section {
-      line-height: 72px;
+      //line-height: 70px;
       a {
         color: #e5e5e5;
       }
@@ -117,5 +178,57 @@
     }
   }
 
+  .profile-card {
+    margin-bottom: 16px;
+  }
 
+  .date-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-grow: 1;
+
+    label {
+      margin-right: 50px;
+      display: inline-block;
+    }
+
+    .dd-datetime {
+      margin-left: 30px;
+    }
+
+    .lbl-calendar {
+      margin-left: 10px;
+      margin-right: 50px;
+      color: #e5e5e5;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .location-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-grow: 1;
+
+    label {
+      margin-right: 40px !important;
+      display: inline-block;
+    }
+  }
+
+  .type-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-grow: 1;
+
+    label {
+      margin-right: 40px !important;
+      display: inline-block;
+    }
+  }
 }

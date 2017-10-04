@@ -1,5 +1,6 @@
 .top-artists-section {
   padding-top: @section-padding-top;
+  background-color: #fdfdfe;
 
   .section-title {
     display: block;
@@ -10,6 +11,11 @@
   .view-all {
     .section-title-blue;
     margin-bottom: 34px;
+    color: #4990e2;
+
+    &:hover {
+      color: #b54914;
+    }
   }
 
   .artist-card {
@@ -23,5 +29,11 @@
   .filter-section {
     position: absolute;
     height: 72px;
+  }
+
+  .banner {
+    img {
+      border-radius: 4px;
+    }
   }
 }

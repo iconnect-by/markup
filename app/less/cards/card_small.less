@@ -52,14 +52,23 @@
 
   .name {
     a {
-      display: block;
-      .title-H4;
-      margin-bottom: 2px;
+      @line-height: 1.357;
+      @font-size: 14px * @rem;
+
+      font-family: @iConnect-font-regular;
       color: #333;
-      line-height: 1;
+      font-size: @font-size;
+      letter-spacing: .4px;
+      line-height: @line-height;
+      margin-bottom: 2px;
+      font-weight: @fw-semibold;
+      margin-top: -5px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: block;
 
       &:hover {
-        color: @iConnect-orange;
+        color: #b54914;
       }
     }
     .title {

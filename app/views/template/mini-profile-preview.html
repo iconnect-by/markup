@@ -13,7 +13,7 @@
 
     <div class="name">
         <a href="#">{{ $ctrl.data.firstName ? $ctrl.data.firstName : $ctrl.data.title }} {{ $ctrl.data.lastName ? $ctrl.data.lastName : '' }}</a>
-        <div class="info">{{ $ctrl.data.country }}{{ $ctrl.data.style ? " | " + $ctrl.data.style : '' }}</div>
+        <div class="info">{{ $ctrl.data.country }}{{ $ctrl.data.style ? ". " + $ctrl.data.style : '' }}</div>
     </div>
     <div ng-show="$ctrl.data.showLink" class="next-link">
         <a href="#" class="lnk {{$ctrl.data.addedIconClass}}" style="color: {{ $ctrl.data.iconColor ? $ctrl.data.iconColor : '#333' }}">
