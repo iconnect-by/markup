@@ -7,33 +7,40 @@
 
                    <div class="form-group date-filter">
                        <label>From</label>
-                       <div class="dropdown">
-                           <button class="dd-datetime" id="date_start" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                               {{dt ? dt : dateNow | date:'d MMM y' }}
+
+                       <div class="dd-block">
+                           <div class="dropdown">
+                               <button class="dd-datetime" id="date_start" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                   {{dt ? dt : dateNow | date:'d MMM y' }}
+                               </button>
+                               <div class="dropdown-menu dropdown-menu-form ddatetime" aria-labelledby="date_start">
+                                   <div class="picker-title">
+                                       Set a date From
+                                   </div>
+                                   <div style="display:inline-block;">
+                                       <div uib-datepicker ng-model="dt" class="well well-sm ic-datepicker" datepicker-options="DatePickerOptions"></div>
+                                   </div>
+                               </div>
+                           </div>
+                           <a href="#" class="lbl-calendar"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                       </div>
+
+                       <label>to</label>
+
+                       <div class="dd-block">
+                           <button class="dd-datetime" id="date_ended" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               {{dte ? dte : dateNow | date:'d MMM y' }}
                            </button>
-                           <div class="dropdown-menu dropdown-menu-form ddatetime" aria-labelledby="date_start">
+                           <div class="dropdown-menu dropdown-menu-form ddatetime" aria-labelledby="date_ended">
                                <div class="picker-title">
-                                   Set a date From
+                                   Set a date To
                                </div>
                                <div style="display:inline-block;">
-                                   <div uib-datepicker ng-model="dt" class="well well-sm ic-datepicker" datepicker-options="DatePickerOptions"></div>
+                                   <div uib-datepicker ng-model="dte" class="well well-sm ic-datepicker" datepicker-options="DatePickerEndOptions"></div>
                                </div>
                            </div>
+                           <a href="#" class="lbl-calendar"><i class="fa fa-calendar" aria-hidden="true"></i></a>
                        </div>
-                       <a href="#" class="lbl-calendar"><i class="fa fa-calendar" aria-hidden="true"></i></a>
-                       <label>to</label>
-                       <button class="dd-datetime" id="date_ended" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           {{dte ? dte : dateNow | date:'d MMM y' }}
-                       </button>
-                       <div class="dropdown-menu dropdown-menu-form ddatetime" aria-labelledby="date_ended">
-                           <div class="picker-title">
-                               Set a date To
-                           </div>
-                           <div style="display:inline-block;">
-                               <div uib-datepicker ng-model="dte" class="well well-sm ic-datepicker" datepicker-options="DatePickerEndOptions"></div>
-                           </div>
-                       </div>
-                       <a href="#" class="lbl-calendar"><i class="fa fa-calendar" aria-hidden="true"></i></a>
                    </div>
 
                    <span class="fg-divider"></span>
@@ -83,10 +90,10 @@
                                       typeahead-min-length="0"
                                >
                                <span class="ic-caret">
-                                           <svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="0 0 9 7">
-                                                <path id="ic_caret" fill="#E5E5E5" fill-rule="evenodd" d="M1.234 4.355l2.501-2.967a1 1 0 0 1 1.53 0l2.501 2.967A1 1 0 0 1 7.002 6H1.998a1 1 0 0 1-.764-1.645z"/>
-                                            </svg>
-                                       </span>
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="0 0 9 7">
+                                        <path id="ic_caret" fill="#E5E5E5" fill-rule="evenodd" d="M1.234 4.355l2.501-2.967a1 1 0 0 1 1.53 0l2.501 2.967A1 1 0 0 1 7.002 6H1.998a1 1 0 0 1-.764-1.645z"/>
+                                    </svg>
+                               </span>
                            </div>
                        </div>
 
