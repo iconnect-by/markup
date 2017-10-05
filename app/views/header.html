@@ -44,23 +44,25 @@
         </div>
 
         <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a ui-sref="app">TOP ARTISTS</a></li>
-                <li><a ui-sref="app.events">EVENTS</a></li>
-                <li><a ui-sref="app.organization">ORGANIZATION</a></li>
-                <li ng-if="true"><a href="#" class="mails header-glifs"><i class="fa fa-envelope"></i></a></li>
-                <li ng-if="true"><a href="#" class="alerts header-glifs"><i class="fa fa-bell"></i><span>8</span></a></li>
+                <li>
+                    <a href="#search" class="search header-glifs"><i class="fa fa-search"></i></a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
                 <li ng-if="true" class="dropdown">
 
                     <!--DON'T DELETE FOR SIMPLE ACCOUNT-->
                     <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true" onclick="return false;">-->
-                        <!--<div class="image circle">-->
-                            <!--<img src="../images/placeholder.svg" alt="...">-->
-                        <!--</div>-->
-                        <!--<span class="content">-->
-                            <!--<span class="title">Dima Kaminsky</span>-->
-                        <!--</span>-->
-                        <!--<span class="caret"></span>-->
+                    <!--<div class="image circle">-->
+                    <!--<img src="../images/placeholder.svg" alt="...">-->
+                    <!--</div>-->
+                    <!--<span class="content">-->
+                    <!--<span class="title">Dima Kaminsky</span>-->
+                    <!--</span>-->
+                    <!--<span class="caret"></span>-->
                     <!--</a>-->
                     <!--DON'T DELETE-->
 
@@ -76,8 +78,6 @@
                     </a>
 
                     <ul class="dropdown-menu" role="menu">
-
-
 
                         <li class="non-fixed-list">
                             <ul class="non-fixed-block">
@@ -139,8 +139,6 @@
                             </ul>
                         </li>
 
-
-
                         <li>
                             <a href="#">
                                 <span class="image">
@@ -164,12 +162,21 @@
                     </ul>
                 </li>
                 <!--<li ng-if="true">-->
-                    <!--<button ui-sref="app.login" class="ic-btn ic-btn-orange">LOGIN</button>-->
+                <!--<button ui-sref="app.login" class="ic-btn ic-btn-orange">LOGIN</button>-->
                 <!--</li>-->
-                <li>
-                    <a href="#search" class="search header-glifs"><i class="fa fa-search"></i></a>
-                </li>
             </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li ng-if="true"><a href="#" class="mails header-glifs"><i class="fa fa-envelope"></i></a></li>
+                <li ng-if="true"><a href="#" class="alerts header-glifs"><i class="fa fa-bell"></i><span>8</span></a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a ui-sref="app">TOP ARTISTS</a></li>
+                <li><a ui-sref="app.events">EVENTS</a></li>
+                <li><a ui-sref="app.organization">ORGANIZATION</a></li>
+            </ul>
+
         </div>
     </div>
 </nav>
