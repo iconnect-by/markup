@@ -3,7 +3,10 @@ html, body {
   font-size: @context-pt;
   min-height: 100%;
   height: 100%;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
   -moz-osx-font-smoothing: grayscale;
 }
 
@@ -74,10 +77,10 @@ html, body {
     .section-title;
   }
   &.black {
-    .section-title-black;
+    .h1-black;
   }
   &.blue {
-    .section-title-blue;
+    .h1-blue;
   }
 }
 

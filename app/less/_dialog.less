@@ -14,7 +14,7 @@
 
   .dialog-inner {
     .title {
-      .section-title-black;
+      .h1-black;
       border-bottom: 1px solid #f2f2f2;
       margin: 0;
       padding: 0 0 17px 0;
@@ -132,7 +132,7 @@
               overflow-x:visible;
               white-space:nowrap;
               color:black; /* color is for demo purposes */
-              background-color: #ff5400;
+              background-color: @bright-orange;
 
               .percent {
                 .text-default;
@@ -194,7 +194,7 @@
               color: #00b700;
             }
             &.processing {
-              color: #333;
+              color: @black;
             }
             &.error {
               color: #e62117;
@@ -262,11 +262,11 @@
     align-items: center;
 
     .title {
-      .section-title-black;
+      .h1-black;
     }
 
     .marker-lnk {
-      .section-title-black;
+      .h1-black;
       color: #4a90e2;
     }
   }
@@ -281,11 +281,11 @@
       padding-bottom: 17px;
 
       .label {
-        .section-title-black;
+        .h1-black;
         padding: 0;
       }
       .dropdown-btn {
-        .section-title-black;
+        .h1-black;
         border: none;
         background: #fff;
         outline: none;
@@ -305,7 +305,7 @@
 
 
             .link {
-              .section-title-black;
+              .h1-black;
               padding: 10px 5px;
 
               img {
@@ -345,7 +345,7 @@
 
     .message-block, .proposal-block, .set-role-block {
       .label {
-        .section-title-black;
+        .h1-black;
         padding: 17px 0;
         display: block;
         text-align: left;
@@ -465,7 +465,7 @@
         }
 
         &.helper {
-          background-color: fade(#ff5400, 3%);
+          background-color: fade(@bright-orange, 3%);
 
           .avatar-block {
             img {
@@ -516,7 +516,7 @@
 
     .role-switch {
       display: none;
-      color: #333;
+      color: @black;
     }
 
     &:hover, &:active, &:focus {
@@ -616,7 +616,7 @@
 
     input {
       .text-default-medium;
-      color: #333;
+      color: @black;
       margin: 0;
       font-weight: @fw-regular;
       text-align: left;

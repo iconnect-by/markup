@@ -10,11 +10,8 @@
   min-height: 205px;
   width: 100%;
   background-color: #fff;
-
-  &:hover {
-    //border: 1px solid transparent;
-    //box-shadow: 0 10px 25px fade(#000, 10%);
-  }
+  max-height: 212px;
+  max-width: 300px;
 
   .card-header {
     padding-bottom: 20px;
@@ -39,20 +36,24 @@
       }
     }
     .profile-info {
+      position: relative;
+      overflow: hidden;
+
       .name {
         a {
           @font-size: 14px * @rem;
-          @line-height: 1.357;
+          @line-height: 1.2;
           @lines-to-show: 2;
 
-          //height: @font-size * @line-height * @lines-to-show + .3;
+          height: @font-size * @line-height * @lines-to-show + .3;
           -webkit-line-clamp: @lines-to-show;
           -webkit-box-orient: vertical;
           overflow: hidden;
           text-overflow: ellipsis;
+          display: -webkit-box;
 
           font-family: @iConnect-font-regular;
-          color: #333;
+          color: @black;
           font-size: @font-size;
           letter-spacing: .4px;
           line-height: @line-height;
@@ -61,12 +62,13 @@
           margin-bottom: 5px * @rem;
           font-weight: @fw-semibold;
           display: inline-block;
-          margin-top: -4px;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
+          position: absolute;
+          top: -6px;
 
           &:hover {
-            color: #b54914;
+            color: @burnt-sienna;
           }
         }
       }
@@ -75,25 +77,27 @@
         letter-spacing: .31px;
         line-height: 1.36;
         word-wrap: break-word;
-        color: #333;
+        color: @black;
 
         p {
           @font-size: 10 * @rem;
           @line-height: 1.36;
-          @lines-to-show: 5;
+          @lines-to-show: 6;
 
-          height: @font-size * @line-height * @lines-to-show;
+          height: @font-size * @line-height * @lines-to-show * 1.0392;
           -webkit-line-clamp: @lines-to-show;
           -webkit-box-orient: vertical;
+          display: -webkit-box;
           overflow: hidden;
           text-overflow: ellipsis;
           line-height: @line-height;
           margin-bottom: 0;
           letter-spacing: .31px;
           word-wrap: break-word;
-          color: #333;
+          color: @black;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
+          margin-top: 34px;
         }
       }
     }
@@ -135,7 +139,7 @@
     .right-part {
       font-family: @iConnect-font-regular;
       font-weight: @fw-semibold;
-      color: #333;
+      color: @black;
       font-size: 10 * @rem;
       letter-spacing: .29px;
       text-transform: uppercase;

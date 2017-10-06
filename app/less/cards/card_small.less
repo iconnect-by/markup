@@ -3,6 +3,7 @@
   flex-direction: row;
   align-items: center;
   margin-bottom: 20px;
+  overflow: hidden;
 
   .counter-place {
     .title-H4;
@@ -56,7 +57,7 @@
       @font-size: 14px * @rem;
 
       font-family: @iConnect-font-regular;
-      color: #333;
+      color: @black;
       font-size: @font-size;
       letter-spacing: .4px;
       line-height: @line-height;
@@ -66,16 +67,20 @@
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 180px;
 
       &:hover {
-        color: #b54914;
+        color: @burnt-sienna;
       }
     }
     .title {
       display: block;
       .title-H4;
       margin-bottom: 2px;
-      color: #333;
+      color: @black;
     }
     .price {
       .text-default-medium;
@@ -91,6 +96,10 @@
     display: block;
     .text-grey-small;
     line-height: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 180px;
   }
 
   .next-link {
@@ -99,7 +108,7 @@
     margin-right: 0;
 
     .lnk {
-      color: #333;
+      color: @black;
       &.big {
         font-size:40 * @rem;
       }
