@@ -25,4 +25,52 @@
     outline: none;
     width: 95px;
   }
+
+  // Don't remove! Only for frontend project
+  .dropdown-menu-form {
+    width: 300px!important;
+  }
+
+  .form-group.ic-datetime {
+    label.error {
+      color: @iConnect-red;
+    }
+
+    .separate {
+      padding-right: 30px;
+      position: relative;
+
+      &:after {
+        content: '';
+        display: block;
+        background: #f2f2f2;
+        height: 30px;
+        width: 1px;
+        position: absolute;
+        right: 10px;
+        top: 0;
+      }
+    }
+
+    label, .form-control {
+      margin: 0;
+      height: 30px;
+      line-height: 30px;
+    }
+
+    .form-control {
+      background-repeat: no-repeat;
+      background-position: right center;
+      padding: 0 30px 0 0;
+      text-align: right;
+
+      &.date {
+        background-image: url('@{ic-path-images}/date-start-end-icon.svg');
+      }
+
+      &.time {
+        background-image: url('@{ic-path-images}/time-icon.svg');
+      }
+    }
+  }
 }
