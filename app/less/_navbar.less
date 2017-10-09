@@ -35,9 +35,21 @@
         margin-top: 0;
       }
       .nav {
+        &.line {
+          li {
+            &:not(:last-child) {
+              padding: 0 10px;
+              margin-right: 40px;
+            }
+            &:last-child {
+              margin-right: 10px;
+            }
+          }
+        }
         &>li {
           //margin: 0 10px;
           padding: 0 10px;
+
           &>a {
             .h1-black;
             text-transform: uppercase;
@@ -179,6 +191,8 @@
 
             &.alerts {
               span {
+                font-family: @iConnect-font-regular;
+                font-weight: @fw-semibold;
                 position: absolute;
                 background-color: #f00;
                 line-height: 1.363;
@@ -256,7 +270,7 @@
           .content {
             display: inline-block;
             line-height: 1;
-            margin-right: 32px;
+            margin-right: 27px;
 
             .title {
               margin-top: 5px;
@@ -265,8 +279,7 @@
             .account-type {
               padding: 0;
               display: block;
-              .text-grey-small;
-              color: @iConnect-orange;
+              .additional-text;
               text-transform: none;
               text-align: left;
               margin-top: 3px;
