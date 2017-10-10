@@ -15,6 +15,7 @@
 
   .card-header {
     padding-bottom: 20px;
+    max-height: 133px;
 
     .hero-avatar {
       border-radius: 2px;
@@ -37,7 +38,9 @@
     }
     .profile-info {
       position: relative;
-      //overflow: hidden;
+      overflow: hidden;
+      max-height: 125px;
+      top: -5px;
 
       .name {
         a {
@@ -45,27 +48,17 @@
           @line-height: 1.36;
           @lines-to-show: 2;
 
-          height: @font-size * @line-height * @lines-to-show + .3;
-          -webkit-line-clamp: @lines-to-show;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          display: -webkit-box;
-
           font-family: @iConnect-font-regular;
           color: @black;
           font-size: @font-size;
           letter-spacing: .4px;
           line-height: @line-height;
-          padding-top: 5px * @rem;
-          padding-bottom: 5px * @rem;
-          margin-bottom: 5px * @rem;
+          margin-bottom: 13px;
           font-weight: @fw-semibold;
           display: inline-block;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
-          position: absolute;
-          top: -11px;
+          position: relative;
 
           &:hover {
             color: @burnt-sienna;
@@ -73,31 +66,21 @@
         }
       }
       .description {
-        font-size: 11 * @rem;
-        letter-spacing: .31px;
-        line-height: 1.45;
-        word-wrap: break-word;
+        .additional-text;
         color: @black;
+        font-weight: @fw-regular;
 
         p {
-          @font-size: 10 * @rem;
-          @line-height: 1.36;
-          @lines-to-show: 6;
-
-          height: @font-size * @line-height * @lines-to-show * 1.0392;
-          -webkit-line-clamp: @lines-to-show;
-          -webkit-box-orient: vertical;
-          display: -webkit-box;
-          overflow: hidden;
+          .additional-text;
+          line-height: 1.5;
           text-overflow: ellipsis;
-          line-height: @line-height;
           margin-bottom: 0;
           letter-spacing: .31px;
           word-wrap: break-word;
           color: @black;
+          font-weight: @fw-regular;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
-          margin-top: 27px;
         }
       }
     }
