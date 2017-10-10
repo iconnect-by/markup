@@ -39,7 +39,7 @@
           li {
             &:not(:last-child) {
               padding: 0 10px;
-              margin-right: 40px;
+              margin-right: 22px;
             }
             &:last-child {
               margin-right: 10px;
@@ -47,8 +47,7 @@
           }
         }
         &>li {
-          //margin: 0 10px;
-          padding: 0 10px;
+          padding: 0;
 
           &>a {
             .h1-black;
@@ -72,8 +71,6 @@
                 margin-left: 0;
               }
             }
-
-
           }
         }
         &.navbar-nav {
@@ -160,7 +157,6 @@
                   }
 
                 }
-
               }
 
               .non-fixed-list {
@@ -223,6 +219,16 @@
             }
           }
         }
+
+        &.notifications-block {
+          li {
+            padding: 0 20px;
+
+            &:first-child {
+              padding-right: 0;
+            }
+          }
+        }
       }
 
       .navbar-nav {
@@ -253,7 +259,6 @@
             display: inline-block;
             img {
               display: inline-block;
-              margin-right: 9px;
               width: 30px;
               max-width: 100%;
               height: auto;
@@ -270,7 +275,8 @@
           .content {
             display: inline-block;
             line-height: 1;
-            margin-right: 27px;
+            margin-right: 30px;
+            margin-left: 10px;
 
             .title {
               margin-top: 5px;
