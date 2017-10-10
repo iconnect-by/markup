@@ -1,11 +1,23 @@
-<section class="top-artists-section-open" ng-controller="OrganizationController">
+<section class="top-artists-section-open organizations-open-section" ng-controller="OrganizationController">
 
     <div ng-include="'views/template/filter_section.html'"></div>
+
+    <div class="container organizations-header">
+        <div class="row">
+            <div class="col-md-9">
+                <span class="title">Top organizations</span>
+            </div>
+            <div class="col-md-3">
+                <span class="title">New Artist</span>
+            </div>
+        </div>
+    </div>
+
 
     <div class="container">
         <div class="row">
             <div class="col-md-9">
-                <a href="#" ui-sref="app" class="back-link">Find {{organizationList.length}} organization</a>
+                <!--<a href="#" ui-sref="app" class="back-link">Find {{organizationList.length}} organization</a>-->
 
                 <div class="row">
                     <div class="col-md-4" ng-repeat="org in organizationList">
@@ -16,7 +28,7 @@
 
             <div class="col-md-3">
                 <div class="new-artist-section">
-                    <div class="section-title">New Artist</div>
+                    <!--<span class="section-title">New Artist</span>-->
 
                     <div class="artist-new">
                         <mini-profile-preview

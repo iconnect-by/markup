@@ -1,5 +1,5 @@
 .top-artists-section-open {
-  padding-top: @section-padding-top + 70px;
+  padding-top: @section-padding-top + 78px;
   background-color: @pale-grey;
 
 
@@ -10,37 +10,37 @@
     margin-right: 10px;
   }
 
+  .back-link {
+    .h1-black;
+    margin-bottom: 16px;
+    display: block;
+    justify-self: flex-start;
+    margin-left: 0;
+    flex-grow: 2;
+
+    .left-arrow {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    &:hover {
+      color: @burnt-sienna;
+
+      svg {
+        #back_lnk {
+          fill: @burnt-sienna;
+        }
+      }
+    }
+  }
+
   .top-artists-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    .back-link {
-      .h1-blue;
-      margin-bottom: 16px;
-      display: block;
-      justify-self: flex-start;
-      margin-left: 0;
-      flex-grow: 2;
-
-      .left-arrow {
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        margin-right: 10px;
-        vertical-align: middle;
-      }
-
-      &:hover {
-        color: @burnt-sienna;
-
-        svg {
-          #back_lnk {
-            fill: @burnt-sienna;
-          }
-        }
-      }
-    }
 
     .title {
       .h1-blue;
