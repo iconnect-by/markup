@@ -43,6 +43,8 @@
       top: -5px;
 
       .name {
+        margin-bottom: 10px;
+        display: block;
         a {
           @font-size: 14px * @rem;
           @line-height: 1.36;
@@ -53,12 +55,13 @@
           font-size: @font-size;
           letter-spacing: .4px;
           line-height: @line-height;
-          margin-bottom: 13px;
           font-weight: @fw-semibold;
           display: inline-block;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
           position: relative;
+          max-height: 36px;
+          overflow: hidden;
 
           &:hover {
             color: @burnt-sienna;
