@@ -85,6 +85,16 @@ angular.module('iConnectApp', ['ui.router', 'ngDialog', 'ui-notification', 'ui.b
                 }
             })
 
+            .state('app.events', {
+                url: 'events',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/events.html',
+                        controller: 'EventsController'
+                    }
+                }
+            })
+
             // route for the login page
             .state('app.login', {
                 url: 'login',

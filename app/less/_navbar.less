@@ -160,7 +160,7 @@
               }
 
               .non-fixed-list {
-                height: 200px;
+                max-height: 200px;
                 overflow: hidden;
                 overflow-y: auto;
 
@@ -184,6 +184,14 @@
             border-bottom: 2px solid transparent;
             position: relative;
             color: @black;
+
+            svg {
+              &:hover {
+                path {
+                  fill: @iConnect-orange;
+                }
+              }
+            }
 
             &.alerts {
               span {

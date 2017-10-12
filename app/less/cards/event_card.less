@@ -9,11 +9,6 @@
   transition: box-shadow .15s ease-in-out;
   width: 100%;
 
-  &:hover {
-    //border: 1px solid transparent;
-    //box-shadow: 0 10px 25px fade(#000, 10%);
-  }
-
   .card-header {
     .event-avatar {
       padding-left: 0;
@@ -60,30 +55,31 @@
 
       .name {
         .title-H4;
-        @font-size: 14 * @rem;
-        @line-height: 1.5;
-        @lines-to-show: 1;
-
-        height: @font-size * @line-height * @lines-to-show;
-        -webkit-line-clamp: @lines-to-show;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
-
-        line-height: @line-height;
-        padding-top: 5 * @rem;
-        margin-bottom: 15 * @rem;
+        line-height: 1;
         font-weight: @fw-semibold;
+        padding-top: 4px;
       }
 
       .subtext {
-        .text-grey-small;
+        .additional-text;
         margin-bottom: 13px;
       }
 
       .description {
-        .text-default-small;
+        .additional-text;
+        line-height: 1.5;
+        text-overflow: ellipsis;
+        margin-bottom: 0;
+        letter-spacing: .31px;
         word-wrap: break-word;
+        color: @black;
+        font-weight: @fw-regular;
+
+        @font-size: 11px * @rem;
+        @line-height: 1.5;
+
+        max-height: @font-size * @line-height * 3 - 0.2;
+        overflow: hidden;
       }
     }
 
@@ -106,7 +102,7 @@
     align-items: flex-start;
     align-content: center;
     justify-content: flex-start;
-    margin: 20px 0;
+    margin: 13px 0;
     padding: 0 10px;
 
     .people-link {
@@ -119,7 +115,6 @@
         height: 40px;
         display: block;
         max-width: 100%;
-        //height: auto;
       }
 
       &.circle {
@@ -129,11 +124,13 @@
       }
     }
     .people-link-add {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin: auto 0;
       margin-bottom: 11px;
       border: 1px dashed #f2f2f2;
       border-radius: 50%;
-      padding: 10px;
       width: 40px;
       height: 40px;
       line-height: 1;
@@ -145,11 +142,16 @@
         font-size: 20 * @rem;
       }
 
-      &:hover, &:focus, &:active {
-        border-color: darken(@iConnect-lightGrey, 20%);
-
-        .fa {
-          color: darken(@iConnect-lightGrey, 20%);
+      &.total {
+        .additional-text;
+        span {
+          background-color: #ccc;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 30px;
+          height: 30px;
+          width: 30px;
+          color: #fff;
         }
       }
     }
@@ -157,7 +159,7 @@
 
   .card-footer {
     border-top: 1px solid #f2f2f2;
-    padding: 19px 0 20px 0;
+    padding: 16px 0 16px 0;
     margin: 0 10px 0 10px;
 
     p {
@@ -170,20 +172,23 @@
     }
 
     .left-part {
-      color: #999;
-      font-size: 10 * @rem;
-      letter-spacing: .29px;
+      .additional-text;
       text-align: left;
       padding-left: 0;
       padding-right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+
+
+      .map-marker {
+        margin-right: 9px;
+        color: #e5e5e5;
+      }
     }
     .right-part {
-      font-family: @iConnect-font-semiBold;
-      font-weight: 600;
-      color: @black;
-      font-size: 10 * @rem;
-      letter-spacing: .29px;
-      text-transform: uppercase;
+      .h1-black;
       text-align: right;
       padding-right: 0;
       padding-left: 0;

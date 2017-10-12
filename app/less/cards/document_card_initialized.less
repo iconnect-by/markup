@@ -25,11 +25,6 @@
     .title-H4;
   }
 
-  &:hover {
-    //border: 1px solid transparent;
-    //box-shadow: 0 10px 25px fade(#000, 10%);
-  }
-
   .delete-document {
     display: none;
     position: absolute;
@@ -37,21 +32,32 @@
     right: 10px;
     width: 30px;
     height: 30px;
-    background-color: fade(#000, 10%);
+    background-color: #fff;
     border-radius: 4px;
     padding: 7px 9px;
     z-index: 99;
+    border: 1px dashed #f2f2f2;
+    align-content: center;
+    justify-content: center;
 
-    img {
-      display: block;
-      width: 12px;
-      height: 16px;
+    svg {
+      path {
+        fill: @bright-orange;
+      }
     }
   }
 
   &:hover {
     .delete-document {
-      display: block;
+      display: flex;
+
+      &:hover {
+        svg {
+          path {
+            fill: @bright-orange;
+          }
+        }
+      }
     }
   }
 

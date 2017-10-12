@@ -82,8 +82,6 @@
           word-wrap: break-word;
           color: @black;
           font-weight: @fw-regular;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
         }
       }
     }
@@ -101,8 +99,6 @@
       overflow: hidden;
       text-overflow: ellipsis;
       display: inline-block;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
       font-weight: @fw-semibold;
     }
 
@@ -123,11 +119,7 @@
       }
     }
     .right-part {
-      font-family: @iConnect-font-regular;
-      font-weight: @fw-semibold;
-      color: @black;
-      font-size: 10 * @rem;
-      letter-spacing: .29px;
+      .h1-black;
       text-transform: uppercase;
       text-align: right;
       padding-right: 0;

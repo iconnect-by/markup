@@ -14,21 +14,25 @@
                 <h4 class="name">{{ $ctrl.data.title }}</h4>
                 <div class="subtext">{{ $ctrl.data.eventDate }}</div>
                 <div class="description">
-                    <!--<p ng-bind-html="$ctrl.data.eventText">{{$ctrl.data.eventText}}</p>-->
                     {{$ctrl.data.eventText}}
                 </div>
             </div>
         </div>
         <div class="people">
-            <a href="#" class="people-link circle" ng-repeat="man in $ctrl.data.eventArtist">
+            <a href="#" class="people-link circle" ng-repeat="man in $ctrl.data.eventArtist.slice(0,9)">
                 <img ng-src="{{ man.artistImg }}" alt="avatar">
+
+                <a href="#" class="people-link-add" ng-if="$ctrl.data.eventArtist.length < 10" ng-repeat="i in [0,1,2,3,4,5,6,7,8,9].slice(0,9-$ctrl.data.eventArtist.length)">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                </a>
             </a>
-            <a href="#" class="people-link-add">
-                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            <a href="#" class="people-link-add total">
+                <span>+{{ $ctrl.data.participantsNum - 9 }}</span>
             </a>
         </div>
         <div class="row card-footer">
             <div class="col-xs-6 left-part">
+                <i class="fa fa-map-marker map-marker" aria-hidden="true"></i>
                 <p>{{$ctrl.data.eventLocation}}</p>
             </div>
             <div class="col-xs-6 right-part">

@@ -12,12 +12,20 @@
   padding: 20px;
   position: relative;
 
+  &:after {
+    content: '';
+    clear: both;
+    display: table;
+    width: 100%;
+  }
+
   .dialog-inner {
     .title {
       .h1-black;
       border-bottom: 1px solid #f2f2f2;
       margin: 0;
       padding: 0 0 17px 0;
+      width: 100%;
     }
     .dialog-body {
       .content {
@@ -26,12 +34,10 @@
 
         .day-date {
           .title-H4;
-          //padding: 17px 0 36px 0;
         }
 
         .date {
           .text-grey-small;
-          //padding: 17px 0 36px 0;
         }
       }
 
@@ -226,6 +232,11 @@
         width: 100%;
         max-width: none;
 
+        &.social-close-btn {
+          width: auto;
+          float: right;
+        }
+
         &.disabled {
           opacity: .6;
           border-color: transparent;
@@ -376,7 +387,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         margin: 0;
 
         .social-icons__item {
@@ -384,6 +395,7 @@
           display: inline-block;
           height: 45px;
           width: 45px;
+          margin: 0 5px;
 
           img {
             height: 45px;
