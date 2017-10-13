@@ -316,6 +316,12 @@
       .navbar-brand {
         color: @iConnect-white !important;
         text-shadow: none;
+
+        svg {
+          path {
+            fill: #fff;
+          }
+        }
       }
 
       .nav {
@@ -328,6 +334,19 @@
               background: transparent;
               color: @iConnect-orange;
             }
+
+            svg {
+              path {
+                fill: #fff;
+              }
+
+              &:hover {
+                path {
+                  fill: @iConnect-orange;
+                }
+              }
+            }
+
           }
         }
       }
