@@ -37,6 +37,20 @@
         background-color: @pale-grey;
         border: solid 1px #f2f2f2;
         margin-left: 10px;
+
+        svg {
+          path {
+            fill: #e5e5e5;
+          }
+        }
+
+        &.active {
+          svg {
+            path {
+              fill: @dark-sky-blue;
+            }
+          }
+        }
       }
     }
 

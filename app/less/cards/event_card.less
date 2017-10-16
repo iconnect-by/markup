@@ -77,9 +77,17 @@
 
         @font-size: 11px * @rem;
         @line-height: 1.5;
+        @lines-to-show: 3;
 
-        max-height: @font-size * @line-height * 3 - 0.2;
+        max-height: @font-size * @line-height * @lines-to-show - 0.2;
+
+        height: @font-size * @line-height * @lines-to-show - 0.2;
+        -webkit-line-clamp: @lines-to-show;
+        -webkit-box-orient: vertical;
         overflow: hidden;
+        text-overflow: ellipsis;
+
+        //overflow: hidden;
       }
     }
 
