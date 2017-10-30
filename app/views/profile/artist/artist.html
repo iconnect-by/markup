@@ -13,7 +13,7 @@
                 <!--<div class="hero-avatar empty">-->
                 <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
 
-                <div class="hero-avatar circle">
+                <div class="hero-avatar">
                     <figure class="progressive-image">
                         <div class="h-aspect-ratio">
                             <div class="aspect-ratio-fill" style="padding-bottom: 100%;"></div>
@@ -98,10 +98,12 @@
                 <div class="row-content" ng-show="divShow == 'allMedia'">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="media-content box-content">
+
+
+                            <div class="media-content box-content" style="display:none;">
                                 <div class="mc-title">
-                                    <span>Photo (12)</span>
-                                    <a href="#">Add photo</a>
+                                    <!--<span>Photo (12)</span>-->
+                                    <!--<a href="#">Add photo</a>-->
                                 </div>
 
                                 <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
@@ -119,14 +121,28 @@
                                 <!--DON'T DELETE - IT'S FOR CONTENT -->
 
                                 <div class="mc-content empty-others photo">
-                                    <span>This user has not uploaded photos yet</span>
+                                    <span>You haven't added any photo yet</span>
+                                    <a href="#" class="ic-btn ic-btn-white">Add photos</a>
                                 </div>
 
-                                <a href="#" class="view-all" ng-click="showMedia('photo', $event)">View All</a>
+                                <!--<a href="#" class="view-all" ng-click="showMedia('photo', $event)">View All</a>-->
                             </div>
+
+                            <!-- for owner -->
+                            <div class="media-content box-content">
+                                <div class="mc-content empty-others photo-owner">
+                                    <span>You haven't added any photo yet</span>
+                                    <a href="#" class="ic-btn ic-btn-white">Add photos</a>
+                                </div>
+                            </div>
+
+
+
                         </div><!--.col-->
                         <div class="col-md-6">
-                            <div class="media-content box-content">
+
+
+                            <div class="media-content box-content" style="display:none;">
                                 <div class="mc-title">
                                     <span>Video (3)</span>
                                     <a href="#">Add embed video</a>
@@ -155,9 +171,20 @@
 
                                 <a href="#" class="view-all" ng-click="showMedia('video', $event)">View All</a>
                             </div>
+
+                            <!-- for owner -->
+                            <div class="media-content box-content">
+                                <div class="mc-content empty-others video-owner">
+                                    <span>You haven't added any video yet</span>
+                                    <a href="#" class="ic-btn ic-btn-white">Add videos</a>
+                                </div>
+                            </div>
+
                         </div><!--.col-->
                         <div class="col-md-12">
-                            <div class="media-content box-content">
+
+
+                            <div class="media-content box-content" style="display:none;">
                                 <div class="mc-title">
                                     <span>Music (17)</span>
                                     <a href="#">Add embed audio</a>
@@ -200,6 +227,16 @@
 
                                 <a href="#" class="view-all" ng-click="showMedia('music', $event)">View All</a>
                             </div>
+
+                            <!-- for owner -->
+                            <div class="media-content box-content">
+                                <div class="mc-content empty-others video-owner">
+                                    <span>You haven't added any music yet</span>
+                                    <a href="#" class="ic-btn ic-btn-white">Add videos</a>
+                                </div>
+                            </div>
+
+
                         </div><!--.col-->
                         <div class="col-md-12 history-and-feedback-block">
                             <div class="content">

@@ -1,12 +1,14 @@
 .profile-section {
   padding-top: @section-padding-top;
   padding-bottom: 70px;
+  background-color: @pale-grey;
 
   .box-content {
     border: 1px solid @iConnect-lightGrey;
     border-radius: 4px;
     margin-bottom: 20px;
     position: relative;
+    //background-color: #fff;
 
     .video-item {
       margin: 0!important;
@@ -90,6 +92,7 @@
 
   .hero-desc {
     padding: 22px 0 0 0;
+    background-color: #fff;
 
     .hero-descr-block {
       padding: 0 20px;
@@ -341,6 +344,8 @@
 
   .documents-upload {
     padding: 16px 20px 20px;
+    background-color: #fff;
+
     .title {
       .h1-black;
       margin-bottom: 17px;
@@ -415,6 +420,7 @@
     border-radius: 4px;
     position: relative;
     overflow: hidden;
+    min-height: 265px;
 
     .grid {
 
@@ -596,12 +602,20 @@
       }
 
       &.empty-others {
-        background-color: #fff;
-        border: 1px dashed #e5e5e5;
+        //background-color: #fff;
+        //border: 1px dashed #e5e5e5;
         border-radius: 4px;
         min-height: 180px;
         width: 100%;
         display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .ic-btn {
+          background-color: #fff;
+          margin-top: 20px;
+        }
 
         span {
           align-self: center;
@@ -611,6 +625,7 @@
           text-align: center;
           font-weight: 400;
           padding: 0 20px;
+          color: @cool-grey;
         }
       }
 
@@ -871,6 +886,7 @@
   .settings-block {
     border: 1px solid #f2f2f2;
     border-radius: 4px;
+    background-color: #fff;
 
     h1 {
       .h1-black;
