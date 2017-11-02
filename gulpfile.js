@@ -70,8 +70,8 @@ gulp.task('video', function(){
 });
 
 gulp.task('watch', function() {
-  gulp.watch('app/js/**/*', ['scripts']);
-  gulp.watch('app/less/*.less', ['lessStyles']);
+  gulp.watch('app/js/**', ['scripts']);
+  gulp.watch('app/less/**', ['lessStyles']);
   gulp.watch(['app/*.html', 'app/**/*.html'], ['html']);
   gulp.watch('app/images/**/*.*', ['images']);
 });

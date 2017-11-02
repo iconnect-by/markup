@@ -99,117 +99,154 @@
             </div><!--.col-->
 
             <div class="col-md-9">
-                <div class="event-content">
-
-                    <span class="section-title">Artists taking part in the event</span>
-
-                    <div class="person-interested-in-block">
-                        <div class="row">
-                            <div class="col-md-4" ng-repeat="item in [1,2,3]">
-                                <mini-profile-preview
-                                        data="{
-                                            id: item,
-                                            photo: '../../../images/placeholder.svg',
-                                            title: 'Walter Gonzales',
-                                            country: 'London',
-                                            style: 'Jazz',
-                                            showLink: true,
-                                            cssClass: 'person-interested-in',
-                                            icon: 'fa fa-times-circle',
-                                            iconColor: '#e5e5e5',
-                                            addedIconClass: 'big'
-                                        }"
-                                        show-index="0"
-                                ></mini-profile-preview>
-                            </div>
-                            <div class="col-md-4">
-                                <mini-profile-new data="{
-                                    cssClass: 'dashed',
-                                    icon: 'fa-times-circle'
-                                }"
-                                ></mini-profile-new>
-                            </div>
-                            <div class="col-md-2">
-                                <button id="add_place" class="add-place" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fa fa-plus-circle"></i>
+                <section class="event-slot-list">
+                    <h3 class="section-title">Artists taking part in the event</h3>
+                    <div class="row">
+                        <div class="col-md-4" ng-repeat="item in [1,2,3]">
+                            <div class="event-slot artist">
+                                <div class="profile-preview-card">
+                                    <div class="avatar circle">
+                                        <div class="image">
+                                            <img src="../../../images/placeholder.svg">
+                                        </div>
+                                    </div>
+                                    <div class="about">
+                                        <a class="title">Ms. Amalia Hoppe DDS</a>
+                                        <div class="subtitle">Vocalist</div>
+                                    </div>
+                                </div>
+                                <button class="event-slot-btn red remove" uib-tooltip="Remove artist" tooltip-placement="top">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                                        <path fill="#E5E5E5" fill-rule="evenodd" d="M0 15c0 8.25 6.75 15 15 15s15-6.75 15-15S23.25 0 15 0 0 6.75 0 15zm16.5 1.5V21a1.5 1.5 0 0 1-3 0v-4.5H9a1.5 1.5 0 0 1 0-3h4.5V9a1.5 1.5 0 0 1 3 0v4.5H21a1.5 1.5 0 0 1 0 3h-4.5z"/>
+                                    </svg>
                                 </button>
-                                <div class="dropdown-menu dropdown-menu-form add-role-dropdown" aria-labelledby="add_place">
-                                    <div ng-include="'views/template/add-role-dropdown.html'"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="event-slot">
+                                <div class="content">
+                                    <div class="subtitle">We search:</div>
+                                    <div class="title">Music group</div>
+                                </div>
+                                <button class="event-slot-btn red remove" uib-tooltip="Remove slot" tooltip-placement="top">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                                        <path fill="#E5E5E5" fill-rule="evenodd" d="M0 15c0 8.25 6.75 15 15 15s15-6.75 15-15S23.25 0 15 0 0 6.75 0 15zm16.5 1.5V21a1.5 1.5 0 0 1-3 0v-4.5H9a1.5 1.5 0 0 1 0-3h4.5V9a1.5 1.5 0 0 1 3 0v4.5H21a1.5 1.5 0 0 1 0 3h-4.5z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="event-slot create">
+                                <button class="event-slot-btn inverse" data-toggle="dropdown" uib-tooltip="Add event slot" tooltip-placement="top">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                                        <path fill="#E5E5E5" fill-rule="evenodd" d="M0 15c0 8.25 6.75 15 15 15s15-6.75 15-15S23.25 0 15 0 0 6.75 0 15zm16.5 1.5V21a1.5 1.5 0 0 1-3 0v-4.5H9a1.5 1.5 0 0 1 0-3h4.5V9a1.5 1.5 0 0 1 3 0v4.5H21a1.5 1.5 0 0 1 0 3h-4.5z"/>
+                                    </svg>
+                                </button>
+                                <div class="dropdown-popup right">
+                                    <h3 class="dropdown-title">Select the desired role</h3>
+                                    <div class="form-tags-list inverse">
+                                        <label class="tag-item" ng-repeat="tag in ['Blues', 'Comedy', 'Folk', 'Jazz', 'Latin', 'Pop', 'Rock', 'Hip Hop', 'R&B and Soul', 'Electronic']">
+                                            <input type="radio" name="artist_skill" class="widget"><span class="inner">{{ ::tag }}</span>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </section>
 
+                <section class="event-slot-list">
+                    <h3 class="section-title">Received applications<span class="separator">|</span><a href="">Reject all</a></h3>
 
-                    <div class="title-filter-block">
-                        <span class="section-title">Users want ot participate</span>
-                        <div class="filter">
-                            <div class="dropdown">
-                                <button class="dropdown-toggle" type="button" data-toggle="dropdown">
-                                    Show all <span class="caret"></span>
+                    <div class="event-slot-list__filter">
+                        <button class="dropdown-toggle" type="button" data-toggle="dropdown">Show all <span class="caret"></span></button>
+                        <div class="dropdown-popup right">
+                            <ul class="dropdown-popup-menu">
+                                <li class="item" ng-repeat="skillName in ['Artist', 'Vocalist', 'Promoter', 'DJ', 'Singer', 'Dancer', 'Music group']">
+                                    <span class="value">{{ ::skillName }}</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4" ng-repeat="item in [1,2,3,4]">
+                            <div class="event-slot artist">
+                                <div class="profile-preview-card">
+                                    <div class="avatar circle">
+                                        <div class="image">
+                                            <img src="../../../images/placeholder.svg">
+                                        </div>
+                                    </div>
+                                    <div class="about">
+                                        <a class="title">Ms. Hoppe</a>
+                                        <div class="subtitle">Vocalist</div>
+                                        <div class="details">
+                                            <span class="value">Offer: $ 435</span>
+                                            <a class="link" href="#">Show offer details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="event-slot-btn green" uib-tooltip="Approve" tooltip-placement="top">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                                        <path fill="#E5E5E5" fill-rule="evenodd" d="M0 15c0 8.25 6.75 15 15 15s15-6.75 15-15S23.25 0 15 0 0 6.75 0 15zm16.5 1.5V21a1.5 1.5 0 0 1-3 0v-4.5H9a1.5 1.5 0 0 1 0-3h4.5V9a1.5 1.5 0 0 1 3 0v4.5H21a1.5 1.5 0 0 1 0 3h-4.5z"/>
+                                    </svg>
                                 </button>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Artist</a></li>
-                                    <li><a href="#">Singer</a></li>
-                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4" ng-repeat="item in [1,2]">
+                            <div class="event-slot artist">
+                                <div class="profile-preview-card">
+                                    <div class="avatar circle">
+                                        <div class="image">
+                                            <img src="../../../images/placeholder.svg">
+                                        </div>
+                                    </div>
+                                    <div class="about">
+                                        <a class="title">Ms. Amalia Hoppe DDS</a>
+                                        <div class="subtitle">Vocalist</div>
+                                        <div class="details">
+                                            <span class="value">Offer: $ 435</span>
+                                            <a class="link" href="#">Show offer details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="event-slot-btn green" disabled>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                                        <path fill="#E5E5E5" fill-rule="evenodd" d="M0 15c0 8.25 6.75 15 15 15s15-6.75 15-15S23.25 0 15 0 0 6.75 0 15zm16.5 1.5V21a1.5 1.5 0 0 1-3 0v-4.5H9a1.5 1.5 0 0 1 0-3h4.5V9a1.5 1.5 0 0 1 3 0v4.5H21a1.5 1.5 0 0 1 0 3h-4.5z"/>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
+                </section>
 
-                    <div class="person-users-want-participation-block">
-                        <div class="row">
-                            <div class="col-md-4" ng-repeat="item in [1,2,3]">
-                                <mini-profile-preview-price
-                                        data="{
-                                            id: item,
-                                            photo: '../../../images/placeholder.svg',
-                                            title: 'Walter Gonzales',
-                                            country: 'London',
-                                            style: 'Jazz',
-                                            showLink: true,
-                                            cssClass: 'person-interested-in',
-                                            icon: 'fa fa-plus-circle',
-                                            iconColor: '#e5e5e5',
-                                            addedIconClass: 'big',
-                                            price: '$ 100'
-                                        }"
-                                        show-index="0"
-                                ></mini-profile-preview-price>
+                <section class="event-slot-list">
+                    <h3 class="section-title">Sent invitations</h3>
+                    <div class="row">
+                        <div class="col-md-4" ng-repeat="item in [1,2]">
+                            <div class="event-slot artist">
+                                <div class="profile-preview-card">
+                                    <div class="avatar circle">
+                                        <div class="image">
+                                            <img src="../../../images/placeholder.svg">
+                                        </div>
+                                    </div>
+                                    <div class="about">
+                                        <a class="title">Danny Watinks</a>
+                                        <div class="subtitle">Vocalist</div>
+                                    </div>
+                                </div>
+                                <button class="event-slot-btn red remove" uib-tooltip="Cancel invitation" tooltip-placement="top">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                                        <path fill="#E5E5E5" fill-rule="evenodd" d="M0 15c0 8.25 6.75 15 15 15s15-6.75 15-15S23.25 0 15 0 0 6.75 0 15zm16.5 1.5V21a1.5 1.5 0 0 1-3 0v-4.5H9a1.5 1.5 0 0 1 0-3h4.5V9a1.5 1.5 0 0 1 3 0v4.5H21a1.5 1.5 0 0 1 0 3h-4.5z"/>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
-
-                    <span class="section-title">Users you invited</span>
-
-                    <div class="person-users-invited-block">
-                        <div class="row">
-
-                            <div class="col-md-4" ng-repeat="item in [1,2,3]">
-                                <mini-profile-preview-price
-                                        data="{
-                                            id: item,
-                                            photo: '../../../images/placeholder.svg',
-                                            title: 'Walter Gonzales',
-                                            country: 'London',
-                                            style: 'Jazz',
-                                            showLink: true,
-                                            cssClass: 'person-interested-in',
-                                            icon: 'fa fa-plus-circle',
-                                            iconColor: '#e5e5e5',
-                                            addedIconClass: 'big',
-                                            price: '$ 100'
-                                        }"
-                                        show-index="0"
-                                ></mini-profile-preview-price>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
+                </section>
             </div><!--.col-->
-
         </div><!--.row-->
-
     </div><!--.container-->
 </section>
