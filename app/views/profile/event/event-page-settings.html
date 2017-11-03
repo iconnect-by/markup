@@ -117,16 +117,18 @@
             <div class="col-md-6">
                 <div class="settings-block">
                     <h1>Profile Information Setting</h1>
+
                     <form name="setting" ng-submit="save_event()" class="form-inline" novalidate>
                         <fieldset>
                             <div class="form-group">
                                 <div class="col-xs-3">
                                     <label>Event Type</label>
                                 </div>
-                                <div class="col-xs-9 multi">
-                                    <div class="artist-role-block {{genre.status}}" ng-repeat="genre in genres">
-                                        <span class="role-name">{{genre.title}}</span>
-                                        <span class="role-switch"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                                <div class="col-xs-9">
+                                    <div class="form-tags-list">
+                                        <label class="tag-item" ng-repeat="tag in ['Blues', 'Comedy', 'Folk', 'Jazz', 'Latin', 'Pop', 'Rock', 'Hip Hop', 'R&B and Soul', 'Electronic']">
+                                            <input type="checkbox" name="artist_skill" class="widget"><span class="inner">{{ ::tag }}</span>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
@@ -255,7 +257,6 @@
                                     <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i></a>
                                 </div>
                             </div>
-
                         </fieldset>
 
                         <div class="form-group">

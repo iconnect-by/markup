@@ -940,67 +940,6 @@
         font-weight: @fw-regular;
       }
 
-      .artist-role-block {
-        display: inline-block;
-        padding: 0 11px;
-        margin: 0 10px 10px 0;
-        background-color: #fafafa;
-        border: 1px dashed #e5e5e5;
-        border-radius: 20px;
-        cursor: pointer;
-        min-width: 70px;
-        text-align: center;
-        height: 30px;
-
-        input {
-          display: none;
-        }
-
-        .role-name {
-          color: #fff;
-          .text-default;
-          font-weight: @fw-semibold;
-          text-transform: uppercase;
-          line-height: 28px;
-        }
-
-        .role-switch {
-          display: none;
-          color: @black;
-        }
-
-        &:hover, &:active, &:focus {
-          background-color: lighten(#fafafa, 20%);
-        }
-
-        &.active {
-          background-color: #4a90e2;
-          border: 1px solid #4a90e2;
-          text-align: left;
-
-          .role-name {
-            color: #fff;
-          }
-
-          .role-switch {
-            float: right;
-            display: inline;
-            color: #fff;
-            margin-left: 9px;
-
-            .fa {
-              font-size: 14 * @rem;
-              line-height: 28px;
-            }
-          }
-
-          &:hover, &:active, &:focus {
-            background-color: darken(#4a90e2, 20%);
-          }
-        }
-
-      }
-
       .ic-btn-orange {
         margin-right: 20px;
       }

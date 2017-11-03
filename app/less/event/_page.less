@@ -209,7 +209,7 @@
 
       .dropdown-popup {
         transform: translate(5px, -10px);
-        width: 350px;
+        width: 380px;
       }
     }
 
@@ -337,13 +337,11 @@
 }
 
 // TODO move to new file Dropdown popup
-.open {
-  .dropdown-popup {
+.dropdown-popup {
+  .open & {
     display: block;
   }
-}
 
-.dropdown-popup {
   position: absolute;
   top: 100%;
   left: 0;
@@ -392,35 +390,35 @@
     margin: 0 0 20px;
     padding: 0 0 16px;
   }
-}
 
-.dropdown-popup-menu {
-  margin: 0;
+  &-menu {
+    margin: 0;
 
-  .item {
-    font-size: 14 * @rem;
-    font-weight: 400;
-    cursor: pointer;
-    line-height: 1.5em;
-    padding: 0 20px;
-    margin: 0 -20px -1px;
-
-    .value {
-      display: block;
-      padding: 9px 0 7px;
-    }
-
-    &:hover {
-      background-color: #464646;
+    .item {
+      font-size: 14 * @rem;
+      font-weight: 400;
+      cursor: pointer;
+      line-height: 1.5em;
+      padding: 0 20px;
+      margin: 0 -20px -1px;
 
       .value {
-        border-color: transparent;
+        display: block;
+        padding: 9px 0 7px;
       }
-    }
 
-    + .item {
-      .value {
-        border-top: solid 1px #464646;
+      &:hover {
+        background-color: #464646;
+
+        .value {
+          border-color: transparent;
+        }
+      }
+
+      + .item {
+        .value {
+          border-top: solid 1px #464646;
+        }
       }
     }
   }
@@ -428,17 +426,6 @@
 
 // TODO move to new file Form tags list
 .form-tags-list {
-  &.inverse {
-    .tag-item {
-      color: @iConnect-white;
-
-      .inner {
-        background-color: fade(@iConnect-white, 20%);
-        border-color: fade(@iConnect-white, 7%);
-      }
-    }
-  }
-
   .tag-item {
     margin: 5px;
 
@@ -451,7 +438,16 @@
 
     cursor: pointer;
 
+    .inverse& {
+      color: @iConnect-white;
+    }
+
     .inner {
+      .inverse& {
+        background-color: fade(@iConnect-white, 20%);
+        border-color: fade(@iConnect-white, 7%);
+      }
+
       background-color: @pale-grey;
       border: solid 1px darken(@pale-grey, 5%);
       border-radius: 15px;
@@ -461,6 +457,12 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      transition: border-color .1s ease;
+
+      &::selection {
+        color: inherit;
+        background: none;
+      }
     }
 
     .widget {
@@ -470,7 +472,7 @@
       &:checked ~ .inner {
         color: @iConnect-white;
         background-color: @iConnect-blue;
-        border-color: darken(@iConnect-blue, 10%);
+        border-color: @iConnect-blue;
       }
     }
 
@@ -480,7 +482,7 @@
       }
 
       .widget:checked ~ .inner {
-        border-color: darken(@iConnect-blue, 20%);
+        border-color: darken(@iConnect-blue, 10%);
       }
     }
 
