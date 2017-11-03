@@ -116,164 +116,158 @@
             </div><!--.col-->
 
             <div class="col-md-6">
-                <div class="event-content">
-
-                    <div class="settings-block">
-
-                        <h1>Profile Information Setting</h1>
-
-                        <form name="setting" ng-submit="save_event()" class="form-inline" novalidate>
-                            <fieldset>
-                                <div class="form-group">
-                                    <div class="col-xs-3">
-                                        <label>Event Type</label>
-                                    </div>
-                                    <div class="col-xs-9 multi">
-                                        <div class="artist-role-block {{genre.status}}" ng-repeat="genre in genres">
-                                            <span class="role-name">{{genre.title}}</span>
-                                            <span class="role-switch"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-xs-3">
-                                        <label>About event</label>
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <textarea class="form-control" ng-required="true">In the 80s, the hair accessory was invaluable. Almost every style involved some sort of hair accessory or embellishment to really set it off. Today, the hair accessory is not a part of everyday style and care should be taken as to when and how to use the look dated.</textarea>
-                                        <span class="symbols-counter">There are 130 characters left to limit</span>
-                                    </div>
-                                    <div class="col-xs-1 edit-section">
-                                        <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-xs-3">
-                                        <label>Your Location</label>
-                                    </div>
-                                    <div class="col-xs-8 editable-form">
-                                        <span class="form-value" ng-show="!locationEditable" ng-click="edit($event)">London, United Kindom</span>
-                                        <div class="editable-block" ng-show="locationEditable">
-                                            <div class="row">
-                                                <div class="col-xs-6">
-                                                    <input type="text" placeholder="City..." value="">
-                                                </div>
-                                                <div class="col-xs-6">
-                                                    <select name="location_countries" id="location_countries" ng-model="user.country">
-                                                        <option value="" selected disabled>Select country...</option>
-                                                        <option value="1">London</option>
-                                                        <option value="2">USA</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xs-12">
-                                                    <select name="location_state" id="location_state" ng-show="user.country == 2">
-                                                        <option value="" selected disabled>Select state...</option>
-                                                        <option value="1">MI</option>
-                                                        <option value="2">NY</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xs-12">
-                                                    <input type="text" class="address" placeholder="Address..." value="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-1 edit-section">
-                                        <a href="#" ng-click="edit($event)"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <div class="col-xs-3">
-                                        <label>Date Start</label>
-                                    </div>
-                                    <div class="col-xs-2">
-                                        <div class="dropdown">
-                                            <button class="dd-datetime" id="date_start" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                {{dt ? dt : dateNow | date:'d MMM y' }}
-                                            </button>
-                                            <div class="dropdown-menu dropdown-menu-form ddatetime" aria-labelledby="date_start">
-                                                <div class="picker-title">
-                                                    Set a date start
-                                                </div>
-                                                <div style="display:inline-block;">
-                                                    <div uib-datepicker ng-model="dt" class="well well-sm ic-datepicker" datepicker-options="DatePickerOptions"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-1 edit-section separate">
-                                        <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i></a>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <label>Date Ended</label>
-                                    </div>
-                                    <div class="col-xs-2">
-                                        <button class="dd-datetime" id="date_ended" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            {{dte ? dte : dateNow | date:'d MMM y' }}
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-form ddatetime" aria-labelledby="date_ended">
-                                            <div class="picker-title">
-                                                Set a date ended
-                                            </div>
-                                            <div style="display:inline-block;">
-                                                <div uib-datepicker ng-model="dte" class="well well-sm ic-datepicker" datepicker-options="DatePickerEndOptions"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-1 edit-section">
-                                        <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <div class="col-xs-3">
-                                        <label>Time Start</label>
-                                    </div>
-                                    <div class="col-xs-2">
-                                        <button class="dd-datetime" id="time_start" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            11:01 PM
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-form ddatetime" aria-labelledby="time_start">
-                                            <div ng-include="'views/template/timepicker.html'" ng-init="headerTitle = 'Time Start'"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-1 edit-section separate">
-                                        <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i></a>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <label>Time Ended</label>
-                                    </div>
-                                    <div class="col-xs-2">
-                                        <button class="dd-datetime" id="time_ended" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            11:01 PM
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-form ddatetime" aria-labelledby="time_ended">
-                                            <div ng-include="'views/template/timepicker.html'" onload="headerTitle = 'Time Ended'"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-1 edit-section">
-                                        <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-
-                            </fieldset>
-
+                <div class="settings-block">
+                    <h1>Profile Information Setting</h1>
+                    <form name="setting" ng-submit="save_event()" class="form-inline" novalidate>
+                        <fieldset>
                             <div class="form-group">
-                                <div class="col-xs-12 edit-section2">
-                                    <button class="ic-btn ic-btn-white ic-btn-delete pull-left">Delete</button>
-                                    <button class="ic-btn ic-btn-white pull-right" ui-sref="app.event-page">Cancel</button>
-                                    <button type="submit" class="ic-btn ic-btn-orange pull-right" ng-disabled="setting.$invalid">Save</button>
+                                <div class="col-xs-3">
+                                    <label>Event Type</label>
+                                </div>
+                                <div class="col-xs-9 multi">
+                                    <div class="artist-role-block {{genre.status}}" ng-repeat="genre in genres">
+                                        <span class="role-name">{{genre.title}}</span>
+                                        <span class="role-switch"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                                    </div>
                                 </div>
                             </div>
-                        </form>
-                    </div><!--.settings-block-->
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>About event</label>
+                                </div>
+                                <div class="col-xs-8">
+                                    <textarea class="form-control" ng-required="true">In the 80s, the hair accessory was invaluable. Almost every style involved some sort of hair accessory or embellishment to really set it off. Today, the hair accessory is not a part of everyday style and care should be taken as to when and how to use the look dated.</textarea>
+                                    <span class="symbols-counter">There are 130 characters left to limit</span>
+                                </div>
+                                <div class="col-xs-1 edit-section">
+                                    <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>Your Location</label>
+                                </div>
+                                <div class="col-xs-8 editable-form">
+                                    <span class="form-value" ng-show="!locationEditable" ng-click="edit($event)">London, United Kindom</span>
+                                    <div class="editable-block" ng-show="locationEditable">
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <input type="text" placeholder="City..." value="">
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <select name="location_countries" id="location_countries" ng-model="user.country">
+                                                    <option value="" selected disabled>Select country...</option>
+                                                    <option value="1">London</option>
+                                                    <option value="2">USA</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <select name="location_state" id="location_state" ng-show="user.country == 2">
+                                                    <option value="" selected disabled>Select state...</option>
+                                                    <option value="1">MI</option>
+                                                    <option value="2">NY</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <input type="text" class="address" placeholder="Address..." value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-1 edit-section">
+                                    <a href="#" ng-click="edit($event)"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
 
-                </div>
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>Date Start</label>
+                                </div>
+                                <div class="col-xs-2">
+                                    <div class="dropdown">
+                                        <button class="dd-datetime" id="date_start" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            {{dt ? dt : dateNow | date:'d MMM y' }}
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-form ddatetime" aria-labelledby="date_start">
+                                            <div class="picker-title">
+                                                Set a date start
+                                            </div>
+                                            <div style="display:inline-block;">
+                                                <div uib-datepicker ng-model="dt" class="well well-sm ic-datepicker" datepicker-options="DatePickerOptions"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-1 edit-section separate">
+                                    <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <label>Date Ended</label>
+                                </div>
+                                <div class="col-xs-2">
+                                    <button class="dd-datetime" id="date_ended" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        {{dte ? dte : dateNow | date:'d MMM y' }}
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-form ddatetime" aria-labelledby="date_ended">
+                                        <div class="picker-title">
+                                            Set a date ended
+                                        </div>
+                                        <div style="display:inline-block;">
+                                            <div uib-datepicker ng-model="dte" class="well well-sm ic-datepicker" datepicker-options="DatePickerEndOptions"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-1 edit-section">
+                                    <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>Time Start</label>
+                                </div>
+                                <div class="col-xs-2">
+                                    <button class="dd-datetime" id="time_start" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        11:01 PM
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-form ddatetime" aria-labelledby="time_start">
+                                        <div ng-include="'views/template/timepicker.html'" ng-init="headerTitle = 'Time Start'"></div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-1 edit-section separate">
+                                    <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <label>Time Ended</label>
+                                </div>
+                                <div class="col-xs-2">
+                                    <button class="dd-datetime" id="time_ended" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        11:01 PM
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-form ddatetime" aria-labelledby="time_ended">
+                                        <div ng-include="'views/template/timepicker.html'" onload="headerTitle = 'Time Ended'"></div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-1 edit-section">
+                                    <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+
+                        </fieldset>
+
+                        <div class="form-group">
+                            <div class="col-xs-12 edit-section2">
+                                <button class="ic-btn ic-btn-white ic-btn-delete pull-left">Delete</button>
+                                <button class="ic-btn ic-btn-white pull-right" ui-sref="app.event-page">Cancel</button>
+                                <button type="submit" class="ic-btn ic-btn-orange pull-right" ng-disabled="setting.$invalid">Save</button>
+                            </div>
+                        </div>
+                    </form>
+                </div><!--.settings-block-->
             </div><!--.col-->
 
         </div><!--.row-->

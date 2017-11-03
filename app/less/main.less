@@ -1,5 +1,5 @@
 @import "_reset";
-@import "_mixins";
+@import "mixins/main";
 
 @import "../../node_modules/bootstrap/less/bootstrap";
 @container-tablet: (840px + @grid-gutter-width);
@@ -26,24 +26,14 @@
 @import "../../node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css";
 
 @import "_common";
-
 @import "_vars";
-@import "_navbar";
-@import "_login";
-@import "_top_artists";
-@import "_cabinet";
-@import "_open_artists";
-@import "_dialog";
-@import "_open_organizations";
-@import "_new_artist";
-@import "_create_initial_section";
-@import "_cards";
-@import "_personal_page";
-@import "_text_block";
-@import "_registration_page";
-@import "_event";
-@import "_account_settings";
-@import "_element";
-@import "_calendar";
-@import "_rating";
-@import "_open_events";
+
+@import "header/main";
+@import "security/main";
+@import "tops/main";
+@import "dashboard/main";
+@import "cards/main";
+@import "profile/main";
+@import "event/main";
+@import "element/main";
+@import "calendar/main";

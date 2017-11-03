@@ -93,74 +93,72 @@
             </div><!--.col-->
 
             <div class="col-md-9">
-                <div class="event-content">
-                    <span class="section-title">Artists taking part in the event</span>
+                <span class="section-title">Artists taking part in the event</span>
 
-                    <div class="person-interested-in-block">
-                        <div class="row">
-                            <div class="col-md-4" ng-repeat="item in [1,2,3,4,5]">
-                                <mini-profile-preview
-                                        data="{
-                                            id: item,
-                                            photo: '../../../images/placeholder.svg',
-                                            title: 'Walter Gonzales',
-                                            country: 'London',
-                                            style: 'Jazz',
-                                            showLink: true,
-                                            cssClass: 'person-interested-in'
-                                        }"
-                                        show-index="0"
-                                ></mini-profile-preview>
-                            </div>
-                            <div class="col-md-4">
-                                <mini-profile-new data="{
-                                    cssClass: 'dashed'
-                                }"
-                                ></mini-profile-new>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <span class="section-title">Other activities of the organizer</span>
-
+                <div class="person-interested-in-block">
                     <div class="row">
-                        <div class="col-md-4" ng-repeat="item in [1,2,3]">
-                            <event-card
+                        <div class="col-md-4" ng-repeat="item in [1,2,3,4,5]">
+                            <mini-profile-preview
                                     data="{
-                                id: 0,
-                                title: 'Romantic Ballads',
-                                imgUrl: '../../images/images.jpeg',
-                                eventText: '<p>A purpose is the eternal condition for success.Every former smoker can tell you just how hard it is to stop smoking cigarettes. </p> <p>A purpose is the eternal condition for success.Every former smoker can tell you just how hard it is to stop smoking cigarettes. </p> <p>A purpose is the eternal condition for success.Every former smoker can tell you just how hard it is to stop smoking cigarettes. </p>',
-                                eventType: 'Concert',
-                                eventLocation: 'UK, London',
-                                eventDate: '12 nov 2016, 22:00 - 5:00',
-                                eventArtist: [
-                                    {
-                                        id: 1,
-                                        artistImg: '../../images/images.jpeg'
-                                    },
-                                    {
-                                        id: 1,
-                                        artistImg: '../../images/placeholder.svg'
-                                    },
-                                    {
-                                        id: 0,
-                                        artistImg: '../../images/placeholder.svg'
-                                    },
-                                    {
-                                        id: 0,
-                                        artistImg: '../../images/placeholder.svg'
-                                    },
-                                    {
-                                        id: 0,
-                                        artistImg: '../../images/placeholder.svg'
-                                    }
-                                ]
-
-                            }"
-                            ></event-card>
+                                        id: item,
+                                        photo: '../../../images/placeholder.svg',
+                                        title: 'Walter Gonzales',
+                                        country: 'London',
+                                        style: 'Jazz',
+                                        showLink: true,
+                                        cssClass: 'person-interested-in'
+                                    }"
+                                    show-index="0"
+                            ></mini-profile-preview>
                         </div>
+                        <div class="col-md-4">
+                            <mini-profile-new data="{
+                                cssClass: 'dashed'
+                            }"
+                            ></mini-profile-new>
+                        </div>
+
+                    </div>
+                </div>
+
+                <span class="section-title">Other activities of the organizer</span>
+
+                <div class="row">
+                    <div class="col-md-4" ng-repeat="item in [1,2,3]">
+                        <event-card
+                                data="{
+                            id: 0,
+                            title: 'Romantic Ballads',
+                            imgUrl: '../../images/images.jpeg',
+                            eventText: '<p>A purpose is the eternal condition for success.Every former smoker can tell you just how hard it is to stop smoking cigarettes. </p> <p>A purpose is the eternal condition for success.Every former smoker can tell you just how hard it is to stop smoking cigarettes. </p> <p>A purpose is the eternal condition for success.Every former smoker can tell you just how hard it is to stop smoking cigarettes. </p>',
+                            eventType: 'Concert',
+                            eventLocation: 'UK, London',
+                            eventDate: '12 nov 2016, 22:00 - 5:00',
+                            eventArtist: [
+                                {
+                                    id: 1,
+                                    artistImg: '../../images/images.jpeg'
+                                },
+                                {
+                                    id: 1,
+                                    artistImg: '../../images/placeholder.svg'
+                                },
+                                {
+                                    id: 0,
+                                    artistImg: '../../images/placeholder.svg'
+                                },
+                                {
+                                    id: 0,
+                                    artistImg: '../../images/placeholder.svg'
+                                },
+                                {
+                                    id: 0,
+                                    artistImg: '../../images/placeholder.svg'
+                                }
+                            ]
+
+                        }"
+                        ></event-card>
                     </div>
                 </div>
             </div><!--.col-->
