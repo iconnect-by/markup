@@ -422,82 +422,81 @@ angular.module('iConnectApp')
         $scope.galleryImages = [
             {
                 id: 0,
-                src: '../../images/gallery-0.jpg',
+                src: '../../images/fixtures/gallery/0.jpg',
                 width: '749',
                 height: '910'
             },
             {
                 id: 1,
-                src: '../../images/gallery-1.jpg',
+                src: '../../images/fixtures/gallery/1.jpg',
                 width: '540',
                 height: '383'
             },
             {
                 id: 2,
-                src: '../../images/gallery-2.jpg',
+                src: '../../images/fixtures/gallery/2.jpg',
                 width: '1440',
                 height: '900'
             },
             {
                 id: 3,
-                src: '../../images/gallery-3.jpg',
+                src: '../../images/fixtures/gallery/3.jpg',
                 width: '2048',
                 height: '1360'
             },
             {
                 id: 4,
-                src: '../../images/gallery-4.jpg',
+                src: '../../images/fixtures/gallery/4.jpg',
                 width: '604',
                 height: '604'
             },
             {
                 id: 5,
-                src: '../../images/gallery-5.jpg',
+                src: '../../images/fixtures/gallery/5.jpg',
                 width: '600',
                 height: '734'
             },
             {
                 id: 6,
-                src: '../../images/gallery-6.jpg',
+                src: '../../images/fixtures/gallery/6.jpg',
                 width: '542',
                 height: '542'
             },
             {
                 id: 7,
-                src: '../../images/gallery-7.jpg',
+                src: '../../images/fixtures/gallery/7.jpg',
                 width: '602',
                 height: '295'
             },
             {
                 id: 8,
-                src: '../../images/Asmundur_at_his_Craft_in_Iceland_at_Sunset.jpg',
+                src: '../../images/fixtures/gallery/8.jpg',
                 width: '602',
                 height: '295'
             },
             {
                 id: 9,
-                src: '../../images/MghPv9G13oM.jpg',
+                src: '../../images/fixtures/gallery/9.jpg',
                 width: '602',
                 height: '295'
             },
             {
                 id: 10,
-                src: '../../images/file000267747089.jpg',
+                src: '../../images/fixtures/gallery/10.jpg',
                 width: '602',
                 height: '295'
             },
             {
                 id: 11,
-                src: '../../images/file0002056219390.jpg',
+                src: '../../images/fixtures/gallery/11.jpg',
                 width: '602',
                 height: '295'
             },
             {
                 id: 12,
-                src: '../../images/file0002056219390.jpg',
+                src: '../../images/fixtures/gallery/11.jpg',
                 width: '602',
                 height: '295'
             }
         ]
-
     }]);

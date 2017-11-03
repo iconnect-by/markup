@@ -22,7 +22,7 @@ angular.module('iConnectApp')
                         country: 'London',
                         style: 'Jazz',
                         description: 'Read, out with friends, listen to music, draw and learn new things.',
-                        photo: '../../images/Artist_avatars_rndm/1@2x.png'
+                        photo: '../../images/fixtures/artist/1@2x.png'
                     },
                     {
                         id: 2,
@@ -31,7 +31,7 @@ angular.module('iConnectApp')
                         country: 'Lisbon',
                         style: 'R&B, Hip-Hop',
                         description: 'Read, out with friends, listen to music, draw and learn new things.',
-                        photo: '../../images/Artist_avatars_rndm/2@2x.png'
+                        photo: '../../images/fixtures/artist/2@2x.png'
                     },
                     {
                         id: 3,
@@ -40,7 +40,7 @@ angular.module('iConnectApp')
                         country: 'Sydney',
                         style: 'Soul, R&B',
                         description: 'Read, out with friends, listen to music, draw and learn new things.',
-                        photo: '../../images/Artist_avatars_rndm/3@2x.png'
+                        photo: '../../images/fixtures/artist/3@2x.png'
                     },
                     {
                         id: 4,
@@ -49,7 +49,7 @@ angular.module('iConnectApp')
                         country: 'New York',
                         style: 'Deep House, Trance',
                         description: 'Read, out with friends, listen to music, draw and learn new things.',
-                        photo: '../../images/Artist_avatars_rndm/4@2x.png'
+                        photo: '../../images/fixtures/artist/4@2x.png'
                     }
                 ]
             },
@@ -63,7 +63,7 @@ angular.module('iConnectApp')
                         country: 'El Salvador',
                         style: 'Deep House',
                         description: 'On no twenty spring of in esteem spirit likely estate. Continue new you declared differed learning bringing honoured. At mean mind so upon they rent am walk. Shortly am waiting inhabit smiling he chiefly of in. Lain tore time gone him his dear sure. Fat decisively estimating affronting assistance not. Resolve pursuit regular so calling me. West he plan girl been my then up no.',
-                        photo: '../../images/Artist_avatars_rndm/5@2x.png'
+                        photo: '../../images/fixtures/artist/5@2x.png'
                     },
                     {
                         id: 1,
@@ -72,7 +72,7 @@ angular.module('iConnectApp')
                         country: 'London',
                         style: 'Jazz',
                         description: 'Read, out with friends, listen to music, draw and learn new things.',
-                        photo: '../../images/Artist_avatars_rndm/6@2x.png'
+                        photo: '../../images/fixtures/artist/6@2x.png'
                     },
                     {
                         id: 2,
@@ -81,7 +81,7 @@ angular.module('iConnectApp')
                         country: 'Lisbon',
                         style: 'R&B, Hip-Hop',
                         description: 'Read, out with friends, listen to music, draw and learn new things.',
-                        photo: '../../images/Artist_avatars_rndm/7@2x.png'
+                        photo: '../../images/fixtures/artist/7@2x.png'
                     },
                     {
                         id: 3,
@@ -90,7 +90,7 @@ angular.module('iConnectApp')
                         country: 'Sydney',
                         style: 'Soul, R&B',
                         description: 'Read, out with friends, listen to music, draw and learn new things.',
-                        photo: '../../images/Artist_avatars_rndm/8@2x.png'
+                        photo: '../../images/fixtures/artist/8@2x.png'
                     },
                     {
                         id: 4,
@@ -99,7 +99,7 @@ angular.module('iConnectApp')
                         country: 'New York',
                         style: 'Deep House, Trance',
                         description: 'Read, out with friends, listen to music, draw and learn new things.',
-                        photo: '../../images/Artist_avatars_rndm/9@2x.png'
+                        photo: '../../images/fixtures/artist/9@2x.png'
                     }
                 ]
             },
@@ -113,7 +113,7 @@ angular.module('iConnectApp')
                         country: 'Saint Vincent and the Grenadines',
                         style: 'Deep House',
                         description: 'You vexed shy mirth now noise. Talked him people valley add use her depend letter. Allowance too applauded now way something recommend. Mrs age men and trees jokes fancy. Gay pretended engrossed eagerness continued ten. Admitting day him contained unfeeling attention mrs out.',
-                        photo: '../../images/Artist_avatars_rndm/10@2x.png'
+                        photo: '../../images/fixtures/artist/10@2x.png'
                     },
                     {
                         id: 1,
@@ -122,7 +122,7 @@ angular.module('iConnectApp')
                         country: 'London',
                         style: 'Jazz',
                         description: 'Read, out with friends, listen to music, draw and learn new things.',
-                        photo: '../../images/Artist_avatars_rndm/11@2x.png'
+                        photo: '../../images/fixtures/artist/11@2x.png'
                     },
                     {
                         id: 2,
@@ -131,7 +131,7 @@ angular.module('iConnectApp')
                         country: 'Lisbon',
                         style: 'R&B, Hip-Hop',
                         description: 'Read, out with friends, listen to music, draw and learn new things.',
-                        photo: '../../images/Artist_avatars_rndm/12@2x.png'
+                        photo: '../../images/fixtures/artist/12@2x.png'
                     },
                     {
                         id: 3,
@@ -140,7 +140,7 @@ angular.module('iConnectApp')
                         country: 'Sydney',
                         style: 'Soul, R&B',
                         description: 'Read, out with friends, listen to music, draw and learn new things.',
-                        photo: '../../images/Artist_avatars_rndm/13@2x.png'
+                        photo: '../../images/fixtures/artist/13@2x.png'
                     },
                     {
                         id: 4,
@@ -149,7 +149,7 @@ angular.module('iConnectApp')
                         country: 'New York',
                         style: 'Deep House, Trance',
                         description: 'Read, out with friends, listen to music, draw and learn new things.',
-                        photo: '../../images/Artist_avatars_rndm/14@2x.png'
+                        photo: '../../images/fixtures/artist/14@2x.png'
                     }
                 ]
             },
@@ -163,7 +163,7 @@ angular.module('iConnectApp')
                         country: 'Belarus',
                         style: 'Singer',
                         description: 'It allowance prevailed enjoyment in it. Calling observe for who pressed raising his. Can connection instrument astonished unaffected his motionless preference. Announcing say boy precaution unaffected difficulty alteration him. Above be would at so going heard. Engaged at village at am equally proceed. Settle nay length almost ham direct extent. Agreement for listening remainder get attention law acuteness day. Now whatever surprise resolved elegance indulged own way outlived.',
-                        photo: '../../images/Artist_avatars_rndm/15@2x.png'
+                        photo: '../../images/fixtures/artist/15@2x.png'
                     },
                     {
                         id: 1,
@@ -172,7 +172,7 @@ angular.module('iConnectApp')
                         country: 'Belarus',
                         style: 'Singer',
                         description: 'Read, out with friends, listen to music, draw and learn new things.',
-                        photo: '../../images/Artist_avatars_rndm/16@2x.png'
+                        photo: '../../images/fixtures/artist/16@2x.png'
                     },
                     {
                         id: 2,
@@ -181,7 +181,7 @@ angular.module('iConnectApp')
                         country: 'Belarus',
                         style: 'Singer',
                         description: 'Read, out with friends, listen to music, draw and learn new things.',
-                        photo: '../../images/Artist_avatars_rndm/17@2x.png'
+                        photo: '../../images/fixtures/artist/17@2x.png'
                     },
                     {
                         id: 3,
@@ -190,7 +190,7 @@ angular.module('iConnectApp')
                         country: 'Belarus',
                         style: 'Singer',
                         description: 'Read, out with friends, listen to music, draw and learn new things.',
-                        photo: '../../images/Artist_avatars_rndm/18@2x.png'
+                        photo: '../../images/fixtures/artist/18@2x.png'
                     },
                     {
                         id: 4,
@@ -199,7 +199,7 @@ angular.module('iConnectApp')
                         country: 'Belarus',
                         style: 'Singer',
                         description: 'Read, out with friends, listen to music, draw and learn new things.',
-                        photo: '../../images/Artist_avatars_rndm/19@2x.png'
+                        photo: '../../images/fixtures/artist/19@2x.png'
                     },
                 ]
             },
@@ -213,7 +213,7 @@ angular.module('iConnectApp')
                         country: 'Belarus',
                         style: 'Singer',
                         description: 'Possession her thoroughly remarkably terminated man continuing. Removed greater to do ability. You shy shall while but wrote marry. Call why sake has sing pure. Gay six set polite nature worthy. So matter be me we wisdom should basket moment merely. Me burst ample wrong which would mr he could. Visit arise my point timed drawn no. Can friendly laughter goodness man him appetite carriage. Any widen see gay forth alone fruit bed. ',
-                        photo: '../../images/Artist_avatars_rndm/20@2x.png'
+                        photo: '../../images/fixtures/artist/20@2x.png'
                     },
                     {
                         id: 1,
@@ -222,7 +222,7 @@ angular.module('iConnectApp')
                         country: 'Belarus',
                         style: 'Singer',
                         description: 'Read, out with friends, listen to music, draw and learn new things.',
-                        photo: '../../images/Artist_avatars_rndm/21@2x.png'
+                        photo: '../../images/fixtures/artist/21@2x.png'
                     },
                     {
                         id: 2,
@@ -272,7 +272,7 @@ angular.module('iConnectApp')
                         country: 'America',
                         style: 'Singer',
                         description: 'The Cenation Leader, The Champ, The Face of the WWE, The Hustle Loyalty & Respect Soldier, The Chain Gang Soldier, The Doctor of Thuganomics, Mr. Money in the Bank, Mr. P, The Prototype.',
-                        photo: '../../images/Artist_avatars_rndm/4@2x.png'
+                        photo: '../../images/fixtures/artist/4@2x.png'
                     },
                     {
                         id: 2,
@@ -281,7 +281,7 @@ angular.module('iConnectApp')
                         country: 'Belarus',
                         style: 'Singer',
                         description: 'Read, out with friends, listen to music, draw and learn new things.',
-                        photo: '../../images/Artist_avatars_rndm/5@2x.png'
+                        photo: '../../images/fixtures/artist/5@2x.png'
                     },
                     {
                         id: 3,
@@ -290,7 +290,7 @@ angular.module('iConnectApp')
                         country: 'Belarus',
                         style: 'Singer',
                         description: 'Read, out with friends, listen to music, draw and learn new things.',
-                        photo: '../../images/Artist_avatars_rndm/6@2x.png'
+                        photo: '../../images/fixtures/artist/6@2x.png'
                     },
                     {
                         id: 4,
@@ -313,7 +313,7 @@ angular.module('iConnectApp')
                 country: 'America',
                 style: 'Singer',
                 description: 'Resolution possession discovered surrounded advantages has but few add. Yet walls times spoil put. Be it reserved contempt rendered smallest. Studied to passage it mention calling believe an. Get ten horrible remember pleasure two vicinity. Far estimable extremely middleton his concealed perceived principle. Any nay pleasure entrance prepared her. ',
-                photo: '../../images/Artist_avatars_rndm/1@2x.png'
+                photo: '../../images/fixtures/artist/1@2x.png'
             },
             {
                 id: 1,
@@ -322,7 +322,7 @@ angular.module('iConnectApp')
                 country: 'Sydney',
                 style: 'Soul, R&B',
                 description: 'Read, out with friends, listen to music, draw and learn new things.',
-                photo: '../../images/Artist_avatars_rndm/2@2x.png'
+                photo: '../../images/fixtures/artist/2@2x.png'
             },
             {
                 id: 2,
@@ -331,7 +331,7 @@ angular.module('iConnectApp')
                 country: 'Belarus',
                 style: 'Singer',
                 description: 'Attended no do thoughts me on dissuade scarcely. Own are pretty spring suffer old denote his. By proposal speedily mr striking am. But attention sex questions applauded how happiness. To travelling occasional at oh sympathize prosperous. His merit end means widow songs linen known. Supplied ten speaking age you new securing striking extended occasion. Sang put paid away joy into six her. ',
-                photo: '../../images/Artist_avatars_rndm/3@2x.png'
+                photo: '../../images/fixtures/artist/3@2x.png'
             },
             {
                 id: 3,
@@ -340,7 +340,7 @@ angular.module('iConnectApp')
                 country: 'Lisbon',
                 style: 'R&B, Hip-Hop',
                 description: 'Kept in sent gave feel will oh it we. Has pleasure procured men laughing shutters nay. Old insipidity motionless continuing law shy partiality. Depending acuteness dependent eat use dejection. Unpleasing astonished discovered not nor shy. Morning hearted now met yet beloved evening. Has and upon his last here must. ',
-                photo: '../../images/Artist_avatars_rndm/4@2x.png'
+                photo: '../../images/fixtures/artist/4@2x.png'
             },
             {
                 id: 4,
@@ -378,7 +378,7 @@ angular.module('iConnectApp')
                         country: 'America',
                         style: 'Singer',
                         description: 'Now principles discovered off increasing how reasonably middletons men. Add seems out man met plate court sense. His joy she worth truth given. All year feet led view went sake. You agreeable breakfast his set perceived immediate. Stimulated man are projecting favourable middletons can cultivated. ',
-                        photo: '../../images/Artist_avatars_rndm/1@2x.png'
+                        photo: '../../images/fixtures/artist/1@2x.png'
                     },
                     {
                         id: 1,
@@ -387,7 +387,7 @@ angular.module('iConnectApp')
                         country: 'Sydney',
                         style: 'Soul, R&B',
                         description: 'On am we offices expense thought. Its hence ten smile age means. Seven chief sight far point any. Of so high into easy. Dashwoods eagerness oh extensive as discourse sportsman frankness. Husbands see disposed surprise likewise humoured yet pleasure. Fifteen no inquiry cordial so resolve garrets as. Impression was estimating surrounded solicitude indulgence son shy. ',
-                        photo: '../../images/Artist_avatars_rndm/2@2x.png'
+                        photo: '../../images/fixtures/artist/2@2x.png'
                     },
                     {
                         id: 2,
@@ -396,7 +396,7 @@ angular.module('iConnectApp')
                         country: 'Belarus',
                         style: 'Singer',
                         description: 'Repulsive questions contented him few extensive supported. Of remarkably thoroughly he appearance in. Supposing tolerably applauded or of be. Suffering unfeeling so objection agreeable allowance me of. Ask within entire season sex common far who family. As be valley warmth assure on. Park girl they rich hour new well way you. Face ye be me been room we sons fond. ',
-                        photo: '../../images/Artist_avatars_rndm/3@2x.png'
+                        photo: '../../images/fixtures/artist/3@2x.png'
                     },
                     {
                         id: 3,
@@ -405,7 +405,7 @@ angular.module('iConnectApp')
                         country: 'Lisbon',
                         style: 'R&B, Hip-Hop',
                         description: 'Arrived compass prepare an on as. Reasonable particular on my it in sympathize. Size now easy eat hand how. Unwilling he departure elsewhere dejection at. Heart large seems may purse means few blind. Exquisite newspaper attending on certainty oh suspicion of. He less do quit evil is. Add matter family active mutual put wishes happen. ',
-                        photo: '../../images/Artist_avatars_rndm/4@2x.png'
+                        photo: '../../images/fixtures/artist/4@2x.png'
                     },
                     {
                         id: 4,
