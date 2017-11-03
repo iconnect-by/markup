@@ -6,7 +6,7 @@
     $('textarea').autosize();
 </script>
 
-<section class="profile-section" ng-controller="PersonalController">
+<main class="profile-main" ng-controller="PersonalController">
     <div class="container">
         <div class="row">
             <div class="col-md-3">
@@ -81,64 +81,64 @@
                 </div>
             </div>
 
-
             <div class="col-md-6">
-                <div class="settings-block">
+                <section class="profile-section">
+                    <h1 class="profile-section-header">Profile Settings</h1>
 
-                    <h1>Profile Information Setting</h1>
-
-                    <form name="setting" ng-submit="save_artist()" class="form-inline" novalidate>
-                        <fieldset>
+                    <form name="setting" ng-submit="save_artist()" class="profile-edit-form" novalidate>
+                        <div class="profile-section-body">
                             <div class="form-group">
-                                <div class="col-xs-3">
-                                    <label>Aliase</label>
-                                </div>
+                                <label class="col-xs-3 control-label">Alias</label>
                                 <div class="col-xs-8">
                                     <input class="form-control" type="email" ng-required="true" value="Maximdanilovdesigner@gmail.com">
                                 </div>
-                                <div class="col-xs-1 edit-section">
-                                    <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                <div class="col-xs-1 control-icon">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                                            <path fill="#E5E5E5" fill-rule="evenodd" d="M0 7.889V10h2.111l6.111-6.167-2.11-2.11L0 7.888zm9.833-5.667a.537.537 0 0 0 0-.778L8.556.167a.537.537 0 0 0-.778 0l-1 1 2.11 2.11.945-1.055z"/>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="form-group focused error">
-                                <div class="col-xs-3">
-                                    <label>Your Role</label>
-                                </div>
-                                <div class="col-xs-9 multi">
-                                    <div class="artist-role-block {{role.status}}" ng-repeat="role in artistRole">
-                                        <span class="role-name">{{role.title}}</span>
-                                        <span class="role-switch"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                            <div class="form-group">
+                                <label class="col-xs-3 control-label">Your Role</label>
+                                <div class="col-xs-9">
+                                    <div class="form-tags-list">
+                                        <label class="tag-item" ng-repeat="role in artistRole">
+                                            <input type="checkbox" name="artist_skill" class="widget"><span class="inner">{{ ::role.title }}</span>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group focused error">
-                                <div class="col-xs-3">
-                                    <label>About your</label>
-                                </div>
+                            <div class="form-group">
+                                <label class="col-xs-3 control-label">About</label>
                                 <div class="col-xs-8">
-                                    <textarea class="form-control" ng-required="true">In the 80s, the hair accessory was invaluable. Almost every style involved some sort of hair accessory or embellishment to really set it off. Today, the hair accessory is not a part of everyday style and care should be taken as to when and how to use the look dated.</textarea>
+                                    <textarea class="form-control" rows="5" ng-required="true">In the 80s, the hair accessory was invaluable. Almost every style involved some sort of hair accessory or embellishment to really set it off. Today, the hair accessory is not a part of everyday style and care should be taken as to when and how to use the look dated.</textarea>
                                     <span class="symbols-counter">There are 130 characters left to limit</span>
                                 </div>
-                                <div class="col-xs-1 edit-section">
-                                    <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                <div class="col-xs-1 control-icon">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                                            <path fill="#E5E5E5" fill-rule="evenodd" d="M0 7.889V10h2.111l6.111-6.167-2.11-2.11L0 7.888zm9.833-5.667a.537.537 0 0 0 0-.778L8.556.167a.537.537 0 0 0-.778 0l-1 1 2.11 2.11.945-1.055z"/>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-xs-3">
-                                    <label>Music Genres</label>
-                                </div>
+                                <label class="col-xs-3 control-label">Music Genres</label>
                                 <div class="col-xs-8">
                                     <input class="form-control" type="text" ng-required="true" value="R&B, Hip-Hop, Trance, Dubstep">
-                                    <p class="help-info">You can specify up to 7 genres separated by commas</p>
                                 </div>
-                                <div class="col-xs-1 edit-section">
-                                    <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                <div class="col-xs-1 control-icon">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                                            <path fill="#E5E5E5" fill-rule="evenodd" d="M0 7.889V10h2.111l6.111-6.167-2.11-2.11L0 7.888zm9.833-5.667a.537.537 0 0 0 0-.778L8.556.167a.537.537 0 0 0-.778 0l-1 1 2.11 2.11.945-1.055z"/>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-xs-3">
-                                    <label>Location</label>
-                                </div>
+                                <label class="col-xs-3 control-label">Location</label>
                                 <div class="col-xs-8 editable-form">
                                     <span class="form-value" ng-show="!locationEditable" ng-click="edit($event)">London, United Kindom</span>
                                     <div class="editable-block" ng-show="locationEditable">
@@ -170,46 +170,50 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xs-1 edit-section">
-                                    <a href="#" ng-click="edit($event)"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                <div class="col-xs-1 control-icon">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                                            <path fill="#E5E5E5" fill-rule="evenodd" d="M0 7.889V10h2.111l6.111-6.167-2.11-2.11L0 7.888zm9.833-5.667a.537.537 0 0 0 0-.778L8.556.167a.537.537 0 0 0-.778 0l-1 1 2.11 2.11.945-1.055z"/>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-xs-3">
-                                    <label>iTunes</label>
-                                </div>
+                                <label class="col-xs-3 control-label">iTunes</label>
                                 <div class="col-xs-8">
                                     <input class="form-control" type="text" ng-required="true" value="https://www.itunes.com/maxim911">
                                 </div>
-                                <div class="col-xs-1 edit-section">
-                                    <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                <div class="col-xs-1 control-icon">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                                            <path fill="#E5E5E5" fill-rule="evenodd" d="M0 7.889V10h2.111l6.111-6.167-2.11-2.11L0 7.888zm9.833-5.667a.537.537 0 0 0 0-.778L8.556.167a.537.537 0 0 0-.778 0l-1 1 2.11 2.11.945-1.055z"/>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-xs-3">
-                                    <label>SoundCloud</label>
-                                </div>
+                                <label class="col-xs-3 control-label">SoundCloud</label>
                                 <div class="col-xs-8">
                                     <input class="form-control" type="text" ng-required="true" value="https://www.soundcloud.com/qweqw/maxim.eriomov">
                                 </div>
-                                <div class="col-xs-1 edit-section">
-                                    <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                <div class="col-xs-1 control-icon">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                                            <path fill="#E5E5E5" fill-rule="evenodd" d="M0 7.889V10h2.111l6.111-6.167-2.11-2.11L0 7.888zm9.833-5.667a.537.537 0 0 0 0-.778L8.556.167a.537.537 0 0 0-.778 0l-1 1 2.11 2.11.945-1.055z"/>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="form-group">
-                                <div class="col-xs-12">
-                                    <button class="ic-btn ic-btn-white ic-btn-delete pull-left">Delete</button>
-                                    <button class="ic-btn ic-btn-white pull-right" ui-sref="app.personal-artist">Cancel</button>
-                                    <button type="submit" class="ic-btn ic-btn-orange pull-right" ng-disabled="setting.$invalid">Save</button>
-                                </div>
-                            </div>
-
-                        </fieldset>
+                        <div class="actions">
+                            <button class="ic-btn ic-btn-white ic-btn-delete pull-left">Delete page</button>
+                            <button type="submit" class="ic-btn ic-btn-green pull-right" ng-disabled="setting.$invalid">Save settings</button>
+                            <button class="ic-btn ic-btn-white pull-right" ui-sref="app.personal-artist">Close</button>
+                        </div>
                     </form>
-                </div><!--.settings-block-->
+                </section>
             </div>
-
 
             <div class="col-md-3">
                 <!--<img src="../../../images/fixtures/calendar-mock.png" style="display: inline-block; margin-bottom: 20px;" class="img-responsive" alt="...">-->
@@ -266,7 +270,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-</section>
+</main>

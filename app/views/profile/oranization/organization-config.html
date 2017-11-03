@@ -10,7 +10,7 @@
     });
 </script>
 
-<section class="profile-section" ng-controller="PersonalController">
+<main class="profile-main" ng-controller="PersonalController">
     <div class="container">
         <div class="row">
             <div class="col-md-3">
@@ -71,52 +71,50 @@
                 </div>
             </div>
 
-
             <div class="col-md-6">
-                <div class="settings-block">
-
-                    <h1>Profile Information Setting</h1>
-
-                    <form name="setting" ng-submit="save_artist()" class="form-inline" novalidate>
-                        <fieldset>
+                <section class="profile-section">
+                    <h1 class="profile-section-header">Profile Settings</h1>
+                    <form name="setting" ng-submit="save_artist()" class="profile-edit-form" novalidate>
+                        <div class="profile-section-body">
                             <div class="form-group focused error">
-                                <div class="col-xs-3">
-                                    <label>Email</label>
-                                </div>
+                                <label class="control-label col-xs-3">Email</label>
                                 <div class="col-xs-8">
                                     <input class="form-control" type="email" ng-required="true" value="Maximdanilovdesigner@gmail.com">
                                 </div>
-                                <div class="col-xs-1 edit-section">
-                                    <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                <div class="col-xs-1 control-icon">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                                            <path fill="#E5E5E5" fill-rule="evenodd" d="M0 7.889V10h2.111l6.111-6.167-2.11-2.11L0 7.888zm9.833-5.667a.537.537 0 0 0 0-.778L8.556.167a.537.537 0 0 0-.778 0l-1 1 2.11 2.11.945-1.055z"/>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-xs-3">
-                                    <label>Field of activity</label>
-                                </div>
-                                <div class="col-xs-9 multi">
-                                    <div class="artist-role-block {{genre.status}}" ng-repeat="genre in genres">
-                                        <span class="role-name">{{genre.title}}</span>
-                                        <span class="role-switch"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                                <label class="control-label col-xs-3">Field of activity</label>
+                                <div class="col-xs-9">
+                                    <div class="form-tags-list">
+                                        <label class="tag-item" ng-repeat="genre in genres">
+                                            <input type="checkbox" name="angency_type" class="widget"><span class="inner">{{ ::genre.title }}</span>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-xs-3">
-                                    <label>About organization</label>
-                                </div>
+                                <label class="control-label col-xs-3">About organization</label>
                                 <div class="col-xs-8">
-                                    <textarea class="form-control" ng-required="true">In the 80s, the hair accessory was invaluable. Almost every style involved some sort of hair accessory or embellishment to really set it off. Today, the hair accessory is not a part of everyday style and care should be taken as to when and how to use the look dated.</textarea>
+                                    <textarea class="form-control" rows="5" ng-required="true">In the 80s, the hair accessory was invaluable. Almost every style involved some sort of hair accessory or embellishment to really set it off. Today, the hair accessory is not a part of everyday style and care should be taken as to when and how to use the look dated.</textarea>
                                     <span class="symbols-counter">There are 130 characters left to limit</span>
                                 </div>
-                                <div class="col-xs-1 edit-section">
-                                    <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                <div class="col-xs-1 control-icon">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                                            <path fill="#E5E5E5" fill-rule="evenodd" d="M0 7.889V10h2.111l6.111-6.167-2.11-2.11L0 7.888zm9.833-5.667a.537.537 0 0 0 0-.778L8.556.167a.537.537 0 0 0-.778 0l-1 1 2.11 2.11.945-1.055z"/>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-xs-3">
-                                    <label>Location</label>
-                                </div>
+                                <label class="control-label col-xs-3">Location</label>
                                 <div class="col-xs-8 editable-form">
                                     <span class="form-value" ng-show="!locationEditable" ng-click="edit($event)">London, United Kindom</span>
                                     <div class="editable-block" ng-show="locationEditable">
@@ -148,73 +146,39 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xs-1 edit-section">
-                                    <a href="#" ng-click="edit($event)"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                <div class="col-xs-1 control-icon">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                                            <path fill="#E5E5E5" fill-rule="evenodd" d="M0 7.889V10h2.111l6.111-6.167-2.11-2.11L0 7.888zm9.833-5.667a.537.537 0 0 0 0-.778L8.556.167a.537.537 0 0 0-.778 0l-1 1 2.11 2.11.945-1.055z"/>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-xs-3">
-                                    <label>iTunes</label>
-                                </div>
-                                <div class="col-xs-8">
-                                    <input class="form-control" type="text" ng-required="true" value="https://www.itunes.com/maxim911">
-                                </div>
-                                <div class="col-xs-1 edit-section">
-                                    <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-xs-3">
-                                    <label>Website</label>
-                                </div>
+                                <label class="control-label col-xs-3">Website</label>
                                 <div class="col-xs-8">
                                     <input class="form-control" type="text" ng-required="true" value="https://www.soundcloud.com/qweqw/maxim.eriomov">
                                 </div>
-                                <div class="col-xs-1 edit-section">
-                                    <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                <div class="col-xs-1 control-icon">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                                            <path fill="#E5E5E5" fill-rule="evenodd" d="M0 7.889V10h2.111l6.111-6.167-2.11-2.11L0 7.888zm9.833-5.667a.537.537 0 0 0 0-.778L8.556.167a.537.537 0 0 0-.778 0l-1 1 2.11 2.11.945-1.055z"/>
+                                        </svg>
+                                    </a>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-xs-3">
-                                    <label>Social Networks</label>
-                                </div>
-                                <div class="col-xs-9">
-                                    <div class="social-network">
-                                        <div class="social-block">
-                                            <img src="../../../images/facebook-icon.svg" alt="...">
-                                            <input type="text" class="form-control social-name" value="Dima Kaminsky">
-                                            <span class="edit-section remove">
-                                                <a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
-                                            </span>
-                                        </div>
-                                        <div class="social-block">
-                                            <img src="../../../images/twitter-icon.svg" alt="...">
-                                            <input type="text" class="form-control social-name" value="Dima Kaminsky">
-                                            <span class="edit-section remove">
-                                                <a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
-                                            </span>
-                                        </div>
-
-                                        <a href="#" class="add-more-social">+ Add more social network account</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>
-
-                        <div class="form-group">
-                            <div class="col-xs-12 edit-section2">
-                                <button class="ic-btn ic-btn-white ic-btn-delete pull-left">Delete</button>
-                                <button class="ic-btn ic-btn-white pull-right" ui-sref="app.personal-artist">Cancel</button>
-                                <button type="submit" class="ic-btn ic-btn-orange pull-right" ng-disabled="setting.$invalid">Save</button>
                             </div>
                         </div>
+
+                        <div class="actions">
+                            <button class="ic-btn ic-btn-white ic-btn-delete pull-left">Delete</button>
+                            <button type="submit" class="ic-btn ic-btn-green pull-right" ng-disabled="setting.$invalid">Save settings</button>
+                            <button class="ic-btn ic-btn-white pull-right" ui-sref="app.personal-artist">Cancel</button>
+                        </div>
                     </form>
-                </div><!--.settings-block-->
+                </section>
             </div>
 
             <div class="col-md-3">
-                <!--<img src="../../../images/fixtures/calendar-mock.png" style="display: inline-block; margin-bottom: 20px;" class="img-responsive" alt="...">-->
-
                 <div class="calendar-sidebar-block box-content">
                     <div class="calendar-header">
                         <div class="title">Booking organization</div>
@@ -240,7 +204,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-</section>
+</main>

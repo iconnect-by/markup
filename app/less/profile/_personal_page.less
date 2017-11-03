@@ -1,4 +1,4 @@
-.profile-section {
+.profile-main {
   padding-top: @section-padding-top;
   padding-bottom: 70px;
   background-color: @pale-grey;
@@ -242,7 +242,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 17px 20px;
-        border-top: 1px solid #f2f2f2;
+        border-top: 1px solid @border-grey;
         min-height: 51px;
         height: 51px;
 
@@ -307,7 +307,7 @@
         .text-grey-small;
         display: block;
         padding: 17px 0 17px 17px;
-        border-top: 1px solid #f2f2f2;
+        border-top: 1px solid @border-grey;
         margin: 0 34px;
         align-self: flex-start;
         justify-self: end;
@@ -883,33 +883,63 @@
     }
   }
 
-  .settings-block {
-    border: 1px solid #f2f2f2;
-    border-radius: 4px;
-    background-color: #fff;
+  .event-card {
+    margin-top: 0;
+  }
 
-    h1 {
+  .event-title {
+    h2 {
       .h1-black;
-      padding: 16px 20px;
-      margin: 0;
-      border-bottom: 1px solid #f2f2f2;
+      margin-top: 0;
+      margin-bottom: 17px;
     }
+  }
 
+  .row-content-events {
+    padding-bottom: 37px;
+  }
+
+  .history-and-feedback-block {
+    .title {
+      .h1-black;
+      margin-top: 19px;
+      margin-bottom: 17px;
+    }
+    .content {
+
+    }
+  }
+
+  .profile-edit-form {
     .form-group {
-      padding: 16px 5px;
-      border-bottom: 1px solid #f2f2f2;
-      width: 100%;
+      .clearfix;
+      margin: 0;
+      padding: 0 0 25px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
 
       &.error {
-        label {
+        .control-label {
           color: @iConnect-red;
         }
       }
 
-      label {
-        .text-default;
-        font-size: 12 * @rem;
-        font-weight: @fw-semibold;
+      + .form-group {
+        border-top: 1px solid @border-grey;
+        padding-top: 25px;
+      }
+
+      .control-label {
+        color: @black;
+        font-size: 10 * @rem;
+        letter-spacing: .3px;
+        text-align: left;
+        text-transform: uppercase;
+
+        margin-top: 5px;
+        padding-left: 0;
       }
 
       .form-control {
@@ -921,34 +951,87 @@
         outline: none;
         .text-default;
         font-size: 12 * @rem;
-        letter-spacing: .34px;
+        letter-spacing: .3px;
+        padding-top: 0;
+        padding-bottom: 0;
+        height: auto;
+        min-height: 26px;
       }
 
       textarea {
         resize: none;
       }
 
+      .control-icon {
+        text-align: right;
+
+        a {
+          color: @light-grey;
+          line-height: 1.5;
+          font-size: 18 * @rem;
+          vertical-align: middle;
+
+          &:hover {
+            color: darken(@light-grey, 20%);
+          }
+
+          svg {
+            path {
+              fill: currentColor;
+            }
+          }
+        }
+
+        &.focus {
+          a {
+            color: @iConnect-orange;
+
+            &:hover {
+              color: darken(@iConnect-orange, 20%);
+            }
+          }
+        }
+
+        &.remove {
+          float: right;
+          a {
+            color: #f00;
+            line-height: 1.5;
+            vertical-align: middle;
+            font-size: 16 * @rem;
+          }
+
+          &:hover {
+            a {
+              color: @iConnect-orange;
+            }
+          }
+        }
+
+        &.separate {
+          text-align: center;
+          &:after {
+            content: '';
+            display: inline-block;
+            width: 1px;
+            height: 30px;
+            position: absolute;
+            border-right: 1px solid @border-grey;
+            right: 10px
+          }
+        }
+      }
+
+      .symbols-counter {
+        .text-default-medium;
+        color: @iConnect-red;
+        padding: 6px 12px;
+      }
+
       .form-value {
         .text-default;
         font-size: 12 * @rem;
         letter-spacing: .34px;
-        padding: 6px 12px;
-      }
-
-      .add-more-social {
-        .text-blue-medium;
-        font-weight: @fw-regular;
-      }
-
-      .ic-btn-orange {
-        margin-right: 20px;
-      }
-
-      .help-info {
-        display: block;
-        .text-grey-small;
-        font-weight: @fw-regular;
-        margin-top: 14px;
         padding: 6px 12px;
       }
 
@@ -991,221 +1074,22 @@
           }
         }
       }
-
-      .social-block {
-        display: block;
-        margin-bottom: 20px;
-
-        img {
-          border-radius: 50%;
-          width: 30px;
-          height: 30px;
-          display: inline-block;
-        }
-        .social-name {
-          .text-default;
-          font-weight: @fw-semibold;
-          max-width: 200px;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          display: inline-block;
-          vertical-align: middle;
-          padding-left: 5px;
-        }
-
-      }
-
-      .edit-section {
-        text-align: right;
-        a {
-          color: #e5e5e5;
-          line-height: 1.5;
-          font-size: 16 * @rem;
-          vertical-align: middle;
-
-          &:hover {
-            color: darken(#e5e5e5, 20%);
-          }
-        }
-
-        &.focus {
-          a {
-            color: @iConnect-orange;
-
-            &:hover {
-              color: darken(@iConnect-orange, 20%);
-            }
-          }
-        }
-
-        &.remove {
-          float: right;
-          a {
-            color: #f00;
-            line-height: 1.5;
-            vertical-align: middle;
-            font-size: 16 * @rem;
-          }
-
-          &:hover {
-            a {
-              color: @iConnect-orange;
-            }
-          }
-        }
-
-        &.separate {
-          text-align: center;
-          &:after {
-            content: '';
-            display: inline-block;
-            width: 1px;
-            height: 30px;
-            position: absolute;
-            border-right: 1px solid #f2f2f2;
-            right: 10px
-          }
-        }
-      }
-
-      .symbols-counter {
-        .text-default-medium;
-        color: #f00;
-        padding: 6px 12px;
-      }
-
     }
 
+    .actions {
+      padding-top: 20px;
+      margin-top: 20px;
+      border-top: solid 1px @border-grey;
 
-    .styled-placeholder {
-      position: relative;
-      display: block;
-
-      &.form-group {
-        background-color: transparent;
-        height: auto;
-        border: 0;
-        border-radius: 0;
-        margin-bottom: 0;
-
-        &.focused {
-          .control-label {
-            opacity: 1;
-            top: -3px;
-            transform: scale(1);
-            color: #626875;
-          }
-        }
+      // TODO refactor all buttons
+      [type="submit"] {
+        padding-right: 45px;
+        padding-left: 45px;
+        margin-left: 30px;
       }
-
-      .control-label {
-        .title-H2;
-        color: #999;
-        font-family: @iConnect-font-regular;
-        font-size: 10 * @rem;
-        font-weight: @fw-regular;
-        line-height: 1.125;
-        letter-spacing: .46px;
-        margin-bottom: 0;
-        opacity: .5;
-        pointer-events: none;
-        position: absolute;
-        width: 100%;
-        text-align: left;
-        top: 23px;
-        transform: scale(1);
-        transform-origin: left top;
-        transition: all .2s ease-in-out;
-      }
-
-      .form-control {
-        align-self: flex-end;
-        border: none;
-        box-shadow: none;
-        line-height: 1;
-        border-bottom: 1px solid #f2f2f2;
-      }
-
-      input {
-        .text-default-medium;
-        color: @black;
-        margin: 0;
-        font-weight: @fw-regular;
-        text-align: left;
-        border-radius: 0;
-        padding-left: 0;
-        padding-right: 0;
-
-        max-width: 99.99% !important;
-        transition: width 0.25s;
-      }
-
-      .bar {
-        position: relative;
-        display: block;
-        width: 100%;
-
-        &:before, &:after {
-          content: '';
-          height: 1px;
-          width: 0;
-          bottom: -1px;
-          position: absolute;
-          background: @iConnect-orange;
-          transition: 0.2s ease all;
-          -moz-transition: 0.2s ease all;
-          -webkit-transition: 0.2s ease all;
-        }
-        &:before {
-          left: 50%;
-        }
-        &:after {
-          right: 50%;
-        }
-      }
-
-      /* active state */
-      input:focus ~ .bar:before, input:focus ~ .bar:after {
-        width:50%;
-      }
-
-    }
-
-
-
-
-
-  }
-
-  .event-card {
-    margin-top: 0;
-  }
-
-  .event-title {
-    h2 {
-      .h1-black;
-      margin-top: 0;
-      margin-bottom: 17px;
-    }
-  }
-  .row-content-events {
-    padding-bottom: 37px;
-  }
-
-  .history-and-feedback-block {
-    .title {
-      .h1-black;
-      margin-top: 19px;
-      margin-bottom: 17px;
-    }
-    .content {
-
     }
   }
 }
-
-
 
 .noscroll {
   overflow: hidden;
@@ -1344,7 +1228,7 @@
 
       &:not(:last-child) {
         a {
-          border-right: 1px solid #f2f2f2;
+          border-right: 1px solid @border-grey;
         }
       }
 

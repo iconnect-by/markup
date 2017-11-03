@@ -99,139 +99,92 @@
     }
 
   }
+}
 
-  .section-title {
-    .h1-black;
-    display: block;
-    margin-bottom: 17px;
+.event-slot {
+  .content-plate;
 
-    .separator {
-      margin: 0 15px;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    a {
-      color: @bright-orange;
+  height: 100px;
+  overflow: hidden;
 
-      &:hover {
-        color: lighten(@bright-orange, 20%);
-      }
-    }
+  .profile-section & {
+    margin-bottom: 20px;
   }
 
-  .event-slot-list {
-    margin-top: 36px;
-    position: relative;
-
-    .event-slot-list__filter {
-      line-height: 0;
-      position: absolute;
-      top: 0;
-      right: 0;
-
-      .dropdown-toggle {
-        .h1-base;
-        background: none;
-        border: 0 none;
-        padding: 0;
-      }
-
-      .dropdown-popup {
-        transform: translateY(15px);
-        width: 180px;
-        min-width: 180px;
-      }
-    }
-
-    .event-slot {
-      margin-bottom: 20px;
-    }
+  .content, .profile-preview-card {
+    min-width: 0;
+    margin-right: 20px;
   }
 
-  .event-slot {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  .profile-preview-card {
+    .details {
+      color: @black;
+      font-size: 11 * @rem;
+      line-height: 1;
+      margin-top: 9px;
 
-    border: dashed 1px @light-grey;
-    border-radius: 4px;
-    background: @iConnect-white;
-
-    height: 100px;
-    padding: 20px;
-    overflow: hidden;
-
-    .content, .profile-preview-card {
-      min-width: 0;
-      margin-right: 20px;
-    }
-
-    .profile-preview-card {
-      .details {
-        color: @black;
-        font-size: 11 * @rem;
+      .link {
+        font-size: 1em;
         line-height: 1;
-        margin-top: 9px;
-
-        .link {
-          font-size: 1em;
-          line-height: 1;
-          display: none;
-        }
-      }
-    }
-
-    .content {
-      letter-spacing: .4px;
-
-      .subtitle {
-        color: @cool-grey;
-        font-size: 10 * @rem;
-        line-height: 1.8;
-      }
-
-      .title {
-        display: block;
-        font-size: 14 * @rem;
-        font-weight: 600;
-        line-height: 1.5;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-      }
-    }
-
-    &.create {
-      background: transparent;
-      justify-content: center;
-      width: 100px;
-      position: relative;
-      overflow: initial;
-
-      .dropdown-popup {
-        transform: translate(5px, -10px);
-        width: 380px;
-      }
-    }
-
-    &.artist {
-      border-style: solid;
-      border-color: @iConnect-lightGrey;
-    }
-
-    &:hover {
-      .profile-preview-card .details {
-        .value {
-          display: none;
-        }
-
-        .link {
-          display: inline-block;
-        }
+        display: none;
       }
     }
   }
 
-  .event-slot-btn {
+  .content {
+    letter-spacing: .4px;
+
+    .subtitle {
+      color: @cool-grey;
+      font-size: 10 * @rem;
+      line-height: 1.8;
+    }
+
+    .title {
+      display: block;
+      font-size: 14 * @rem;
+      font-weight: 600;
+      line-height: 1.5;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  &.dashed {
+    border-color: @light-grey;
+  }
+
+  &:hover {
+    .profile-preview-card .details {
+      .value {
+        display: none;
+      }
+
+      .link {
+        display: inline-block;
+      }
+    }
+  }
+
+  &.create {
+    background: transparent;
+    justify-content: center;
+    width: 100px;
+    position: relative;
+    overflow: initial;
+
+    .dropdown-popup {
+      transform: translate(5px, -10px);
+      width: 380px;
+    }
+  }
+
+  &-btn {
     border: 0 none;
     border-radius: 50%;
     background-color: fade(@dark-sky-blue, 5%);
@@ -275,6 +228,54 @@
     &:disabled {
       color: @light-grey;
     }
+  }
+}
+
+// TODO move to profile related less
+.profile-section {
+  margin-top: 36px;
+  position: relative;
+
+  &__filter {
+    line-height: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    .dropdown-toggle {
+      .h1-base;
+      background: none;
+      border: 0 none;
+      padding: 0;
+    }
+
+    .dropdown-popup {
+      transform: translateY(15px);
+      width: 180px;
+      min-width: 180px;
+    }
+  }
+
+  &-header {
+    .h1-black;
+    display: block;
+    margin-bottom: 17px;
+
+    .separator {
+      margin: 0 15px;
+    }
+
+    a {
+      color: @bright-orange;
+
+      &:hover {
+        color: lighten(@bright-orange, 20%);
+      }
+    }
+  }
+
+  &-body {
+    .content-plate;
   }
 }
 

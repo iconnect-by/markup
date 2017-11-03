@@ -8,7 +8,7 @@
     });
 </script>
 
-<section class="event-page-section profile-section event-page-settings-section add-role-section" ng-controller="EventsController">
+<main class="event-page-section profile-main" ng-controller="EventsController">
     <div class="container top-banner-container">
         <div class="row">
 
@@ -97,11 +97,11 @@
             </div><!--.col-->
 
             <div class="col-md-9">
-                <section class="event-slot-list">
-                    <h3 class="section-title">Artists taking part in the event</h3>
+                <section class="profile-section">
+                    <h3 class="profile-section-header">Artists taking part in the event</h3>
                     <div class="row">
                         <div class="col-md-4" ng-repeat="item in [1,2,3]">
-                            <div class="event-slot artist">
+                            <div class="event-slot">
                                 <div class="profile-preview-card">
                                     <div class="avatar circle">
                                         <div class="image">
@@ -121,7 +121,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="event-slot">
+                            <div class="event-slot dashed">
                                 <div class="content">
                                     <div class="subtitle">We search:</div>
                                     <div class="title">Music group</div>
@@ -134,7 +134,7 @@
                             </div>
                         </div>
                         <div class="col-md-2">
-                            <div class="event-slot create">
+                            <div class="event-slot dashed create">
                                 <button class="event-slot-btn inverse" data-toggle="dropdown" uib-tooltip="Add event slot" tooltip-placement="top">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
                                         <path fill="#E5E5E5" fill-rule="evenodd" d="M0 15c0 8.25 6.75 15 15 15s15-6.75 15-15S23.25 0 15 0 0 6.75 0 15zm16.5 1.5V21a1.5 1.5 0 0 1-3 0v-4.5H9a1.5 1.5 0 0 1 0-3h4.5V9a1.5 1.5 0 0 1 3 0v4.5H21a1.5 1.5 0 0 1 0 3h-4.5z"/>
@@ -153,10 +153,10 @@
                     </div>
                 </section>
 
-                <section class="event-slot-list">
-                    <h3 class="section-title">Received applications<span class="separator">|</span><a href="">Reject all</a></h3>
+                <section class="profile-section">
+                    <h3 class="profile-section-header">Received applications<span class="separator">|</span><a href="">Reject all</a></h3>
 
-                    <div class="event-slot-list__filter">
+                    <div class="profile-section__filter">
                         <button class="dropdown-toggle" type="button" data-toggle="dropdown">Show all <span class="caret"></span></button>
                         <div class="dropdown-popup right">
                             <ul class="dropdown-popup-menu">
@@ -169,7 +169,7 @@
 
                     <div class="row">
                         <div class="col-md-4" ng-repeat="item in [1,2,3,4]">
-                            <div class="event-slot artist">
+                            <div class="event-slot">
                                 <div class="profile-preview-card">
                                     <div class="avatar circle">
                                         <div class="image">
@@ -193,7 +193,7 @@
                             </div>
                         </div>
                         <div class="col-md-4" ng-repeat="item in [1,2]">
-                            <div class="event-slot artist">
+                            <div class="event-slot">
                                 <div class="profile-preview-card">
                                     <div class="avatar circle">
                                         <div class="image">
@@ -219,8 +219,8 @@
                     </div>
                 </section>
 
-                <section class="event-slot-list">
-                    <h3 class="section-title">Sent invitations</h3>
+                <section class="profile-section">
+                    <h3 class="profile-section-header">Sent invitations</h3>
                     <div class="row">
                         <div class="col-md-4" ng-repeat="item in [1,2]">
                             <div class="event-slot artist">
@@ -247,4 +247,4 @@
             </div><!--.col-->
         </div><!--.row-->
     </div><!--.container-->
-</section>
+</main>
