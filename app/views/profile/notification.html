@@ -1,4 +1,4 @@
-<section class="cabinet-section notification-section">
+<section class="notification-section">
     <div class="container">
 
         <div class="row header-container">
@@ -10,69 +10,150 @@
         </div><!--.row-->
 
         <div class="row">
-            <ul class="nav nav-tabs" role="tablist">
-                <li class="active"><a href="#" data-target='#all_activity' data-toggle="tab" onclick="return false;">All activity</a></li>
-                <li><a href="#" data-target='#request' data-toggle="tab" onclick="return false;">Request</a></li>
-                <li><a href="#" data-target='#rating' data-toggle="tab" onclick="return false;">Rating</a></li>
-            </ul>
+            <div class="col-md-12">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="active"><a href="#" data-target='#all_activity' data-toggle="tab" onclick="return false;">All activity</a></li>
+                    <li><a href="#" data-target='#request' data-toggle="tab" onclick="return false;">Request</a></li>
+                    <li><a href="#" data-target='#rating' data-toggle="tab" onclick="return false;">Rating</a></li>
+                </ul>
+            </div>
+        </div>
 
-            <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active in" id="all_activity">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <notification-card data="{
-                                    hands: true,
-                                    btns: false,
-                                    rating: false,
-                                    isNew: false
-                                }">
-                                </notification-card>
-                            </div>
-                            <div class="col-md-3">
-                                <notification-card data="{
-                                    hands: false,
-                                    btns: false,
-                                    rating: true,
-                                    isNew: true,
-                                }">
-                                </notification-card>
-                            </div>
-                            <div class="col-md-3">
-                                <notification-card data="{
-                                    hands: false,
-                                    rating: false,
-                                    btns: true,
-                                    isNew: true,
-                                }">
-                                </notification-card>
-                            </div>
+    </div>
 
-                            <div class="col-md-3" ng-repeat="i in [1,2,3,4,5,6,7,8,9]">
-                                <notification-card data="{
-                                    hands: false,
-                                    rating: false,
-                                    btns: true,
-                                    isNew: true,
-                                }">
-                                </notification-card>
+    <div class="container-fluid notification-container">
+        <div class="container">
+            <div class="row">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active in" id="all_activity">
+
+                        <div class="col-md-12">
+                            <h3 class="header">General Notifications</h3>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="general-notification">
+                                <div class="gnotification-avatar">
+                                    <img src="../../images/mail.svg" alt="...">
+                                </div>
+                                <div class="gnotification-content">
+                                    <div class="gn-header">You are invited to participate in the event:</div>
+                                    <div class="gn-message">Search Engine Optimization And Advertising</div>
+                                </div>
                             </div>
                         </div>
-                    </div><!--.container-fluid-->
-                </div><!--.tabpanel-->
+                        <div class="col-md-12">
+                            <h3 class="header">Transnation 2017</h3>
+                        </div>
 
-                <div role="tabpanel" class="tab-pane" id="request">
-                    <div class="container-fluid">
-                        request
-                    </div><!--.container-fluid-->
-                </div><!--.tabpanel-->
+                        <div class="col-md-3">
+                            <div class="standart-notification">
+                                <div class="sn-avatar circle stack">
+                                    <img src="../../images/fixtures/artist/11@2x.png" alt="...">
+                                    <img src="../../images/no-icon-new.svg" alt="...">
+                                </div>
+                                <div class="content">
+                                    John Malkovich canceled his own participation of his own volition:
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="standart-notification">
+                                <div class="sn-avatar">
+                                    <img src="../../images/yes-icon-new.svg" alt="...">
+                                </div>
+                                <div class="content">
+                                    You were approved to participate in the event
+                                </div>
+                            </div>
+                        </div>
 
-                <div role="tabpanel" class="tab-pane" id="rating">
-                    <div class="container-fluid">
-                        rating
-                    </div>
-                </div><!--.tabpanel-->
-            </div><!--.tab-content-->
-        </div><!--.row-->
+                        <div class="col-md-3">
+                            <div class="standart-notification">
+                                <div class="sn-avatar">
+                                    <img src="../../images/no-icon-new.svg" alt="...">
+                                </div>
+                                <div class="content">
+                                    Your application for participation in the event was rejected
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="standart-notification">
+                                <div class="sn-avatar circle">
+                                    <img src="../../images/fixtures/artist/10@2x.png" alt="...">
+                                </div>
+                                <div class="content">
+                                    Your application for participation in the event was rejected
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="standart-notification">
+                                <div class="sn-avatar circle">
+                                    <img src="../../images/fixtures/artist/10@2x.png" alt="...">
+                                </div>
+                                <div class="content">
+                                    Your application for participation in the event was rejected
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="standart-notification">
+                                <div class="sn-avatar circle">
+                                    <img src="../../images/fixtures/artist/10@2x.png" alt="...">
+                                </div>
+                                <div class="content">
+                                    Your application for participation in the event was rejected
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <h3 class="header">Freaking Summer Party</h3>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="standart-notification">
+                                <div class="sn-avatar circle">
+                                    <img src="../../images/fixtures/artist/10@2x.png" alt="...">
+                                </div>
+                                <div class="content">
+                                    Your application for participation in the event was rejected
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="standart-notification">
+                                <div class="sn-avatar circle">
+                                    <img src="../../images/fixtures/artist/10@2x.png" alt="...">
+                                </div>
+                                <div class="content">
+                                    Your application for participation in the event was rejected
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!--.tabpanel-->
+
+                    <div role="tabpanel" class="tab-pane" id="request">
+                        <div class="container-fluid">
+                            request
+                        </div><!--.container-fluid-->
+                    </div><!--.tabpanel-->
+
+                    <div role="tabpanel" class="tab-pane" id="rating">
+                        <div class="container-fluid">
+                            rating
+                        </div>
+                    </div><!--.tabpanel-->
+                </div><!--.tab-content-->
+            </div><!--.row-->
+        </div>
     </div>
+
 </section>

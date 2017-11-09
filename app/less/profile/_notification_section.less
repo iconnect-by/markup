@@ -1,0 +1,78 @@
+.notification-section {
+  padding-top: @section-padding-top;
+
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .user-info {
+      margin-right: auto;
+    }
+
+    .user-config-menu {
+      margin-left: auto;
+    }
+
+    .title {
+      margin: 0;
+    }
+  }
+
+  .nav-tabs {
+    border-bottom: 1px solid @iConnect-lightGrey ;
+    margin-top: 49px;
+    margin-right: 0;
+    margin-left: 0;
+
+    li {
+      padding-right: 18px;
+
+      a {
+        background: transparent;
+        border: 0;
+        border-bottom: 2px solid transparent;
+        font-weight: @fw-regular;
+        line-height: 1.4;
+        color: inherit;
+        font-size: 11 * @rem;
+        text-transform: uppercase;
+        padding: 18px;
+      }
+
+      &.active, &.hover {
+        a {
+          color: @iConnect-orange;
+          border: 0 solid @iConnect-orange;
+          border-bottom-width: 2px;
+          font-weight: @fw-bold;
+        }
+      }
+    }
+  }
+
+  .notification-container {
+    background-color: @pale-grey;
+
+    .tab-content {
+      h3 {
+        font-family: @iConnect-font-semiBold;
+        font-weight: @fw-semibold;
+        color: @black;
+        font-size: 10 * @rem;
+        letter-spacing: .29px;
+        line-height: 1.4;
+        text-transform: uppercase;
+        margin: 36px 0 20px 0;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 17px;
+      }
+
+      .tab-pane {
+        &:not(#dashboard):not(#events):not(#events):not(#documents) {
+          padding-top: 32px;
+        }
+      }
+    }
+  }
+}
