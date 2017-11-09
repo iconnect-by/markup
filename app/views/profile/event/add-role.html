@@ -30,70 +30,66 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-
-                <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
-                <!--<div class="hero-avatar empty">-->
-                <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
-
-                <div class="hero-avatar">
-                    <div class="avatar-img">
-                        <img class="progressive-image" src="../../../images/placeholder.svg" alt="artist-img">
-                    </div>
-                </div>
-
-                <div class="hero-actions">
-                    <button class="ic-btn ic-btn-blue" ui-sref="app.personal-artist.config">Change event information</button>
-                    <button class="ic-btn ic-btn-orange" ui-sref="app.event-page-settings">Manage participants</button>
-                </div>
-
-                <div class="hero-desc box-content">
-                    <div class="hero-descr-block">
-                        <h1 class="hero-desc-name">Transnation</h1>
-                        <small class="hero-desc-caption">Festival</small>
-
-                        <div class="hero-desc-about">
-                            <span class="empty">Enter information about your event ...</span>
+                <aside class="profile-sidebar">
+                    <div class="profile-sidebar-avatar empty">
+                        <div class="avatar-img">
+                            <!--<img src="../../../images/placeholder.svg" alt="artist-img">-->
                         </div>
                     </div>
 
-                    <div class="hero-organizator">
-                        <div class="title">Organizator:</div>
-                        <mini-profile-preview
-                                data="{
-                                id: '0',
-                                photo: '',
-                                title: 'Walter Gonzales',
-                                country: 'Corporate events, Night Clubs',
-                                showLink: true,
-                                imgClass: 'square'
-                            }"
-                                show-index="0"
-                        ></mini-profile-preview>
+                    <div class="profile-sidebar-content">
+                        <h1 class="title">Rosie Shaw</h1>
+                        <div class="subtitle">Festival</div>
+                        <div class="about">You have not added a description of your event...</div>
+
+                        <div class="event-agency">
+                            <div class="title">Organizator:</div>
+                            <mini-profile-preview
+                                    data="{
+                                            id: '0',
+                                            photo: '../../../images/placeholder.svg',
+                                            title: 'Walter Gonzales',
+                                            country: 'Corporate events, Night Clubs',
+                                            showLink: true,
+                                            imgClass: 'square'
+                                        }"
+                                    show-index="0"
+                            ></mini-profile-preview>
+                        </div>
+                        <ul class="fields">
+                            <li class="item">
+                                <ul class="fields">
+                                    <li class="item d-flex align-items-center">
+                                        <div class="item-icon">
+                                            <img src="../../../images/map-baloon-icon.svg">
+                                        </div>
+                                        <div class="item-value">Croatia, New Ryannmouth</div>
+                                    </li>
+                                    <li class="item d-flex align-items-center">
+                                        <div class="item-icon">
+                                            <img src="../../../images/location-address.svg">
+                                        </div>
+                                        <div class="item-value empty">Not indicated</div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="item d-flex align-items-center">
+                                <div class="item-icon">
+                                    <img src="../../../images/date-start-end-icon.svg">
+                                </div>
+                                <div class="item-name">Date start / end</div>
+                                <div class="item-value ml-auto">25 - 28 Dec, 2017</div>
+                            </li>
+                            <li class="item d-flex align-items-center">
+                                <div class="item-icon">
+                                    <img src="../../../images/time-icon.svg">
+                                </div>
+                                <div class="item-name">Time</div>
+                                <div class="item-value ml-auto empty">Not indicated</div>
+                            </li>
+                        </ul>
                     </div>
-
-                    <div class="hero-desc-list">
-                        <div class="item">
-                            <span class="icon"><img src="../../../images/map-baloon-icon.svg" alt="..."></span>
-                            <span class="title">Location</span>
-                            <span class="value"><span class="not-indicated">not indicated</span></span>
-                        </div>
-
-                        <!--<div class="address">2760 Ora Bypass</div>-->
-                        <div class="address"><span class="not-indicated">not indicated</span></div>
-
-                        <div class="item">
-                            <span class="icon"><img src="../../../images/date-start-end-icon.svg" alt="..."></span>
-                            <span class="title">Date Start / End</span>
-                            <span class="value text-blue">22 sep - 24 sep 2017</span>
-                        </div>
-                        <div class="item">
-                            <span class="icon"><img src="../../../images/time-icon.svg" alt="..."></span>
-                            <span class="title">Time</span>
-                            <span class="value text-orange"><span class="not-indicated">not indicated</span></span>
-                        </div>
-                    </div>
-
-                </div>
+                </aside>
             </div><!--.col-->
 
             <div class="col-md-9">

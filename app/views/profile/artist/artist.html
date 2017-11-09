@@ -13,85 +13,60 @@
                 <!--<div class="hero-avatar empty">-->
                 <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
 
-                <div class="hero-avatar">
-                    <figure class="progressive-image">
-                        <div class="h-aspect-ratio">
-                            <div class="aspect-ratio-fill" style="padding-bottom: 100%;"></div>
-                            <div class="image">
-                                <canvas class="canvas-thumbnail" width="20" height="20"></canvas>
-                                <img class="image-original" src="../../../images/placeholder-artist.svg" alt="avatar">
+                <aside class="profile-sidebar">
+                    <div class="profile-sidebar-avatar">
+                        <figure class="progressive-image">
+                            <div class="h-aspect-ratio">
+                                <div class="aspect-ratio-fill" style="padding-bottom: 100%;"></div>
+                                <div class="image">
+                                    <img class="image-original" src="../../../images/placeholder-artist.svg" alt="avatar">
+                                </div>
                             </div>
-                        </div>
-                    </figure>
+                        </figure>
 
-                    <div class="ic-image-selector">
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="upload" title="Upload">&nbsp;</a></li>
-                            <li><a href="#" class="cut" title="Cut">&nbsp;</a></li>
-                            <li><a href="#" class="trash" title="Delete">&nbsp;</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="hero-actions">
-                    <button class="ic-btn ic-btn-blue" ui-sref="app.personal-artist.config">Change profile information</button>
-                </div>
-
-                <div class="hero-desc box-content">
-                    <div class="hero-descr-block">
-                        <h1 class="hero-desc-name">Sarah Dawson</h1>
-                        <small class="hero-desc-caption">Singer</small>
-                        <div class="artist-rating">
+                        <div class="ic-image-selector">
                             <ul class="list-unstyled">
-                                <li><span class="star active">&nbsp;</span></li>
-                                <li><span class="star active">&nbsp;</span></li>
-                                <li><span class="star active">&nbsp;</span></li>
-                                <li><span class="star active">&nbsp;</span></li>
-                                <li><span class="star active">&nbsp;</span></li>
-                                <li><span class="star">&nbsp;</span></li>
-                                <li><span class="star">&nbsp;</span></li>
+                                <li><a href="#" class="upload" title="Upload">&nbsp;</a></li>
+                                <li><a href="#" class="cut" title="Cut">&nbsp;</a></li>
+                                <li><a href="#" class="trash" title="Delete">&nbsp;</a></li>
                             </ul>
-                            <span class="rating-value">Rating 5.35</span>
                         </div>
-                        <div class="hero-desc-about text-collapsed" data-id="hdc" ng-click="showCloseText($event, 'hdc')">
-                            <p>
-                                This article covers the basics of Astrology and how they are inter-related.
-                                Astrology is defined as ‘the art or practice of determining the supposed influences of the planets
-                                and their motions on human affairs and human disposition’.
-                                and their motions on human affairs and human disposition’.
-                                and their motions on human affairs and human disposition’.
-                                and their motions on human affairs and human disposition’.
-                                and their motions on human affairs and human disposition’.
-                                and their motions on human affairs and human disposition’.
-                            </p>
+                    </div>
+
+                    <div class="profile-sidebar-actions">
+                        <button class="ic-btn ic-btn-blue" ui-sref="app.personal-artist.config">Change profile information</button>
+                    </div>
+
+                    <div class="profile-sidebar-content">
+                        <h1 class="title">Sarah Dawson</h1>
+                        <div class="subtitle">Singer</div>
+
+
+                        <div class="rating">
+                            <ul class="stars">
+                                <li ng-repeat="i in [1,2,3,4,5]"><span class="star"></span></li>
+                            </ul>
+                            <span class="value">None</span>
                         </div>
 
-                        <ul class="list-unstyled artist-genres">
-                            <li ng-repeat="gen in genres">
-                                <a href="#">{{ gen.title }}</a>
+                        <div class="about">This article covers the basics of Astrology and how they are inter-related. Astrology is defined as ‘the art or practice of determining the supposed influences of the planets</div>
+
+                        <ul class="artist-genres">
+                            <li ng-repeat="gen in genres" class="genre">
+                                <a href="#" class="link">{{ gen.title }}</a>
+                            </li>
+                        </ul>
+
+                        <ul class="fields">
+                            <li class="item d-flex align-items-center">
+                                <div class="item-icon">
+                                    <img src="../../../images/map-baloon-icon.svg">
+                                </div>
+                                <div class="item-value">Croatia, New Ryannmouth</div>
                             </li>
                         </ul>
                     </div>
-
-                    <div class="hero-desc-list">
-                        <div class="item">
-                            <span class="title">Location</span>
-                            <span class="value">Belarus&nbsp;<img src="../../../images/flag-british-icon.svg" alt="UK"></span>
-                        </div>
-                        <div class="item">
-                            <span class="title">iTunes link</span>
-                            <span class="value text-blue"><a href="#">SarahDawson</a></span>
-                        </div>
-                        <div class="item">
-                            <span class="title">Soundcloud</span>
-                            <span class="value text-orange"><a href="#">SarahDawson</a></span>
-                        </div>
-                        <div class="item">
-                            <a href="#" class="share-profile-lnk" ng-click="showSocialDialog($event);">Share profile</a>
-                        </div>
-                    </div>
-
-                </div>
+                </aside>
             </div>
 
             <div ng-class="divShow == 'photo' || divShow == 'video' ? 'col-md-9' : 'col-md-6'">

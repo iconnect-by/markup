@@ -219,13 +219,42 @@
         }
       }
     }
-
   }
-
 }
 
+.date-picker {
+  .content {
+    .title {
+      .h1-black;
+      margin-bottom: 14px;
+      display: block;
+    }
 
+    .header {
+      .text-grey-small;
+    }
 
+    input {
+      background-color: transparent !important;
+      height: auto;
+      padding: 15px 0;
+      border: 0;
+      border-bottom: 1px solid @border-grey;
+      border-radius: 0;
+      color: @black;
+      box-shadow: none;
+      width: 100%;
+
+      &:focus {
+        background-color: transparent;
+        box-shadow: none;
+        outline: none;
+        border-bottom: 1px solid @iConnect-orange;
+      }
+    }
+
+  }
+}
 
 .calendar-sidebar-block {
   padding: 20px;
