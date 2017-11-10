@@ -73,6 +73,10 @@
       &.empty {
         color: @cool-grey;
       }
+
+      .text-collapsed {
+        overflow: hidden;
+      }
     }
 
     .rating {
@@ -184,8 +188,9 @@
             font-size: inherit;
           }
 
-          &.link a {
-            text-transform: uppercase;
+          .link {
+            line-height: 1;
+            font-size: 11 * @rem;
           }
         }
       }

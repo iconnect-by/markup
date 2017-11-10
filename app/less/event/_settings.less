@@ -1,4 +1,4 @@
-.event-page-settings-section {
+.profile-edit-form {
   .dropdown-menu-form {
     min-width: 300px;
     border: none;
@@ -18,15 +18,23 @@
   }
 
   .dd-datetime {
-    border: none;
-    background-color: transparent;
     .text-default-medium;
+    border: none;
     outline: none;
+    background: transparent;
     width: 95px;
   }
 
   // Don't remove! Only for frontend project
   .dropdown-menu-form {
-    width: 300px!important;
+    width: 298px!important;
+  }
+
+  .time + .dropdown-menu-form {
+    transform: translateX(-106px);
+  }
+
+  .dropdown-menu-form.date {
+    transform: translateX(73px);
   }
 }
