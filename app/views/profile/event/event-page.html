@@ -1,20 +1,18 @@
 <main class="event-page-section profile-main" ng-controller="EventsController">
     <div class="container top-banner-container">
-        <div class="row">
+        <div class="banner-image empty"></div>
 
-            <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
-            <!--<div class="banner-image empty">-->
-            <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
-
-            <div class="banner-image empty">
-
-                <div class="save-event-form">
-                    <span class="title">You have an invitation to this event</span>
-                    <div class="btn-block">
-                        <a href="#" class="ic-btn ic-btn-green">Accept request</a>
-                        <a href="#" class="ic-btn ic-btn-red">Cancel</a>
-                    </div>
-                </div>
+        <div class="event-invitation">
+            <div class="title">You have an invitation to this event</div>
+            <div class="body">
+                <div class="price">$ 230</div>
+                <div class="message">Aliquam ut dolor interdum, condimentum tortor ac, semper erat. Proin maximus nulla ut commodo sollicitudin. Fusce sollicitudin, lorem eget eleifend sollicitudin, enim erat faucibus elit, a imperdiet sem lectus et nisl. Nullam blandit risus quis diam euismod, a porta diam ullamcorper. Ut ultricies velit tellus. Fusce molestie metus orci, sed sodales lorem laoreet nec. Quisque laoreet volutpat nisi. Curabitur sed convallis magna.</div>
+                <!--<div class="message">Aliquam ut </div>-->
+            </div>
+            <div class="footer">
+                <button class="ic-btn ic-btn-green" ng-click="showSuccessNotification()">Accept request</button>
+                <button class="ic-btn ic-btn-red counteroffer">Counteroffer</button>
+                <button class="ic-btn ic-btn-white reject" ng-click="showErrorNotification()">Reject</button>
             </div>
         </div>
     </div>

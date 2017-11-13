@@ -1,10 +1,17 @@
-'use strict';
+(function () {
+    'use strict';
 
-angular.module('iConnectApp')
-    .controller('EventsController', ['$scope', function ($scope) {
+    var eventsFixtures = [],
+        genresFixtures = [];
 
+    angular.module('iConnectApp').controller('EventsController', EventController);
+
+    EventController.$inject = ['$scope', 'Notification'];
+
+    function EventController($scope, Notification) {
+        $scope.eventsArt = eventsFixtures;
+        $scope.genres = genresFixtures;
         $scope.dateNow = new Date();
-
         $scope.DatePickerOptions = {
             showWeeks: false,
             formatDayTitle: 'MMM yyyy'
@@ -16,7 +23,29 @@ angular.module('iConnectApp')
             // minDate: $scope.dt <--- opt for range
         };
 
-        $scope.eventsArt = [
+        $scope.edit = function (e) {
+            e.preventDefault();
+            $scope.locationEditable = !$scope.locationEditable;
+        };
+
+        $scope.gotoArtist = function(id){
+            if(id == 0){
+                //
+            } else {
+
+            }
+        };
+
+        $scope.showSuccessNotification = function () {
+            Notification.success("Success message");
+        };
+
+        $scope.showErrorNotification = function () {
+            Notification.error("Error message");
+        };
+    }
+
+    eventsFixtures = [
             {
                 id: 0,
                 title: 'What Makes Flyers Unrivaled',
@@ -358,19 +387,7 @@ angular.module('iConnectApp')
 
             }
         ];
-
-        $scope.edit = function (e) {
-            e.preventDefault();
-
-            if (true === $scope.locationEditable) {
-                $scope.locationEditable = false;
-            } else {
-                $scope.locationEditable = true;
-            }
-
-        };
-
-        $scope.genres = [
+    genresFixtures = [
             {
                 title: 'POP',
                 status: 'active'
@@ -400,12 +417,4 @@ angular.module('iConnectApp')
                 status: 'active'
             }
         ];
-
-        $scope.gotoArtist = function(id){
-            if(id == 0){
-                //
-            } else {
-
-            }
-        }
-    }]);
+})();

@@ -1,8 +1,8 @@
-.content-plate {
-  background-color: white;
-  border: solid 1px @border-grey;
+.content-plate(@border: solid 1px @border-grey; @padding: 20px; @background-color: white) {
+  background-color: @background-color;
+  border: @border;
   border-radius: 4px;
-  padding: 20px;
+  padding: @padding;
 
   &.transparent {
     background-color: transparent;

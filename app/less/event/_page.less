@@ -2,8 +2,74 @@
   .top-banner-container {
     margin-top: @top-menu-height - @section-padding-top ;
     width: 1300px;
+    position: relative;
+
+    .event-invitation {
+      .content-plate(@border: none 0);
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      top: 10px;
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .title {
+        .h1-black;
+        display: block;
+        border-bottom: solid 1px @border-grey;
+        padding-bottom: 17px;
+      }
+
+      .body {
+        letter-spacing: .3px;
+        display: flex;
+        align-items: center;
+
+        .price {
+          .content-plate(@padding: 10px; @background-color: @pale-grey);
+          color: @black;
+          font-size: 14 * @rem;
+          font-weight: 700;
+          line-height: 1.1;
+          white-space: nowrap;
+        }
+
+        .message {
+          @line-height: 1.4em;
+          font-size: 11 * @rem;
+          line-height: @line-height;
+          margin-left: 10px;
+          max-height: @line-height * 2;
+          overflow: hidden;
+        }
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-between;
+
+        .ic-btn {
+          flex-basis: 100%;
+
+          + .ic-btn {
+            margin-left: 20px;
+          }
+        }
+
+        .counteroffer {
+          padding: 0 16px;
+        }
+
+        .reject {
+          padding: 0 16px;
+        }
+      }
+    }
 
     .banner-image {
+      margin: 0 -10px;
       max-height: 200px;
       position: relative;
 
@@ -19,30 +85,6 @@
         background: #fcfcfc url('@{ic-path-images}/photo-empy-icon.svg') center 78px no-repeat;
         background-size: 50px 45px;
         min-height: 200px;
-      }
-
-      .save-event-form {
-        position: absolute;
-        right: 20px;
-        bottom: 20px;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 4px;
-
-        .title {
-          .h1-black;
-          padding-bottom: 16px;
-          display: block;
-        }
-
-        .ic-btn {
-          padding: 0 55px;
-          min-width: 200px;
-
-          &:first-child {
-            margin-right: 20px;
-          }
-        }
       }
 
       &:hover {
@@ -180,6 +222,10 @@
 
     &.red {
       color: @iConnect-red;
+    }
+
+    &.default {
+      color: @dark-sky-blue;
     }
 
     &.remove {
