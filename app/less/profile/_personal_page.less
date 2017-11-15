@@ -271,57 +271,67 @@
 .profile-preview-card {
   display: flex;
   align-items: center;
+}
 
-  .avatar {
-    height: 60px;
-    width: 60px;
-    min-width: 60px;
-    margin-right: 20px;
+.profile-preview-card__avatar {
+  @avatar-size: 60px;
 
-    position: relative;
+  height: @avatar-size;
+  width: @avatar-size;
+  min-width: @avatar-size;
+  margin-right: @avatar-size / 3;
 
-    .image {
-      border-radius: 4px;
-      overflow: hidden;
+  position: relative;
 
-      img {
-        align-self: center;
-        max-width: 100%;
-      }
-    }
+  .profile-preview-card_small & {
+    height: @avatar-size / 2;
+    width: @avatar-size / 2;
+    min-width: @avatar-size / 2;
+  }
 
-    &.circle {
-      .image {
-        border-radius: 50%;
-      }
+  .image {
+    border-radius: 4px;
+    overflow: hidden;
+
+    img {
+      align-self: center;
+      max-width: 100%;
     }
   }
 
-  .about {
-    min-width: 0;
+  &.circle {
+    .image {
+      border-radius: 50%;
+    }
+  }
+}
 
-    .title {
-      color: @black;
-      font-size: 14 * @rem;
-      font-weight: 600;
-      line-height: 1.4;
+.profile-preview-card__about {
+  min-width: 0;
 
-      display: block;
+  &-title {
+    .text-truncate;
+    color: @black;
+    font-size: 14 * @rem;
+    font-weight: 600;
+    line-height: 1.4;
 
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+    display: block;
 
-      &:hover {
-        color: @bright-orange
-      }
+    a&:hover {
+      color: @bright-orange
     }
 
-    .subtitle {
-      color: @cool-grey;
-      font-size: 10 * @rem;
-      line-height: 1.7;
+    .profile-preview-card_small & {
+      font-size: 12 * @rem;
+      font-weight: 400;
     }
+  }
+
+  &-subtitle {
+    color: @cool-grey;
+    font-size: 10 * @rem;
+    line-height: 1.7;
   }
 }
 

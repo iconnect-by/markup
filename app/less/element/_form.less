@@ -1,0 +1,265 @@
+.form-group {
+  @input-height: 45px;
+
+  letter-spacing: .3px;
+  margin: 0 0 20px;
+  position: relative;
+
+  &.float-label {
+      &:after {
+      background-color: @bright-orange;
+      content: ' ';
+      display: block;
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transition: all .2s cubic-bezier(.4,0,.2,1);
+      visibility: hidden;
+      width: 0;
+
+      .focused& {
+        left: 0;
+        visibility: visible;
+        width: 100%;
+      }
+
+      .form-group__radio& {
+        display: none;
+      }
+    }
+  }
+
+  .control-label {
+    -webkit-font-smoothing: antialiased;
+
+    color: @black;
+    font-size: 10 * @rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    display: block;
+    margin: 0;
+    pointer-events: none;
+
+    .float-label& {
+      transition: all .15s ease-in-out;
+      font-size: 12 * @rem;
+      text-transform: none;
+      transform: translate3d(0, 32px, 0);
+      transform-origin: left center;
+
+      .focused& {
+        color: @cool-grey;
+        transform: scale(.9);
+      }
+    }
+
+    .has-error& {
+      color: @iConnect-red!important;
+    }
+  }
+
+  .has-error& {
+    .form-error {
+      color: @iConnect-red;
+      font-size: 10 * @rem;
+      font-weight: 400;
+      margin-top: 7px;
+      position: absolute;
+    }
+  }
+
+  .form-control {
+    background: transparent;
+    border: solid 1px @border-grey;
+    border-radius: 2px;
+    box-shadow: none;
+
+    color: @black;
+    font-size: 14 * @rem;
+    font-weight: 400;
+
+    height: @input-height;
+    margin: 0;
+    padding: 6px 10px;
+
+    &:focus {
+      border-color: @bright-orange;
+      box-shadow: none;
+      outline: none;
+    }
+
+    .float-label& {
+      border-width: 0;
+      border-bottom-width: 1px;
+      border-radius: 0;
+      padding-left: 0;
+      padding-right: 0;
+
+      &:focus {
+        border-color: @border-grey;
+      }
+    }
+  }
+
+  textarea.form-control {
+    height: auto;
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .radio-group {
+    .item {
+      line-height: @input-height;
+      margin: 0;
+
+      + .item {
+        margin-left: 5px;
+      }
+
+      .widget {
+        display: none;
+        visibility: hidden;
+
+        &:checked ~ .inner {
+          color: @black;
+        }
+      }
+
+      .inner {
+        background: transparent;
+        cursor: pointer;
+        display: inline-block;
+        transition: color .1s ease-in-out;
+
+        color: @cool-grey;
+        font-size: 14 * @rem;
+        font-weight: 600;
+        line-height: @input-height;
+
+        &::selection {
+          color: inherit;
+          background: none;
+        }
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.dropdown-select {
+  cursor: pointer;
+}
+
+.dropdown-select__toggler {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown-select__toggler-value {
+  min-width: 0;
+  margin-right: 10px;
+}
+
+.dropdown-select__menu {
+  .dropdown-select__right & {
+    left: auto;
+    right: 0;
+  }
+
+  border: 0 none;
+  padding: 20px 0;
+  position: absolute;
+  background-color: @iConnect-white;
+  border-radius: 10px;
+  box-shadow: 0 12px 20px rgba(51, 51, 51, 0.3);
+  min-width: 250px;
+  max-width: 350px;
+  max-height: 250px;
+  overflow: scroll;
+
+  &-option {
+    cursor: pointer;
+    padding: 7px 20px;
+
+    &:hover {
+      background-color: @pale-grey;
+    }
+  }
+}
+
+.form-tags-list {
+  .tag-item {
+    margin: 5px;
+
+    color: @black;
+    font-size: 10 * @rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+    line-height: 1.2em;
+
+    cursor: pointer;
+
+    .inverse& {
+      color: @iConnect-white;
+    }
+
+    .inner {
+      .inverse& {
+        background-color: fade(@iConnect-white, 20%);
+        border-color: fade(@iConnect-white, 7%);
+      }
+
+      background-color: @pale-grey;
+      border: solid 1px darken(@pale-grey, 5%);
+      border-radius: 15px;
+      display: inline-block;
+      padding: 7px 19px;
+      max-width: 150px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      transition: border-color .1s ease;
+
+      &::selection {
+        color: inherit;
+        background: none;
+      }
+    }
+
+    .widget {
+      display: none;
+      visibility: hidden;
+
+      &:checked ~ .inner {
+        color: @iConnect-white;
+        background-color: @iConnect-blue;
+        border-color: @iConnect-blue;
+      }
+    }
+
+    &:hover, &:focus {
+      .inner {
+        border-color: @iConnect-blue;
+      }
+
+      .widget:checked ~ .inner {
+        border-color: darken(@iConnect-blue, 10%);
+      }
+    }
+
+    &:focus {
+      outline: 0;
+
+      * {
+        outline: 0;
+      }
+    }
+  }
+}

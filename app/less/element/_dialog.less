@@ -20,13 +20,14 @@
   }
 
   .dialog-inner {
-    .title {
+    > .title {
       .h1-black;
       border-bottom: 1px solid @border-grey;
       margin: 0;
       padding: 0 0 17px 0;
       width: 100%;
     }
+
     .dialog-body {
       .content {
         .text-default;
@@ -260,10 +261,9 @@
       background-color: #00B700;
     }
   }
-
 }
 
-.request-popup, .dialog-body {
+.dialog-body {
   .header {
     border-bottom: 1px solid @border-grey;
     margin: 0;
@@ -283,97 +283,6 @@
   }
 
   .content {
-    .account {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 20px;
-      padding-bottom: 17px;
-
-      .label {
-        .h1-black;
-        padding: 0;
-      }
-      .dropdown-btn {
-        .h1-black;
-        border: none;
-        background: #fff;
-        outline: none;
-
-        .caret {
-          color: #e5e5e5;
-          margin-left: 20px;
-        }
-      }
-      .dropdown {
-        .dropdown-menu {
-          padding: 10px;
-          border-radius: 0;
-          border: none;
-
-          .item {
-
-
-            .link {
-              .h1-black;
-              padding: 10px 5px;
-
-              img {
-                width: 30px;
-                height: 30px;
-                display: inline-block;
-                margin-right: 19px;
-                border-radius: 4px;
-              }
-
-              &.circle {
-                img {
-                  border-radius: 50%;
-                }
-              }
-            }
-          }
-        }
-
-        .avatar {
-          img {
-            width: 30px;
-            height: 30px;
-            display: inline-block;
-            margin-right: 19px;
-            border-radius: 4px;
-          }
-
-          &.circle {
-            img {
-              border-radius: 50%;
-            }
-          }
-        }
-      }
-    }
-
-    .message-block, .proposal-block, .set-role-block {
-      .label {
-        .h1-black;
-        padding: 17px 0;
-        display: block;
-        text-align: left;
-      }
-      .text-container {
-        outline: none;
-        padding: 6px 10px 20px 10px;
-        background-color: #fafafa;
-        border: 1px solid @border-grey;
-        .text-default-small;
-        resize: none;
-        display: block;
-        width: 100%;
-        min-height: 100px;
-      }
-    }
-
     .ic-btn {
       display: block;
       width: 100%;
@@ -403,220 +312,6 @@
             margin: 0 auto;
           }
         }
-      }
-    }
-
-  }
-
-  .artist-role-block {
-    display: inline-block;
-    padding: 0 11px;
-    margin: 0 10px 10px 0;
-    background-color: #fafafa;
-    border: 1px dashed #e5e5e5;
-    border-radius: 20px;
-    cursor: pointer;
-    min-width: 70px;
-    text-align: center;
-    height: 30px;
-
-    input {
-      display: none;
-    }
-
-    .role-name {
-      color: #fff;
-      .text-default;
-      font-weight: @fw-semibold;
-      text-transform: uppercase;
-      line-height: 28px;
-    }
-
-    .role-switch {
-      display: none;
-      color: @black;
-    }
-
-    &:hover, &:active, &:focus {
-      background-color: lighten(#fafafa, 20%);
-    }
-
-    &.active {
-      background-color: #4a90e2;
-      border: 1px solid #4a90e2;
-      text-align: left;
-
-      .role-name {
-        color: #fff;
-      }
-
-      .role-switch {
-        float: right;
-        display: inline;
-        color: #fff;
-        margin-left: 9px;
-
-        .fa {
-          font-size: 14 * @rem;
-          line-height: 28px;
-        }
-      }
-
-      &:hover, &:active, &:focus {
-        background-color: darken(#4a90e2, 20%);
-      }
-    }
-
-  }
-
-  .control-label {
-    &.custom {
-      .title-H2;
-      font-family: @iConnect-font-regular;
-      font-size: 10 * @rem;
-      font-weight: @fw-regular;
-      line-height: 1.125;
-      letter-spacing: .46px;
-      margin-bottom: 0;
-      opacity: 1;
-      color: #626875;
-    }
-  }
-
-
-  .styled-placeholder {
-    margin-top: 20px;
-
-    &.form-group {
-      background-color: transparent;
-      height: auto;
-      border: 0;
-      border-bottom: 1px solid @border-grey;
-      border-radius: 0;
-      margin-bottom: 0;
-
-      &.focused {
-        .control-label {
-          opacity: 1;
-          top: 2px;
-          transform: scale(1);
-          color: #626875;
-        }
-      }
-    }
-
-    .control-label {
-      .title-H2;
-      color: #999;
-      font-family: @iConnect-font-regular;
-      font-size: 10 * @rem;
-      font-weight: @fw-regular;
-      line-height: 1.125;
-      letter-spacing: .46px;
-      margin-bottom: 0;
-      opacity: .5;
-      pointer-events: none;
-      position: absolute;
-      width: 100%;
-      text-align: left;
-      top: 23px;
-      transform: scale(1);
-      transform-origin: left top;
-      transition: all .2s ease-in-out;
-    }
-
-    .form-control {
-      align-self: flex-end;
-      border: none;
-      box-shadow: none;
-      line-height: 1;
-    }
-
-    input {
-      .text-default-medium;
-      color: @black;
-      margin: 0;
-      font-weight: @fw-regular;
-      text-align: left;
-      border-radius: 0;
-      border-bottom: 1px solid transparent !important;
-      padding-left: 0;
-      padding-right: 0;
-
-      max-width: 99.99% !important;
-      transition: width 0.25s;
-    }
-
-    .bar {
-      position: relative;
-      display: block;
-      width: 100%;
-
-      &:before, &:after {
-        content: '';
-        height: 1px;
-        width: 0;
-        bottom: -1px;
-        position: absolute;
-        background: @iConnect-orange;
-        transition: 0.2s ease all;
-        -moz-transition: 0.2s ease all;
-        -webkit-transition: 0.2s ease all;
-      }
-      &:before {
-        left: 50%;
-      }
-      &:after {
-        right: 50%;
-      }
-    }
-
-    /* active state */
-    input:focus ~ .bar:before, input:focus ~ .bar:after {
-      width:50%;
-    }
-
-  }
-
-  .btn-group {
-    margin-top: 20px;
-
-    &.choice {
-      &.type {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: nowrap;
-        flex-basis: 0;
-
-        .btn {
-          .text-grey-small;
-          outline: none !important;
-          box-shadow: none;
-          padding: 5px;
-          background: none;
-
-          &.active, &:active, &:focus {
-            box-shadow: none;
-            color: @iConnect-blue;
-            font-size: 16px * @rem;
-          }
-        }
-      }
-    }
-  }
-
-  .dialog-btns-block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-
-    .ic-btn {
-      padding: 0 5px;
-
-      &:not(:last-child) {
-        margin-right: 10px;
       }
     }
   }
