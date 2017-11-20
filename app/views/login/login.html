@@ -84,7 +84,7 @@
                                         <div class="form-group float-label form-group--big form-group--inverse form-group--icon">
                                             <label class="control-label" for="signin-pass">Password</label>
                                             <input id="signin-pass" class="form-control" autocomplete="off" type="password" name="password" ng-model="user.password" ng-required="true">
-                                            <a class="control-icon control-icon--view-pass"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                            <a class="control-icon"><i class="fa fa-eye" aria-hidden="true"></i></a>
                                             <p class="form-error" ng-show="signin.password.$invalid && signin.email.$touched">Password is required</p>
                                         </div>
                                     </div>
@@ -149,7 +149,7 @@
                                             <label class="control-label" for="signup-pass">Password</label>
                                             <input id="signup-pass" class="form-control" autocomplete="off" type="password" name="password" ng-attr-type="{{ showPassword ? 'text' : 'password' }}" ng-model="userReg.password" ng-required="true">
                                             <p class="form-error" ng-show="signup.password.$invalid && signup.email.$touched">Password is required</p>
-                                            <a class="control-icon control-icon--view-pass"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                            <a class="control-icon"><i class="fa fa-eye" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="col-xs-12">
