@@ -1,12 +1,26 @@
 .form-group {
+  @label-font-size: 10;
+  @label-font-size-float: 12;
   @input-height: 45px;
+  @input-font-size: 14;
+  @input-padding-top: 6px;
+  @icon-size: 22px;
 
   letter-spacing: .3px;
   margin: 0 0 20px;
   position: relative;
 
+  .form-error {
+    color: @iConnect-red;
+    font-size: @label-font-size * @rem;
+    font-weight: 400;
+    line-height: 1.2em;
+    margin-top: 7px;
+    position: absolute;
+  }
+
   &.float-label {
-      &:after {
+    &:after {
       background-color: @bright-orange;
       content: ' ';
       display: block;
@@ -34,7 +48,7 @@
     -webkit-font-smoothing: antialiased;
 
     color: @black;
-    font-size: 10 * @rem;
+    font-size: @label-font-size * @rem;
     font-weight: 600;
     text-transform: uppercase;
 
@@ -44,12 +58,13 @@
 
     .float-label& {
       transition: all .15s ease-in-out;
-      font-size: 12 * @rem;
+      font-size: @label-font-size-float * @rem;
       text-transform: none;
-      transform: translate3d(0, 32px, 0);
+      transform: translate3d(0, 38px, 0);
       transform-origin: left center;
 
-      .focused& {
+      .focused&,
+      .has-value& {
         color: @cool-grey;
         transform: scale(.9);
       }
@@ -60,16 +75,6 @@
     }
   }
 
-  .has-error& {
-    .form-error {
-      color: @iConnect-red;
-      font-size: 10 * @rem;
-      font-weight: 400;
-      margin-top: 7px;
-      position: absolute;
-    }
-  }
-
   .form-control {
     background: transparent;
     border: solid 1px @border-grey;
@@ -77,12 +82,12 @@
     box-shadow: none;
 
     color: @black;
-    font-size: 14 * @rem;
+    font-size: @input-font-size * @rem;
     font-weight: 400;
 
     height: @input-height;
     margin: 0;
-    padding: 6px 10px;
+    padding: @input-padding-top 10px;
 
     &:focus {
       border-color: @bright-orange;
@@ -149,6 +154,108 @@
       }
     }
   }
+
+  &--icon {
+    .control-icon {
+      background: 0;
+      border: none 0;
+      color: @black;
+      text-align: right;
+
+      display: inline-block;
+      width: @icon-size;
+      height: @icon-size;
+      padding: 0;
+      margin: 0;
+
+      position: absolute;
+      right: 0;
+      bottom: (@input-height - @icon-size) / 2;
+
+      &--view-pass {
+        color: @cool-grey;
+
+        &:hover {
+          color: @bright-orange;
+        }
+      }
+    }
+
+    &.float-label {
+      .form-control {
+        padding-right: @icon-size * 1.5;
+      }
+    }
+  }
+
+  &--big {
+    .control-label, .form-error {
+      font-size: @label-font-size * 1.2 * @rem;
+    }
+
+    &.float-label {
+      .control-label {
+        font-size: @label-font-size-float * 1.2 * @rem;
+      }
+    }
+
+    .form-control {
+      font-size: @input-font-size * 1.2 * @rem;
+      height: @input-height * 1.2;
+      padding-top: @input-padding-top * 2;
+      padding-bottom: @input-padding-top * 2;
+    }
+
+    .control-icon {
+      bottom: (@input-height * 1.2 - @icon-size) / 2;
+    }
+  }
+
+  &--inverse {
+    .control-label {
+      color: @iConnect-white;
+    }
+
+    &.float-label {
+      .control-label {
+        .focused&,
+        .has-value& {
+          color: darken(@iConnect-white, 40%);
+        }
+      }
+    }
+
+    .form-control {
+      border-bottom-color: fadeout(@iConnect-white, 70%);
+      color: @iConnect-white;
+    }
+
+    .control-icon {
+      &--view-pass {
+        color: @iConnect-white;
+      }
+    }
+  }
+
+  &&--profile-create {
+    &.float-label {
+      .control-label {
+        text-transform: uppercase;
+        text-align: center;
+        transform-origin: center center;
+      }
+    }
+
+    .form-control {
+      text-align: center;
+    }
+
+    .dropdown-menu {
+      width: 100%;
+      max-width: 100%;
+      max-height: 350px;
+    }
+  }
 }
 
 .dropdown-select {
@@ -166,6 +273,7 @@
   margin-right: 10px;
 }
 
+ul.dropdown-menu,
 .dropdown-select__menu {
   .dropdown-select__right & {
     left: auto;
@@ -193,9 +301,20 @@
   }
 }
 
+ul.dropdown-menu {
+  > li {
+    cursor: pointer;
+    padding: 7px 20px;
+
+    &.active {
+      background-color: @pale-grey;
+    }
+  }
+}
+
 .form-tags-list {
   .tag-item {
-    margin: 5px;
+    margin: 0 5px 5px 0;
 
     color: @black;
     font-size: 10 * @rem;

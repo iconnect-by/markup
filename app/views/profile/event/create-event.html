@@ -1,63 +1,26 @@
-<section class="create-initial-section event-section" ng-controller="RegistrationController">
+<section class="create-initial-section" ng-controller="RegistrationController">
     <div class="container">
-
-        <script>
-            $('.form-control').on('focus blur', function (e) {
-                $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
-            }).trigger('blur');
-
-            function resizable (el, factor) {
-                var int = Number(factor) || 7.7;
-                function resize() {el.style.width = ((el.value.length+1) * int) + 'px'}
-                var e = 'keyup,keypress,change'.split(',');
-                for (var i in e) el.addEventListener(e[i],resize,false);
-                resize();
-            }
-            resizable(document.getElementsByName('event-name')[0],7);
-        </script>
-
-        <form class="create-form" name="create-form" novalidate>
+        <form name="create-form" novalidate>
             <div class="row">
-
                 <div class="col-md-offset-2 col-md-4">
-                    <fieldset>
-                        <div class="form-group styled-placeholder">
-                            <label class="control-label">Add an event name</label>
-                            <input class="form-control" autocomplete="off" type="text" name="event-name" ng-model="event.name" ng-required="true">
-                            <span class="bar"></span>
-                        </div>
-                    </fieldset>
-                </div>
-
-                <div class="col-md-4">
-                    <script type="text/ng-template" id="customTemplate.html" class="ddown-entity event-choose">
-                        <a href="#" class="event-choose-lnk">
-                            <span class="image circle" ><img src="../../../images/placeholder.svg" alt="..."></span>
-                            <span class="content-block">
-                                    <span class="content" ng-bind-html="match.label | uibTypeaheadHighlight:query"></span>
-                                    <span class="label">Artist</span>
-                                </span>
-                        </a>
-                    </script>
-
-                    <div class="input-ddown-block">
-                        <div class="form-group">
-                            <label class="control-label">Choose organizator</label>
-                            <!--<pre>Model: {{customSelected | json}}</pre>-->
-                            <input ng-model="customSelected"
-                                   placeholder=""
-                                   uib-typeahead="artist as artist.firstName for artist in artistList | filter:{firstName:$viewValue}"
-                                   typeahead-template-url="customTemplate.html"
-                                   class="form-control input-field"
-                                   typeahead-show-hint="false"
-                                   typeahead-min-length="0"
-                            >
-                            <span class="bar"></span>
-                            <span class="caret"></span>
-                        </div>
+                    <div class="form-group form-group--big float-label form-group--profile-create">
+                        <label class="control-label">Add an event name</label>
+                        <input class="form-control" autocomplete="off" type="text" name="event-name" ng-model="event.name" ng-required="true">
                     </div>
                 </div>
 
+                <div class="col-md-4">
+                    <div class="form-group form-group--big form-group--icon float-label form-group--profile-create">
+                        <label class="control-label">Choose organizator</label>
+                        <input ng-model="customSelected"
+                               class="form-control"
+                               uib-typeahead="artist as artist.firstName for artist in artistList | filter:{firstName:$viewValue}"
+                               typeahead-template-url="profilePreview.html"
+                               typeahead-show-hint="false"
+                               typeahead-min-length="0">
+                        <div class="control-icon"><span class="caret"></span></div>
+                    </div>
+                </div>
             </div>
 
             <div class="row">
@@ -77,11 +40,30 @@
             </div>
 
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 text-center">
                     <button class="ic-btn ic-btn-blue big">Create Event</button>
                 </div>
             </div>
         </form>
-
     </div><!--.container-->
 </section>
+
+<script>
+    $('.form-control').on('focus blur', function (e) {
+        $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+</script>
+
+<script type="text/ng-template" id="profilePreview.html">
+    <div class="profile-preview-card">
+        <div class="profile-preview-card__avatar circle">
+            <div class="image">
+                <img src="../../../images/placeholder-artist.svg">
+            </div>
+        </div>
+        <div class="profile-preview-card__about">
+            <div class="profile-preview-card__about-title" ng-bind-html="match.label | uibTypeaheadHighlight:query"></div>
+            <div class="profile-preview-card__about-subtitle">Artist</div>
+        </div>
+    </div>
+</script>

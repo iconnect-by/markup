@@ -1,21 +1,12 @@
-<section class="create-initial-section organization-section" ng-controller="RegistrationController">
+<section class="create-initial-section" ng-controller="RegistrationController">
     <div class="container">
-        <script>
-            $('.form-control').on('focus blur', function (e) {
-                $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
-            }).trigger('blur');
-        </script>
         <form class="create-form" name="create-form" novalidate>
             <div class="row">
-
                 <div class="col-md-offset-4 col-md-4">
-                    <fieldset>
-                        <div class="form-group styled-placeholder">
-                            <label class="control-label">Add an organization name</label>
-                            <input class="form-control" type="text" autocomplete="off" name="organization-name" ng-model="user.name" ng-required="true">
-                            <span class="bar"></span>
-                        </div>
-                    </fieldset>
+                    <div class="form-group form-group--big form-group--profile-create float-label">
+                        <label class="control-label">Add an organization name</label>
+                        <input class="form-control" type="text" autocomplete="off" name="organization-name" ng-model="user.name" ng-required="true">
+                    </div>
                 </div>
             </div>
 
@@ -36,11 +27,16 @@
             </div>
 
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 text-center">
                     <button class="ic-btn ic-btn-blue big">Create Account</button>
                 </div>
             </div>
         </form>
-
     </div><!--.container-->
 </section>
+
+<script>
+    $('.form-control').on('focus blur', function (e) {
+        $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+</script>

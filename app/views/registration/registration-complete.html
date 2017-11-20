@@ -22,74 +22,70 @@
                     <p>To access your private office, enter your name, surname, and location. <br> This is necessary so that we can prepare the most relevant information for you</p>
                 </div>
 
-                <form action="" name="settings" autocomplete="off" class="form-block">
+                <form name="settings" autocomplete="off">
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
+                        <div class="col-md-12 mb-20">
+                            <div class="form-group form-group--big float-label">
                                 <label class="control-label" for="first-name">First Name</label>
                                 <input id="first-name" name="first_name" class="form-control" ng-model="user.firstname" ng-required="true">
-                                <p class="error" ng-if="settings.first_name.$dirty && settings.first_name.$error.required">First name is required</p>
+                                <p class="form-error" ng-if="settings.first_name.$dirty && settings.first_name.$error.required">First name is required</p>
                             </div>
-                            <div class="form-group">
+                        </div>
+                        <div class="col-md-12 mb-20">
+                            <div class="form-group form-group--big float-label">
                                 <label class="control-label" for="last-name">Last Name</label>
                                 <input id="last-name" name="last_name" class="form-control" ng-model="user.lastname" ng-required="true">
-                                <p class="error" ng-if="settings.last_name.$dirty && settings.last_name.$error.required">Last name is required</p>
+                                <p class="form-error" ng-if="settings.last_name.$dirty && settings.last_name.$error.required">Last name is required</p>
                             </div>
                         </div>
-
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <div class="input-ddown-block">
-                                    <label class="control-label">Country</label>
-                                    <input ng-model="userCountry"
-                                           class="form-control"
-                                           uib-typeahead="country as country.name for country in [{
-                                                            id: 1,
-                                                            name: 'United Kingdom',
-                                                        },
-                                                        {
-                                                            id: 2,
-                                                            name: 'United States of America',
-                                                        }] | filter:{name:$viewValue}"
-                                           typeahead-template-url="locationDropdownOption.html"
-                                           typeahead-show-hint="false"
-                                           typeahead-min-length="0"
-                                    >
-                                    <span class="caret"></span>
-                                </div>
+                        <div class="col-md-4 mb-20">
+                            <div class="form-group form-group--big form-group--icon float-label">
+                                <label class="control-label">Country</label>
+                                <input ng-model="userCountry"
+                                       class="form-control"
+                                       uib-typeahead="country as country.name for country in [{
+                                                        id: 1,
+                                                        name: 'United Kingdom',
+                                                    },
+                                                    {
+                                                        id: 2,
+                                                        name: 'United States of America',
+                                                    }] | filter:{name:$viewValue}"
+                                       typeahead-template-url="locationDropdownOption.html"
+                                       typeahead-show-hint="false"
+                                       typeahead-min-length="0"
+                                >
+                                <a class="control-icon"><span class="caret"></span></a>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
+                        <div class="col-md-4 mb-20">
+                            <div class="form-group form-group--big float-label">
                                 <label class="control-label" for="city">City</label>
                                 <input id="city" name="city" class="form-control" ng-model="user.city" ng-required="true">
-                                <p class="error" ng-if="settings.city.$dirty && settings.city.$error.required">City is required</p>
+                                <p class="form-error" ng-if="settings.city.$dirty && settings.city.$error.required">City is required</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <div class="input-ddown-block" ng-show="userCountry.id == 2">
-                                    <label class="control-label">State</label>
-                                    <input ng-model="userState"
-                                           class="form-control"
-                                           uib-typeahead="city as city.name for city in [{
-                                                            id: 1,
-                                                            name: 'MI',
-                                                        },
-                                                        {
-                                                            id: 2,
-                                                            name: 'NY',
-                                                        }] | filter:{name:$viewValue}"
-                                           typeahead-template-url="locationDropdownOption.html"
-                                           typeahead-show-hint="false"
-                                           typeahead-min-length="0"
-                                    >
-                                    <span class="caret"></span>
-                                </div>
+                        <div class="col-md-4 mb-20" ng-show="userCountry.id == 2">
+                            <div class="form-group form-group--big form-group--icon float-label">
+                                <label class="control-label">State</label>
+                                <input ng-model="userState"
+                                       class="form-control"
+                                       uib-typeahead="city as city.name for city in [{
+                                                        id: 1,
+                                                        name: 'MI',
+                                                    },
+                                                    {
+                                                        id: 2,
+                                                        name: 'NY',
+                                                    }] | filter:{name:$viewValue}"
+                                       typeahead-template-url="locationDropdownOption.html"
+                                       typeahead-show-hint="false"
+                                       typeahead-min-length="0"
+                                >
+                                <a class="control-icon"><span class="caret"></span></a>
                             </div>
                         </div>
-
-                        <div class="col-md-7">
+                        <div class="col-md-7 mt-30">
                             <label class="control control-checkbox ic-checkbox">I have read and agree to the
                                 <a href="#" ui-sref="app.terms-of-use">Terms of use</a> &amp;
                                 <a href="#" ui-sref="app.privacy-policy">Privacy Policy</a>
@@ -97,7 +93,7 @@
                                 <div class="control_indicator"></div>
                             </label>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-md-5 mt-30">
                             <button class="ic-btn ic-btn-blue big pull-right">Go to my account</button>
                         </div>
                     </div>

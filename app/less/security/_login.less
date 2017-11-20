@@ -1,5 +1,4 @@
 .security-form {
-
   input:-webkit-autofill,
   input:-webkit-autofill:hover,
   input:-webkit-autofill:focus input:-webkit-autofill,
@@ -12,109 +11,6 @@
     -webkit-text-fill-color: #fff !important;
     -webkit-box-shadow: none !important;
     transition: background-color 5000s ease-in-out 0s !important;
-  }
-
-  input,
-  input [type=tel],
-  input [type=email],
-  input [type=number],
-  input [type=password] {
-    background-color: transparent !important;
-    height: auto;
-    padding: 15px 0;
-    border: 0;
-    border-bottom: 1px solid fade(#fff, 30%);
-    border-radius: 0;
-
-    &:focus {
-      background-color: transparent;
-      box-shadow: none;
-      outline: none;
-      border-bottom: 1px solid @iConnect-orange;
-    }
-  }
-
-  .pwd-group {
-    position: relative;
-
-    input {
-      padding-right: 30px;
-    }
-
-    .see-pwd {
-      position: absolute;
-      padding: 19px 10px;
-      cursor: pointer;
-      right: 0;
-      bottom: 0;
-      top: auto;
-
-      img {
-        display: inline-block;
-        width: 14px;
-        height: 10px;
-      }
-    }
-  }
-
-  .form-group {
-    display: flex;
-    height: 55px;
-    margin-bottom: 55px;
-    position: relative;
-    flex-direction: column;
-
-    .error {
-      color: @iConnect-red;
-      font-size: 11 * @rem;
-      margin: 7px 0;
-    }
-
-    &.focused {
-      .control-label {
-        opacity: 1;
-        top: -10px;
-        transform: scale(0.75);
-      }
-    }
-
-    &.with-addon {
-      position: relative;
-
-      input {
-        padding-right: 30px;
-      }
-
-      .addon {
-        font-size: 5 * @rem;
-        position: absolute;
-        padding: 19px 10px;
-        right: 0;
-        bottom: 0;
-        top: auto;
-      }
-    }
-  }
-
-  .control-label {
-    color: #fff;
-    font-family: @iConnect-font-regular;
-    font-size: 16 * @rem;
-    font-weight: @fw-regular;
-    line-height: 1.125;
-    letter-spacing: .46px;
-    margin-bottom: 0;
-    opacity: .5;
-    pointer-events: none;
-    position: absolute;
-    top: 18px;
-    transform: scale(1);
-    transform-origin: left top;
-    transition: all .2s ease-in-out;
-  }
-
-  .form-control {
-    align-self: flex-end;
   }
 
   .forgot-pass-link {
@@ -200,21 +96,6 @@
       }
     }
 
-    .security-form {
-      input,
-      input [type=tel],
-      input [type=email],
-      input [type=number],
-      input [type=password]  {
-        color: #fff;
-        box-shadow: none;
-
-        &:focus {
-          color: #fff;
-        }
-      }
-    }
-
     // redeclare default bootstrap classes to make ot work with angular custom components
     .tab-content {
       .tab-pane {
@@ -254,41 +135,5 @@
         margin: 0 5px;
       }
     }
-  }
-}
-
-.verification-section {
-  background-color: white;
-  width: 100%;
-  padding: 0 7%;
-  display: table;
-  margin: 0;
-  max-width: none;
-  height: 91vh;
-
-  h1 {
-    span {
-      color: @iConnect-blue;
-    }
-  }
-
-  label {
-    color: @iConnect-grey;
-  }
-
-  input,
-  input [type=tel],
-  input [type=email],
-  input [type=number],
-  input [type=password] {
-    color: black;
-  }
-
-  input:focus,
-  input [type=tel]:focus,
-  input [type=email]:focus,
-  input [type=number]:focus,
-  input [type=password]:focus {
-    color: black;
   }
 }

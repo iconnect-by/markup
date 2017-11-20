@@ -26,19 +26,13 @@
                 <li><a href="#" data-target='#upgrade' data-toggle="tab" onclick="return false;">upgrade your account</a></li>
             </ul>
 
-            <div class="tab-content">
-                <div role="tabpanel" class="tab-pane    active in" id="account">
+            <div class="tab-content mb-30">
+                <div role="tabpanel" class="tab-pane active in" id="account">
                     <div class="container-fluid">
-
                         <div class="form-block">
                             <form action="">
                                 <div class="row">
                                     <div class="col-md-3">
-
-                                        <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
-                                        <!--<div class="hero-avatar empty">-->
-                                        <!--DON'T DELETE - IT'S FOR EMPTY CONTENT -->
-
                                         <div class="hero-avatar circle">
                                             <figure class="progressive-image">
                                                 <div class="h-aspect-ratio">
@@ -58,20 +52,20 @@
                                                 </ul>
                                             </div>
                                         </div>
-
                                     </div>
 
                                     <div class="col-md-offset-1 col-md-5">
-                                        <div class="row user-name-block">
+                                        <div class="row">
                                             <div class="col-md-12">
-                                                <div class="form-group">
+                                                <div class="form-group form-group--big float-label">
                                                     <label class="control-label" for="first-name">First Name</label>
                                                     <input id="first-name" class="form-control" autocomplete="off" ng-model="user.firstname" ng-required="true">
                                                 </div>
-                                                <div class="form-group">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group form-group--big float-label">
                                                     <label class="control-label" for="last-name">Last Name</label>
                                                     <input id="last-name" class="form-control" autocomplete="off" ng-model="user.lastname" ng-required="true">
-                                                    <p class="help-info">You must specify here only your real name, which coincides with the name in the passport</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -80,151 +74,13 @@
                                             <div class="col-md-4">
                                                 <script type="text/ng-template" id="customTemplate.html" class="ddown-entity event-choose">
                                                     <span class="content-block">
-                                                            <span class="content" ng-bind-html="match.label | uibTypeaheadHighlight:query"></span>
-                                                        </span>
+                                                        <span class="content" ng-bind-html="match.label | uibTypeaheadHighlight:query"></span>
+                                                    </span>
                                                 </script>
-
-                                                <div class="input-ddown-block">
-                                                    <div class="form-group">
-                                                        <label class="control-label">Country</label>
-                                                        <!--<pre>Model: {{userCountry | json}}</pre>-->
-                                                        <input ng-model="userCountry"
-                                                               placeholder=""
-                                                               uib-typeahead="country as country.name for country in [{
-                                                                    id: 1,
-                                                                    name: 'London',
-                                                                },
-                                                                {
-                                                                    id: 2,
-                                                                    name: 'USA',
-                                                                }] | filter:{name:$viewValue}"
-                                                               typeahead-template-url="customTemplate.html"
-                                                               class="form-control input-field"
-                                                               typeahead-show-hint="false"
-                                                               typeahead-min-length="0"
-                                                        >
-                                                        <span class="bar"></span>
-                                                        <span class="caret"></span>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label class="control-label" for="city1">City</label>
-                                                    <input id="city1" class="form-control" autocomplete="off" ng-model="user.city" ng-required="true">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <div class="input-ddown-block" ng-show="userCountry.id == 2">
-                                                        <div class="form-group">
-                                                            <label class="control-label">State</label>
-                                                            <!--<pre>Model: {{userState | json}}</pre>-->
-                                                            <input ng-model="userState"
-                                                                   placeholder=""
-                                                                   uib-typeahead="city as city.name for city in [{
-                                                                    id: 1,
-                                                                    name: 'MI',
-                                                                },
-                                                                {
-                                                                    id: 2,
-                                                                    name: 'NY',
-                                                                }] | filter:{name:$viewValue}"
-                                                                   typeahead-template-url="customTemplate.html"
-                                                                   class="form-control input-field"
-                                                                   typeahead-show-hint="false"
-                                                                   typeahead-min-length="0"
-                                                            >
-                                                            <span class="bar"></span>
-                                                            <span class="caret"></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label class="control-label" for="email_address">Email address</label>
-                                                    <input id="email_address" class="form-control" autocomplete="off" ng-model="new.pwd" ng-required="true">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group with-verification">
-                                                    <label class="control-label" for="phone_number">Phone Number</label>
-                                                    <input id="phone_number" class="form-control" autocomplete="off" ng-model="phone.number" ng-required="true">
-                                                    <!--<span class="verification-message error">Number not verified</span>-->
-                                                    <!--<span class="verification-message success">Number verified</span>-->
-                                                    <span class="verification-message info">Verify number</span>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </div><!--.row-->
-
-
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group pull-right">
-                                            <div class="btn-block">
-                                                <button class="ic-btn ic-btn-orange big ">Save</button>
-                                                <button class="ic-btn ic-btn-white big">Back to cabinet</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-
-
-
-                    </div><!--.container-fluid-->
-                </div><!--.tabpanel-->
-
-                <div role="tabpanel" class="tab-pane" id="legal_info">
-                    <div class="container-fluid">
-
-                        <div class="form-block">
-                            <form action="">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <fieldset>
-                                            <div class="form-group">
-                                                <label class="control-label" for="entity_legal_name">Name of the legal entity</label>
-                                                <input id="entity_legal_name" class="form-control" autocomplete="off" ng-required="true">
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label" for="account_number">Account number</label>
-                                                <input id="account_number" class="form-control" autocomplete="off" ng-required="true">
-                                            </div>
-                                        </fieldset>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <fieldset>
-                                            <div class="form-group">
-                                                <label class="control-label" for="payer_account_number">Payer account number</label>
-                                                <input id="payer_account_number" class="form-control" autocomplete="off" ng-required="true">
-                                            </div>
-                                        </fieldset>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <div class="input-ddown-block">
-                                                <div class="form-group">
+                                                <div class="form-group form-group--big form-group--icon float-label">
                                                     <label class="control-label">Country</label>
                                                     <!--<pre>Model: {{userCountry | json}}</pre>-->
-                                                    <input ng-model="userCountry1"
+                                                    <input ng-model="userCountry"
                                                            placeholder=""
                                                            uib-typeahead="country as country.name for country in [{
                                                                     id: 1,
@@ -237,63 +93,165 @@
                                                            typeahead-template-url="customTemplate.html"
                                                            class="form-control input-field"
                                                            typeahead-show-hint="false"
-                                                           typeahead-min-length="0"
-                                                    >
-                                                    <span class="bar"></span>
-                                                    <span class="caret"></span>
+                                                           typeahead-min-length="0">
+                                                    <div class="control-icon"><span class="caret"></span></div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label class="control-label" for="city">City</label>
-                                            <input id="city" class="form-control" autocomplete="off" ng-model="user.city" ng-required="true">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <div class="input-ddown-block" ng-show="userCountry1.id == 2">
-                                                <div class="form-group">
+                                            <div class="col-md-4">
+                                                <div class="form-group form-group--big float-label">
+                                                    <label class="control-label" for="city1">City</label>
+                                                    <input id="city1" class="form-control" autocomplete="off" ng-model="user.city" ng-required="true">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group form-group--big form-group--icon float-label" ng-show="userCountry.id == 2">
                                                     <label class="control-label">State</label>
-                                                    <!--<pre>Model: {{userState1 | json}}</pre>-->
-                                                    <input ng-model="userState1"
+                                                    <!--<pre>Model: {{userState | json}}</pre>-->
+                                                    <input ng-model="userState"
                                                            placeholder=""
                                                            uib-typeahead="city as city.name for city in [{
-                                                                    id: 1,
-                                                                    name: 'MI',
-                                                                },
-                                                                {
-                                                                    id: 2,
-                                                                    name: 'NY',
-                                                                }] | filter:{name:$viewValue}"
+                                                            id: 1,
+                                                            name: 'MI',
+                                                        },
+                                                        {
+                                                            id: 2,
+                                                            name: 'NY',
+                                                        }] | filter:{name:$viewValue}"
                                                            typeahead-template-url="customTemplate.html"
                                                            class="form-control input-field"
                                                            typeahead-show-hint="false"
-                                                           typeahead-min-length="0"
-                                                    >
-                                                    <span class="bar"></span>
-                                                    <span class="caret"></span>
+                                                           typeahead-min-length="0">
+                                                    <div class="control-icon"><span class="caret"></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group form-group--big float-label">
+                                                    <label class="control-label" for="email_address">Email address</label>
+                                                    <input id="email_address" class="form-control" autocomplete="off" ng-model="new.pwd" ng-required="true">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div class="form-group form-group--big float-label with-verification">
+                                                    <label class="control-label" for="phone_number">Phone Number</label>
+                                                    <input id="phone_number" class="form-control" autocomplete="off" ng-model="phone.number" ng-required="true">
+                                                    <!--<span class="verification-message error">Number not verified</span>-->
+                                                    <!--<span class="verification-message success">Number verified</span>-->
+                                                    <span class="verification-message info">Verify number</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div><!--.row-->
 
-                                    <div class="col-md-8">
-                                        <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="btn-block">
+                                            <button class="ic-btn ic-btn-orange big pull-right">Save</button>
+                                            <a ui-sref="app.cabinet" class="ic-btn ic-btn-white big pull-right">Back to cabinet</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div><!--.container-fluid-->
+                </div><!--.tabpanel-->
+
+                <div role="tabpanel" class="tab-pane" id="legal_info">
+                    <div class="container-fluid">
+
+                        <div class="form-block">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group form-group--big float-label">
+                                            <label class="control-label" for="entity_legal_name">Name of the legal entity</label>
+                                            <input id="entity_legal_name" class="form-control" autocomplete="off" ng-required="true">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group form-group--big float-label">
+                                            <label class="control-label" for="account_number">Account number</label>
+                                            <input id="account_number" class="form-control" autocomplete="off" ng-required="true">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group  form-group--big float-label">
+                                            <label class="control-label" for="payer_account_number">Payer account number</label>
+                                            <input id="payer_account_number" class="form-control" autocomplete="off" ng-required="true">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="form-group form-group--big form-group--icon float-label">
+                                            <label class="control-label">Country</label>
+                                            <!--<pre>Model: {{userCountry | json}}</pre>-->
+                                            <input ng-model="userCountry"
+                                                   placeholder=""
+                                                   uib-typeahead="country as country.name for country in [{
+                                                                id: 1,
+                                                                name: 'London',
+                                                            },
+                                                            {
+                                                                id: 2,
+                                                                name: 'USA',
+                                                            }] | filter:{name:$viewValue}"
+                                                   typeahead-template-url="customTemplate.html"
+                                                   class="form-control input-field"
+                                                   typeahead-show-hint="false"
+                                                   typeahead-min-length="0">
+                                            <div class="control-icon"><span class="caret"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group form-group--big float-label">
+                                            <label class="control-label" for="city2">City</label>
+                                            <input id="city2" class="form-control" autocomplete="off" ng-model="user.city" ng-required="true">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group form-group--big form-group--icon float-label" ng-show="userCountry.id == 2">
+                                            <label class="control-label">State</label>
+                                            <!--<pre>Model: {{userState | json}}</pre>-->
+                                            <input ng-model="userState"
+                                                   placeholder=""
+                                                   uib-typeahead="city as city.name for city in [{
+                                                        id: 1,
+                                                        name: 'MI',
+                                                    },
+                                                    {
+                                                        id: 2,
+                                                        name: 'NY',
+                                                    }] | filter:{name:$viewValue}"
+                                                   typeahead-template-url="customTemplate.html"
+                                                   class="form-control input-field"
+                                                   typeahead-show-hint="false"
+                                                   typeahead-min-length="0">
+                                            <div class="control-icon"><span class="caret"></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group form-group--big float-label">
                                             <label class="control-label" for="legal_address">Legal address</label>
                                             <input id="legal_address" class="form-control" autocomplete="off" ng-required="true">
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <div class="form-group pull-right">
-                                            <div class="btn-block">
-                                                <button class="ic-btn ic-btn-orange big ">Save</button>
-                                                <button class="ic-btn ic-btn-white big">Cancel</button>
-                                            </div>
+                                        <div class="btn-block">
+                                            <button class="ic-btn ic-btn-orange big pull-right">Save</button>
+                                            <a ui-sref="app.cabinet" class="ic-btn ic-btn-white big pull-right">Cancel</a>
                                         </div>
                                     </div>
                                 </div>
